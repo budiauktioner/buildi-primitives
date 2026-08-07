@@ -201,12 +201,16 @@ The root entry re-exports everything for convenience. Import from a namespace
 subpath instead when bundle size matters:
 
 ```ts
-// ~292 kB minified — the root entry registers every text scanner
+// ~372 kB minified — the root entry registers every text scanner
 import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives";
 
 // ~40 kB minified — the same type, nothing else
 import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives/organization";
 ```
+
+`measurement` is the one subpath that does not shrink to the type you ask for:
+its unit tables are static class fields, which bundlers keep whether or not you
+reference the class, so importing a single dimension still costs about 96 kB.
 
 Available subpaths: `contact`, `person`, `organization`, `geography`, `web`,
 `finance`, `property`, `banking`, `measurement`, `validation`, `text-scanning`,

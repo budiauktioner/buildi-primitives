@@ -52,7 +52,7 @@ export abstract class Quantity<TUnit extends MeasurementUnit> {
 
   /** The exact value converted to `unit`. */
   inDecimal(unit: TUnit): Decimal {
-    return this.baseValue.dividedBy(unit.toBaseUnitFactor);
+    return unit.fromBase(this.baseValue);
   }
 
   /** The value converted to `unit`, as a `number` for ergonomic access. */
@@ -146,7 +146,7 @@ export function tryParseQuantity<TUnit extends MeasurementUnit>(
   if (unit === null) return null;
 
   try {
-    return { baseValue: split.value.times(unit.toBaseUnitFactor), unit };
+    return { baseValue: unit.toBase(split.value), unit };
   } catch {
     return null;
   }

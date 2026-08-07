@@ -8,11 +8,15 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- `Length` and `LengthUnit`, the first types of the `Measurement` namespace,
-  available from the new `@budiauktioner/buildi-primitives/measurement` subpath.
-  `Length` supports parsing from any of its 13 units, exact conversion between
-  them, `toNaturalString()` auto-scaling, arithmetic, masking via `maskLength`,
-  and text scanning through `TextScanResult.lengths`.
+- The `Measurement` namespace, available from the new
+  `@budiauktioner/buildi-primitives/measurement` subpath. Eighteen dimensions —
+  `Area`, `DataSize`, `ElectricCharge`, `ElectricCurrent`, `Energy`,
+  `FlowRate`, `Frequency`, `Length`, `Luminance`, `LuminousFlux`, `Power`,
+  `Pressure`, `RotationalSpeed`, `Speed`, `Torque`, `Voltage`, `Volume` and
+  `Weight` — covering 133 units. Each supports parsing from any of its units,
+  exact conversion between them, `toNaturalString()` auto-scaling, arithmetic,
+  a `mask*` helper, and text scanning through the matching `TextScanResult`
+  accessor. `Temperature` and the standalone types are not ported yet.
 - Internal foundation for the rest of the namespace: exact base-10 arithmetic
   matching .NET `System.Decimal`, the measurement string splitter, and the
   shared unit-index and quantity base classes.

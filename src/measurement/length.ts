@@ -91,7 +91,7 @@ export class Length extends Quantity<LengthUnit> {
   /** Creates a length from a value and unit. */
   static create(value: number | Decimal, unit: LengthUnit): Length {
     const amount = value instanceof Decimal ? value : Length.decimalOf(value);
-    return new Length(amount.times(unit.toBaseUnitFactor), unit);
+    return new Length(unit.toBase(amount), unit);
   }
 
   static fromNanometers(value: number | Decimal): Length {

@@ -12,6 +12,7 @@ import { SwedishOrganizationNumber } from "./organization/swedish-organization-n
 import { SwedishCoordinationNumber } from "./person/swedish-coordination-number.js";
 import { SwedishPersonalIdentityNumber } from "./person/swedish-personal-identity-number.js";
 import { TextCandidateCategory } from "./text-scanning/text-candidate-category.js";
+import type { TextScanFunction } from "./text-scanning/text-scanner.js";
 import { defaultTextScanner } from "./text-scanning/text-scanner.js";
 import { EmailAddress } from "./web/email-address.js";
 import { Url } from "./web/url.js";
@@ -24,7 +25,24 @@ import { SwedishPostgiroNumber } from "./banking/swedish-postgiro-number.js";
 import { SwedishOcrReferenceNumber } from "./banking/swedish-ocr-reference-number.js";
 import { SwedishBankAccount } from "./banking/swedish-bank-account.js";
 import { SwedishSwishNumber } from "./banking/swedish-swish-number.js";
+import { Area } from "./measurement/area.js";
+import { DataSize } from "./measurement/data-size.js";
+import { ElectricCharge } from "./measurement/electric-charge.js";
+import { ElectricCurrent } from "./measurement/electric-current.js";
+import { Energy } from "./measurement/energy.js";
+import { FlowRate } from "./measurement/flow-rate.js";
+import { Frequency } from "./measurement/frequency.js";
 import { Length } from "./measurement/length.js";
+import { Luminance } from "./measurement/luminance.js";
+import { LuminousFlux } from "./measurement/luminous-flux.js";
+import { Power } from "./measurement/power.js";
+import { Pressure } from "./measurement/pressure.js";
+import { RotationalSpeed } from "./measurement/rotational-speed.js";
+import { Speed } from "./measurement/speed.js";
+import { Torque } from "./measurement/torque.js";
+import { Voltage } from "./measurement/voltage.js";
+import { Volume } from "./measurement/volume.js";
+import { Weight } from "./measurement/weight.js";
 
 let registered = false;
 
@@ -161,9 +179,34 @@ export function registerDefaultTextScanners(): void {
     scan: SwedishSwishNumber.findCandidatesInText,
   });
 
-  defaultTextScanner.register({
-    typeName: "Length",
-    category: TextCandidateCategory.Measurement,
-    scan: Length.findCandidatesInText,
-  });
+  // Names are spelled out rather than read from `Class.name`, which a
+  // consumer's minifier is free to mangle.
+  const quantities: readonly (readonly [string, { findCandidatesInText: TextScanFunction }])[] = [
+    ["Area", Area],
+    ["DataSize", DataSize],
+    ["ElectricCharge", ElectricCharge],
+    ["ElectricCurrent", ElectricCurrent],
+    ["Energy", Energy],
+    ["FlowRate", FlowRate],
+    ["Frequency", Frequency],
+    ["Length", Length],
+    ["Luminance", Luminance],
+    ["LuminousFlux", LuminousFlux],
+    ["Power", Power],
+    ["Pressure", Pressure],
+    ["RotationalSpeed", RotationalSpeed],
+    ["Speed", Speed],
+    ["Torque", Torque],
+    ["Voltage", Voltage],
+    ["Volume", Volume],
+    ["Weight", Weight],
+  ];
+
+  for (const [typeName, quantity] of quantities) {
+    defaultTextScanner.register({
+      typeName,
+      category: TextCandidateCategory.Measurement,
+      scan: quantity.findCandidatesInText,
+    });
+  }
 }

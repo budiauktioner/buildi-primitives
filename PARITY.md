@@ -24,21 +24,21 @@ commit that changes the .NET baseline.
 
 ## Namespace coverage
 
-| .NET namespace    | Status          | Notes                                                    |
-| ----------------- | --------------- | -------------------------------------------------------- |
-| `Organization`    | Complete        | 10 types                                                 |
-| `Banking`         | Complete        | 10 types                                                 |
-| `Person`          | Complete        | 6 types                                                  |
-| `Geography`       | Complete        | 7 types                                                  |
-| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                            |
-| `Contact`         | Complete        | Including all 31 country address / zip-code pairs        |
-| `Web`             | Complete        | 2 types                                                  |
-| `Property`        | Complete        | 2 types                                                  |
-| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                 |
-| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors |
-| **`Measurement`** | **In progress** | `Length` and `LengthUnit`; 23 quantity types to go       |
-| **`Vehicle`**     | **Not ported**  | 29 types                                                 |
-| **`Product`**     | **Not ported**  | 36 types                                                 |
+| .NET namespace    | Status          | Notes                                                           |
+| ----------------- | --------------- | --------------------------------------------------------------- |
+| `Organization`    | Complete        | 10 types                                                        |
+| `Banking`         | Complete        | 10 types                                                        |
+| `Person`          | Complete        | 6 types                                                         |
+| `Geography`       | Complete        | 7 types                                                         |
+| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                                   |
+| `Contact`         | Complete        | Including all 31 country address / zip-code pairs               |
+| `Web`             | Complete        | 2 types                                                         |
+| `Property`        | Complete        | 2 types                                                         |
+| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                        |
+| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors        |
+| **`Measurement`** | **In progress** | 18 of 19 dimensions; `Temperature` and 6 standalone types to go |
+| **`Vehicle`**     | **Not ported**  | 29 types                                                        |
+| **`Product`**     | **Not ported**  | 36 types                                                        |
 
 ## Cross-cutting features
 
@@ -87,18 +87,43 @@ The namespace divides into 19 quantity types, each paired with a unit class, and
 six standalone types (`Count`, `Percentage`, `SoundLevel`, `TemperatureDelta`,
 `Year`, `YearMonth`). There are 133 units in total.
 
-`Length` is ported as the reference implementation. The remaining 18 quantities
-share its shape, so the work is mostly supplying unit tables and the named
-accessors that make each dimension readable.
+Eighteen of the nineteen dimensions are ported, covering 133 units. Still to
+come: `Temperature` and the standalone types.
 
-Two things do not follow the pattern:
+Four things do not follow the common pattern:
 
 - **`Temperature` is affine.** `TemperatureUnit` has no `ToBaseUnitFactor`
   because Celsius, Fahrenheit and kelvin differ by offset as well as scale, so
   it cannot use the shared multiplicative conversion.
+- **Some factors are repeating decimals.** 1/60 for rpm, 1/3600 for coulomb,
+  1000/3600 for km/h. Multiplying by the rounded factor and dividing by it are
+  not inverses, so those five units carry an exact numerator/denominator pair
+  instead. .NET special-cases exactly the same units.
+- **`mW` against `MW`, `mV` against `MV`.** Unit lookup is otherwise
+  case-insensitive, but these two pairs differ by a factor of a billion, so
+  `PowerUnit` and `VoltageUnit` resolve them case-sensitively first. For the
+  same reason `Power`'s scan pattern is split in two: .NET writes it as one
+  regex with a scoped `(?i:...)` group, which JavaScript has no equivalent for.
 - **Arithmetic has no operators.** C# overloads `+ - * /` and the comparison
   operators on every quantity; those become `plus`, `minus`, `times`,
   `dividedBy`, `negated`, `isLessThan` and `isGreaterThan`.
+
+Unit lookup case-folds by upper-casing rather than lower-casing, matching
+.NET's `StringComparer.OrdinalIgnoreCase`. Lower-casing would break `ΜW`: the
+micro sign `µ` and the Greek capital mu `Μ` fold together going up but not
+going down.
+
+Two dimensions accept a bare number and assume a unit, as .NET does:
+`Luminance` reads it as candela per square metre and rejects negatives, and
+`RotationalSpeed` reads it as rpm.
+
+`Speed`, `Torque` and `RotationalSpeed` have no curated display scale in .NET,
+so `naturalUnit` falls back to the base unit for them.
+
+The unit tables are static class fields, which bundlers keep whether or not the
+class is referenced, so the `measurement` subpath does not shrink to the single
+dimension a consumer imports. Splitting it into per-dimension subpaths would
+fix that if it becomes a problem.
 
 Values are held internally as an exact base-10 decimal
 ([`internal/decimal.ts`](src/internal/decimal.ts)) rather than `number`.

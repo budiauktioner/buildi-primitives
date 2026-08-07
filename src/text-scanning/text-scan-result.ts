@@ -16,7 +16,24 @@ import type { AddressZipCode } from "../contact/address-zip-code.js";
 import type { PhoneNumber } from "../contact/phone-number.js";
 import type { SwedishAddress } from "../contact/swedish-address.js";
 import type { Isin } from "../finance/isin.js";
+import type { Area } from "../measurement/area.js";
+import type { DataSize } from "../measurement/data-size.js";
+import type { ElectricCharge } from "../measurement/electric-charge.js";
+import type { ElectricCurrent } from "../measurement/electric-current.js";
+import type { Energy } from "../measurement/energy.js";
+import type { FlowRate } from "../measurement/flow-rate.js";
+import type { Frequency } from "../measurement/frequency.js";
 import type { Length } from "../measurement/length.js";
+import type { Luminance } from "../measurement/luminance.js";
+import type { LuminousFlux } from "../measurement/luminous-flux.js";
+import type { Power } from "../measurement/power.js";
+import type { Pressure } from "../measurement/pressure.js";
+import type { RotationalSpeed } from "../measurement/rotational-speed.js";
+import type { Speed } from "../measurement/speed.js";
+import type { Torque } from "../measurement/torque.js";
+import type { Voltage } from "../measurement/voltage.js";
+import type { Volume } from "../measurement/volume.js";
+import type { Weight } from "../measurement/weight.js";
 import type { Country } from "../geography/country.js";
 import type { SwedishCounty } from "../geography/swedish-county.js";
 import type { SwedishMunicipality } from "../geography/swedish-municipality.js";
@@ -155,8 +172,59 @@ export class TextScanResult {
     return this.byTypeName<SwedishPropertyDesignation>("SwedishPropertyDesignation");
   }
 
+  get areas(): TextCandidate<Area>[] {
+    return this.byTypeName<Area>("Area");
+  }
+  get dataSizes(): TextCandidate<DataSize>[] {
+    return this.byTypeName<DataSize>("DataSize");
+  }
+  get electricCharges(): TextCandidate<ElectricCharge>[] {
+    return this.byTypeName<ElectricCharge>("ElectricCharge");
+  }
+  get electricCurrents(): TextCandidate<ElectricCurrent>[] {
+    return this.byTypeName<ElectricCurrent>("ElectricCurrent");
+  }
+  get energies(): TextCandidate<Energy>[] {
+    return this.byTypeName<Energy>("Energy");
+  }
+  get flowRates(): TextCandidate<FlowRate>[] {
+    return this.byTypeName<FlowRate>("FlowRate");
+  }
+  get frequencies(): TextCandidate<Frequency>[] {
+    return this.byTypeName<Frequency>("Frequency");
+  }
   get lengths(): TextCandidate<Length>[] {
     return this.byTypeName<Length>("Length");
+  }
+  get luminances(): TextCandidate<Luminance>[] {
+    return this.byTypeName<Luminance>("Luminance");
+  }
+  get luminousFluxes(): TextCandidate<LuminousFlux>[] {
+    return this.byTypeName<LuminousFlux>("LuminousFlux");
+  }
+  get powers(): TextCandidate<Power>[] {
+    return this.byTypeName<Power>("Power");
+  }
+  get pressures(): TextCandidate<Pressure>[] {
+    return this.byTypeName<Pressure>("Pressure");
+  }
+  get rotationalSpeeds(): TextCandidate<RotationalSpeed>[] {
+    return this.byTypeName<RotationalSpeed>("RotationalSpeed");
+  }
+  get speeds(): TextCandidate<Speed>[] {
+    return this.byTypeName<Speed>("Speed");
+  }
+  get torques(): TextCandidate<Torque>[] {
+    return this.byTypeName<Torque>("Torque");
+  }
+  get voltages(): TextCandidate<Voltage>[] {
+    return this.byTypeName<Voltage>("Voltage");
+  }
+  get volumes(): TextCandidate<Volume>[] {
+    return this.byTypeName<Volume>("Volume");
+  }
+  get weights(): TextCandidate<Weight>[] {
+    return this.byTypeName<Weight>("Weight");
   }
 
   /** Returns all candidates in the given category. */
