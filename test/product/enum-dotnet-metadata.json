@@ -1,0 +1,3338 @@
+[
+  {
+    "type": "AspectRatio",
+    "typeInfo": {
+      "englishName": "Aspect Ratio",
+      "localizedName": "Bildformat",
+      "emoji": "🖥️",
+      "sources": [
+        "https://www.itu.int/rec/R-REC-BT.709"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "Width",
+        "type": "Int32"
+      },
+      {
+        "name": "Height",
+        "type": "Int32"
+      },
+      {
+        "name": "Ratio",
+        "type": "Decimal"
+      },
+      {
+        "name": "CommonName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "OneToOne",
+        "Value": "1:1",
+        "Width": 1,
+        "Height": 1,
+        "Ratio": "1",
+        "CommonName": "Square"
+      },
+      {
+        "member": "FourThree",
+        "Value": "4:3",
+        "Width": 4,
+        "Height": 3,
+        "Ratio": "1.3333333333333333333333333333",
+        "CommonName": "Standard"
+      },
+      {
+        "member": "FiveFour",
+        "Value": "5:4",
+        "Width": 5,
+        "Height": 4,
+        "Ratio": "1.25",
+        "CommonName": "Computer Standard"
+      },
+      {
+        "member": "ThreeTwo",
+        "Value": "3:2",
+        "Width": 3,
+        "Height": 2,
+        "Ratio": "1.5",
+        "CommonName": "Classic 35 mm"
+      },
+      {
+        "member": "SixteenTen",
+        "Value": "16:10",
+        "Width": 16,
+        "Height": 10,
+        "Ratio": "1.6",
+        "CommonName": "Widescreen Computer"
+      },
+      {
+        "member": "SixteenNine",
+        "Value": "16:9",
+        "Width": 16,
+        "Height": 9,
+        "Ratio": "1.7777777777777777777777777778",
+        "CommonName": "Widescreen"
+      },
+      {
+        "member": "EighteenNine",
+        "Value": "18:9",
+        "Width": 18,
+        "Height": 9,
+        "Ratio": "2",
+        "CommonName": "Univisium"
+      },
+      {
+        "member": "TwentyOneNine",
+        "Value": "21:9",
+        "Width": 21,
+        "Height": 9,
+        "Ratio": "2.3333333333333333333333333333",
+        "CommonName": "Ultrawide"
+      },
+      {
+        "member": "ThirtyTwoNine",
+        "Value": "32:9",
+        "Width": 32,
+        "Height": 9,
+        "Ratio": "3.5555555555555555555555555556",
+        "CommonName": "Super Ultrawide"
+      },
+      {
+        "member": "NineSixteen",
+        "Value": "9:16",
+        "Width": 9,
+        "Height": 16,
+        "Ratio": "0.5625",
+        "CommonName": "Vertical"
+      },
+      {
+        "member": "NineEighteen",
+        "Value": "9:18",
+        "Width": 9,
+        "Height": 18,
+        "Ratio": "0.5",
+        "CommonName": "Vertical Tall"
+      }
+    ],
+    "order": [
+      "OneToOne",
+      "FourThree",
+      "FiveFour",
+      "ThreeTwo",
+      "SixteenTen",
+      "SixteenNine",
+      "EighteenNine",
+      "TwentyOneNine",
+      "ThirtyTwoNine",
+      "NineSixteen",
+      "NineEighteen"
+    ],
+    "lookup": [
+      [
+        "1:1",
+        "OneToOne"
+      ],
+      [
+        "1/1",
+        "OneToOne"
+      ],
+      [
+        "1x1",
+        "OneToOne"
+      ],
+      [
+        "4:3",
+        "FourThree"
+      ],
+      [
+        "4/3",
+        "FourThree"
+      ],
+      [
+        "4x3",
+        "FourThree"
+      ],
+      [
+        "5:4",
+        "FiveFour"
+      ],
+      [
+        "5/4",
+        "FiveFour"
+      ],
+      [
+        "5x4",
+        "FiveFour"
+      ],
+      [
+        "3:2",
+        "ThreeTwo"
+      ],
+      [
+        "3/2",
+        "ThreeTwo"
+      ],
+      [
+        "3x2",
+        "ThreeTwo"
+      ],
+      [
+        "16:10",
+        "SixteenTen"
+      ],
+      [
+        "16/10",
+        "SixteenTen"
+      ],
+      [
+        "16x10",
+        "SixteenTen"
+      ],
+      [
+        "16:9",
+        "SixteenNine"
+      ],
+      [
+        "16/9",
+        "SixteenNine"
+      ],
+      [
+        "16x9",
+        "SixteenNine"
+      ],
+      [
+        "18:9",
+        "EighteenNine"
+      ],
+      [
+        "18/9",
+        "EighteenNine"
+      ],
+      [
+        "18x9",
+        "EighteenNine"
+      ],
+      [
+        "21:9",
+        "TwentyOneNine"
+      ],
+      [
+        "21/9",
+        "TwentyOneNine"
+      ],
+      [
+        "21x9",
+        "TwentyOneNine"
+      ],
+      [
+        "32:9",
+        "ThirtyTwoNine"
+      ],
+      [
+        "32/9",
+        "ThirtyTwoNine"
+      ],
+      [
+        "32x9",
+        "ThirtyTwoNine"
+      ],
+      [
+        "9:16",
+        "NineSixteen"
+      ],
+      [
+        "9/16",
+        "NineSixteen"
+      ],
+      [
+        "9x16",
+        "NineSixteen"
+      ],
+      [
+        "9:18",
+        "NineEighteen"
+      ],
+      [
+        "9/18",
+        "NineEighteen"
+      ],
+      [
+        "9x18",
+        "NineEighteen"
+      ]
+    ]
+  },
+  {
+    "type": "BatteryChemistry",
+    "typeInfo": {
+      "englishName": "Battery Chemistry",
+      "localizedName": "Batterikemi",
+      "emoji": "🔋",
+      "sources": [
+        "https://www.iec.ch/"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "IsRechargeable",
+        "type": "Boolean"
+      },
+      {
+        "name": "NominalCellVoltageV",
+        "type": "Decimal"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "LithiumIon",
+        "Value": "Li-ion",
+        "EnglishName": "Lithium-ion",
+        "LocalizedName": "Litium-jon",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "3.7",
+        "DisplayName": "Lithium-ion"
+      },
+      {
+        "member": "LiFePO4",
+        "Value": "LiFePO4",
+        "EnglishName": "Lithium iron phosphate",
+        "LocalizedName": "Litiumjärnfosfat",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "3.2",
+        "DisplayName": "Lithium iron phosphate"
+      },
+      {
+        "member": "LithiumPolymer",
+        "Value": "LiPo",
+        "EnglishName": "Lithium polymer",
+        "LocalizedName": "Litium-polymer",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "3.7",
+        "DisplayName": "Lithium polymer"
+      },
+      {
+        "member": "LithiumTitanate",
+        "Value": "LTO",
+        "EnglishName": "Lithium titanate",
+        "LocalizedName": "Litium-titanat",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "2.4",
+        "DisplayName": "Lithium titanate"
+      },
+      {
+        "member": "NickelMetalHydride",
+        "Value": "NiMH",
+        "EnglishName": "Nickel-metal hydride",
+        "LocalizedName": "Nickel-metallhydrid",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "1.2",
+        "DisplayName": "Nickel-metal hydride"
+      },
+      {
+        "member": "NickelCadmium",
+        "Value": "NiCd",
+        "EnglishName": "Nickel-cadmium",
+        "LocalizedName": "Nickel-kadmium",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "1.2",
+        "DisplayName": "Nickel-cadmium"
+      },
+      {
+        "member": "FloodedLeadAcid",
+        "Value": "Pb-Acid",
+        "EnglishName": "Flooded lead-acid",
+        "LocalizedName": "Blybatteri (flytande syra)",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "2.0",
+        "DisplayName": "Flooded lead-acid"
+      },
+      {
+        "member": "AbsorbedGlassMat",
+        "Value": "AGM",
+        "EnglishName": "Absorbed Glass Mat",
+        "LocalizedName": "AGM-batteri",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "2.0",
+        "DisplayName": "Absorbed Glass Mat"
+      },
+      {
+        "member": "GelLeadAcid",
+        "Value": "Gel",
+        "EnglishName": "Gel lead-acid",
+        "LocalizedName": "Gelbatteri",
+        "IsRechargeable": true,
+        "NominalCellVoltageV": "2.0",
+        "DisplayName": "Gel lead-acid"
+      },
+      {
+        "member": "Alkaline",
+        "Value": "Alkaline",
+        "EnglishName": "Alkaline",
+        "LocalizedName": "Alkaliskt",
+        "IsRechargeable": false,
+        "NominalCellVoltageV": "1.5",
+        "DisplayName": "Alkaline"
+      },
+      {
+        "member": "ZincCarbon",
+        "Value": "Zinc-carbon",
+        "EnglishName": "Zinc-carbon",
+        "LocalizedName": "Zinkkol",
+        "IsRechargeable": false,
+        "NominalCellVoltageV": "1.5",
+        "DisplayName": "Zinc-carbon"
+      }
+    ],
+    "order": [
+      "LithiumIon",
+      "LiFePO4",
+      "LithiumPolymer",
+      "LithiumTitanate",
+      "NickelMetalHydride",
+      "NickelCadmium",
+      "FloodedLeadAcid",
+      "AbsorbedGlassMat",
+      "GelLeadAcid",
+      "Alkaline",
+      "ZincCarbon"
+    ],
+    "lookup": [
+      [
+        "liion",
+        "LithiumIon"
+      ],
+      [
+        "lithiumion",
+        "LithiumIon"
+      ],
+      [
+        "litiumjon",
+        "LithiumIon"
+      ],
+      [
+        "lifepo4",
+        "LiFePO4"
+      ],
+      [
+        "lithiumironphosphate",
+        "LiFePO4"
+      ],
+      [
+        "litiumjarnfosfat",
+        "LiFePO4"
+      ],
+      [
+        "lipo",
+        "LithiumPolymer"
+      ],
+      [
+        "lithiumpolymer",
+        "LithiumPolymer"
+      ],
+      [
+        "litiumpolymer",
+        "LithiumPolymer"
+      ],
+      [
+        "lto",
+        "LithiumTitanate"
+      ],
+      [
+        "lithiumtitanate",
+        "LithiumTitanate"
+      ],
+      [
+        "litiumtitanat",
+        "LithiumTitanate"
+      ],
+      [
+        "nimh",
+        "NickelMetalHydride"
+      ],
+      [
+        "nickelmetalhydride",
+        "NickelMetalHydride"
+      ],
+      [
+        "nickelmetallhydrid",
+        "NickelMetalHydride"
+      ],
+      [
+        "nicd",
+        "NickelCadmium"
+      ],
+      [
+        "nickelcadmium",
+        "NickelCadmium"
+      ],
+      [
+        "nickelkadmium",
+        "NickelCadmium"
+      ],
+      [
+        "pbacid",
+        "FloodedLeadAcid"
+      ],
+      [
+        "floodedleadacid",
+        "FloodedLeadAcid"
+      ],
+      [
+        "blybatteri(flytandesyra)",
+        "FloodedLeadAcid"
+      ],
+      [
+        "agm",
+        "AbsorbedGlassMat"
+      ],
+      [
+        "absorbedglassmat",
+        "AbsorbedGlassMat"
+      ],
+      [
+        "agmbatteri",
+        "AbsorbedGlassMat"
+      ],
+      [
+        "gel",
+        "GelLeadAcid"
+      ],
+      [
+        "gelleadacid",
+        "GelLeadAcid"
+      ],
+      [
+        "gelbatteri",
+        "GelLeadAcid"
+      ],
+      [
+        "alkaline",
+        "Alkaline"
+      ],
+      [
+        "alkaliskt",
+        "Alkaline"
+      ],
+      [
+        "zinccarbon",
+        "ZincCarbon"
+      ],
+      [
+        "zinkkol",
+        "ZincCarbon"
+      ],
+      [
+        "litiumion",
+        "LithiumIon"
+      ],
+      [
+        "lfp",
+        "LiFePO4"
+      ],
+      [
+        "lipoly",
+        "LithiumPolymer"
+      ],
+      [
+        "leadacid",
+        "FloodedLeadAcid"
+      ],
+      [
+        "bly",
+        "FloodedLeadAcid"
+      ],
+      [
+        "blybatteri",
+        "FloodedLeadAcid"
+      ],
+      [
+        "pb",
+        "FloodedLeadAcid"
+      ],
+      [
+        "wetcell",
+        "FloodedLeadAcid"
+      ],
+      [
+        "vatcell",
+        "FloodedLeadAcid"
+      ],
+      [
+        "absorbentglassmat",
+        "AbsorbedGlassMat"
+      ],
+      [
+        "gelcell",
+        "GelLeadAcid"
+      ],
+      [
+        "alkalisk",
+        "Alkaline"
+      ]
+    ]
+  },
+  {
+    "type": "ClothingFit",
+    "typeInfo": {
+      "englishName": "Clothing Fit",
+      "localizedName": "Passform",
+      "emoji": "🧥",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Clothing_sizes"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Slim",
+        "Value": "Slim",
+        "EnglishName": "Slim",
+        "LocalizedName": "Smal",
+        "DisplayName": "Slim"
+      },
+      {
+        "member": "Regular",
+        "Value": "Regular",
+        "EnglishName": "Regular",
+        "LocalizedName": "Normal",
+        "DisplayName": "Regular"
+      },
+      {
+        "member": "Loose",
+        "Value": "Loose",
+        "EnglishName": "Loose",
+        "LocalizedName": "Lös",
+        "DisplayName": "Loose"
+      },
+      {
+        "member": "Oversized",
+        "Value": "Oversized",
+        "EnglishName": "Oversized",
+        "LocalizedName": "Oversize",
+        "DisplayName": "Oversized"
+      },
+      {
+        "member": "Tailored",
+        "Value": "Tailored",
+        "EnglishName": "Tailored",
+        "LocalizedName": "Skräddarsydd",
+        "DisplayName": "Tailored"
+      }
+    ],
+    "order": [
+      "Slim",
+      "Regular",
+      "Loose",
+      "Oversized",
+      "Tailored"
+    ],
+    "lookup": [
+      [
+        "slim",
+        "Slim"
+      ],
+      [
+        "smal",
+        "Slim"
+      ],
+      [
+        "regular",
+        "Regular"
+      ],
+      [
+        "normal",
+        "Regular"
+      ],
+      [
+        "loose",
+        "Loose"
+      ],
+      [
+        "los",
+        "Loose"
+      ],
+      [
+        "oversized",
+        "Oversized"
+      ],
+      [
+        "oversize",
+        "Oversized"
+      ],
+      [
+        "tailored",
+        "Tailored"
+      ],
+      [
+        "skraddarsydd",
+        "Tailored"
+      ],
+      [
+        "slimfit",
+        "Slim"
+      ],
+      [
+        "tight",
+        "Slim"
+      ],
+      [
+        "skinny",
+        "Slim"
+      ],
+      [
+        "skinnyfit",
+        "Slim"
+      ],
+      [
+        "figurnara",
+        "Slim"
+      ],
+      [
+        "atsittande",
+        "Slim"
+      ],
+      [
+        "standard",
+        "Regular"
+      ],
+      [
+        "regularfit",
+        "Regular"
+      ],
+      [
+        "standardfit",
+        "Regular"
+      ],
+      [
+        "straight",
+        "Regular"
+      ],
+      [
+        "straightfit",
+        "Regular"
+      ],
+      [
+        "klassiskpassform",
+        "Regular"
+      ],
+      [
+        "normalpassform",
+        "Regular"
+      ],
+      [
+        "rak",
+        "Regular"
+      ],
+      [
+        "rakpassform",
+        "Regular"
+      ],
+      [
+        "lospassform",
+        "Loose"
+      ],
+      [
+        "relaxed",
+        "Loose"
+      ],
+      [
+        "relaxedfit",
+        "Loose"
+      ],
+      [
+        "loosefit",
+        "Loose"
+      ],
+      [
+        "vid",
+        "Loose"
+      ],
+      [
+        "vidpassform",
+        "Loose"
+      ],
+      [
+        "comfortfit",
+        "Loose"
+      ],
+      [
+        "bekvampassform",
+        "Loose"
+      ],
+      [
+        "oversizefit",
+        "Oversized"
+      ],
+      [
+        "oversizedfit",
+        "Oversized"
+      ],
+      [
+        "boxy",
+        "Oversized"
+      ],
+      [
+        "boxyfit",
+        "Oversized"
+      ],
+      [
+        "overdimensionerad",
+        "Oversized"
+      ],
+      [
+        "extravid",
+        "Oversized"
+      ],
+      [
+        "xxlfit",
+        "Oversized"
+      ],
+      [
+        "tailoredfit",
+        "Tailored"
+      ],
+      [
+        "slimtailored",
+        "Tailored"
+      ],
+      [
+        "anpassadpassform",
+        "Tailored"
+      ],
+      [
+        "formellpassform",
+        "Tailored"
+      ]
+    ]
+  },
+  {
+    "type": "ClothingGender",
+    "typeInfo": {
+      "englishName": "Clothing Gender",
+      "localizedName": "Klädkön",
+      "emoji": "🚻",
+      "sources": [
+        "https://support.google.com/merchants/answer/6324479",
+        "https://schema.org/GenderType"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Male",
+        "Value": "Male",
+        "EnglishName": "Male",
+        "LocalizedName": "Herr",
+        "DisplayName": "Male"
+      },
+      {
+        "member": "Female",
+        "Value": "Female",
+        "EnglishName": "Female",
+        "LocalizedName": "Dam",
+        "DisplayName": "Female"
+      },
+      {
+        "member": "Unisex",
+        "Value": "Unisex",
+        "EnglishName": "Unisex",
+        "LocalizedName": "Unisex",
+        "DisplayName": "Unisex"
+      },
+      {
+        "member": "Boys",
+        "Value": "Boys",
+        "EnglishName": "Boys",
+        "LocalizedName": "Pojke",
+        "DisplayName": "Boys"
+      },
+      {
+        "member": "Girls",
+        "Value": "Girls",
+        "EnglishName": "Girls",
+        "LocalizedName": "Flicka",
+        "DisplayName": "Girls"
+      }
+    ],
+    "order": [
+      "Male",
+      "Female",
+      "Unisex",
+      "Boys",
+      "Girls"
+    ],
+    "lookup": [
+      [
+        "male",
+        "Male"
+      ],
+      [
+        "herr",
+        "Male"
+      ],
+      [
+        "female",
+        "Female"
+      ],
+      [
+        "dam",
+        "Female"
+      ],
+      [
+        "unisex",
+        "Unisex"
+      ],
+      [
+        "boys",
+        "Boys"
+      ],
+      [
+        "pojke",
+        "Boys"
+      ],
+      [
+        "girls",
+        "Girls"
+      ],
+      [
+        "flicka",
+        "Girls"
+      ],
+      [
+        "man",
+        "Male"
+      ],
+      [
+        "men",
+        "Male"
+      ],
+      [
+        "men's",
+        "Male"
+      ],
+      [
+        "mens",
+        "Male"
+      ],
+      [
+        "herrar",
+        "Male"
+      ],
+      [
+        "herrkläder",
+        "Male"
+      ],
+      [
+        "gentleman",
+        "Male"
+      ],
+      [
+        "gentlemen",
+        "Male"
+      ],
+      [
+        "woman",
+        "Female"
+      ],
+      [
+        "women",
+        "Female"
+      ],
+      [
+        "women's",
+        "Female"
+      ],
+      [
+        "womens",
+        "Female"
+      ],
+      [
+        "damer",
+        "Female"
+      ],
+      [
+        "kvinna",
+        "Female"
+      ],
+      [
+        "kvinnor",
+        "Female"
+      ],
+      [
+        "damkläder",
+        "Female"
+      ],
+      [
+        "lady",
+        "Female"
+      ],
+      [
+        "ladies",
+        "Female"
+      ],
+      [
+        "uni",
+        "Unisex"
+      ],
+      [
+        "both",
+        "Unisex"
+      ],
+      [
+        "boy",
+        "Boys"
+      ],
+      [
+        "pojkar",
+        "Boys"
+      ],
+      [
+        "pojk",
+        "Boys"
+      ],
+      [
+        "kille",
+        "Boys"
+      ],
+      [
+        "killar",
+        "Boys"
+      ],
+      [
+        "girl",
+        "Girls"
+      ],
+      [
+        "flickor",
+        "Girls"
+      ],
+      [
+        "tjej",
+        "Girls"
+      ],
+      [
+        "tjejer",
+        "Girls"
+      ]
+    ]
+  },
+  {
+    "type": "ClothingSeason",
+    "typeInfo": {
+      "englishName": "Clothing Season",
+      "localizedName": "Säsong",
+      "emoji": "🍂",
+      "sources": [
+        "https://support.google.com/merchants/answer/6324470",
+        "https://en.wikipedia.org/wiki/Season"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "MonthsCovered",
+        "type": "IReadOnlyList<Int32>"
+      },
+      {
+        "name": "IsAllSeason",
+        "type": "Boolean"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Spring",
+        "Value": "Spring",
+        "EnglishName": "Spring",
+        "LocalizedName": "Vår",
+        "MonthsCovered": [
+          3,
+          4,
+          5
+        ],
+        "IsAllSeason": false,
+        "DisplayName": "Spring"
+      },
+      {
+        "member": "Summer",
+        "Value": "Summer",
+        "EnglishName": "Summer",
+        "LocalizedName": "Sommar",
+        "MonthsCovered": [
+          6,
+          7,
+          8
+        ],
+        "IsAllSeason": false,
+        "DisplayName": "Summer"
+      },
+      {
+        "member": "Autumn",
+        "Value": "Autumn",
+        "EnglishName": "Autumn",
+        "LocalizedName": "Höst",
+        "MonthsCovered": [
+          9,
+          10,
+          11
+        ],
+        "IsAllSeason": false,
+        "DisplayName": "Autumn"
+      },
+      {
+        "member": "Winter",
+        "Value": "Winter",
+        "EnglishName": "Winter",
+        "LocalizedName": "Vinter",
+        "MonthsCovered": [
+          12,
+          1,
+          2
+        ],
+        "IsAllSeason": false,
+        "DisplayName": "Winter"
+      },
+      {
+        "member": "AllSeason",
+        "Value": "All-Season",
+        "EnglishName": "All-Season",
+        "LocalizedName": "Året runt",
+        "MonthsCovered": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "IsAllSeason": true,
+        "DisplayName": "All-Season"
+      }
+    ],
+    "order": [
+      "Spring",
+      "Summer",
+      "Autumn",
+      "Winter",
+      "AllSeason"
+    ],
+    "lookup": [
+      [
+        "spring",
+        "Spring"
+      ],
+      [
+        "var",
+        "Spring"
+      ],
+      [
+        "summer",
+        "Summer"
+      ],
+      [
+        "sommar",
+        "Summer"
+      ],
+      [
+        "autumn",
+        "Autumn"
+      ],
+      [
+        "host",
+        "Autumn"
+      ],
+      [
+        "winter",
+        "Winter"
+      ],
+      [
+        "vinter",
+        "Winter"
+      ],
+      [
+        "allseason",
+        "AllSeason"
+      ],
+      [
+        "aretrunt",
+        "AllSeason"
+      ],
+      [
+        "varsasong",
+        "Spring"
+      ],
+      [
+        "springtime",
+        "Spring"
+      ],
+      [
+        "ss",
+        "Spring"
+      ],
+      [
+        "springsummer",
+        "Spring"
+      ],
+      [
+        "sommarsasong",
+        "Summer"
+      ],
+      [
+        "summertime",
+        "Summer"
+      ],
+      [
+        "hostsasong",
+        "Autumn"
+      ],
+      [
+        "fall",
+        "Autumn"
+      ],
+      [
+        "autumnal",
+        "Autumn"
+      ],
+      [
+        "aw",
+        "Autumn"
+      ],
+      [
+        "fw",
+        "Autumn"
+      ],
+      [
+        "autumnwinter",
+        "Autumn"
+      ],
+      [
+        "fallwinter",
+        "Autumn"
+      ],
+      [
+        "vintersasong",
+        "Winter"
+      ],
+      [
+        "wintertime",
+        "Winter"
+      ],
+      [
+        "allyear",
+        "AllSeason"
+      ],
+      [
+        "yearround",
+        "AllSeason"
+      ],
+      [
+        "aretom",
+        "AllSeason"
+      ],
+      [
+        "helar",
+        "AllSeason"
+      ],
+      [
+        "allroundsasong",
+        "AllSeason"
+      ],
+      [
+        "4season",
+        "AllSeason"
+      ],
+      [
+        "fourseason",
+        "AllSeason"
+      ],
+      [
+        "multiseason",
+        "AllSeason"
+      ]
+    ]
+  },
+  {
+    "type": "DisplayPanelType",
+    "typeInfo": {
+      "englishName": "Display Panel Type",
+      "localizedName": "Skärmpaneltyp",
+      "emoji": "🖥️",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Comparison_of_display_technology"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "Family",
+        "type": "String"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Lcd",
+        "Value": "LCD",
+        "EnglishName": "LCD",
+        "LocalizedName": "LCD",
+        "Family": "LCD",
+        "DisplayName": "LCD"
+      },
+      {
+        "member": "Tn",
+        "Value": "TN",
+        "EnglishName": "TN (Twisted Nematic)",
+        "LocalizedName": "TN (Twisted Nematic)",
+        "Family": "LCD",
+        "DisplayName": "TN (Twisted Nematic)"
+      },
+      {
+        "member": "Ips",
+        "Value": "IPS",
+        "EnglishName": "IPS (In-Plane Switching)",
+        "LocalizedName": "IPS (In-Plane Switching)",
+        "Family": "LCD",
+        "DisplayName": "IPS (In-Plane Switching)"
+      },
+      {
+        "member": "Va",
+        "Value": "VA",
+        "EnglishName": "VA (Vertical Alignment)",
+        "LocalizedName": "VA (Vertical Alignment)",
+        "Family": "LCD",
+        "DisplayName": "VA (Vertical Alignment)"
+      },
+      {
+        "member": "Pls",
+        "Value": "PLS",
+        "EnglishName": "PLS (Plane to Line Switching)",
+        "LocalizedName": "PLS (Plane to Line Switching)",
+        "Family": "LCD",
+        "DisplayName": "PLS (Plane to Line Switching)"
+      },
+      {
+        "member": "Oled",
+        "Value": "OLED",
+        "EnglishName": "OLED",
+        "LocalizedName": "OLED",
+        "Family": "OLED",
+        "DisplayName": "OLED"
+      },
+      {
+        "member": "Amoled",
+        "Value": "AMOLED",
+        "EnglishName": "AMOLED",
+        "LocalizedName": "AMOLED",
+        "Family": "OLED",
+        "DisplayName": "AMOLED"
+      },
+      {
+        "member": "PmOled",
+        "Value": "PMOLED",
+        "EnglishName": "PMOLED",
+        "LocalizedName": "PMOLED",
+        "Family": "OLED",
+        "DisplayName": "PMOLED"
+      },
+      {
+        "member": "Qled",
+        "Value": "QLED",
+        "EnglishName": "QLED",
+        "LocalizedName": "QLED",
+        "Family": "LCD",
+        "DisplayName": "QLED"
+      },
+      {
+        "member": "QdOled",
+        "Value": "QD-OLED",
+        "EnglishName": "QD-OLED",
+        "LocalizedName": "QD-OLED",
+        "Family": "OLED",
+        "DisplayName": "QD-OLED"
+      },
+      {
+        "member": "MiniLed",
+        "Value": "MiniLED",
+        "EnglishName": "MiniLED",
+        "LocalizedName": "MiniLED",
+        "Family": "LCD",
+        "DisplayName": "MiniLED"
+      },
+      {
+        "member": "MicroLed",
+        "Value": "MicroLED",
+        "EnglishName": "MicroLED",
+        "LocalizedName": "MicroLED",
+        "Family": "MicroLED",
+        "DisplayName": "MicroLED"
+      },
+      {
+        "member": "Plasma",
+        "Value": "Plasma",
+        "EnglishName": "Plasma",
+        "LocalizedName": "Plasma",
+        "Family": "Plasma",
+        "DisplayName": "Plasma"
+      },
+      {
+        "member": "Crt",
+        "Value": "CRT",
+        "EnglishName": "CRT (Cathode Ray Tube)",
+        "LocalizedName": "CRT (katodstrålerör)",
+        "Family": "CRT",
+        "DisplayName": "CRT (Cathode Ray Tube)"
+      },
+      {
+        "member": "EInk",
+        "Value": "E-Ink",
+        "EnglishName": "E-Ink",
+        "LocalizedName": "E-Ink",
+        "Family": "E-Ink",
+        "DisplayName": "E-Ink"
+      },
+      {
+        "member": "Tft",
+        "Value": "TFT",
+        "EnglishName": "TFT (Thin Film Transistor)",
+        "LocalizedName": "TFT (Thin Film Transistor)",
+        "Family": "LCD",
+        "DisplayName": "TFT (Thin Film Transistor)"
+      }
+    ],
+    "order": [
+      "Lcd",
+      "Tn",
+      "Ips",
+      "Va",
+      "Pls",
+      "Tft",
+      "Oled",
+      "Amoled",
+      "PmOled",
+      "Qled",
+      "QdOled",
+      "MiniLed",
+      "MicroLed",
+      "Plasma",
+      "Crt",
+      "EInk"
+    ],
+    "lookup": [
+      [
+        "lcd",
+        "Lcd"
+      ],
+      [
+        "tn",
+        "Tn"
+      ],
+      [
+        "tntwistednematic",
+        "Tn"
+      ],
+      [
+        "ips",
+        "Ips"
+      ],
+      [
+        "ipsinplaneswitching",
+        "Ips"
+      ],
+      [
+        "va",
+        "Va"
+      ],
+      [
+        "vaverticalalignment",
+        "Va"
+      ],
+      [
+        "pls",
+        "Pls"
+      ],
+      [
+        "plsplanetolineswitching",
+        "Pls"
+      ],
+      [
+        "tft",
+        "Tft"
+      ],
+      [
+        "tftthinfilmtransistor",
+        "Tft"
+      ],
+      [
+        "oled",
+        "Oled"
+      ],
+      [
+        "amoled",
+        "Amoled"
+      ],
+      [
+        "pmoled",
+        "PmOled"
+      ],
+      [
+        "qled",
+        "Qled"
+      ],
+      [
+        "qdoled",
+        "QdOled"
+      ],
+      [
+        "miniled",
+        "MiniLed"
+      ],
+      [
+        "microled",
+        "MicroLed"
+      ],
+      [
+        "plasma",
+        "Plasma"
+      ],
+      [
+        "crt",
+        "Crt"
+      ],
+      [
+        "crtcathoderaytube",
+        "Crt"
+      ],
+      [
+        "crtkatodstraleror",
+        "Crt"
+      ],
+      [
+        "eink",
+        "EInk"
+      ],
+      [
+        "liquidcrystaldisplay",
+        "Lcd"
+      ],
+      [
+        "flytandekristall",
+        "Lcd"
+      ],
+      [
+        "twistednematic",
+        "Tn"
+      ],
+      [
+        "inplaneswitching",
+        "Ips"
+      ],
+      [
+        "verticalalignment",
+        "Va"
+      ],
+      [
+        "mva",
+        "Va"
+      ],
+      [
+        "pva",
+        "Va"
+      ],
+      [
+        "planetolineswitching",
+        "Pls"
+      ],
+      [
+        "organicled",
+        "Oled"
+      ],
+      [
+        "organiclightemittingdiode",
+        "Oled"
+      ],
+      [
+        "activematrixoled",
+        "Amoled"
+      ],
+      [
+        "superamoled",
+        "Amoled"
+      ],
+      [
+        "passivematrixoled",
+        "PmOled"
+      ],
+      [
+        "quantumdotled",
+        "Qled"
+      ],
+      [
+        "quantumdotoled",
+        "QdOled"
+      ],
+      [
+        "µled",
+        "MicroLed"
+      ],
+      [
+        "uled",
+        "MicroLed"
+      ],
+      [
+        "pdp",
+        "Plasma"
+      ],
+      [
+        "plasmaskarm",
+        "Plasma"
+      ],
+      [
+        "cathoderaytube",
+        "Crt"
+      ],
+      [
+        "katodstraleror",
+        "Crt"
+      ],
+      [
+        "bildror",
+        "Crt"
+      ],
+      [
+        "electronicink",
+        "EInk"
+      ],
+      [
+        "electronicpaper",
+        "EInk"
+      ],
+      [
+        "epaper",
+        "EInk"
+      ],
+      [
+        "elektronisktblack",
+        "EInk"
+      ],
+      [
+        "thinfilmtransistor",
+        "Tft"
+      ]
+    ]
+  },
+  {
+    "type": "ElectricalPhase",
+    "typeInfo": {
+      "englishName": "Electrical Phase",
+      "localizedName": "Fas",
+      "emoji": "⚡",
+      "sources": [
+        "https://www.elsakerhetsverket.se/"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "PhaseCount",
+        "type": "Int32"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "SinglePhase",
+        "Value": "1-phase",
+        "EnglishName": "Single-phase",
+        "LocalizedName": "Enfas",
+        "PhaseCount": 1,
+        "DisplayName": "Single-phase"
+      },
+      {
+        "member": "TwoPhase",
+        "Value": "2-phase",
+        "EnglishName": "Two-phase",
+        "LocalizedName": "Tvåfas",
+        "PhaseCount": 2,
+        "DisplayName": "Two-phase"
+      },
+      {
+        "member": "ThreePhase",
+        "Value": "3-phase",
+        "EnglishName": "Three-phase",
+        "LocalizedName": "Trefas",
+        "PhaseCount": 3,
+        "DisplayName": "Three-phase"
+      }
+    ],
+    "order": [
+      "SinglePhase",
+      "TwoPhase",
+      "ThreePhase"
+    ],
+    "lookup": [
+      [
+        "1",
+        "SinglePhase"
+      ],
+      [
+        "2",
+        "TwoPhase"
+      ],
+      [
+        "3",
+        "ThreePhase"
+      ],
+      [
+        "1phase",
+        "SinglePhase"
+      ],
+      [
+        "singlephase",
+        "SinglePhase"
+      ],
+      [
+        "enfas",
+        "SinglePhase"
+      ],
+      [
+        "2phase",
+        "TwoPhase"
+      ],
+      [
+        "twophase",
+        "TwoPhase"
+      ],
+      [
+        "tvafas",
+        "TwoPhase"
+      ],
+      [
+        "3phase",
+        "ThreePhase"
+      ],
+      [
+        "threephase",
+        "ThreePhase"
+      ],
+      [
+        "trefas",
+        "ThreePhase"
+      ],
+      [
+        "1fas",
+        "SinglePhase"
+      ],
+      [
+        "1p",
+        "SinglePhase"
+      ],
+      [
+        "1f",
+        "SinglePhase"
+      ],
+      [
+        "230v1fas",
+        "SinglePhase"
+      ],
+      [
+        "l1",
+        "SinglePhase"
+      ],
+      [
+        "2fas",
+        "TwoPhase"
+      ],
+      [
+        "2p",
+        "TwoPhase"
+      ],
+      [
+        "2f",
+        "TwoPhase"
+      ],
+      [
+        "3fas",
+        "ThreePhase"
+      ],
+      [
+        "3p",
+        "ThreePhase"
+      ],
+      [
+        "3f",
+        "ThreePhase"
+      ],
+      [
+        "400v3fas",
+        "ThreePhase"
+      ],
+      [
+        "l1l2l3",
+        "ThreePhase"
+      ]
+    ]
+  },
+  {
+    "type": "EuEnergyEfficiencyClass",
+    "typeInfo": {
+      "englishName": "Energy Efficiency Class",
+      "localizedName": "Energimärkning",
+      "emoji": "🏷️",
+      "sources": [
+        "https://energy.ec.europa.eu/topics/energy-efficiency/energy-label-and-ecodesign/energy-label_en"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Label",
+        "type": "String"
+      },
+      {
+        "name": "Scale",
+        "type": "EnergyScale"
+      },
+      {
+        "name": "NumericRank",
+        "type": "Int32"
+      },
+      {
+        "name": "Value",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "APlusPlusPlus",
+        "Label": "A+++",
+        "Scale": "Old",
+        "NumericRank": 0,
+        "Value": "A+++"
+      },
+      {
+        "member": "APlusPlus",
+        "Label": "A++",
+        "Scale": "Old",
+        "NumericRank": 1,
+        "Value": "A++"
+      },
+      {
+        "member": "APlus",
+        "Label": "A+",
+        "Scale": "Old",
+        "NumericRank": 2,
+        "Value": "A+"
+      },
+      {
+        "member": "A",
+        "Label": "A",
+        "Scale": "Old",
+        "NumericRank": 3,
+        "Value": "A"
+      },
+      {
+        "member": "B",
+        "Label": "B",
+        "Scale": "Old",
+        "NumericRank": 4,
+        "Value": "B"
+      },
+      {
+        "member": "C",
+        "Label": "C",
+        "Scale": "Old",
+        "NumericRank": 5,
+        "Value": "C"
+      },
+      {
+        "member": "D",
+        "Label": "D",
+        "Scale": "Old",
+        "NumericRank": 6,
+        "Value": "D"
+      },
+      {
+        "member": "E",
+        "Label": "E",
+        "Scale": "Old",
+        "NumericRank": 7,
+        "Value": "E"
+      },
+      {
+        "member": "F",
+        "Label": "F",
+        "Scale": "Old",
+        "NumericRank": 8,
+        "Value": "F"
+      },
+      {
+        "member": "G",
+        "Label": "G",
+        "Scale": "Old",
+        "NumericRank": 9,
+        "Value": "G"
+      },
+      {
+        "member": "NewA",
+        "Label": "A",
+        "Scale": "New",
+        "NumericRank": 0,
+        "Value": "A"
+      },
+      {
+        "member": "NewB",
+        "Label": "B",
+        "Scale": "New",
+        "NumericRank": 1,
+        "Value": "B"
+      },
+      {
+        "member": "NewC",
+        "Label": "C",
+        "Scale": "New",
+        "NumericRank": 2,
+        "Value": "C"
+      },
+      {
+        "member": "NewD",
+        "Label": "D",
+        "Scale": "New",
+        "NumericRank": 3,
+        "Value": "D"
+      },
+      {
+        "member": "NewE",
+        "Label": "E",
+        "Scale": "New",
+        "NumericRank": 4,
+        "Value": "E"
+      },
+      {
+        "member": "NewF",
+        "Label": "F",
+        "Scale": "New",
+        "NumericRank": 5,
+        "Value": "F"
+      },
+      {
+        "member": "NewG",
+        "Label": "G",
+        "Scale": "New",
+        "NumericRank": 6,
+        "Value": "G"
+      }
+    ],
+    "order": [
+      "APlusPlusPlus",
+      "APlusPlus",
+      "APlus",
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G"
+    ],
+    "lookup": []
+  },
+  {
+    "type": "PowerSource",
+    "typeInfo": {
+      "englishName": "Power Source",
+      "localizedName": "Strömkälla",
+      "emoji": "🔌",
+      "sources": [
+        "https://schema.org/PowerSupplySpecification"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "IsElectric",
+        "type": "Boolean"
+      },
+      {
+        "name": "IsCombustion",
+        "type": "Boolean"
+      },
+      {
+        "name": "RequiresFuel",
+        "type": "Boolean"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Electric",
+        "Value": "Electric",
+        "EnglishName": "Mains electric",
+        "LocalizedName": "El",
+        "IsElectric": true,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Mains electric"
+      },
+      {
+        "member": "Battery",
+        "Value": "Battery",
+        "EnglishName": "Battery-powered",
+        "LocalizedName": "Batteri",
+        "IsElectric": true,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Battery-powered"
+      },
+      {
+        "member": "Solar",
+        "Value": "Solar",
+        "EnglishName": "Solar-powered",
+        "LocalizedName": "Solenergi",
+        "IsElectric": true,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Solar-powered"
+      },
+      {
+        "member": "Hybrid",
+        "Value": "Hybrid",
+        "EnglishName": "Hybrid",
+        "LocalizedName": "Hybrid",
+        "IsElectric": true,
+        "IsCombustion": true,
+        "RequiresFuel": true,
+        "DisplayName": "Hybrid"
+      },
+      {
+        "member": "Petrol",
+        "Value": "Petrol",
+        "EnglishName": "Petrol",
+        "LocalizedName": "Bensin",
+        "IsElectric": false,
+        "IsCombustion": true,
+        "RequiresFuel": true,
+        "DisplayName": "Petrol"
+      },
+      {
+        "member": "Diesel",
+        "Value": "Diesel",
+        "EnglishName": "Diesel",
+        "LocalizedName": "Diesel",
+        "IsElectric": false,
+        "IsCombustion": true,
+        "RequiresFuel": true,
+        "DisplayName": "Diesel"
+      },
+      {
+        "member": "Hydrogen",
+        "Value": "Hydrogen",
+        "EnglishName": "Hydrogen",
+        "LocalizedName": "Vätgas",
+        "IsElectric": true,
+        "IsCombustion": false,
+        "RequiresFuel": true,
+        "DisplayName": "Hydrogen"
+      },
+      {
+        "member": "Pneumatic",
+        "Value": "Pneumatic",
+        "EnglishName": "Pneumatic (air)",
+        "LocalizedName": "Pneumatisk",
+        "IsElectric": false,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Pneumatic (air)"
+      },
+      {
+        "member": "Hydraulic",
+        "Value": "Hydraulic",
+        "EnglishName": "Hydraulic",
+        "LocalizedName": "Hydraulisk",
+        "IsElectric": false,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Hydraulic"
+      },
+      {
+        "member": "Manual",
+        "Value": "Manual",
+        "EnglishName": "Manual",
+        "LocalizedName": "Manuell",
+        "IsElectric": false,
+        "IsCombustion": false,
+        "RequiresFuel": false,
+        "DisplayName": "Manual"
+      }
+    ],
+    "order": [
+      "Electric",
+      "Battery",
+      "Solar",
+      "Hybrid",
+      "Petrol",
+      "Diesel",
+      "Hydrogen",
+      "Pneumatic",
+      "Hydraulic",
+      "Manual"
+    ],
+    "lookup": [
+      [
+        "electric",
+        "Electric"
+      ],
+      [
+        "mainselectric",
+        "Electric"
+      ],
+      [
+        "el",
+        "Electric"
+      ],
+      [
+        "battery",
+        "Battery"
+      ],
+      [
+        "batterypowered",
+        "Battery"
+      ],
+      [
+        "batteri",
+        "Battery"
+      ],
+      [
+        "solar",
+        "Solar"
+      ],
+      [
+        "solarpowered",
+        "Solar"
+      ],
+      [
+        "solenergi",
+        "Solar"
+      ],
+      [
+        "hybrid",
+        "Hybrid"
+      ],
+      [
+        "petrol",
+        "Petrol"
+      ],
+      [
+        "bensin",
+        "Petrol"
+      ],
+      [
+        "diesel",
+        "Diesel"
+      ],
+      [
+        "hydrogen",
+        "Hydrogen"
+      ],
+      [
+        "vatgas",
+        "Hydrogen"
+      ],
+      [
+        "pneumatic",
+        "Pneumatic"
+      ],
+      [
+        "pneumaticair",
+        "Pneumatic"
+      ],
+      [
+        "pneumatisk",
+        "Pneumatic"
+      ],
+      [
+        "hydraulic",
+        "Hydraulic"
+      ],
+      [
+        "hydraulisk",
+        "Hydraulic"
+      ],
+      [
+        "manual",
+        "Manual"
+      ],
+      [
+        "manuell",
+        "Manual"
+      ],
+      [
+        "electricity",
+        "Electric"
+      ],
+      [
+        "elektrisk",
+        "Electric"
+      ],
+      [
+        "eldriven",
+        "Electric"
+      ],
+      [
+        "mains",
+        "Electric"
+      ],
+      [
+        "mainspowered",
+        "Electric"
+      ],
+      [
+        "corded",
+        "Electric"
+      ],
+      [
+        "cordedelectric",
+        "Electric"
+      ],
+      [
+        "plugin",
+        "Electric"
+      ],
+      [
+        "nat",
+        "Electric"
+      ],
+      [
+        "natansluten",
+        "Electric"
+      ],
+      [
+        "natstrom",
+        "Electric"
+      ],
+      [
+        "sladdansluten",
+        "Electric"
+      ],
+      [
+        "230v",
+        "Electric"
+      ],
+      [
+        "400v",
+        "Electric"
+      ],
+      [
+        "batteridriven",
+        "Battery"
+      ],
+      [
+        "cordless",
+        "Battery"
+      ],
+      [
+        "sladdlos",
+        "Battery"
+      ],
+      [
+        "rechargeable",
+        "Battery"
+      ],
+      [
+        "uppladdningsbartbatteri",
+        "Battery"
+      ],
+      [
+        "accu",
+        "Battery"
+      ],
+      [
+        "solarpower",
+        "Solar"
+      ],
+      [
+        "solcell",
+        "Solar"
+      ],
+      [
+        "soldriven",
+        "Solar"
+      ],
+      [
+        "solpanel",
+        "Solar"
+      ],
+      [
+        "pv",
+        "Solar"
+      ],
+      [
+        "hybriddrift",
+        "Hybrid"
+      ],
+      [
+        "pluginhybrid",
+        "Hybrid"
+      ],
+      [
+        "phev",
+        "Hybrid"
+      ],
+      [
+        "hev",
+        "Hybrid"
+      ],
+      [
+        "mhev",
+        "Hybrid"
+      ],
+      [
+        "mildhybrid",
+        "Hybrid"
+      ],
+      [
+        "laddhybrid",
+        "Hybrid"
+      ],
+      [
+        "bensindriven",
+        "Petrol"
+      ],
+      [
+        "bensinmotor",
+        "Petrol"
+      ],
+      [
+        "gasoline",
+        "Petrol"
+      ],
+      [
+        "gas",
+        "Petrol"
+      ],
+      [
+        "petrolengine",
+        "Petrol"
+      ],
+      [
+        "dieseldriven",
+        "Diesel"
+      ],
+      [
+        "dieselmotor",
+        "Diesel"
+      ],
+      [
+        "dieselengine",
+        "Diesel"
+      ],
+      [
+        "vatgasdriven",
+        "Hydrogen"
+      ],
+      [
+        "h2",
+        "Hydrogen"
+      ],
+      [
+        "fuelcell",
+        "Hydrogen"
+      ],
+      [
+        "branslecell",
+        "Hydrogen"
+      ],
+      [
+        "fcev",
+        "Hydrogen"
+      ],
+      [
+        "pneumatik",
+        "Pneumatic"
+      ],
+      [
+        "airpowered",
+        "Pneumatic"
+      ],
+      [
+        "tryckluft",
+        "Pneumatic"
+      ],
+      [
+        "tryckluftsdriven",
+        "Pneumatic"
+      ],
+      [
+        "compressedair",
+        "Pneumatic"
+      ],
+      [
+        "komprimeradluft",
+        "Pneumatic"
+      ],
+      [
+        "hydraulik",
+        "Hydraulic"
+      ],
+      [
+        "hydrauliskt",
+        "Hydraulic"
+      ],
+      [
+        "hydrauldriven",
+        "Hydraulic"
+      ],
+      [
+        "manuellt",
+        "Manual"
+      ],
+      [
+        "manuelldrift",
+        "Manual"
+      ],
+      [
+        "handdriven",
+        "Manual"
+      ],
+      [
+        "muskelkraft",
+        "Manual"
+      ],
+      [
+        "humanpowered",
+        "Manual"
+      ],
+      [
+        "pedal",
+        "Manual"
+      ],
+      [
+        "pedaldriven",
+        "Manual"
+      ],
+      [
+        "nopower",
+        "Manual"
+      ],
+      [
+        "stromlos",
+        "Manual"
+      ]
+    ]
+  },
+  {
+    "type": "Refrigerant",
+    "typeInfo": {
+      "englishName": "Refrigerant",
+      "localizedName": "Köldmedium",
+      "emoji": "❄️",
+      "sources": [
+        "https://www.ashrae.org/technical-resources/standards-and-guidelines/standards-addenda/standard-34-designation-and-safety-classification-of-refrigerants",
+        "https://eur-lex.europa.eu/eli/reg/2014/517/oj"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "CompactCode",
+        "type": "String"
+      },
+      {
+        "name": "Composition",
+        "type": "String"
+      },
+      {
+        "name": "Family",
+        "type": "RefrigerantFamily"
+      },
+      {
+        "name": "Gwp100Year",
+        "type": "Int32"
+      },
+      {
+        "name": "SafetyClass",
+        "type": "String"
+      },
+      {
+        "name": "IsRestrictedInEu",
+        "type": "Boolean"
+      }
+    ],
+    "members": [
+      {
+        "member": "R12",
+        "Value": "R-12",
+        "CompactCode": "R12",
+        "Composition": "Dichlorodifluoromethane",
+        "Family": "Cfc",
+        "Gwp100Year": 10900,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": true
+      },
+      {
+        "member": "R22",
+        "Value": "R-22",
+        "CompactCode": "R22",
+        "Composition": "Chlorodifluoromethane",
+        "Family": "Hcfc",
+        "Gwp100Year": 1810,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": true
+      },
+      {
+        "member": "R32",
+        "Value": "R-32",
+        "CompactCode": "R32",
+        "Composition": "Difluoromethane",
+        "Family": "Hfc",
+        "Gwp100Year": 675,
+        "SafetyClass": "A2L",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R134a",
+        "Value": "R-134a",
+        "CompactCode": "R134a",
+        "Composition": "1,1,1,2-Tetrafluoroethane",
+        "Family": "Hfc",
+        "Gwp100Year": 1430,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R290",
+        "Value": "R-290",
+        "CompactCode": "R290",
+        "Composition": "Propane",
+        "Family": "Natural",
+        "Gwp100Year": 3,
+        "SafetyClass": "A3",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R404A",
+        "Value": "R-404A",
+        "CompactCode": "R404A",
+        "Composition": "HFC blend (R-125/R-143a/R-134a)",
+        "Family": "Hfc",
+        "Gwp100Year": 3922,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": true
+      },
+      {
+        "member": "R407C",
+        "Value": "R-407C",
+        "CompactCode": "R407C",
+        "Composition": "HFC blend (R-32/R-125/R-134a)",
+        "Family": "Hfc",
+        "Gwp100Year": 1774,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R407F",
+        "Value": "R-407F",
+        "CompactCode": "R407F",
+        "Composition": "HFC blend (R-32/R-125/R-134a)",
+        "Family": "Hfc",
+        "Gwp100Year": 1825,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R410A",
+        "Value": "R-410A",
+        "CompactCode": "R410A",
+        "Composition": "HFC blend (R-32/R-125)",
+        "Family": "Hfc",
+        "Gwp100Year": 2088,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R448A",
+        "Value": "R-448A",
+        "CompactCode": "R448A",
+        "Composition": "HFC/HFO blend (R-32/R-125/R-134a/R-1234yf/R-1234ze)",
+        "Family": "HfcHfoBlend",
+        "Gwp100Year": 1387,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R449A",
+        "Value": "R-449A",
+        "CompactCode": "R449A",
+        "Composition": "HFC/HFO blend (R-32/R-125/R-134a/R-1234yf)",
+        "Family": "HfcHfoBlend",
+        "Gwp100Year": 1397,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R452A",
+        "Value": "R-452A",
+        "CompactCode": "R452A",
+        "Composition": "HFC/HFO blend (R-32/R-125/R-1234yf)",
+        "Family": "HfcHfoBlend",
+        "Gwp100Year": 2140,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R507A",
+        "Value": "R-507A",
+        "CompactCode": "R507A",
+        "Composition": "HFC blend (R-125/R-143a)",
+        "Family": "Hfc",
+        "Gwp100Year": 3985,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": true
+      },
+      {
+        "member": "R513A",
+        "Value": "R-513A",
+        "CompactCode": "R513A",
+        "Composition": "HFC/HFO blend (R-1234yf/R-134a)",
+        "Family": "HfcHfoBlend",
+        "Gwp100Year": 631,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R600a",
+        "Value": "R-600a",
+        "CompactCode": "R600a",
+        "Composition": "Isobutane",
+        "Family": "Natural",
+        "Gwp100Year": 3,
+        "SafetyClass": "A3",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R717",
+        "Value": "R-717",
+        "CompactCode": "R717",
+        "Composition": "Ammonia",
+        "Family": "Natural",
+        "Gwp100Year": 0,
+        "SafetyClass": "B2L",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R718",
+        "Value": "R-718",
+        "CompactCode": "R718",
+        "Composition": "Water",
+        "Family": "Natural",
+        "Gwp100Year": 0,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R744",
+        "Value": "R-744",
+        "CompactCode": "R744",
+        "Composition": "Carbon dioxide",
+        "Family": "Natural",
+        "Gwp100Year": 1,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R1234yf",
+        "Value": "R-1234yf",
+        "CompactCode": "R1234yf",
+        "Composition": "2,3,3,3-Tetrafluoropropene",
+        "Family": "Hfo",
+        "Gwp100Year": 4,
+        "SafetyClass": "A2L",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R1234ze",
+        "Value": "R-1234ze",
+        "CompactCode": "R1234ze",
+        "Composition": "trans-1,3,3,3-Tetrafluoropropene",
+        "Family": "Hfo",
+        "Gwp100Year": 7,
+        "SafetyClass": "A2L",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R1233zd",
+        "Value": "R-1233zd",
+        "CompactCode": "R1233zd",
+        "Composition": "trans-1-Chloro-3,3,3-trifluoropropene",
+        "Family": "Hfo",
+        "Gwp100Year": 1,
+        "SafetyClass": "A1",
+        "IsRestrictedInEu": false
+      },
+      {
+        "member": "R1270",
+        "Value": "R-1270",
+        "CompactCode": "R1270",
+        "Composition": "Propylene",
+        "Family": "Natural",
+        "Gwp100Year": 2,
+        "SafetyClass": "A3",
+        "IsRestrictedInEu": false
+      }
+    ],
+    "order": [
+      "R12",
+      "R22",
+      "R32",
+      "R134a",
+      "R290",
+      "R404A",
+      "R407C",
+      "R407F",
+      "R410A",
+      "R448A",
+      "R449A",
+      "R452A",
+      "R507A",
+      "R513A",
+      "R600a",
+      "R717",
+      "R718",
+      "R744",
+      "R1234yf",
+      "R1234ze",
+      "R1233zd",
+      "R1270"
+    ],
+    "lookup": [
+      [
+        "r12",
+        "R12"
+      ],
+      [
+        "r22",
+        "R22"
+      ],
+      [
+        "r32",
+        "R32"
+      ],
+      [
+        "r134a",
+        "R134a"
+      ],
+      [
+        "r290",
+        "R290"
+      ],
+      [
+        "r404a",
+        "R404A"
+      ],
+      [
+        "r407c",
+        "R407C"
+      ],
+      [
+        "r407f",
+        "R407F"
+      ],
+      [
+        "r410a",
+        "R410A"
+      ],
+      [
+        "r448a",
+        "R448A"
+      ],
+      [
+        "r449a",
+        "R449A"
+      ],
+      [
+        "r452a",
+        "R452A"
+      ],
+      [
+        "r507a",
+        "R507A"
+      ],
+      [
+        "r513a",
+        "R513A"
+      ],
+      [
+        "r600a",
+        "R600a"
+      ],
+      [
+        "r717",
+        "R717"
+      ],
+      [
+        "r718",
+        "R718"
+      ],
+      [
+        "r744",
+        "R744"
+      ],
+      [
+        "r1234yf",
+        "R1234yf"
+      ],
+      [
+        "r1234ze",
+        "R1234ze"
+      ],
+      [
+        "r1233zd",
+        "R1233zd"
+      ],
+      [
+        "r1270",
+        "R1270"
+      ],
+      [
+        "co2",
+        "R744"
+      ],
+      [
+        "co₂",
+        "R744"
+      ],
+      [
+        "carbondioxide",
+        "R744"
+      ],
+      [
+        "koldioxid",
+        "R744"
+      ],
+      [
+        "propane",
+        "R290"
+      ],
+      [
+        "propan",
+        "R290"
+      ],
+      [
+        "isobutane",
+        "R600a"
+      ],
+      [
+        "isobutan",
+        "R600a"
+      ],
+      [
+        "ammonia",
+        "R717"
+      ],
+      [
+        "ammoniak",
+        "R717"
+      ],
+      [
+        "nh3",
+        "R717"
+      ],
+      [
+        "water",
+        "R718"
+      ],
+      [
+        "vatten",
+        "R718"
+      ],
+      [
+        "h2o",
+        "R718"
+      ],
+      [
+        "propylene",
+        "R1270"
+      ],
+      [
+        "propen",
+        "R1270"
+      ]
+    ]
+  },
+  {
+    "type": "StorageMediaType",
+    "typeInfo": {
+      "englishName": "Storage Media Type",
+      "localizedName": "Lagringsmedia",
+      "emoji": "💽",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Computer_data_storage",
+        "https://en.wikipedia.org/wiki/NVM_Express"
+      ]
+    },
+    "properties": [
+      {
+        "name": "Value",
+        "type": "String"
+      },
+      {
+        "name": "EnglishName",
+        "type": "String"
+      },
+      {
+        "name": "LocalizedName",
+        "type": "String"
+      },
+      {
+        "name": "Family",
+        "type": "String"
+      },
+      {
+        "name": "IsSolidState",
+        "type": "Boolean"
+      },
+      {
+        "name": "DisplayName",
+        "type": "String"
+      }
+    ],
+    "members": [
+      {
+        "member": "Hdd",
+        "Value": "HDD",
+        "EnglishName": "Hard disk drive",
+        "LocalizedName": "Hårddisk (HDD)",
+        "Family": "HDD",
+        "IsSolidState": false,
+        "DisplayName": "Hard disk drive"
+      },
+      {
+        "member": "Sshd",
+        "Value": "SSHD",
+        "EnglishName": "Solid-state hybrid drive",
+        "LocalizedName": "Hybriddisk (SSHD)",
+        "Family": "Hybrid",
+        "IsSolidState": false,
+        "DisplayName": "Solid-state hybrid drive"
+      },
+      {
+        "member": "Ssd",
+        "Value": "SSD",
+        "EnglishName": "Solid-state drive",
+        "LocalizedName": "SSD-disk",
+        "Family": "SSD",
+        "IsSolidState": true,
+        "DisplayName": "Solid-state drive"
+      },
+      {
+        "member": "Nvme",
+        "Value": "NVMe",
+        "EnglishName": "NVMe SSD",
+        "LocalizedName": "NVMe SSD",
+        "Family": "SSD",
+        "IsSolidState": true,
+        "DisplayName": "NVMe SSD"
+      },
+      {
+        "member": "EMmc",
+        "Value": "eMMC",
+        "EnglishName": "eMMC",
+        "LocalizedName": "eMMC",
+        "Family": "Flash",
+        "IsSolidState": true,
+        "DisplayName": "eMMC"
+      },
+      {
+        "member": "Ufs",
+        "Value": "UFS",
+        "EnglishName": "Universal Flash Storage",
+        "LocalizedName": "UFS",
+        "Family": "Flash",
+        "IsSolidState": true,
+        "DisplayName": "Universal Flash Storage"
+      },
+      {
+        "member": "Flash",
+        "Value": "Flash",
+        "EnglishName": "Flash storage",
+        "LocalizedName": "Flashminne",
+        "Family": "Flash",
+        "IsSolidState": true,
+        "DisplayName": "Flash storage"
+      },
+      {
+        "member": "Optane",
+        "Value": "Optane",
+        "EnglishName": "Intel Optane",
+        "LocalizedName": "Intel Optane",
+        "Family": "SSD",
+        "IsSolidState": true,
+        "DisplayName": "Intel Optane"
+      }
+    ],
+    "order": [
+      "Hdd",
+      "Sshd",
+      "Ssd",
+      "Nvme",
+      "EMmc",
+      "Ufs",
+      "Flash",
+      "Optane"
+    ],
+    "lookup": [
+      [
+        "hdd",
+        "Hdd"
+      ],
+      [
+        "harddiskdrive",
+        "Hdd"
+      ],
+      [
+        "harddiskhdd",
+        "Hdd"
+      ],
+      [
+        "sshd",
+        "Sshd"
+      ],
+      [
+        "solidstatehybriddrive",
+        "Sshd"
+      ],
+      [
+        "hybriddisksshd",
+        "Sshd"
+      ],
+      [
+        "ssd",
+        "Ssd"
+      ],
+      [
+        "solidstatedrive",
+        "Ssd"
+      ],
+      [
+        "ssddisk",
+        "Ssd"
+      ],
+      [
+        "nvme",
+        "Nvme"
+      ],
+      [
+        "nvmessd",
+        "Nvme"
+      ],
+      [
+        "emmc",
+        "EMmc"
+      ],
+      [
+        "ufs",
+        "Ufs"
+      ],
+      [
+        "universalflashstorage",
+        "Ufs"
+      ],
+      [
+        "flash",
+        "Flash"
+      ],
+      [
+        "flashstorage",
+        "Flash"
+      ],
+      [
+        "flashminne",
+        "Flash"
+      ],
+      [
+        "optane",
+        "Optane"
+      ],
+      [
+        "inteloptane",
+        "Optane"
+      ],
+      [
+        "harddisk",
+        "Hdd"
+      ],
+      [
+        "harddrive",
+        "Hdd"
+      ],
+      [
+        "mekaniskharddisk",
+        "Hdd"
+      ],
+      [
+        "mechanicaldrive",
+        "Hdd"
+      ],
+      [
+        "spinningdisk",
+        "Hdd"
+      ],
+      [
+        "spinningdrive",
+        "Hdd"
+      ],
+      [
+        "magneticdisk",
+        "Hdd"
+      ],
+      [
+        "magnetiskdisk",
+        "Hdd"
+      ],
+      [
+        "rotationaldrive",
+        "Hdd"
+      ],
+      [
+        "sshddisk",
+        "Sshd"
+      ],
+      [
+        "hybriddisk",
+        "Sshd"
+      ],
+      [
+        "hybriddrive",
+        "Sshd"
+      ],
+      [
+        "hybridharddrive",
+        "Sshd"
+      ],
+      [
+        "ssdhddhybrid",
+        "Sshd"
+      ],
+      [
+        "solidstate",
+        "Ssd"
+      ],
+      [
+        "satassd",
+        "Ssd"
+      ],
+      [
+        "m2sata",
+        "Ssd"
+      ],
+      [
+        "m2satassd",
+        "Ssd"
+      ],
+      [
+        "nvmexpress",
+        "Nvme"
+      ],
+      [
+        "pciessd",
+        "Nvme"
+      ],
+      [
+        "pciexpressssd",
+        "Nvme"
+      ],
+      [
+        "m2nvme",
+        "Nvme"
+      ],
+      [
+        "m2nvmessd",
+        "Nvme"
+      ],
+      [
+        "gen3nvme",
+        "Nvme"
+      ],
+      [
+        "gen4nvme",
+        "Nvme"
+      ],
+      [
+        "gen5nvme",
+        "Nvme"
+      ],
+      [
+        "embeddedmmc",
+        "EMmc"
+      ],
+      [
+        "embeddedmultimediacard",
+        "EMmc"
+      ],
+      [
+        "ufs21",
+        "Ufs"
+      ],
+      [
+        "ufs30",
+        "Ufs"
+      ],
+      [
+        "ufs31",
+        "Ufs"
+      ],
+      [
+        "ufs40",
+        "Ufs"
+      ],
+      [
+        "flashmemory",
+        "Flash"
+      ],
+      [
+        "nandflash",
+        "Flash"
+      ],
+      [
+        "flashdrive",
+        "Flash"
+      ],
+      [
+        "flashlagring",
+        "Flash"
+      ],
+      [
+        "optanememory",
+        "Optane"
+      ],
+      [
+        "3dxpoint",
+        "Optane"
+      ],
+      [
+        "xpoint",
+        "Optane"
+      ]
+    ]
+  }
+]
