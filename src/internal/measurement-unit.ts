@@ -1,0 +1,116 @@
+/**
+ * Shared machinery for the `Measurement` unit classes (`LengthUnit`,
+ * `PowerUnit`, and the rest).
+ *
+ * In .NET each of these is a hand-written class repeating the same symbol
+ * index, natural-scale walk and lookup. Repetition is free there; here it would
+ * be bytes shipped to a browser for all nineteen dimensions, so the shared part
+ * lives once and each public unit class supplies only its table.
+ *
+ * Internal; not re-exported publicly.
+ */
+
+import { Decimal } from "./decimal.js";
+
+/** The fields every unit in a dimension carries. */
+export interface MeasurementUnitDefinition {
+  readonly symbol: string;
+  readonly englishName: string;
+  readonly localizedName: string;
+  readonly pluralEnglish: string;
+  readonly pluralSwedish: string;
+  /** Multiply a value in this unit by this factor to reach the base unit. */
+  readonly toBaseUnitFactor: Decimal;
+  readonly aliases?: readonly string[];
+}
+
+export class MeasurementUnit {
+  readonly symbol: string;
+  readonly englishName: string;
+  readonly localizedName: string;
+  readonly pluralEnglish: string;
+  readonly pluralSwedish: string;
+  readonly toBaseUnitFactor: Decimal;
+  readonly aliases: readonly string[];
+
+  constructor(definition: MeasurementUnitDefinition) {
+    this.symbol = definition.symbol;
+    this.englishName = definition.englishName;
+    this.localizedName = definition.localizedName;
+    this.pluralEnglish = definition.pluralEnglish;
+    this.pluralSwedish = definition.pluralSwedish;
+    this.toBaseUnitFactor = definition.toBaseUnitFactor;
+    this.aliases = definition.aliases ?? [];
+  }
+
+  toString(): string {
+    return this.symbol;
+  }
+}
+
+/**
+ * Case-insensitive lookup over a dimension's units plus the natural-scale walk
+ * used for display.
+ */
+export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
+  private index: Map<string, TUnit> | null = null;
+
+  constructor(
+    readonly all: readonly TUnit[],
+    readonly baseUnit: TUnit,
+    /** Metric units ordered small to large, used to auto-scale display. */
+    readonly naturalScale: readonly TUnit[],
+  ) {}
+
+  /**
+   * Matches on symbol, English and Swedish names, plurals and aliases. Earlier
+   * units win a collision, mirroring the `TryAdd` order in .NET.
+   */
+  tryParse(input: string | null | undefined): TUnit | null {
+    if (input == null) return null;
+    const trimmed = input.trim();
+    if (trimmed.length === 0) return null;
+    return this.symbolIndex().get(trimmed.toLowerCase()) ?? null;
+  }
+
+  /**
+   * Picks the largest unit on the natural scale where the magnitude is still at
+   * least one, so 1500 meters displays as `1.5 km`.
+   */
+  getNatural(baseValue: Decimal): TUnit {
+    const magnitude = baseValue.abs();
+    let result = this.naturalScale[0] ?? this.baseUnit;
+
+    for (let i = 1; i < this.naturalScale.length; i++) {
+      const candidate = this.naturalScale[i];
+      if (candidate === undefined) break;
+      if (magnitude.dividedBy(candidate.toBaseUnitFactor).compareTo(Decimal.one) >= 0) {
+        result = candidate;
+      } else break;
+    }
+
+    return result;
+  }
+
+  private symbolIndex(): Map<string, TUnit> {
+    if (this.index !== null) return this.index;
+
+    const index = new Map<string, TUnit>();
+    const add = (key: string, unit: TUnit): void => {
+      const normalized = key.toLowerCase();
+      if (normalized.length > 0 && !index.has(normalized)) index.set(normalized, unit);
+    };
+
+    for (const unit of this.all) {
+      add(unit.symbol, unit);
+      add(unit.englishName, unit);
+      add(unit.localizedName, unit);
+      add(unit.pluralEnglish, unit);
+      add(unit.pluralSwedish, unit);
+      for (const alias of unit.aliases) add(alias, unit);
+    }
+
+    this.index = index;
+    return index;
+  }
+}
