@@ -30,6 +30,7 @@ import type { Power } from "../measurement/power.js";
 import type { Pressure } from "../measurement/pressure.js";
 import type { RotationalSpeed } from "../measurement/rotational-speed.js";
 import type { Speed } from "../measurement/speed.js";
+import type { Temperature } from "../measurement/temperature.js";
 import type { Torque } from "../measurement/torque.js";
 import type { Voltage } from "../measurement/voltage.js";
 import type { Volume } from "../measurement/volume.js";
@@ -213,6 +214,9 @@ export class TextScanResult {
   }
   get speeds(): TextCandidate<Speed>[] {
     return this.byTypeName<Speed>("Speed");
+  }
+  get temperatures(): TextCandidate<Temperature>[] {
+    return this.byTypeName<Temperature>("Temperature");
   }
   get torques(): TextCandidate<Torque>[] {
     return this.byTypeName<Torque>("Torque");

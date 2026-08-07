@@ -24,21 +24,21 @@ commit that changes the .NET baseline.
 
 ## Namespace coverage
 
-| .NET namespace    | Status          | Notes                                                           |
-| ----------------- | --------------- | --------------------------------------------------------------- |
-| `Organization`    | Complete        | 10 types                                                        |
-| `Banking`         | Complete        | 10 types                                                        |
-| `Person`          | Complete        | 6 types                                                         |
-| `Geography`       | Complete        | 7 types                                                         |
-| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                                   |
-| `Contact`         | Complete        | Including all 31 country address / zip-code pairs               |
-| `Web`             | Complete        | 2 types                                                         |
-| `Property`        | Complete        | 2 types                                                         |
-| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                        |
-| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors        |
-| **`Measurement`** | **In progress** | 18 of 19 dimensions; `Temperature` and 6 standalone types to go |
-| **`Vehicle`**     | **Not ported**  | 29 types                                                        |
-| **`Product`**     | **Not ported**  | 36 types                                                        |
+| .NET namespace    | Status          | Notes                                                    |
+| ----------------- | --------------- | -------------------------------------------------------- |
+| `Organization`    | Complete        | 10 types                                                 |
+| `Banking`         | Complete        | 10 types                                                 |
+| `Person`          | Complete        | 6 types                                                  |
+| `Geography`       | Complete        | 7 types                                                  |
+| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                            |
+| `Contact`         | Complete        | Including all 31 country address / zip-code pairs        |
+| `Web`             | Complete        | 2 types                                                  |
+| `Property`        | Complete        | 2 types                                                  |
+| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                 |
+| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors |
+| **`Measurement`** | **In progress** | All 19 dimensions; 5 standalone types to go              |
+| **`Vehicle`**     | **Not ported**  | 29 types                                                 |
+| **`Product`**     | **Not ported**  | 36 types                                                 |
 
 ## Cross-cutting features
 
@@ -87,14 +87,19 @@ The namespace divides into 19 quantity types, each paired with a unit class, and
 six standalone types (`Count`, `Percentage`, `SoundLevel`, `TemperatureDelta`,
 `Year`, `YearMonth`). There are 133 units in total.
 
-Eighteen of the nineteen dimensions are ported, covering 133 units. Still to
-come: `Temperature` and the standalone types.
+All nineteen dimensions are ported, covering 136 units. Still to come: the
+standalone types `Count`, `Percentage`, `SoundLevel`, `Year` and `YearMonth`.
 
 Four things do not follow the common pattern:
 
 - **`Temperature` is affine.** `TemperatureUnit` has no `ToBaseUnitFactor`
   because Celsius, Fahrenheit and kelvin differ by offset as well as scale, so
-  it cannot use the shared multiplicative conversion.
+  it neither uses the shared multiplicative conversion nor extends the common
+  base classes. Subtracting two temperatures yields a `TemperatureDelta`, where
+  a kelvin and a Celsius degree are the same interval and Fahrenheit scales by
+  9/5. Round-tripping through Fahrenheit drifts in the last digits — 0 °F comes
+  back as -4e-27 °F — and the port reproduces that rather than hiding it,
+  because .NET lands on the same value.
 - **Some factors are repeating decimals.** 1/60 for rpm, 1/3600 for coulomb,
   1000/3600 for km/h. Multiplying by the rounded factor and dividing by it are
   not inverses, so those five units carry an exact numerator/denominator pair

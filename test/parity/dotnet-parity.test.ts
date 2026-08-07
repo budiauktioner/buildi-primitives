@@ -110,8 +110,8 @@ const EXPECTED_TYPES: Readonly<Record<string, readonly string[]>> = {
     "SwedishPropertyTaxationCategory",
     "SwedishPropertyTaxationCode",
   ],
-  // Partially ported — see PARITY.md. Temperature and the standalone types
-  // (Count, Percentage, SoundLevel, TemperatureDelta, Year, YearMonth) remain.
+  // Partially ported — see PARITY.md. The standalone types (Count, Percentage,
+  // SoundLevel, Year, YearMonth) remain.
   Measurement: [
     "Area",
     "AreaUnit",
@@ -141,6 +141,9 @@ const EXPECTED_TYPES: Readonly<Record<string, readonly string[]>> = {
     "RotationalSpeedUnit",
     "Speed",
     "SpeedUnit",
+    "Temperature",
+    "TemperatureUnit",
+    "TemperatureDelta",
     "Torque",
     "TorqueUnit",
     "Voltage",
@@ -210,6 +213,7 @@ const EXPECTED_MASKING_FUNCTIONS = [
   "maskPressure",
   "maskRotationalSpeed",
   "maskSpeed",
+  "maskTemperature",
   "maskTorque",
   "maskVoltage",
   "maskVolume",
@@ -279,6 +283,7 @@ const EXPECTED_SCANNABLE_TYPES = [
   "Pressure",
   "RotationalSpeed",
   "Speed",
+  "Temperature",
   "Torque",
   "Voltage",
   "Volume",
@@ -394,6 +399,8 @@ describe(".NET parity — ported namespaces", () => {
       "PressureUnit",
       "RotationalSpeedUnit",
       "SpeedUnit",
+      "TemperatureUnit",
+      "TemperatureDelta",
       "TorqueUnit",
       "VoltageUnit",
       "VolumeUnit",
@@ -433,8 +440,8 @@ describe(".NET parity — namespaces not yet ported", () => {
   // Sentinel types from each unported namespace. If one of these starts
   // resolving, the namespace has landed and PARITY.md needs updating.
   it.each([
-    ["Measurement", "Temperature"],
     ["Measurement", "Percentage"],
+    ["Measurement", "Count"],
     ["Vehicle", "VehicleIdentificationNumber"],
     ["Vehicle", "SwedishVehicleRegistrationNumber"],
     ["Product", "Gtin13"],

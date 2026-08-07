@@ -38,6 +38,9 @@ export {
 export { RotationalSpeedUnit } from "./rotational-speed-unit.js";
 export { Speed, maskSpeed, type SpeedFormatOptions } from "./speed.js";
 export { SpeedUnit } from "./speed-unit.js";
+export { Temperature, maskTemperature, type TemperatureFormatOptions } from "./temperature.js";
+export { TemperatureUnit } from "./temperature-unit.js";
+export { TemperatureDelta } from "./temperature-delta.js";
 export { Torque, maskTorque, type TorqueFormatOptions } from "./torque.js";
 export { TorqueUnit } from "./torque-unit.js";
 export { Voltage, maskVoltage, type VoltageFormatOptions } from "./voltage.js";

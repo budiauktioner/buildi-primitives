@@ -98,7 +98,7 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
     if (input == null) return null;
     const trimmed = input.trim();
     if (trimmed.length === 0) return null;
-    return this.symbolIndex().get(fold(trimmed)) ?? null;
+    return this.symbolIndex().get(foldForUnitLookup(trimmed)) ?? null;
   }
 
   /**
@@ -125,7 +125,7 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
 
     const index = new Map<string, TUnit>();
     const add = (key: string, unit: TUnit): void => {
-      const normalized = fold(key);
+      const normalized = foldForUnitLookup(key);
       if (normalized.length > 0 && !index.has(normalized)) index.set(normalized, unit);
     };
 
@@ -149,6 +149,6 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
  * Greek capital mu `Μ` fold together going up but not going down, so `ΜW` would
  * stop resolving to microwatt.
  */
-function fold(key: string): string {
+export function foldForUnitLookup(key: string): string {
   return key.toUpperCase();
 }

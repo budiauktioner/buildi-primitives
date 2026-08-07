@@ -7,9 +7,6 @@ import vectors from "./quantity-dotnet-vectors.json" with { type: "json" };
  * Runs every quantity type against expectations captured from its .NET
  * counterpart. The inputs are derived from each unit's symbol, names, plurals
  * and aliases, so a unit table that is wrong in any field shows up here.
- *
- * `Temperature` is absent because it converts by offset rather than by factor
- * and is tested separately.
  */
 
 interface Case {

@@ -39,6 +39,7 @@ import { Power } from "./measurement/power.js";
 import { Pressure } from "./measurement/pressure.js";
 import { RotationalSpeed } from "./measurement/rotational-speed.js";
 import { Speed } from "./measurement/speed.js";
+import { Temperature } from "./measurement/temperature.js";
 import { Torque } from "./measurement/torque.js";
 import { Voltage } from "./measurement/voltage.js";
 import { Volume } from "./measurement/volume.js";
@@ -196,6 +197,7 @@ export function registerDefaultTextScanners(): void {
     ["Pressure", Pressure],
     ["RotationalSpeed", RotationalSpeed],
     ["Speed", Speed],
+    ["Temperature", Temperature],
     ["Torque", Torque],
     ["Voltage", Voltage],
     ["Volume", Volume],

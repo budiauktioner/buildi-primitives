@@ -1,0 +1,346 @@
+{
+  "conversions": [
+    {
+      "value": "0",
+      "scale": "C",
+      "celsius": "0.00",
+      "fahrenheit": "32.00",
+      "kelvin": "273.15",
+      "toString": "0 °C",
+      "normalized": "273.15 K",
+      "inCelsius": "0 °C",
+      "inFahrenheit2": "32 °F"
+    },
+    {
+      "value": "0",
+      "scale": "F",
+      "celsius": "-17.77777777777777777777777778",
+      "fahrenheit": "-0.000000000000000000000000004",
+      "kelvin": "255.37222222222222222222222222",
+      "toString": "-0.000000000000000000000000004 °F",
+      "normalized": "255.37222222222222222222222222 K",
+      "inCelsius": "-17.77777777777777777777777778 °C",
+      "inFahrenheit2": "0 °F"
+    },
+    {
+      "value": "0",
+      "scale": "K",
+      "celsius": "-273.15",
+      "fahrenheit": "-459.67",
+      "kelvin": "0",
+      "toString": "0 K",
+      "normalized": "0 K",
+      "inCelsius": "-273.15 °C",
+      "inFahrenheit2": "-459.67 °F"
+    },
+    {
+      "value": "20",
+      "scale": "C",
+      "celsius": "20.00",
+      "fahrenheit": "68.00",
+      "kelvin": "293.15",
+      "toString": "20 °C",
+      "normalized": "293.15 K",
+      "inCelsius": "20 °C",
+      "inFahrenheit2": "68 °F"
+    },
+    {
+      "value": "20",
+      "scale": "F",
+      "celsius": "-6.66666666666666666666666667",
+      "fahrenheit": "19.999999999999999999999999994",
+      "kelvin": "266.48333333333333333333333333",
+      "toString": "19.999999999999999999999999994 °F",
+      "normalized": "266.48333333333333333333333333 K",
+      "inCelsius": "-6.66666666666666666666666667 °C",
+      "inFahrenheit2": "20 °F"
+    },
+    {
+      "value": "20",
+      "scale": "K",
+      "celsius": "-253.15",
+      "fahrenheit": "-423.67",
+      "kelvin": "20",
+      "toString": "20 K",
+      "normalized": "20 K",
+      "inCelsius": "-253.15 °C",
+      "inFahrenheit2": "-423.67 °F"
+    },
+    {
+      "value": "-40",
+      "scale": "C",
+      "celsius": "-40.00",
+      "fahrenheit": "-40.00",
+      "kelvin": "233.15",
+      "toString": "-40 °C",
+      "normalized": "233.15 K",
+      "inCelsius": "-40 °C",
+      "inFahrenheit2": "-40 °F"
+    },
+    {
+      "value": "-40",
+      "scale": "F",
+      "celsius": "-40.00",
+      "fahrenheit": "-40.00",
+      "kelvin": "233.15",
+      "toString": "-40 °F",
+      "normalized": "233.15 K",
+      "inCelsius": "-40 °C",
+      "inFahrenheit2": "-40 °F"
+    },
+    {
+      "value": "-40",
+      "scale": "K",
+      "celsius": "-313.15",
+      "fahrenheit": "-531.67",
+      "kelvin": "-40",
+      "toString": "-40 K",
+      "normalized": "-40 K",
+      "inCelsius": "-313.15 °C",
+      "inFahrenheit2": "-531.67 °F"
+    },
+    {
+      "value": "100",
+      "scale": "C",
+      "celsius": "100.00",
+      "fahrenheit": "212.00",
+      "kelvin": "373.15",
+      "toString": "100 °C",
+      "normalized": "373.15 K",
+      "inCelsius": "100 °C",
+      "inFahrenheit2": "212 °F"
+    },
+    {
+      "value": "100",
+      "scale": "F",
+      "celsius": "37.77777777777777777777777778",
+      "fahrenheit": "100.00000000000000000000000000",
+      "kelvin": "310.92777777777777777777777778",
+      "toString": "100 °F",
+      "normalized": "310.92777777777777777777777778 K",
+      "inCelsius": "37.77777777777777777777777778 °C",
+      "inFahrenheit2": "100 °F"
+    },
+    {
+      "value": "100",
+      "scale": "K",
+      "celsius": "-173.15",
+      "fahrenheit": "-279.67",
+      "kelvin": "100",
+      "toString": "100 K",
+      "normalized": "100 K",
+      "inCelsius": "-173.15 °C",
+      "inFahrenheit2": "-279.67 °F"
+    },
+    {
+      "value": "37.5",
+      "scale": "C",
+      "celsius": "37.50",
+      "fahrenheit": "99.50",
+      "kelvin": "310.65",
+      "toString": "37.5 °C",
+      "normalized": "310.65 K",
+      "inCelsius": "37.5 °C",
+      "inFahrenheit2": "99.5 °F"
+    },
+    {
+      "value": "37.5",
+      "scale": "F",
+      "celsius": "3.05555555555555555555555556",
+      "fahrenheit": "37.500000000000000000000000008",
+      "kelvin": "276.20555555555555555555555556",
+      "toString": "37.500000000000000000000000008 °F",
+      "normalized": "276.20555555555555555555555556 K",
+      "inCelsius": "3.05555555555555555555555556 °C",
+      "inFahrenheit2": "37.5 °F"
+    },
+    {
+      "value": "37.5",
+      "scale": "K",
+      "celsius": "-235.65",
+      "fahrenheit": "-392.17",
+      "kelvin": "37.5",
+      "toString": "37.5 K",
+      "normalized": "37.5 K",
+      "inCelsius": "-235.65 °C",
+      "inFahrenheit2": "-392.17 °F"
+    },
+    {
+      "value": "-273.15",
+      "scale": "C",
+      "celsius": "-273.15",
+      "fahrenheit": "-459.67",
+      "kelvin": "0.00",
+      "toString": "-273.15 °C",
+      "normalized": "0 K",
+      "inCelsius": "-273.15 °C",
+      "inFahrenheit2": "-459.67 °F"
+    },
+    {
+      "value": "-273.15",
+      "scale": "F",
+      "celsius": "-169.52777777777777777777777778",
+      "fahrenheit": "-273.1500000000000000000000000",
+      "kelvin": "103.62222222222222222222222222",
+      "toString": "-273.15 °F",
+      "normalized": "103.62222222222222222222222222 K",
+      "inCelsius": "-169.52777777777777777777777778 °C",
+      "inFahrenheit2": "-273.15 °F"
+    },
+    {
+      "value": "-273.15",
+      "scale": "K",
+      "celsius": "-546.30",
+      "fahrenheit": "-951.34",
+      "kelvin": "-273.15",
+      "toString": "-273.15 K",
+      "normalized": "-273.15 K",
+      "inCelsius": "-546.3 °C",
+      "inFahrenheit2": "-951.34 °F"
+    },
+    {
+      "value": "451",
+      "scale": "C",
+      "celsius": "451.00",
+      "fahrenheit": "843.80",
+      "kelvin": "724.15",
+      "toString": "451 °C",
+      "normalized": "724.15 K",
+      "inCelsius": "451 °C",
+      "inFahrenheit2": "843.8 °F"
+    },
+    {
+      "value": "451",
+      "scale": "F",
+      "celsius": "232.77777777777777777777777778",
+      "fahrenheit": "451.0000000000000000000000000",
+      "kelvin": "505.92777777777777777777777778",
+      "toString": "451 °F",
+      "normalized": "505.92777777777777777777777778 K",
+      "inCelsius": "232.77777777777777777777777778 °C",
+      "inFahrenheit2": "451 °F"
+    },
+    {
+      "value": "451",
+      "scale": "K",
+      "celsius": "177.85",
+      "fahrenheit": "352.13",
+      "kelvin": "451",
+      "toString": "451 K",
+      "normalized": "451 K",
+      "inCelsius": "177.85 °C",
+      "inFahrenheit2": "352.13 °F"
+    },
+    {
+      "value": "0.001",
+      "scale": "C",
+      "celsius": "0.001",
+      "fahrenheit": "32.0018",
+      "kelvin": "273.151",
+      "toString": "0.001 °C",
+      "normalized": "273.151 K",
+      "inCelsius": "0.001 °C",
+      "inFahrenheit2": "32 °F"
+    },
+    {
+      "value": "0.001",
+      "scale": "F",
+      "celsius": "-17.77722222222222222222222222",
+      "fahrenheit": "0.001000000000000000000000004",
+      "kelvin": "255.37277777777777777777777778",
+      "toString": "0.001000000000000000000000004 °F",
+      "normalized": "255.37277777777777777777777778 K",
+      "inCelsius": "-17.77722222222222222222222222 °C",
+      "inFahrenheit2": "0 °F"
+    },
+    {
+      "value": "0.001",
+      "scale": "K",
+      "celsius": "-273.149",
+      "fahrenheit": "-459.6682",
+      "kelvin": "0.001",
+      "toString": "0.001 K",
+      "normalized": "0.001 K",
+      "inCelsius": "-273.149 °C",
+      "inFahrenheit2": "-459.67 °F"
+    }
+  ],
+  "deltas": [
+    { "value": "0", "from": "K", "kelvin": "0", "celsius": "0", "fahrenheit": "0" },
+    { "value": "0", "from": "C", "kelvin": "0", "celsius": "0", "fahrenheit": "0" },
+    { "value": "0", "from": "F", "kelvin": "0", "celsius": "0", "fahrenheit": "0" },
+    { "value": "1", "from": "K", "kelvin": "1", "celsius": "1", "fahrenheit": "1.8" },
+    { "value": "1", "from": "C", "kelvin": "1", "celsius": "1", "fahrenheit": "1.8" },
+    {
+      "value": "1",
+      "from": "F",
+      "kelvin": "0.5555555555555555555555555556",
+      "celsius": "0.5555555555555555555555555556",
+      "fahrenheit": "1.0000000000000000000000000001"
+    },
+    { "value": "5", "from": "K", "kelvin": "5", "celsius": "5", "fahrenheit": "9" },
+    { "value": "5", "from": "C", "kelvin": "5", "celsius": "5", "fahrenheit": "9" },
+    {
+      "value": "5",
+      "from": "F",
+      "kelvin": "2.7777777777777777777777777778",
+      "celsius": "2.7777777777777777777777777778",
+      "fahrenheit": "5.000000000000000000000000000"
+    },
+    { "value": "-5", "from": "K", "kelvin": "-5", "celsius": "-5", "fahrenheit": "-9" },
+    { "value": "-5", "from": "C", "kelvin": "-5", "celsius": "-5", "fahrenheit": "-9" },
+    {
+      "value": "-5",
+      "from": "F",
+      "kelvin": "-2.7777777777777777777777777778",
+      "celsius": "-2.7777777777777777777777777778",
+      "fahrenheit": "-5.000000000000000000000000000"
+    },
+    { "value": "100", "from": "K", "kelvin": "100", "celsius": "100", "fahrenheit": "180" },
+    { "value": "100", "from": "C", "kelvin": "100", "celsius": "100", "fahrenheit": "180" },
+    {
+      "value": "100",
+      "from": "F",
+      "kelvin": "55.555555555555555555555555556",
+      "celsius": "55.555555555555555555555555556",
+      "fahrenheit": "100.00000000000000000000000000"
+    },
+    { "value": "2.5", "from": "K", "kelvin": "2.5", "celsius": "2.5", "fahrenheit": "4.5" },
+    { "value": "2.5", "from": "C", "kelvin": "2.5", "celsius": "2.5", "fahrenheit": "4.5" },
+    {
+      "value": "2.5",
+      "from": "F",
+      "kelvin": "1.3888888888888888888888888889",
+      "celsius": "1.3888888888888888888888888889",
+      "fahrenheit": "2.500000000000000000000000000"
+    }
+  ],
+  "arithmetic": [
+    {
+      "temperature": "20 °C",
+      "deltaKelvin": "5",
+      "plus": "25 °C",
+      "minus": "15 °C",
+      "plusNormalized": "298.15 K"
+    },
+    {
+      "temperature": "100 K",
+      "deltaKelvin": "0.5",
+      "plus": "100.5 K",
+      "minus": "99.5 K",
+      "plusNormalized": "100.5 K"
+    },
+    {
+      "temperature": "32 °F",
+      "deltaKelvin": "-10",
+      "plus": "14 °F",
+      "minus": "50 °F",
+      "plusNormalized": "263.15 K"
+    }
+  ],
+  "differences": [
+    { "a": "20 °C", "b": "10 °C", "kelvin": "10.00", "fahrenheit": "18.00" },
+    { "a": "100 K", "b": "0 K", "kelvin": "100", "fahrenheit": "180" },
+    { "a": "212 °F", "b": "32 °F", "kelvin": "100.00", "fahrenheit": "180.00" }
+  ]
+}
