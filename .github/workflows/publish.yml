@@ -22,20 +22,18 @@ jobs:
       id-token: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
       # Deliberately not .nvmrc. That file pins the minimum runtime we support
       # for consumers; trusted publishing needs npm 11.5.1 or newer, which is
-      # what Node 24 ships. `registry-url` is also omitted on purpose: it makes
-      # setup-node write `_authToken=${NODE_AUTH_TOKEN}` into the runner .npmrc,
-      # and with no token that expands to an empty string which npm reads as
-      # "already authenticated", skipping the OIDC exchange and failing with
-      # ENEEDAUTH. The default registry is registry.npmjs.org either way.
+      # what Node 24 ships. `registry-url` is omitted because the default is
+      # already registry.npmjs.org and setting it only adds an `_authToken`
+      # line to the runner .npmrc, which is exactly what OIDC exists to avoid.
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: "24"
 

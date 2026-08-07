@@ -8,7 +8,7 @@ exactly how much of that surface is implemented here.
 |                   |                            |
 | ----------------- | -------------------------- |
 | .NET baseline     | `Buildi.Primitives` 0.21.0 |
-| This package      | `0.1.0` (unreleased)       |
+| This package      | `0.1.1`                    |
 | Namespaces ported | 10 of 13                   |
 | Types ported      | 111 of 200                 |
 

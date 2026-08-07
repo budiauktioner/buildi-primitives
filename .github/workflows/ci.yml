@@ -15,13 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v6
 
+      # `cache` is explicit because setup-node v6 stopped enabling caching
+      # automatically for anything but npm.
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version-file: .nvmrc
           cache: pnpm
@@ -54,7 +56,7 @@ jobs:
         run: pnpm pack --pack-destination ./artifacts
 
       - name: Upload npm package
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: buildi-primitives-npm
           path: artifacts/*.tgz
