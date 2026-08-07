@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class PowerUnit extends MeasurementUnit {
+  declare private readonly __powerUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Power Unit",
     localizedName: "Effektenhet",
@@ -97,7 +99,7 @@ export class PowerUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<PowerUnit>(
+  static readonly index: MeasurementUnitIndex<PowerUnit> = new MeasurementUnitIndex<PowerUnit>(
     [
       PowerUnit.Microwatt,
       PowerUnit.Milliwatt,

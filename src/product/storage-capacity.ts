@@ -76,10 +76,7 @@ export class StorageCapacity {
     const bare = tryParseNumberOnly(trimmed);
     if (bare !== null) {
       if (bare.compareTo(Decimal.zero) <= 0) return null;
-      return new StorageCapacity(
-        DataSize.fromGigabytes(bare),
-        `${formatQuantityDecimal(bare)} GB`,
-      );
+      return new StorageCapacity(DataSize.fromGigabytes(bare), `${formatQuantityDecimal(bare)} GB`);
     }
 
     const parsed = DataSize.tryParse(trimmed);
@@ -105,7 +102,10 @@ export class StorageCapacity {
     const parsed = StorageCapacity.tryParse(input);
     if (parsed !== null) {
       if (options?.unit !== undefined || options?.decimals !== undefined) {
-        return parsed.size.toStringInUnit(options.unit ?? parsed.size.originalUnit, options.decimals);
+        return parsed.size.toStringInUnit(
+          options.unit ?? parsed.size.originalUnit,
+          options.decimals,
+        );
       }
       return parsed.value;
     }
@@ -148,7 +148,9 @@ export class StorageCapacity {
   }
 
   times(factor: number | Decimal): StorageCapacity {
-    return new StorageCapacity(this.size.times(factor instanceof Decimal ? factor : decimalOf(factor)));
+    return new StorageCapacity(
+      this.size.times(factor instanceof Decimal ? factor : decimalOf(factor)),
+    );
   }
 
   dividedBy(divisor: number | Decimal): StorageCapacity {

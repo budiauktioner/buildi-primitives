@@ -97,7 +97,10 @@ export class ClothingSize {
   }
 
   /** Returns the display form of the resolved kind, e.g. `L` or `EU 128`. */
-  static format(input: string | null | undefined, options?: ClothingSizeFormatOptions): string | null {
+  static format(
+    input: string | null | undefined,
+    options?: ClothingSizeFormatOptions,
+  ): string | null {
     if (input == null || input.trim().length === 0) return null;
 
     const text = input.trim();

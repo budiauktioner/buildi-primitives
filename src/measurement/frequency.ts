@@ -65,6 +65,7 @@ export class Frequency extends Quantity<FrequencyUnit> {
 
   /** Creates a frequency from a value and unit. */
   static create(value: number | Decimal, unit: FrequencyUnit): Frequency {
+    FrequencyUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Frequency.decimalOf(value);
     return new Frequency(unit.toBase(amount), unit);
   }

@@ -1,9138 +1,1543 @@
 {
   "AspectRatio": [
-    [
-      "OneToOne",
-      "OneToOne",
-      0,
-      true
-    ],
-    [
-      "OneToOne",
-      "FourThree",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "FiveFour",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "ThreeTwo",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "OneToOne",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "OneToOne",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "FourThree",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "FourThree",
-      "FourThree",
-      0,
-      true
-    ],
-    [
-      "FourThree",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "FourThree",
-      "ThreeTwo",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "FourThree",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "FourThree",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "FiveFour",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "FiveFour",
-      "FourThree",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "FiveFour",
-      0,
-      true
-    ],
-    [
-      "FiveFour",
-      "ThreeTwo",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "FiveFour",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "FiveFour",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "ThreeTwo",
-      0,
-      true
-    ],
-    [
-      "ThreeTwo",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "ThreeTwo",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "ThreeTwo",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "SixteenTen",
-      0,
-      true
-    ],
-    [
-      "SixteenTen",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "SixteenTen",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "ThreeTwo",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "SixteenTen",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "SixteenNine",
-      0,
-      true
-    ],
-    [
-      "SixteenNine",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "SixteenNine",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "ThreeTwo",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "SixteenTen",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "SixteenNine",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "EighteenNine",
-      0,
-      true
-    ],
-    [
-      "EighteenNine",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "EighteenNine",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "ThreeTwo",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "SixteenTen",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "SixteenNine",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "EighteenNine",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "TwentyOneNine",
-      0,
-      true
-    ],
-    [
-      "TwentyOneNine",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "TwentyOneNine",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "OneToOne",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "FourThree",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "FiveFour",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "ThreeTwo",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "SixteenTen",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "SixteenNine",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "EighteenNine",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "TwentyOneNine",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "ThirtyTwoNine",
-      0,
-      true
-    ],
-    [
-      "ThirtyTwoNine",
-      "NineSixteen",
-      1,
-      false
-    ],
-    [
-      "ThirtyTwoNine",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "OneToOne",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "FourThree",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "FiveFour",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "ThreeTwo",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "NineSixteen",
-      "NineSixteen",
-      0,
-      true
-    ],
-    [
-      "NineSixteen",
-      "NineEighteen",
-      1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "OneToOne",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "FourThree",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "FiveFour",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "ThreeTwo",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "SixteenTen",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "SixteenNine",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "EighteenNine",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "TwentyOneNine",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "ThirtyTwoNine",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "NineSixteen",
-      -1,
-      false
-    ],
-    [
-      "NineEighteen",
-      "NineEighteen",
-      0,
-      true
-    ]
+    ["OneToOne", "OneToOne", 0, true],
+    ["OneToOne", "FourThree", -1, false],
+    ["OneToOne", "FiveFour", -1, false],
+    ["OneToOne", "ThreeTwo", -1, false],
+    ["OneToOne", "SixteenTen", -1, false],
+    ["OneToOne", "SixteenNine", -1, false],
+    ["OneToOne", "EighteenNine", -1, false],
+    ["OneToOne", "TwentyOneNine", -1, false],
+    ["OneToOne", "ThirtyTwoNine", -1, false],
+    ["OneToOne", "NineSixteen", 1, false],
+    ["OneToOne", "NineEighteen", 1, false],
+    ["FourThree", "OneToOne", 1, false],
+    ["FourThree", "FourThree", 0, true],
+    ["FourThree", "FiveFour", 1, false],
+    ["FourThree", "ThreeTwo", -1, false],
+    ["FourThree", "SixteenTen", -1, false],
+    ["FourThree", "SixteenNine", -1, false],
+    ["FourThree", "EighteenNine", -1, false],
+    ["FourThree", "TwentyOneNine", -1, false],
+    ["FourThree", "ThirtyTwoNine", -1, false],
+    ["FourThree", "NineSixteen", 1, false],
+    ["FourThree", "NineEighteen", 1, false],
+    ["FiveFour", "OneToOne", 1, false],
+    ["FiveFour", "FourThree", -1, false],
+    ["FiveFour", "FiveFour", 0, true],
+    ["FiveFour", "ThreeTwo", -1, false],
+    ["FiveFour", "SixteenTen", -1, false],
+    ["FiveFour", "SixteenNine", -1, false],
+    ["FiveFour", "EighteenNine", -1, false],
+    ["FiveFour", "TwentyOneNine", -1, false],
+    ["FiveFour", "ThirtyTwoNine", -1, false],
+    ["FiveFour", "NineSixteen", 1, false],
+    ["FiveFour", "NineEighteen", 1, false],
+    ["ThreeTwo", "OneToOne", 1, false],
+    ["ThreeTwo", "FourThree", 1, false],
+    ["ThreeTwo", "FiveFour", 1, false],
+    ["ThreeTwo", "ThreeTwo", 0, true],
+    ["ThreeTwo", "SixteenTen", -1, false],
+    ["ThreeTwo", "SixteenNine", -1, false],
+    ["ThreeTwo", "EighteenNine", -1, false],
+    ["ThreeTwo", "TwentyOneNine", -1, false],
+    ["ThreeTwo", "ThirtyTwoNine", -1, false],
+    ["ThreeTwo", "NineSixteen", 1, false],
+    ["ThreeTwo", "NineEighteen", 1, false],
+    ["SixteenTen", "OneToOne", 1, false],
+    ["SixteenTen", "FourThree", 1, false],
+    ["SixteenTen", "FiveFour", 1, false],
+    ["SixteenTen", "ThreeTwo", 1, false],
+    ["SixteenTen", "SixteenTen", 0, true],
+    ["SixteenTen", "SixteenNine", -1, false],
+    ["SixteenTen", "EighteenNine", -1, false],
+    ["SixteenTen", "TwentyOneNine", -1, false],
+    ["SixteenTen", "ThirtyTwoNine", -1, false],
+    ["SixteenTen", "NineSixteen", 1, false],
+    ["SixteenTen", "NineEighteen", 1, false],
+    ["SixteenNine", "OneToOne", 1, false],
+    ["SixteenNine", "FourThree", 1, false],
+    ["SixteenNine", "FiveFour", 1, false],
+    ["SixteenNine", "ThreeTwo", 1, false],
+    ["SixteenNine", "SixteenTen", 1, false],
+    ["SixteenNine", "SixteenNine", 0, true],
+    ["SixteenNine", "EighteenNine", -1, false],
+    ["SixteenNine", "TwentyOneNine", -1, false],
+    ["SixteenNine", "ThirtyTwoNine", -1, false],
+    ["SixteenNine", "NineSixteen", 1, false],
+    ["SixteenNine", "NineEighteen", 1, false],
+    ["EighteenNine", "OneToOne", 1, false],
+    ["EighteenNine", "FourThree", 1, false],
+    ["EighteenNine", "FiveFour", 1, false],
+    ["EighteenNine", "ThreeTwo", 1, false],
+    ["EighteenNine", "SixteenTen", 1, false],
+    ["EighteenNine", "SixteenNine", 1, false],
+    ["EighteenNine", "EighteenNine", 0, true],
+    ["EighteenNine", "TwentyOneNine", -1, false],
+    ["EighteenNine", "ThirtyTwoNine", -1, false],
+    ["EighteenNine", "NineSixteen", 1, false],
+    ["EighteenNine", "NineEighteen", 1, false],
+    ["TwentyOneNine", "OneToOne", 1, false],
+    ["TwentyOneNine", "FourThree", 1, false],
+    ["TwentyOneNine", "FiveFour", 1, false],
+    ["TwentyOneNine", "ThreeTwo", 1, false],
+    ["TwentyOneNine", "SixteenTen", 1, false],
+    ["TwentyOneNine", "SixteenNine", 1, false],
+    ["TwentyOneNine", "EighteenNine", 1, false],
+    ["TwentyOneNine", "TwentyOneNine", 0, true],
+    ["TwentyOneNine", "ThirtyTwoNine", -1, false],
+    ["TwentyOneNine", "NineSixteen", 1, false],
+    ["TwentyOneNine", "NineEighteen", 1, false],
+    ["ThirtyTwoNine", "OneToOne", 1, false],
+    ["ThirtyTwoNine", "FourThree", 1, false],
+    ["ThirtyTwoNine", "FiveFour", 1, false],
+    ["ThirtyTwoNine", "ThreeTwo", 1, false],
+    ["ThirtyTwoNine", "SixteenTen", 1, false],
+    ["ThirtyTwoNine", "SixteenNine", 1, false],
+    ["ThirtyTwoNine", "EighteenNine", 1, false],
+    ["ThirtyTwoNine", "TwentyOneNine", 1, false],
+    ["ThirtyTwoNine", "ThirtyTwoNine", 0, true],
+    ["ThirtyTwoNine", "NineSixteen", 1, false],
+    ["ThirtyTwoNine", "NineEighteen", 1, false],
+    ["NineSixteen", "OneToOne", -1, false],
+    ["NineSixteen", "FourThree", -1, false],
+    ["NineSixteen", "FiveFour", -1, false],
+    ["NineSixteen", "ThreeTwo", -1, false],
+    ["NineSixteen", "SixteenTen", -1, false],
+    ["NineSixteen", "SixteenNine", -1, false],
+    ["NineSixteen", "EighteenNine", -1, false],
+    ["NineSixteen", "TwentyOneNine", -1, false],
+    ["NineSixteen", "ThirtyTwoNine", -1, false],
+    ["NineSixteen", "NineSixteen", 0, true],
+    ["NineSixteen", "NineEighteen", 1, false],
+    ["NineEighteen", "OneToOne", -1, false],
+    ["NineEighteen", "FourThree", -1, false],
+    ["NineEighteen", "FiveFour", -1, false],
+    ["NineEighteen", "ThreeTwo", -1, false],
+    ["NineEighteen", "SixteenTen", -1, false],
+    ["NineEighteen", "SixteenNine", -1, false],
+    ["NineEighteen", "EighteenNine", -1, false],
+    ["NineEighteen", "TwentyOneNine", -1, false],
+    ["NineEighteen", "ThirtyTwoNine", -1, false],
+    ["NineEighteen", "NineSixteen", -1, false],
+    ["NineEighteen", "NineEighteen", 0, true]
   ],
   "BatteryChemistry": [
-    [
-      "LithiumIon",
-      "LithiumIon",
-      0,
-      true
-    ],
-    [
-      "LithiumIon",
-      "LiFePO4",
-      -1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "LithiumIon",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "LiFePO4",
-      0,
-      true
-    ],
-    [
-      "LiFePO4",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "LiFePO4",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "LiFePO4",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "LithiumPolymer",
-      0,
-      true
-    ],
-    [
-      "LithiumPolymer",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "LithiumPolymer",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "LithiumIon",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "LiFePO4",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "LithiumTitanate",
-      0,
-      true
-    ],
-    [
-      "LithiumTitanate",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "LithiumTitanate",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "LiFePO4",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "LithiumPolymer",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "NickelMetalHydride",
-      0,
-      true
-    ],
-    [
-      "NickelMetalHydride",
-      "NickelCadmium",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "NickelMetalHydride",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "LiFePO4",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "LithiumPolymer",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "NickelCadmium",
-      0,
-      true
-    ],
-    [
-      "NickelCadmium",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "NickelCadmium",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "LiFePO4",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "LithiumPolymer",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "NickelMetalHydride",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "NickelCadmium",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "FloodedLeadAcid",
-      0,
-      true
-    ],
-    [
-      "FloodedLeadAcid",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "FloodedLeadAcid",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "LithiumIon",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "LiFePO4",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "LithiumTitanate",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "AbsorbedGlassMat",
-      0,
-      true
-    ],
-    [
-      "AbsorbedGlassMat",
-      "GelLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "Alkaline",
-      -1,
-      false
-    ],
-    [
-      "AbsorbedGlassMat",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "LithiumIon",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "LiFePO4",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "LithiumTitanate",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "GelLeadAcid",
-      0,
-      true
-    ],
-    [
-      "GelLeadAcid",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "GelLeadAcid",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "LithiumIon",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "LiFePO4",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "LithiumPolymer",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "LithiumTitanate",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "NickelMetalHydride",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "NickelCadmium",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "FloodedLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "Alkaline",
-      "GelLeadAcid",
-      -1,
-      false
-    ],
-    [
-      "Alkaline",
-      "Alkaline",
-      0,
-      true
-    ],
-    [
-      "Alkaline",
-      "ZincCarbon",
-      -1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "LithiumIon",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "LiFePO4",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "LithiumPolymer",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "LithiumTitanate",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "NickelMetalHydride",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "NickelCadmium",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "FloodedLeadAcid",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "AbsorbedGlassMat",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "GelLeadAcid",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "Alkaline",
-      1,
-      false
-    ],
-    [
-      "ZincCarbon",
-      "ZincCarbon",
-      0,
-      true
-    ]
+    ["LithiumIon", "LithiumIon", 0, true],
+    ["LithiumIon", "LiFePO4", -1, false],
+    ["LithiumIon", "LithiumPolymer", -1, false],
+    ["LithiumIon", "LithiumTitanate", 1, false],
+    ["LithiumIon", "NickelMetalHydride", -1, false],
+    ["LithiumIon", "NickelCadmium", -1, false],
+    ["LithiumIon", "FloodedLeadAcid", -1, false],
+    ["LithiumIon", "AbsorbedGlassMat", 1, false],
+    ["LithiumIon", "GelLeadAcid", 1, false],
+    ["LithiumIon", "Alkaline", 1, false],
+    ["LithiumIon", "ZincCarbon", -1, false],
+    ["LiFePO4", "LithiumIon", 1, false],
+    ["LiFePO4", "LiFePO4", 0, true],
+    ["LiFePO4", "LithiumPolymer", -1, false],
+    ["LiFePO4", "LithiumTitanate", 1, false],
+    ["LiFePO4", "NickelMetalHydride", -1, false],
+    ["LiFePO4", "NickelCadmium", -1, false],
+    ["LiFePO4", "FloodedLeadAcid", -1, false],
+    ["LiFePO4", "AbsorbedGlassMat", 1, false],
+    ["LiFePO4", "GelLeadAcid", 1, false],
+    ["LiFePO4", "Alkaline", 1, false],
+    ["LiFePO4", "ZincCarbon", -1, false],
+    ["LithiumPolymer", "LithiumIon", 1, false],
+    ["LithiumPolymer", "LiFePO4", 1, false],
+    ["LithiumPolymer", "LithiumPolymer", 0, true],
+    ["LithiumPolymer", "LithiumTitanate", 1, false],
+    ["LithiumPolymer", "NickelMetalHydride", -1, false],
+    ["LithiumPolymer", "NickelCadmium", -1, false],
+    ["LithiumPolymer", "FloodedLeadAcid", -1, false],
+    ["LithiumPolymer", "AbsorbedGlassMat", 1, false],
+    ["LithiumPolymer", "GelLeadAcid", 1, false],
+    ["LithiumPolymer", "Alkaline", 1, false],
+    ["LithiumPolymer", "ZincCarbon", -1, false],
+    ["LithiumTitanate", "LithiumIon", -1, false],
+    ["LithiumTitanate", "LiFePO4", -1, false],
+    ["LithiumTitanate", "LithiumPolymer", -1, false],
+    ["LithiumTitanate", "LithiumTitanate", 0, true],
+    ["LithiumTitanate", "NickelMetalHydride", -1, false],
+    ["LithiumTitanate", "NickelCadmium", -1, false],
+    ["LithiumTitanate", "FloodedLeadAcid", -1, false],
+    ["LithiumTitanate", "AbsorbedGlassMat", 1, false],
+    ["LithiumTitanate", "GelLeadAcid", 1, false],
+    ["LithiumTitanate", "Alkaline", 1, false],
+    ["LithiumTitanate", "ZincCarbon", -1, false],
+    ["NickelMetalHydride", "LithiumIon", 1, false],
+    ["NickelMetalHydride", "LiFePO4", 1, false],
+    ["NickelMetalHydride", "LithiumPolymer", 1, false],
+    ["NickelMetalHydride", "LithiumTitanate", 1, false],
+    ["NickelMetalHydride", "NickelMetalHydride", 0, true],
+    ["NickelMetalHydride", "NickelCadmium", 1, false],
+    ["NickelMetalHydride", "FloodedLeadAcid", -1, false],
+    ["NickelMetalHydride", "AbsorbedGlassMat", 1, false],
+    ["NickelMetalHydride", "GelLeadAcid", 1, false],
+    ["NickelMetalHydride", "Alkaline", 1, false],
+    ["NickelMetalHydride", "ZincCarbon", -1, false],
+    ["NickelCadmium", "LithiumIon", 1, false],
+    ["NickelCadmium", "LiFePO4", 1, false],
+    ["NickelCadmium", "LithiumPolymer", 1, false],
+    ["NickelCadmium", "LithiumTitanate", 1, false],
+    ["NickelCadmium", "NickelMetalHydride", -1, false],
+    ["NickelCadmium", "NickelCadmium", 0, true],
+    ["NickelCadmium", "FloodedLeadAcid", -1, false],
+    ["NickelCadmium", "AbsorbedGlassMat", 1, false],
+    ["NickelCadmium", "GelLeadAcid", 1, false],
+    ["NickelCadmium", "Alkaline", 1, false],
+    ["NickelCadmium", "ZincCarbon", -1, false],
+    ["FloodedLeadAcid", "LithiumIon", 1, false],
+    ["FloodedLeadAcid", "LiFePO4", 1, false],
+    ["FloodedLeadAcid", "LithiumPolymer", 1, false],
+    ["FloodedLeadAcid", "LithiumTitanate", 1, false],
+    ["FloodedLeadAcid", "NickelMetalHydride", 1, false],
+    ["FloodedLeadAcid", "NickelCadmium", 1, false],
+    ["FloodedLeadAcid", "FloodedLeadAcid", 0, true],
+    ["FloodedLeadAcid", "AbsorbedGlassMat", 1, false],
+    ["FloodedLeadAcid", "GelLeadAcid", 1, false],
+    ["FloodedLeadAcid", "Alkaline", 1, false],
+    ["FloodedLeadAcid", "ZincCarbon", -1, false],
+    ["AbsorbedGlassMat", "LithiumIon", -1, false],
+    ["AbsorbedGlassMat", "LiFePO4", -1, false],
+    ["AbsorbedGlassMat", "LithiumPolymer", -1, false],
+    ["AbsorbedGlassMat", "LithiumTitanate", -1, false],
+    ["AbsorbedGlassMat", "NickelMetalHydride", -1, false],
+    ["AbsorbedGlassMat", "NickelCadmium", -1, false],
+    ["AbsorbedGlassMat", "FloodedLeadAcid", -1, false],
+    ["AbsorbedGlassMat", "AbsorbedGlassMat", 0, true],
+    ["AbsorbedGlassMat", "GelLeadAcid", -1, false],
+    ["AbsorbedGlassMat", "Alkaline", -1, false],
+    ["AbsorbedGlassMat", "ZincCarbon", -1, false],
+    ["GelLeadAcid", "LithiumIon", -1, false],
+    ["GelLeadAcid", "LiFePO4", -1, false],
+    ["GelLeadAcid", "LithiumPolymer", -1, false],
+    ["GelLeadAcid", "LithiumTitanate", -1, false],
+    ["GelLeadAcid", "NickelMetalHydride", -1, false],
+    ["GelLeadAcid", "NickelCadmium", -1, false],
+    ["GelLeadAcid", "FloodedLeadAcid", -1, false],
+    ["GelLeadAcid", "AbsorbedGlassMat", 1, false],
+    ["GelLeadAcid", "GelLeadAcid", 0, true],
+    ["GelLeadAcid", "Alkaline", 1, false],
+    ["GelLeadAcid", "ZincCarbon", -1, false],
+    ["Alkaline", "LithiumIon", -1, false],
+    ["Alkaline", "LiFePO4", -1, false],
+    ["Alkaline", "LithiumPolymer", -1, false],
+    ["Alkaline", "LithiumTitanate", -1, false],
+    ["Alkaline", "NickelMetalHydride", -1, false],
+    ["Alkaline", "NickelCadmium", -1, false],
+    ["Alkaline", "FloodedLeadAcid", -1, false],
+    ["Alkaline", "AbsorbedGlassMat", 1, false],
+    ["Alkaline", "GelLeadAcid", -1, false],
+    ["Alkaline", "Alkaline", 0, true],
+    ["Alkaline", "ZincCarbon", -1, false],
+    ["ZincCarbon", "LithiumIon", 1, false],
+    ["ZincCarbon", "LiFePO4", 1, false],
+    ["ZincCarbon", "LithiumPolymer", 1, false],
+    ["ZincCarbon", "LithiumTitanate", 1, false],
+    ["ZincCarbon", "NickelMetalHydride", 1, false],
+    ["ZincCarbon", "NickelCadmium", 1, false],
+    ["ZincCarbon", "FloodedLeadAcid", 1, false],
+    ["ZincCarbon", "AbsorbedGlassMat", 1, false],
+    ["ZincCarbon", "GelLeadAcid", 1, false],
+    ["ZincCarbon", "Alkaline", 1, false],
+    ["ZincCarbon", "ZincCarbon", 0, true]
   ],
   "ClothingFit": [
-    [
-      "Slim",
-      "Slim",
-      0,
-      true
-    ],
-    [
-      "Slim",
-      "Regular",
-      -1,
-      false
-    ],
-    [
-      "Slim",
-      "Loose",
-      -1,
-      false
-    ],
-    [
-      "Slim",
-      "Oversized",
-      -1,
-      false
-    ],
-    [
-      "Slim",
-      "Tailored",
-      -1,
-      false
-    ],
-    [
-      "Regular",
-      "Slim",
-      1,
-      false
-    ],
-    [
-      "Regular",
-      "Regular",
-      0,
-      true
-    ],
-    [
-      "Regular",
-      "Loose",
-      -1,
-      false
-    ],
-    [
-      "Regular",
-      "Oversized",
-      -1,
-      false
-    ],
-    [
-      "Regular",
-      "Tailored",
-      -1,
-      false
-    ],
-    [
-      "Loose",
-      "Slim",
-      1,
-      false
-    ],
-    [
-      "Loose",
-      "Regular",
-      1,
-      false
-    ],
-    [
-      "Loose",
-      "Loose",
-      0,
-      true
-    ],
-    [
-      "Loose",
-      "Oversized",
-      -1,
-      false
-    ],
-    [
-      "Loose",
-      "Tailored",
-      -1,
-      false
-    ],
-    [
-      "Oversized",
-      "Slim",
-      1,
-      false
-    ],
-    [
-      "Oversized",
-      "Regular",
-      1,
-      false
-    ],
-    [
-      "Oversized",
-      "Loose",
-      1,
-      false
-    ],
-    [
-      "Oversized",
-      "Oversized",
-      0,
-      true
-    ],
-    [
-      "Oversized",
-      "Tailored",
-      -1,
-      false
-    ],
-    [
-      "Tailored",
-      "Slim",
-      1,
-      false
-    ],
-    [
-      "Tailored",
-      "Regular",
-      1,
-      false
-    ],
-    [
-      "Tailored",
-      "Loose",
-      1,
-      false
-    ],
-    [
-      "Tailored",
-      "Oversized",
-      1,
-      false
-    ],
-    [
-      "Tailored",
-      "Tailored",
-      0,
-      true
-    ]
+    ["Slim", "Slim", 0, true],
+    ["Slim", "Regular", -1, false],
+    ["Slim", "Loose", -1, false],
+    ["Slim", "Oversized", -1, false],
+    ["Slim", "Tailored", -1, false],
+    ["Regular", "Slim", 1, false],
+    ["Regular", "Regular", 0, true],
+    ["Regular", "Loose", -1, false],
+    ["Regular", "Oversized", -1, false],
+    ["Regular", "Tailored", -1, false],
+    ["Loose", "Slim", 1, false],
+    ["Loose", "Regular", 1, false],
+    ["Loose", "Loose", 0, true],
+    ["Loose", "Oversized", -1, false],
+    ["Loose", "Tailored", -1, false],
+    ["Oversized", "Slim", 1, false],
+    ["Oversized", "Regular", 1, false],
+    ["Oversized", "Loose", 1, false],
+    ["Oversized", "Oversized", 0, true],
+    ["Oversized", "Tailored", -1, false],
+    ["Tailored", "Slim", 1, false],
+    ["Tailored", "Regular", 1, false],
+    ["Tailored", "Loose", 1, false],
+    ["Tailored", "Oversized", 1, false],
+    ["Tailored", "Tailored", 0, true]
   ],
   "ClothingGender": [
-    [
-      "Male",
-      "Male",
-      0,
-      true
-    ],
-    [
-      "Male",
-      "Female",
-      -1,
-      false
-    ],
-    [
-      "Male",
-      "Unisex",
-      -1,
-      false
-    ],
-    [
-      "Male",
-      "Boys",
-      -1,
-      false
-    ],
-    [
-      "Male",
-      "Girls",
-      -1,
-      false
-    ],
-    [
-      "Female",
-      "Male",
-      1,
-      false
-    ],
-    [
-      "Female",
-      "Female",
-      0,
-      true
-    ],
-    [
-      "Female",
-      "Unisex",
-      -1,
-      false
-    ],
-    [
-      "Female",
-      "Boys",
-      -1,
-      false
-    ],
-    [
-      "Female",
-      "Girls",
-      -1,
-      false
-    ],
-    [
-      "Unisex",
-      "Male",
-      1,
-      false
-    ],
-    [
-      "Unisex",
-      "Female",
-      1,
-      false
-    ],
-    [
-      "Unisex",
-      "Unisex",
-      0,
-      true
-    ],
-    [
-      "Unisex",
-      "Boys",
-      -1,
-      false
-    ],
-    [
-      "Unisex",
-      "Girls",
-      -1,
-      false
-    ],
-    [
-      "Boys",
-      "Male",
-      1,
-      false
-    ],
-    [
-      "Boys",
-      "Female",
-      1,
-      false
-    ],
-    [
-      "Boys",
-      "Unisex",
-      1,
-      false
-    ],
-    [
-      "Boys",
-      "Boys",
-      0,
-      true
-    ],
-    [
-      "Boys",
-      "Girls",
-      -1,
-      false
-    ],
-    [
-      "Girls",
-      "Male",
-      1,
-      false
-    ],
-    [
-      "Girls",
-      "Female",
-      1,
-      false
-    ],
-    [
-      "Girls",
-      "Unisex",
-      1,
-      false
-    ],
-    [
-      "Girls",
-      "Boys",
-      1,
-      false
-    ],
-    [
-      "Girls",
-      "Girls",
-      0,
-      true
-    ]
+    ["Male", "Male", 0, true],
+    ["Male", "Female", -1, false],
+    ["Male", "Unisex", -1, false],
+    ["Male", "Boys", -1, false],
+    ["Male", "Girls", -1, false],
+    ["Female", "Male", 1, false],
+    ["Female", "Female", 0, true],
+    ["Female", "Unisex", -1, false],
+    ["Female", "Boys", -1, false],
+    ["Female", "Girls", -1, false],
+    ["Unisex", "Male", 1, false],
+    ["Unisex", "Female", 1, false],
+    ["Unisex", "Unisex", 0, true],
+    ["Unisex", "Boys", -1, false],
+    ["Unisex", "Girls", -1, false],
+    ["Boys", "Male", 1, false],
+    ["Boys", "Female", 1, false],
+    ["Boys", "Unisex", 1, false],
+    ["Boys", "Boys", 0, true],
+    ["Boys", "Girls", -1, false],
+    ["Girls", "Male", 1, false],
+    ["Girls", "Female", 1, false],
+    ["Girls", "Unisex", 1, false],
+    ["Girls", "Boys", 1, false],
+    ["Girls", "Girls", 0, true]
   ],
   "ClothingSeason": [
-    [
-      "Spring",
-      "Spring",
-      0,
-      true
-    ],
-    [
-      "Spring",
-      "Summer",
-      -1,
-      false
-    ],
-    [
-      "Spring",
-      "Autumn",
-      -1,
-      false
-    ],
-    [
-      "Spring",
-      "Winter",
-      -1,
-      false
-    ],
-    [
-      "Spring",
-      "AllSeason",
-      -1,
-      false
-    ],
-    [
-      "Summer",
-      "Spring",
-      1,
-      false
-    ],
-    [
-      "Summer",
-      "Summer",
-      0,
-      true
-    ],
-    [
-      "Summer",
-      "Autumn",
-      -1,
-      false
-    ],
-    [
-      "Summer",
-      "Winter",
-      -1,
-      false
-    ],
-    [
-      "Summer",
-      "AllSeason",
-      -1,
-      false
-    ],
-    [
-      "Autumn",
-      "Spring",
-      1,
-      false
-    ],
-    [
-      "Autumn",
-      "Summer",
-      1,
-      false
-    ],
-    [
-      "Autumn",
-      "Autumn",
-      0,
-      true
-    ],
-    [
-      "Autumn",
-      "Winter",
-      -1,
-      false
-    ],
-    [
-      "Autumn",
-      "AllSeason",
-      -1,
-      false
-    ],
-    [
-      "Winter",
-      "Spring",
-      1,
-      false
-    ],
-    [
-      "Winter",
-      "Summer",
-      1,
-      false
-    ],
-    [
-      "Winter",
-      "Autumn",
-      1,
-      false
-    ],
-    [
-      "Winter",
-      "Winter",
-      0,
-      true
-    ],
-    [
-      "Winter",
-      "AllSeason",
-      -1,
-      false
-    ],
-    [
-      "AllSeason",
-      "Spring",
-      1,
-      false
-    ],
-    [
-      "AllSeason",
-      "Summer",
-      1,
-      false
-    ],
-    [
-      "AllSeason",
-      "Autumn",
-      1,
-      false
-    ],
-    [
-      "AllSeason",
-      "Winter",
-      1,
-      false
-    ],
-    [
-      "AllSeason",
-      "AllSeason",
-      0,
-      true
-    ]
+    ["Spring", "Spring", 0, true],
+    ["Spring", "Summer", -1, false],
+    ["Spring", "Autumn", -1, false],
+    ["Spring", "Winter", -1, false],
+    ["Spring", "AllSeason", -1, false],
+    ["Summer", "Spring", 1, false],
+    ["Summer", "Summer", 0, true],
+    ["Summer", "Autumn", -1, false],
+    ["Summer", "Winter", -1, false],
+    ["Summer", "AllSeason", -1, false],
+    ["Autumn", "Spring", 1, false],
+    ["Autumn", "Summer", 1, false],
+    ["Autumn", "Autumn", 0, true],
+    ["Autumn", "Winter", -1, false],
+    ["Autumn", "AllSeason", -1, false],
+    ["Winter", "Spring", 1, false],
+    ["Winter", "Summer", 1, false],
+    ["Winter", "Autumn", 1, false],
+    ["Winter", "Winter", 0, true],
+    ["Winter", "AllSeason", -1, false],
+    ["AllSeason", "Spring", 1, false],
+    ["AllSeason", "Summer", 1, false],
+    ["AllSeason", "Autumn", 1, false],
+    ["AllSeason", "Winter", 1, false],
+    ["AllSeason", "AllSeason", 0, true]
   ],
   "DisplayPanelType": [
-    [
-      "Lcd",
-      "Lcd",
-      0,
-      true
-    ],
-    [
-      "Lcd",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Lcd",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Lcd",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "MicroLed",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Lcd",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Lcd",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Lcd",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Tn",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Tn",
-      0,
-      true
-    ],
-    [
-      "Tn",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Tn",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Qled",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "QdOled",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Plasma",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Tn",
-      "Tft",
-      1,
-      false
-    ],
-    [
-      "Ips",
-      "Lcd",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Ips",
-      0,
-      true
-    ],
-    [
-      "Ips",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Ips",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "MicroLed",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Ips",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Ips",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Ips",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Va",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Tn",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Va",
-      0,
-      true
-    ],
-    [
-      "Va",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Qled",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "QdOled",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Plasma",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Va",
-      "Tft",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "Pls",
-      0,
-      true
-    ],
-    [
-      "Pls",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Pls",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Pls",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Oled",
-      0,
-      true
-    ],
-    [
-      "Oled",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Oled",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Oled",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Lcd",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Ips",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Amoled",
-      0,
-      true
-    ],
-    [
-      "Amoled",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "MicroLed",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Crt",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "EInk",
-      -1,
-      false
-    ],
-    [
-      "Amoled",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "PmOled",
-      0,
-      true
-    ],
-    [
-      "PmOled",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "PmOled",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "PmOled",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Qled",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Qled",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Qled",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Qled",
-      0,
-      true
-    ],
-    [
-      "Qled",
-      "QdOled",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Plasma",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Qled",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "QdOled",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "QdOled",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "QdOled",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "QdOled",
-      "QdOled",
-      0,
-      true
-    ],
-    [
-      "QdOled",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Plasma",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "QdOled",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "MiniLed",
-      0,
-      true
-    ],
-    [
-      "MiniLed",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "MiniLed",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "MicroLed",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "MicroLed",
-      0,
-      true
-    ],
-    [
-      "MicroLed",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "MicroLed",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "MicroLed",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Plasma",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Plasma",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Plasma",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Plasma",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Plasma",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Plasma",
-      0,
-      true
-    ],
-    [
-      "Plasma",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Plasma",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Lcd",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Ips",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Crt",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "MicroLed",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Crt",
-      0,
-      true
-    ],
-    [
-      "Crt",
-      "EInk",
-      -1,
-      false
-    ],
-    [
-      "Crt",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Lcd",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Ips",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Pls",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Oled",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "EInk",
-      "PmOled",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Qled",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "QdOled",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "MiniLed",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "MicroLed",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Plasma",
-      -1,
-      false
-    ],
-    [
-      "EInk",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "EInk",
-      "EInk",
-      0,
-      true
-    ],
-    [
-      "EInk",
-      "Tft",
-      -1,
-      false
-    ],
-    [
-      "Tft",
-      "Lcd",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Tn",
-      -1,
-      false
-    ],
-    [
-      "Tft",
-      "Ips",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Va",
-      -1,
-      false
-    ],
-    [
-      "Tft",
-      "Pls",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Oled",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Amoled",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "PmOled",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Qled",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "QdOled",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "MiniLed",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "MicroLed",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Plasma",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Crt",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "EInk",
-      1,
-      false
-    ],
-    [
-      "Tft",
-      "Tft",
-      0,
-      true
-    ]
+    ["Lcd", "Lcd", 0, true],
+    ["Lcd", "Tn", -1, false],
+    ["Lcd", "Ips", 1, false],
+    ["Lcd", "Va", -1, false],
+    ["Lcd", "Pls", -1, false],
+    ["Lcd", "Oled", -1, false],
+    ["Lcd", "Amoled", 1, false],
+    ["Lcd", "PmOled", -1, false],
+    ["Lcd", "Qled", -1, false],
+    ["Lcd", "QdOled", -1, false],
+    ["Lcd", "MiniLed", -1, false],
+    ["Lcd", "MicroLed", -1, false],
+    ["Lcd", "Plasma", -1, false],
+    ["Lcd", "Crt", 1, false],
+    ["Lcd", "EInk", 1, false],
+    ["Lcd", "Tft", -1, false],
+    ["Tn", "Lcd", 1, false],
+    ["Tn", "Tn", 0, true],
+    ["Tn", "Ips", 1, false],
+    ["Tn", "Va", -1, false],
+    ["Tn", "Pls", 1, false],
+    ["Tn", "Oled", 1, false],
+    ["Tn", "Amoled", 1, false],
+    ["Tn", "PmOled", 1, false],
+    ["Tn", "Qled", 1, false],
+    ["Tn", "QdOled", 1, false],
+    ["Tn", "MiniLed", 1, false],
+    ["Tn", "MicroLed", 1, false],
+    ["Tn", "Plasma", 1, false],
+    ["Tn", "Crt", 1, false],
+    ["Tn", "EInk", 1, false],
+    ["Tn", "Tft", 1, false],
+    ["Ips", "Lcd", -1, false],
+    ["Ips", "Tn", -1, false],
+    ["Ips", "Ips", 0, true],
+    ["Ips", "Va", -1, false],
+    ["Ips", "Pls", -1, false],
+    ["Ips", "Oled", -1, false],
+    ["Ips", "Amoled", 1, false],
+    ["Ips", "PmOled", -1, false],
+    ["Ips", "Qled", -1, false],
+    ["Ips", "QdOled", -1, false],
+    ["Ips", "MiniLed", -1, false],
+    ["Ips", "MicroLed", -1, false],
+    ["Ips", "Plasma", -1, false],
+    ["Ips", "Crt", 1, false],
+    ["Ips", "EInk", 1, false],
+    ["Ips", "Tft", -1, false],
+    ["Va", "Lcd", 1, false],
+    ["Va", "Tn", 1, false],
+    ["Va", "Ips", 1, false],
+    ["Va", "Va", 0, true],
+    ["Va", "Pls", 1, false],
+    ["Va", "Oled", 1, false],
+    ["Va", "Amoled", 1, false],
+    ["Va", "PmOled", 1, false],
+    ["Va", "Qled", 1, false],
+    ["Va", "QdOled", 1, false],
+    ["Va", "MiniLed", 1, false],
+    ["Va", "MicroLed", 1, false],
+    ["Va", "Plasma", 1, false],
+    ["Va", "Crt", 1, false],
+    ["Va", "EInk", 1, false],
+    ["Va", "Tft", 1, false],
+    ["Pls", "Lcd", 1, false],
+    ["Pls", "Tn", -1, false],
+    ["Pls", "Ips", 1, false],
+    ["Pls", "Va", -1, false],
+    ["Pls", "Pls", 0, true],
+    ["Pls", "Oled", 1, false],
+    ["Pls", "Amoled", 1, false],
+    ["Pls", "PmOled", -1, false],
+    ["Pls", "Qled", -1, false],
+    ["Pls", "QdOled", -1, false],
+    ["Pls", "MiniLed", 1, false],
+    ["Pls", "MicroLed", 1, false],
+    ["Pls", "Plasma", -1, false],
+    ["Pls", "Crt", 1, false],
+    ["Pls", "EInk", 1, false],
+    ["Pls", "Tft", -1, false],
+    ["Oled", "Lcd", 1, false],
+    ["Oled", "Tn", -1, false],
+    ["Oled", "Ips", 1, false],
+    ["Oled", "Va", -1, false],
+    ["Oled", "Pls", -1, false],
+    ["Oled", "Oled", 0, true],
+    ["Oled", "Amoled", 1, false],
+    ["Oled", "PmOled", -1, false],
+    ["Oled", "Qled", -1, false],
+    ["Oled", "QdOled", -1, false],
+    ["Oled", "MiniLed", 1, false],
+    ["Oled", "MicroLed", 1, false],
+    ["Oled", "Plasma", -1, false],
+    ["Oled", "Crt", 1, false],
+    ["Oled", "EInk", 1, false],
+    ["Oled", "Tft", -1, false],
+    ["Amoled", "Lcd", -1, false],
+    ["Amoled", "Tn", -1, false],
+    ["Amoled", "Ips", -1, false],
+    ["Amoled", "Va", -1, false],
+    ["Amoled", "Pls", -1, false],
+    ["Amoled", "Oled", -1, false],
+    ["Amoled", "Amoled", 0, true],
+    ["Amoled", "PmOled", -1, false],
+    ["Amoled", "Qled", -1, false],
+    ["Amoled", "QdOled", -1, false],
+    ["Amoled", "MiniLed", -1, false],
+    ["Amoled", "MicroLed", -1, false],
+    ["Amoled", "Plasma", -1, false],
+    ["Amoled", "Crt", -1, false],
+    ["Amoled", "EInk", -1, false],
+    ["Amoled", "Tft", -1, false],
+    ["PmOled", "Lcd", 1, false],
+    ["PmOled", "Tn", -1, false],
+    ["PmOled", "Ips", 1, false],
+    ["PmOled", "Va", -1, false],
+    ["PmOled", "Pls", 1, false],
+    ["PmOled", "Oled", 1, false],
+    ["PmOled", "Amoled", 1, false],
+    ["PmOled", "PmOled", 0, true],
+    ["PmOled", "Qled", -1, false],
+    ["PmOled", "QdOled", -1, false],
+    ["PmOled", "MiniLed", 1, false],
+    ["PmOled", "MicroLed", 1, false],
+    ["PmOled", "Plasma", -1, false],
+    ["PmOled", "Crt", 1, false],
+    ["PmOled", "EInk", 1, false],
+    ["PmOled", "Tft", -1, false],
+    ["Qled", "Lcd", 1, false],
+    ["Qled", "Tn", -1, false],
+    ["Qled", "Ips", 1, false],
+    ["Qled", "Va", -1, false],
+    ["Qled", "Pls", 1, false],
+    ["Qled", "Oled", 1, false],
+    ["Qled", "Amoled", 1, false],
+    ["Qled", "PmOled", 1, false],
+    ["Qled", "Qled", 0, true],
+    ["Qled", "QdOled", 1, false],
+    ["Qled", "MiniLed", 1, false],
+    ["Qled", "MicroLed", 1, false],
+    ["Qled", "Plasma", 1, false],
+    ["Qled", "Crt", 1, false],
+    ["Qled", "EInk", 1, false],
+    ["Qled", "Tft", -1, false],
+    ["QdOled", "Lcd", 1, false],
+    ["QdOled", "Tn", -1, false],
+    ["QdOled", "Ips", 1, false],
+    ["QdOled", "Va", -1, false],
+    ["QdOled", "Pls", 1, false],
+    ["QdOled", "Oled", 1, false],
+    ["QdOled", "Amoled", 1, false],
+    ["QdOled", "PmOled", 1, false],
+    ["QdOled", "Qled", -1, false],
+    ["QdOled", "QdOled", 0, true],
+    ["QdOled", "MiniLed", 1, false],
+    ["QdOled", "MicroLed", 1, false],
+    ["QdOled", "Plasma", 1, false],
+    ["QdOled", "Crt", 1, false],
+    ["QdOled", "EInk", 1, false],
+    ["QdOled", "Tft", -1, false],
+    ["MiniLed", "Lcd", 1, false],
+    ["MiniLed", "Tn", -1, false],
+    ["MiniLed", "Ips", 1, false],
+    ["MiniLed", "Va", -1, false],
+    ["MiniLed", "Pls", -1, false],
+    ["MiniLed", "Oled", -1, false],
+    ["MiniLed", "Amoled", 1, false],
+    ["MiniLed", "PmOled", -1, false],
+    ["MiniLed", "Qled", -1, false],
+    ["MiniLed", "QdOled", -1, false],
+    ["MiniLed", "MiniLed", 0, true],
+    ["MiniLed", "MicroLed", 1, false],
+    ["MiniLed", "Plasma", -1, false],
+    ["MiniLed", "Crt", 1, false],
+    ["MiniLed", "EInk", 1, false],
+    ["MiniLed", "Tft", -1, false],
+    ["MicroLed", "Lcd", 1, false],
+    ["MicroLed", "Tn", -1, false],
+    ["MicroLed", "Ips", 1, false],
+    ["MicroLed", "Va", -1, false],
+    ["MicroLed", "Pls", -1, false],
+    ["MicroLed", "Oled", -1, false],
+    ["MicroLed", "Amoled", 1, false],
+    ["MicroLed", "PmOled", -1, false],
+    ["MicroLed", "Qled", -1, false],
+    ["MicroLed", "QdOled", -1, false],
+    ["MicroLed", "MiniLed", -1, false],
+    ["MicroLed", "MicroLed", 0, true],
+    ["MicroLed", "Plasma", -1, false],
+    ["MicroLed", "Crt", 1, false],
+    ["MicroLed", "EInk", 1, false],
+    ["MicroLed", "Tft", -1, false],
+    ["Plasma", "Lcd", 1, false],
+    ["Plasma", "Tn", -1, false],
+    ["Plasma", "Ips", 1, false],
+    ["Plasma", "Va", -1, false],
+    ["Plasma", "Pls", 1, false],
+    ["Plasma", "Oled", 1, false],
+    ["Plasma", "Amoled", 1, false],
+    ["Plasma", "PmOled", 1, false],
+    ["Plasma", "Qled", -1, false],
+    ["Plasma", "QdOled", -1, false],
+    ["Plasma", "MiniLed", 1, false],
+    ["Plasma", "MicroLed", 1, false],
+    ["Plasma", "Plasma", 0, true],
+    ["Plasma", "Crt", 1, false],
+    ["Plasma", "EInk", 1, false],
+    ["Plasma", "Tft", -1, false],
+    ["Crt", "Lcd", -1, false],
+    ["Crt", "Tn", -1, false],
+    ["Crt", "Ips", -1, false],
+    ["Crt", "Va", -1, false],
+    ["Crt", "Pls", -1, false],
+    ["Crt", "Oled", -1, false],
+    ["Crt", "Amoled", 1, false],
+    ["Crt", "PmOled", -1, false],
+    ["Crt", "Qled", -1, false],
+    ["Crt", "QdOled", -1, false],
+    ["Crt", "MiniLed", -1, false],
+    ["Crt", "MicroLed", -1, false],
+    ["Crt", "Plasma", -1, false],
+    ["Crt", "Crt", 0, true],
+    ["Crt", "EInk", -1, false],
+    ["Crt", "Tft", -1, false],
+    ["EInk", "Lcd", -1, false],
+    ["EInk", "Tn", -1, false],
+    ["EInk", "Ips", -1, false],
+    ["EInk", "Va", -1, false],
+    ["EInk", "Pls", -1, false],
+    ["EInk", "Oled", -1, false],
+    ["EInk", "Amoled", 1, false],
+    ["EInk", "PmOled", -1, false],
+    ["EInk", "Qled", -1, false],
+    ["EInk", "QdOled", -1, false],
+    ["EInk", "MiniLed", -1, false],
+    ["EInk", "MicroLed", -1, false],
+    ["EInk", "Plasma", -1, false],
+    ["EInk", "Crt", 1, false],
+    ["EInk", "EInk", 0, true],
+    ["EInk", "Tft", -1, false],
+    ["Tft", "Lcd", 1, false],
+    ["Tft", "Tn", -1, false],
+    ["Tft", "Ips", 1, false],
+    ["Tft", "Va", -1, false],
+    ["Tft", "Pls", 1, false],
+    ["Tft", "Oled", 1, false],
+    ["Tft", "Amoled", 1, false],
+    ["Tft", "PmOled", 1, false],
+    ["Tft", "Qled", 1, false],
+    ["Tft", "QdOled", 1, false],
+    ["Tft", "MiniLed", 1, false],
+    ["Tft", "MicroLed", 1, false],
+    ["Tft", "Plasma", 1, false],
+    ["Tft", "Crt", 1, false],
+    ["Tft", "EInk", 1, false],
+    ["Tft", "Tft", 0, true]
   ],
   "ElectricalPhase": [
-    [
-      "SinglePhase",
-      "SinglePhase",
-      0,
-      true
-    ],
-    [
-      "SinglePhase",
-      "TwoPhase",
-      -1,
-      false
-    ],
-    [
-      "SinglePhase",
-      "ThreePhase",
-      -1,
-      false
-    ],
-    [
-      "TwoPhase",
-      "SinglePhase",
-      1,
-      false
-    ],
-    [
-      "TwoPhase",
-      "TwoPhase",
-      0,
-      true
-    ],
-    [
-      "TwoPhase",
-      "ThreePhase",
-      -1,
-      false
-    ],
-    [
-      "ThreePhase",
-      "SinglePhase",
-      1,
-      false
-    ],
-    [
-      "ThreePhase",
-      "TwoPhase",
-      1,
-      false
-    ],
-    [
-      "ThreePhase",
-      "ThreePhase",
-      0,
-      true
-    ]
+    ["SinglePhase", "SinglePhase", 0, true],
+    ["SinglePhase", "TwoPhase", -1, false],
+    ["SinglePhase", "ThreePhase", -1, false],
+    ["TwoPhase", "SinglePhase", 1, false],
+    ["TwoPhase", "TwoPhase", 0, true],
+    ["TwoPhase", "ThreePhase", -1, false],
+    ["ThreePhase", "SinglePhase", 1, false],
+    ["ThreePhase", "TwoPhase", 1, false],
+    ["ThreePhase", "ThreePhase", 0, true]
   ],
   "EuEnergyEfficiencyClass": [
-    [
-      "APlusPlusPlus",
-      "APlusPlusPlus",
-      0,
-      true
-    ],
-    [
-      "APlusPlusPlus",
-      "APlusPlus",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "APlus",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewA",
-      0,
-      true
-    ],
-    [
-      "APlusPlusPlus",
-      "NewB",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewC",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "APlusPlusPlus",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "APlusPlus",
-      0,
-      true
-    ],
-    [
-      "APlusPlus",
-      "APlus",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewB",
-      0,
-      true
-    ],
-    [
-      "APlusPlus",
-      "NewC",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "APlusPlus",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "APlus",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "APlus",
-      "APlus",
-      0,
-      true
-    ],
-    [
-      "APlus",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "APlus",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "APlus",
-      "NewC",
-      0,
-      true
-    ],
-    [
-      "APlus",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "APlus",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "A",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "A",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "A",
-      "A",
-      0,
-      true
-    ],
-    [
-      "A",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "A",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "A",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "A",
-      "NewD",
-      0,
-      true
-    ],
-    [
-      "A",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "A",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "B",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "B",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "B",
-      "A",
-      1,
-      false
-    ],
-    [
-      "B",
-      "B",
-      0,
-      true
-    ],
-    [
-      "B",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "B",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "B",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "B",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "B",
-      "NewE",
-      0,
-      true
-    ],
-    [
-      "B",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "B",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "C",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "C",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "C",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "C",
-      "A",
-      1,
-      false
-    ],
-    [
-      "C",
-      "B",
-      1,
-      false
-    ],
-    [
-      "C",
-      "C",
-      0,
-      true
-    ],
-    [
-      "C",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "C",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "C",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "C",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "C",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "C",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "C",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "C",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "C",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "C",
-      "NewF",
-      0,
-      true
-    ],
-    [
-      "C",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "D",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "D",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "D",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "D",
-      "A",
-      1,
-      false
-    ],
-    [
-      "D",
-      "B",
-      1,
-      false
-    ],
-    [
-      "D",
-      "C",
-      1,
-      false
-    ],
-    [
-      "D",
-      "D",
-      0,
-      true
-    ],
-    [
-      "D",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "D",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "D",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "D",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewF",
-      1,
-      false
-    ],
-    [
-      "D",
-      "NewG",
-      0,
-      true
-    ],
-    [
-      "E",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "E",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "E",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "E",
-      "A",
-      1,
-      false
-    ],
-    [
-      "E",
-      "B",
-      1,
-      false
-    ],
-    [
-      "E",
-      "C",
-      1,
-      false
-    ],
-    [
-      "E",
-      "D",
-      1,
-      false
-    ],
-    [
-      "E",
-      "E",
-      0,
-      true
-    ],
-    [
-      "E",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "E",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "E",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewF",
-      1,
-      false
-    ],
-    [
-      "E",
-      "NewG",
-      1,
-      false
-    ],
-    [
-      "F",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "F",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "F",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "F",
-      "A",
-      1,
-      false
-    ],
-    [
-      "F",
-      "B",
-      1,
-      false
-    ],
-    [
-      "F",
-      "C",
-      1,
-      false
-    ],
-    [
-      "F",
-      "D",
-      1,
-      false
-    ],
-    [
-      "F",
-      "E",
-      1,
-      false
-    ],
-    [
-      "F",
-      "F",
-      0,
-      true
-    ],
-    [
-      "F",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "F",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewF",
-      1,
-      false
-    ],
-    [
-      "F",
-      "NewG",
-      1,
-      false
-    ],
-    [
-      "G",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "G",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "G",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "G",
-      "A",
-      1,
-      false
-    ],
-    [
-      "G",
-      "B",
-      1,
-      false
-    ],
-    [
-      "G",
-      "C",
-      1,
-      false
-    ],
-    [
-      "G",
-      "D",
-      1,
-      false
-    ],
-    [
-      "G",
-      "E",
-      1,
-      false
-    ],
-    [
-      "G",
-      "F",
-      1,
-      false
-    ],
-    [
-      "G",
-      "G",
-      0,
-      true
-    ],
-    [
-      "G",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewF",
-      1,
-      false
-    ],
-    [
-      "G",
-      "NewG",
-      1,
-      false
-    ],
-    [
-      "NewA",
-      "APlusPlusPlus",
-      0,
-      true
-    ],
-    [
-      "NewA",
-      "APlusPlus",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "APlus",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewA",
-      0,
-      true
-    ],
-    [
-      "NewA",
-      "NewB",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewC",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "NewA",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewB",
-      "APlusPlus",
-      0,
-      true
-    ],
-    [
-      "NewB",
-      "APlus",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewB",
-      "NewB",
-      0,
-      true
-    ],
-    [
-      "NewB",
-      "NewC",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "NewB",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewC",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewC",
-      "APlus",
-      0,
-      true
-    ],
-    [
-      "NewC",
-      "A",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewC",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "NewC",
-      "NewC",
-      0,
-      true
-    ],
-    [
-      "NewC",
-      "NewD",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "NewC",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "A",
-      0,
-      true
-    ],
-    [
-      "NewD",
-      "B",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "NewD",
-      "NewD",
-      0,
-      true
-    ],
-    [
-      "NewD",
-      "NewE",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "NewD",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "A",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "B",
-      0,
-      true
-    ],
-    [
-      "NewE",
-      "C",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "NewE",
-      "NewE",
-      0,
-      true
-    ],
-    [
-      "NewE",
-      "NewF",
-      -1,
-      false
-    ],
-    [
-      "NewE",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewF",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "A",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "B",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "C",
-      0,
-      true
-    ],
-    [
-      "NewF",
-      "D",
-      -1,
-      false
-    ],
-    [
-      "NewF",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewF",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewF",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewF",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "NewF",
-      "NewF",
-      0,
-      true
-    ],
-    [
-      "NewF",
-      "NewG",
-      -1,
-      false
-    ],
-    [
-      "NewG",
-      "APlusPlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "APlusPlus",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "APlus",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "A",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "B",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "C",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "D",
-      0,
-      true
-    ],
-    [
-      "NewG",
-      "E",
-      -1,
-      false
-    ],
-    [
-      "NewG",
-      "F",
-      -1,
-      false
-    ],
-    [
-      "NewG",
-      "G",
-      -1,
-      false
-    ],
-    [
-      "NewG",
-      "NewA",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewB",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewC",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewD",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewE",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewF",
-      1,
-      false
-    ],
-    [
-      "NewG",
-      "NewG",
-      0,
-      true
-    ]
+    ["APlusPlusPlus", "APlusPlusPlus", 0, true],
+    ["APlusPlusPlus", "APlusPlus", -1, false],
+    ["APlusPlusPlus", "APlus", -1, false],
+    ["APlusPlusPlus", "A", -1, false],
+    ["APlusPlusPlus", "B", -1, false],
+    ["APlusPlusPlus", "C", -1, false],
+    ["APlusPlusPlus", "D", -1, false],
+    ["APlusPlusPlus", "E", -1, false],
+    ["APlusPlusPlus", "F", -1, false],
+    ["APlusPlusPlus", "G", -1, false],
+    ["APlusPlusPlus", "NewA", 0, true],
+    ["APlusPlusPlus", "NewB", -1, false],
+    ["APlusPlusPlus", "NewC", -1, false],
+    ["APlusPlusPlus", "NewD", -1, false],
+    ["APlusPlusPlus", "NewE", -1, false],
+    ["APlusPlusPlus", "NewF", -1, false],
+    ["APlusPlusPlus", "NewG", -1, false],
+    ["APlusPlus", "APlusPlusPlus", 1, false],
+    ["APlusPlus", "APlusPlus", 0, true],
+    ["APlusPlus", "APlus", -1, false],
+    ["APlusPlus", "A", -1, false],
+    ["APlusPlus", "B", -1, false],
+    ["APlusPlus", "C", -1, false],
+    ["APlusPlus", "D", -1, false],
+    ["APlusPlus", "E", -1, false],
+    ["APlusPlus", "F", -1, false],
+    ["APlusPlus", "G", -1, false],
+    ["APlusPlus", "NewA", 1, false],
+    ["APlusPlus", "NewB", 0, true],
+    ["APlusPlus", "NewC", -1, false],
+    ["APlusPlus", "NewD", -1, false],
+    ["APlusPlus", "NewE", -1, false],
+    ["APlusPlus", "NewF", -1, false],
+    ["APlusPlus", "NewG", -1, false],
+    ["APlus", "APlusPlusPlus", 1, false],
+    ["APlus", "APlusPlus", 1, false],
+    ["APlus", "APlus", 0, true],
+    ["APlus", "A", -1, false],
+    ["APlus", "B", -1, false],
+    ["APlus", "C", -1, false],
+    ["APlus", "D", -1, false],
+    ["APlus", "E", -1, false],
+    ["APlus", "F", -1, false],
+    ["APlus", "G", -1, false],
+    ["APlus", "NewA", 1, false],
+    ["APlus", "NewB", 1, false],
+    ["APlus", "NewC", 0, true],
+    ["APlus", "NewD", -1, false],
+    ["APlus", "NewE", -1, false],
+    ["APlus", "NewF", -1, false],
+    ["APlus", "NewG", -1, false],
+    ["A", "APlusPlusPlus", 1, false],
+    ["A", "APlusPlus", 1, false],
+    ["A", "APlus", 1, false],
+    ["A", "A", 0, true],
+    ["A", "B", -1, false],
+    ["A", "C", -1, false],
+    ["A", "D", -1, false],
+    ["A", "E", -1, false],
+    ["A", "F", -1, false],
+    ["A", "G", -1, false],
+    ["A", "NewA", 1, false],
+    ["A", "NewB", 1, false],
+    ["A", "NewC", 1, false],
+    ["A", "NewD", 0, true],
+    ["A", "NewE", -1, false],
+    ["A", "NewF", -1, false],
+    ["A", "NewG", -1, false],
+    ["B", "APlusPlusPlus", 1, false],
+    ["B", "APlusPlus", 1, false],
+    ["B", "APlus", 1, false],
+    ["B", "A", 1, false],
+    ["B", "B", 0, true],
+    ["B", "C", -1, false],
+    ["B", "D", -1, false],
+    ["B", "E", -1, false],
+    ["B", "F", -1, false],
+    ["B", "G", -1, false],
+    ["B", "NewA", 1, false],
+    ["B", "NewB", 1, false],
+    ["B", "NewC", 1, false],
+    ["B", "NewD", 1, false],
+    ["B", "NewE", 0, true],
+    ["B", "NewF", -1, false],
+    ["B", "NewG", -1, false],
+    ["C", "APlusPlusPlus", 1, false],
+    ["C", "APlusPlus", 1, false],
+    ["C", "APlus", 1, false],
+    ["C", "A", 1, false],
+    ["C", "B", 1, false],
+    ["C", "C", 0, true],
+    ["C", "D", -1, false],
+    ["C", "E", -1, false],
+    ["C", "F", -1, false],
+    ["C", "G", -1, false],
+    ["C", "NewA", 1, false],
+    ["C", "NewB", 1, false],
+    ["C", "NewC", 1, false],
+    ["C", "NewD", 1, false],
+    ["C", "NewE", 1, false],
+    ["C", "NewF", 0, true],
+    ["C", "NewG", -1, false],
+    ["D", "APlusPlusPlus", 1, false],
+    ["D", "APlusPlus", 1, false],
+    ["D", "APlus", 1, false],
+    ["D", "A", 1, false],
+    ["D", "B", 1, false],
+    ["D", "C", 1, false],
+    ["D", "D", 0, true],
+    ["D", "E", -1, false],
+    ["D", "F", -1, false],
+    ["D", "G", -1, false],
+    ["D", "NewA", 1, false],
+    ["D", "NewB", 1, false],
+    ["D", "NewC", 1, false],
+    ["D", "NewD", 1, false],
+    ["D", "NewE", 1, false],
+    ["D", "NewF", 1, false],
+    ["D", "NewG", 0, true],
+    ["E", "APlusPlusPlus", 1, false],
+    ["E", "APlusPlus", 1, false],
+    ["E", "APlus", 1, false],
+    ["E", "A", 1, false],
+    ["E", "B", 1, false],
+    ["E", "C", 1, false],
+    ["E", "D", 1, false],
+    ["E", "E", 0, true],
+    ["E", "F", -1, false],
+    ["E", "G", -1, false],
+    ["E", "NewA", 1, false],
+    ["E", "NewB", 1, false],
+    ["E", "NewC", 1, false],
+    ["E", "NewD", 1, false],
+    ["E", "NewE", 1, false],
+    ["E", "NewF", 1, false],
+    ["E", "NewG", 1, false],
+    ["F", "APlusPlusPlus", 1, false],
+    ["F", "APlusPlus", 1, false],
+    ["F", "APlus", 1, false],
+    ["F", "A", 1, false],
+    ["F", "B", 1, false],
+    ["F", "C", 1, false],
+    ["F", "D", 1, false],
+    ["F", "E", 1, false],
+    ["F", "F", 0, true],
+    ["F", "G", -1, false],
+    ["F", "NewA", 1, false],
+    ["F", "NewB", 1, false],
+    ["F", "NewC", 1, false],
+    ["F", "NewD", 1, false],
+    ["F", "NewE", 1, false],
+    ["F", "NewF", 1, false],
+    ["F", "NewG", 1, false],
+    ["G", "APlusPlusPlus", 1, false],
+    ["G", "APlusPlus", 1, false],
+    ["G", "APlus", 1, false],
+    ["G", "A", 1, false],
+    ["G", "B", 1, false],
+    ["G", "C", 1, false],
+    ["G", "D", 1, false],
+    ["G", "E", 1, false],
+    ["G", "F", 1, false],
+    ["G", "G", 0, true],
+    ["G", "NewA", 1, false],
+    ["G", "NewB", 1, false],
+    ["G", "NewC", 1, false],
+    ["G", "NewD", 1, false],
+    ["G", "NewE", 1, false],
+    ["G", "NewF", 1, false],
+    ["G", "NewG", 1, false],
+    ["NewA", "APlusPlusPlus", 0, true],
+    ["NewA", "APlusPlus", -1, false],
+    ["NewA", "APlus", -1, false],
+    ["NewA", "A", -1, false],
+    ["NewA", "B", -1, false],
+    ["NewA", "C", -1, false],
+    ["NewA", "D", -1, false],
+    ["NewA", "E", -1, false],
+    ["NewA", "F", -1, false],
+    ["NewA", "G", -1, false],
+    ["NewA", "NewA", 0, true],
+    ["NewA", "NewB", -1, false],
+    ["NewA", "NewC", -1, false],
+    ["NewA", "NewD", -1, false],
+    ["NewA", "NewE", -1, false],
+    ["NewA", "NewF", -1, false],
+    ["NewA", "NewG", -1, false],
+    ["NewB", "APlusPlusPlus", 1, false],
+    ["NewB", "APlusPlus", 0, true],
+    ["NewB", "APlus", -1, false],
+    ["NewB", "A", -1, false],
+    ["NewB", "B", -1, false],
+    ["NewB", "C", -1, false],
+    ["NewB", "D", -1, false],
+    ["NewB", "E", -1, false],
+    ["NewB", "F", -1, false],
+    ["NewB", "G", -1, false],
+    ["NewB", "NewA", 1, false],
+    ["NewB", "NewB", 0, true],
+    ["NewB", "NewC", -1, false],
+    ["NewB", "NewD", -1, false],
+    ["NewB", "NewE", -1, false],
+    ["NewB", "NewF", -1, false],
+    ["NewB", "NewG", -1, false],
+    ["NewC", "APlusPlusPlus", 1, false],
+    ["NewC", "APlusPlus", 1, false],
+    ["NewC", "APlus", 0, true],
+    ["NewC", "A", -1, false],
+    ["NewC", "B", -1, false],
+    ["NewC", "C", -1, false],
+    ["NewC", "D", -1, false],
+    ["NewC", "E", -1, false],
+    ["NewC", "F", -1, false],
+    ["NewC", "G", -1, false],
+    ["NewC", "NewA", 1, false],
+    ["NewC", "NewB", 1, false],
+    ["NewC", "NewC", 0, true],
+    ["NewC", "NewD", -1, false],
+    ["NewC", "NewE", -1, false],
+    ["NewC", "NewF", -1, false],
+    ["NewC", "NewG", -1, false],
+    ["NewD", "APlusPlusPlus", 1, false],
+    ["NewD", "APlusPlus", 1, false],
+    ["NewD", "APlus", 1, false],
+    ["NewD", "A", 0, true],
+    ["NewD", "B", -1, false],
+    ["NewD", "C", -1, false],
+    ["NewD", "D", -1, false],
+    ["NewD", "E", -1, false],
+    ["NewD", "F", -1, false],
+    ["NewD", "G", -1, false],
+    ["NewD", "NewA", 1, false],
+    ["NewD", "NewB", 1, false],
+    ["NewD", "NewC", 1, false],
+    ["NewD", "NewD", 0, true],
+    ["NewD", "NewE", -1, false],
+    ["NewD", "NewF", -1, false],
+    ["NewD", "NewG", -1, false],
+    ["NewE", "APlusPlusPlus", 1, false],
+    ["NewE", "APlusPlus", 1, false],
+    ["NewE", "APlus", 1, false],
+    ["NewE", "A", 1, false],
+    ["NewE", "B", 0, true],
+    ["NewE", "C", -1, false],
+    ["NewE", "D", -1, false],
+    ["NewE", "E", -1, false],
+    ["NewE", "F", -1, false],
+    ["NewE", "G", -1, false],
+    ["NewE", "NewA", 1, false],
+    ["NewE", "NewB", 1, false],
+    ["NewE", "NewC", 1, false],
+    ["NewE", "NewD", 1, false],
+    ["NewE", "NewE", 0, true],
+    ["NewE", "NewF", -1, false],
+    ["NewE", "NewG", -1, false],
+    ["NewF", "APlusPlusPlus", 1, false],
+    ["NewF", "APlusPlus", 1, false],
+    ["NewF", "APlus", 1, false],
+    ["NewF", "A", 1, false],
+    ["NewF", "B", 1, false],
+    ["NewF", "C", 0, true],
+    ["NewF", "D", -1, false],
+    ["NewF", "E", -1, false],
+    ["NewF", "F", -1, false],
+    ["NewF", "G", -1, false],
+    ["NewF", "NewA", 1, false],
+    ["NewF", "NewB", 1, false],
+    ["NewF", "NewC", 1, false],
+    ["NewF", "NewD", 1, false],
+    ["NewF", "NewE", 1, false],
+    ["NewF", "NewF", 0, true],
+    ["NewF", "NewG", -1, false],
+    ["NewG", "APlusPlusPlus", 1, false],
+    ["NewG", "APlusPlus", 1, false],
+    ["NewG", "APlus", 1, false],
+    ["NewG", "A", 1, false],
+    ["NewG", "B", 1, false],
+    ["NewG", "C", 1, false],
+    ["NewG", "D", 0, true],
+    ["NewG", "E", -1, false],
+    ["NewG", "F", -1, false],
+    ["NewG", "G", -1, false],
+    ["NewG", "NewA", 1, false],
+    ["NewG", "NewB", 1, false],
+    ["NewG", "NewC", 1, false],
+    ["NewG", "NewD", 1, false],
+    ["NewG", "NewE", 1, false],
+    ["NewG", "NewF", 1, false],
+    ["NewG", "NewG", 0, true]
   ],
   "PowerSource": [
-    [
-      "Electric",
-      "Electric",
-      0,
-      true
-    ],
-    [
-      "Electric",
-      "Battery",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Solar",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Hybrid",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Petrol",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Diesel",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Electric",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Battery",
-      "Battery",
-      0,
-      true
-    ],
-    [
-      "Battery",
-      "Solar",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Hybrid",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Petrol",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Diesel",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Battery",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Solar",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Solar",
-      "Solar",
-      0,
-      true
-    ],
-    [
-      "Solar",
-      "Hybrid",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Petrol",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Diesel",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Solar",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Hybrid",
-      0,
-      true
-    ],
-    [
-      "Hybrid",
-      "Petrol",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Diesel",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Hybrid",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Petrol",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Petrol",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Petrol",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Petrol",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Petrol",
-      "Petrol",
-      0,
-      true
-    ],
-    [
-      "Petrol",
-      "Diesel",
-      -1,
-      false
-    ],
-    [
-      "Petrol",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Petrol",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Petrol",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Petrol",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Diesel",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Diesel",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Diesel",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Diesel",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Diesel",
-      "Petrol",
-      1,
-      false
-    ],
-    [
-      "Diesel",
-      "Diesel",
-      0,
-      true
-    ],
-    [
-      "Diesel",
-      "Hydrogen",
-      -1,
-      false
-    ],
-    [
-      "Diesel",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Diesel",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Diesel",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Petrol",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Diesel",
-      1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Hydrogen",
-      0,
-      true
-    ],
-    [
-      "Hydrogen",
-      "Pneumatic",
-      -1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Hydrogen",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Petrol",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Diesel",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Hydrogen",
-      1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Pneumatic",
-      0,
-      true
-    ],
-    [
-      "Pneumatic",
-      "Hydraulic",
-      -1,
-      false
-    ],
-    [
-      "Pneumatic",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Petrol",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Diesel",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Hydrogen",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Pneumatic",
-      1,
-      false
-    ],
-    [
-      "Hydraulic",
-      "Hydraulic",
-      0,
-      true
-    ],
-    [
-      "Hydraulic",
-      "Manual",
-      -1,
-      false
-    ],
-    [
-      "Manual",
-      "Electric",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Battery",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Solar",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Hybrid",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Petrol",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Diesel",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Hydrogen",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Pneumatic",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Hydraulic",
-      1,
-      false
-    ],
-    [
-      "Manual",
-      "Manual",
-      0,
-      true
-    ]
+    ["Electric", "Electric", 0, true],
+    ["Electric", "Battery", -1, false],
+    ["Electric", "Solar", -1, false],
+    ["Electric", "Hybrid", -1, false],
+    ["Electric", "Petrol", -1, false],
+    ["Electric", "Diesel", -1, false],
+    ["Electric", "Hydrogen", -1, false],
+    ["Electric", "Pneumatic", -1, false],
+    ["Electric", "Hydraulic", -1, false],
+    ["Electric", "Manual", -1, false],
+    ["Battery", "Electric", 1, false],
+    ["Battery", "Battery", 0, true],
+    ["Battery", "Solar", -1, false],
+    ["Battery", "Hybrid", -1, false],
+    ["Battery", "Petrol", -1, false],
+    ["Battery", "Diesel", -1, false],
+    ["Battery", "Hydrogen", -1, false],
+    ["Battery", "Pneumatic", -1, false],
+    ["Battery", "Hydraulic", -1, false],
+    ["Battery", "Manual", -1, false],
+    ["Solar", "Electric", 1, false],
+    ["Solar", "Battery", 1, false],
+    ["Solar", "Solar", 0, true],
+    ["Solar", "Hybrid", -1, false],
+    ["Solar", "Petrol", -1, false],
+    ["Solar", "Diesel", -1, false],
+    ["Solar", "Hydrogen", -1, false],
+    ["Solar", "Pneumatic", -1, false],
+    ["Solar", "Hydraulic", -1, false],
+    ["Solar", "Manual", -1, false],
+    ["Hybrid", "Electric", 1, false],
+    ["Hybrid", "Battery", 1, false],
+    ["Hybrid", "Solar", 1, false],
+    ["Hybrid", "Hybrid", 0, true],
+    ["Hybrid", "Petrol", -1, false],
+    ["Hybrid", "Diesel", -1, false],
+    ["Hybrid", "Hydrogen", -1, false],
+    ["Hybrid", "Pneumatic", -1, false],
+    ["Hybrid", "Hydraulic", -1, false],
+    ["Hybrid", "Manual", -1, false],
+    ["Petrol", "Electric", 1, false],
+    ["Petrol", "Battery", 1, false],
+    ["Petrol", "Solar", 1, false],
+    ["Petrol", "Hybrid", 1, false],
+    ["Petrol", "Petrol", 0, true],
+    ["Petrol", "Diesel", -1, false],
+    ["Petrol", "Hydrogen", -1, false],
+    ["Petrol", "Pneumatic", -1, false],
+    ["Petrol", "Hydraulic", -1, false],
+    ["Petrol", "Manual", -1, false],
+    ["Diesel", "Electric", 1, false],
+    ["Diesel", "Battery", 1, false],
+    ["Diesel", "Solar", 1, false],
+    ["Diesel", "Hybrid", 1, false],
+    ["Diesel", "Petrol", 1, false],
+    ["Diesel", "Diesel", 0, true],
+    ["Diesel", "Hydrogen", -1, false],
+    ["Diesel", "Pneumatic", -1, false],
+    ["Diesel", "Hydraulic", -1, false],
+    ["Diesel", "Manual", -1, false],
+    ["Hydrogen", "Electric", 1, false],
+    ["Hydrogen", "Battery", 1, false],
+    ["Hydrogen", "Solar", 1, false],
+    ["Hydrogen", "Hybrid", 1, false],
+    ["Hydrogen", "Petrol", 1, false],
+    ["Hydrogen", "Diesel", 1, false],
+    ["Hydrogen", "Hydrogen", 0, true],
+    ["Hydrogen", "Pneumatic", -1, false],
+    ["Hydrogen", "Hydraulic", -1, false],
+    ["Hydrogen", "Manual", -1, false],
+    ["Pneumatic", "Electric", 1, false],
+    ["Pneumatic", "Battery", 1, false],
+    ["Pneumatic", "Solar", 1, false],
+    ["Pneumatic", "Hybrid", 1, false],
+    ["Pneumatic", "Petrol", 1, false],
+    ["Pneumatic", "Diesel", 1, false],
+    ["Pneumatic", "Hydrogen", 1, false],
+    ["Pneumatic", "Pneumatic", 0, true],
+    ["Pneumatic", "Hydraulic", -1, false],
+    ["Pneumatic", "Manual", -1, false],
+    ["Hydraulic", "Electric", 1, false],
+    ["Hydraulic", "Battery", 1, false],
+    ["Hydraulic", "Solar", 1, false],
+    ["Hydraulic", "Hybrid", 1, false],
+    ["Hydraulic", "Petrol", 1, false],
+    ["Hydraulic", "Diesel", 1, false],
+    ["Hydraulic", "Hydrogen", 1, false],
+    ["Hydraulic", "Pneumatic", 1, false],
+    ["Hydraulic", "Hydraulic", 0, true],
+    ["Hydraulic", "Manual", -1, false],
+    ["Manual", "Electric", 1, false],
+    ["Manual", "Battery", 1, false],
+    ["Manual", "Solar", 1, false],
+    ["Manual", "Hybrid", 1, false],
+    ["Manual", "Petrol", 1, false],
+    ["Manual", "Diesel", 1, false],
+    ["Manual", "Hydrogen", 1, false],
+    ["Manual", "Pneumatic", 1, false],
+    ["Manual", "Hydraulic", 1, false],
+    ["Manual", "Manual", 0, true]
   ],
   "Refrigerant": [
-    [
-      "R12",
-      "R12",
-      0,
-      true
-    ],
-    [
-      "R12",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R134a",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R1234yf",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R1234ze",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R1233zd",
-      -1,
-      false
-    ],
-    [
-      "R12",
-      "R1270",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R22",
-      "R22",
-      0,
-      true
-    ],
-    [
-      "R22",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R22",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R22",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R22",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R22",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R22",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R32",
-      0,
-      true
-    ],
-    [
-      "R32",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R32",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R32",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R134a",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R134a",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R134a",
-      0,
-      true
-    ],
-    [
-      "R134a",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R134a",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R134a",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R134a",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R134a",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R290",
-      0,
-      true
-    ],
-    [
-      "R290",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R290",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R290",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R404A",
-      0,
-      true
-    ],
-    [
-      "R404A",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R404A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R404A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R407C",
-      0,
-      true
-    ],
-    [
-      "R407C",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R407C",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R407C",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R407F",
-      0,
-      true
-    ],
-    [
-      "R407F",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R407F",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R407F",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R410A",
-      0,
-      true
-    ],
-    [
-      "R410A",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R410A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R410A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R448A",
-      0,
-      true
-    ],
-    [
-      "R448A",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R448A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R448A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R449A",
-      0,
-      true
-    ],
-    [
-      "R449A",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R449A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R449A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R452A",
-      0,
-      true
-    ],
-    [
-      "R452A",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R452A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R452A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R507A",
-      0,
-      true
-    ],
-    [
-      "R507A",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R507A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R507A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R507A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R507A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R507A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R507A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R507A",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R513A",
-      0,
-      true
-    ],
-    [
-      "R513A",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R513A",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R513A",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R513A",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R513A",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R513A",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R507A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R513A",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R600a",
-      0,
-      true
-    ],
-    [
-      "R600a",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R600a",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R600a",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R600a",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R600a",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R507A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R513A",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R600a",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R717",
-      0,
-      true
-    ],
-    [
-      "R717",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R717",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R717",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R717",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R507A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R513A",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R600a",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R717",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R718",
-      0,
-      true
-    ],
-    [
-      "R718",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R718",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R718",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R22",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R32",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R134a",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R290",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R404A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R407C",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R407F",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R410A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R448A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R449A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R452A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R507A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R513A",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R600a",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R717",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R718",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R744",
-      0,
-      true
-    ],
-    [
-      "R744",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R744",
-      "R1270",
-      1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R134a",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R1234yf",
-      0,
-      true
-    ],
-    [
-      "R1234yf",
-      "R1234ze",
-      -1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R1234yf",
-      "R1270",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R134a",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R1234ze",
-      0,
-      true
-    ],
-    [
-      "R1234ze",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R1234ze",
-      "R1270",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R134a",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R1234yf",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R1234ze",
-      -1,
-      false
-    ],
-    [
-      "R1233zd",
-      "R1233zd",
-      0,
-      true
-    ],
-    [
-      "R1233zd",
-      "R1270",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R12",
-      1,
-      false
-    ],
-    [
-      "R1270",
-      "R22",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R32",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R134a",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R290",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R404A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R407C",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R407F",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R410A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R448A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R449A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R452A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R507A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R513A",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R600a",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R717",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R718",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R744",
-      -1,
-      false
-    ],
-    [
-      "R1270",
-      "R1234yf",
-      1,
-      false
-    ],
-    [
-      "R1270",
-      "R1234ze",
-      1,
-      false
-    ],
-    [
-      "R1270",
-      "R1233zd",
-      1,
-      false
-    ],
-    [
-      "R1270",
-      "R1270",
-      0,
-      true
-    ]
+    ["R12", "R12", 0, true],
+    ["R12", "R22", -1, false],
+    ["R12", "R32", -1, false],
+    ["R12", "R134a", -1, false],
+    ["R12", "R290", -1, false],
+    ["R12", "R404A", -1, false],
+    ["R12", "R407C", -1, false],
+    ["R12", "R407F", -1, false],
+    ["R12", "R410A", -1, false],
+    ["R12", "R448A", -1, false],
+    ["R12", "R449A", -1, false],
+    ["R12", "R452A", -1, false],
+    ["R12", "R507A", -1, false],
+    ["R12", "R513A", -1, false],
+    ["R12", "R600a", -1, false],
+    ["R12", "R717", -1, false],
+    ["R12", "R718", -1, false],
+    ["R12", "R744", -1, false],
+    ["R12", "R1234yf", -1, false],
+    ["R12", "R1234ze", -1, false],
+    ["R12", "R1233zd", -1, false],
+    ["R12", "R1270", -1, false],
+    ["R22", "R12", 1, false],
+    ["R22", "R22", 0, true],
+    ["R22", "R32", -1, false],
+    ["R22", "R134a", 1, false],
+    ["R22", "R290", -1, false],
+    ["R22", "R404A", -1, false],
+    ["R22", "R407C", -1, false],
+    ["R22", "R407F", -1, false],
+    ["R22", "R410A", -1, false],
+    ["R22", "R448A", -1, false],
+    ["R22", "R449A", -1, false],
+    ["R22", "R452A", -1, false],
+    ["R22", "R507A", -1, false],
+    ["R22", "R513A", -1, false],
+    ["R22", "R600a", -1, false],
+    ["R22", "R717", -1, false],
+    ["R22", "R718", -1, false],
+    ["R22", "R744", -1, false],
+    ["R22", "R1234yf", 1, false],
+    ["R22", "R1234ze", 1, false],
+    ["R22", "R1233zd", 1, false],
+    ["R22", "R1270", 1, false],
+    ["R32", "R12", 1, false],
+    ["R32", "R22", 1, false],
+    ["R32", "R32", 0, true],
+    ["R32", "R134a", 1, false],
+    ["R32", "R290", 1, false],
+    ["R32", "R404A", -1, false],
+    ["R32", "R407C", -1, false],
+    ["R32", "R407F", -1, false],
+    ["R32", "R410A", -1, false],
+    ["R32", "R448A", -1, false],
+    ["R32", "R449A", -1, false],
+    ["R32", "R452A", -1, false],
+    ["R32", "R507A", -1, false],
+    ["R32", "R513A", -1, false],
+    ["R32", "R600a", -1, false],
+    ["R32", "R717", -1, false],
+    ["R32", "R718", -1, false],
+    ["R32", "R744", -1, false],
+    ["R32", "R1234yf", 1, false],
+    ["R32", "R1234ze", 1, false],
+    ["R32", "R1233zd", 1, false],
+    ["R32", "R1270", 1, false],
+    ["R134a", "R12", 1, false],
+    ["R134a", "R22", -1, false],
+    ["R134a", "R32", -1, false],
+    ["R134a", "R134a", 0, true],
+    ["R134a", "R290", -1, false],
+    ["R134a", "R404A", -1, false],
+    ["R134a", "R407C", -1, false],
+    ["R134a", "R407F", -1, false],
+    ["R134a", "R410A", -1, false],
+    ["R134a", "R448A", -1, false],
+    ["R134a", "R449A", -1, false],
+    ["R134a", "R452A", -1, false],
+    ["R134a", "R507A", -1, false],
+    ["R134a", "R513A", -1, false],
+    ["R134a", "R600a", -1, false],
+    ["R134a", "R717", -1, false],
+    ["R134a", "R718", -1, false],
+    ["R134a", "R744", -1, false],
+    ["R134a", "R1234yf", 1, false],
+    ["R134a", "R1234ze", 1, false],
+    ["R134a", "R1233zd", 1, false],
+    ["R134a", "R1270", 1, false],
+    ["R290", "R12", 1, false],
+    ["R290", "R22", 1, false],
+    ["R290", "R32", -1, false],
+    ["R290", "R134a", 1, false],
+    ["R290", "R290", 0, true],
+    ["R290", "R404A", -1, false],
+    ["R290", "R407C", -1, false],
+    ["R290", "R407F", -1, false],
+    ["R290", "R410A", -1, false],
+    ["R290", "R448A", -1, false],
+    ["R290", "R449A", -1, false],
+    ["R290", "R452A", -1, false],
+    ["R290", "R507A", -1, false],
+    ["R290", "R513A", -1, false],
+    ["R290", "R600a", -1, false],
+    ["R290", "R717", -1, false],
+    ["R290", "R718", -1, false],
+    ["R290", "R744", -1, false],
+    ["R290", "R1234yf", 1, false],
+    ["R290", "R1234ze", 1, false],
+    ["R290", "R1233zd", 1, false],
+    ["R290", "R1270", 1, false],
+    ["R404A", "R12", 1, false],
+    ["R404A", "R22", 1, false],
+    ["R404A", "R32", 1, false],
+    ["R404A", "R134a", 1, false],
+    ["R404A", "R290", 1, false],
+    ["R404A", "R404A", 0, true],
+    ["R404A", "R407C", -1, false],
+    ["R404A", "R407F", -1, false],
+    ["R404A", "R410A", -1, false],
+    ["R404A", "R448A", -1, false],
+    ["R404A", "R449A", -1, false],
+    ["R404A", "R452A", -1, false],
+    ["R404A", "R507A", -1, false],
+    ["R404A", "R513A", -1, false],
+    ["R404A", "R600a", -1, false],
+    ["R404A", "R717", -1, false],
+    ["R404A", "R718", -1, false],
+    ["R404A", "R744", -1, false],
+    ["R404A", "R1234yf", 1, false],
+    ["R404A", "R1234ze", 1, false],
+    ["R404A", "R1233zd", 1, false],
+    ["R404A", "R1270", 1, false],
+    ["R407C", "R12", 1, false],
+    ["R407C", "R22", 1, false],
+    ["R407C", "R32", 1, false],
+    ["R407C", "R134a", 1, false],
+    ["R407C", "R290", 1, false],
+    ["R407C", "R404A", 1, false],
+    ["R407C", "R407C", 0, true],
+    ["R407C", "R407F", -1, false],
+    ["R407C", "R410A", -1, false],
+    ["R407C", "R448A", -1, false],
+    ["R407C", "R449A", -1, false],
+    ["R407C", "R452A", -1, false],
+    ["R407C", "R507A", -1, false],
+    ["R407C", "R513A", -1, false],
+    ["R407C", "R600a", -1, false],
+    ["R407C", "R717", -1, false],
+    ["R407C", "R718", -1, false],
+    ["R407C", "R744", -1, false],
+    ["R407C", "R1234yf", 1, false],
+    ["R407C", "R1234ze", 1, false],
+    ["R407C", "R1233zd", 1, false],
+    ["R407C", "R1270", 1, false],
+    ["R407F", "R12", 1, false],
+    ["R407F", "R22", 1, false],
+    ["R407F", "R32", 1, false],
+    ["R407F", "R134a", 1, false],
+    ["R407F", "R290", 1, false],
+    ["R407F", "R404A", 1, false],
+    ["R407F", "R407C", 1, false],
+    ["R407F", "R407F", 0, true],
+    ["R407F", "R410A", -1, false],
+    ["R407F", "R448A", -1, false],
+    ["R407F", "R449A", -1, false],
+    ["R407F", "R452A", -1, false],
+    ["R407F", "R507A", -1, false],
+    ["R407F", "R513A", -1, false],
+    ["R407F", "R600a", -1, false],
+    ["R407F", "R717", -1, false],
+    ["R407F", "R718", -1, false],
+    ["R407F", "R744", -1, false],
+    ["R407F", "R1234yf", 1, false],
+    ["R407F", "R1234ze", 1, false],
+    ["R407F", "R1233zd", 1, false],
+    ["R407F", "R1270", 1, false],
+    ["R410A", "R12", 1, false],
+    ["R410A", "R22", 1, false],
+    ["R410A", "R32", 1, false],
+    ["R410A", "R134a", 1, false],
+    ["R410A", "R290", 1, false],
+    ["R410A", "R404A", 1, false],
+    ["R410A", "R407C", 1, false],
+    ["R410A", "R407F", 1, false],
+    ["R410A", "R410A", 0, true],
+    ["R410A", "R448A", -1, false],
+    ["R410A", "R449A", -1, false],
+    ["R410A", "R452A", -1, false],
+    ["R410A", "R507A", -1, false],
+    ["R410A", "R513A", -1, false],
+    ["R410A", "R600a", -1, false],
+    ["R410A", "R717", -1, false],
+    ["R410A", "R718", -1, false],
+    ["R410A", "R744", -1, false],
+    ["R410A", "R1234yf", 1, false],
+    ["R410A", "R1234ze", 1, false],
+    ["R410A", "R1233zd", 1, false],
+    ["R410A", "R1270", 1, false],
+    ["R448A", "R12", 1, false],
+    ["R448A", "R22", 1, false],
+    ["R448A", "R32", 1, false],
+    ["R448A", "R134a", 1, false],
+    ["R448A", "R290", 1, false],
+    ["R448A", "R404A", 1, false],
+    ["R448A", "R407C", 1, false],
+    ["R448A", "R407F", 1, false],
+    ["R448A", "R410A", 1, false],
+    ["R448A", "R448A", 0, true],
+    ["R448A", "R449A", -1, false],
+    ["R448A", "R452A", -1, false],
+    ["R448A", "R507A", -1, false],
+    ["R448A", "R513A", -1, false],
+    ["R448A", "R600a", -1, false],
+    ["R448A", "R717", -1, false],
+    ["R448A", "R718", -1, false],
+    ["R448A", "R744", -1, false],
+    ["R448A", "R1234yf", 1, false],
+    ["R448A", "R1234ze", 1, false],
+    ["R448A", "R1233zd", 1, false],
+    ["R448A", "R1270", 1, false],
+    ["R449A", "R12", 1, false],
+    ["R449A", "R22", 1, false],
+    ["R449A", "R32", 1, false],
+    ["R449A", "R134a", 1, false],
+    ["R449A", "R290", 1, false],
+    ["R449A", "R404A", 1, false],
+    ["R449A", "R407C", 1, false],
+    ["R449A", "R407F", 1, false],
+    ["R449A", "R410A", 1, false],
+    ["R449A", "R448A", 1, false],
+    ["R449A", "R449A", 0, true],
+    ["R449A", "R452A", -1, false],
+    ["R449A", "R507A", -1, false],
+    ["R449A", "R513A", -1, false],
+    ["R449A", "R600a", -1, false],
+    ["R449A", "R717", -1, false],
+    ["R449A", "R718", -1, false],
+    ["R449A", "R744", -1, false],
+    ["R449A", "R1234yf", 1, false],
+    ["R449A", "R1234ze", 1, false],
+    ["R449A", "R1233zd", 1, false],
+    ["R449A", "R1270", 1, false],
+    ["R452A", "R12", 1, false],
+    ["R452A", "R22", 1, false],
+    ["R452A", "R32", 1, false],
+    ["R452A", "R134a", 1, false],
+    ["R452A", "R290", 1, false],
+    ["R452A", "R404A", 1, false],
+    ["R452A", "R407C", 1, false],
+    ["R452A", "R407F", 1, false],
+    ["R452A", "R410A", 1, false],
+    ["R452A", "R448A", 1, false],
+    ["R452A", "R449A", 1, false],
+    ["R452A", "R452A", 0, true],
+    ["R452A", "R507A", -1, false],
+    ["R452A", "R513A", -1, false],
+    ["R452A", "R600a", -1, false],
+    ["R452A", "R717", -1, false],
+    ["R452A", "R718", -1, false],
+    ["R452A", "R744", -1, false],
+    ["R452A", "R1234yf", 1, false],
+    ["R452A", "R1234ze", 1, false],
+    ["R452A", "R1233zd", 1, false],
+    ["R452A", "R1270", 1, false],
+    ["R507A", "R12", 1, false],
+    ["R507A", "R22", 1, false],
+    ["R507A", "R32", 1, false],
+    ["R507A", "R134a", 1, false],
+    ["R507A", "R290", 1, false],
+    ["R507A", "R404A", 1, false],
+    ["R507A", "R407C", 1, false],
+    ["R507A", "R407F", 1, false],
+    ["R507A", "R410A", 1, false],
+    ["R507A", "R448A", 1, false],
+    ["R507A", "R449A", 1, false],
+    ["R507A", "R452A", 1, false],
+    ["R507A", "R507A", 0, true],
+    ["R507A", "R513A", -1, false],
+    ["R507A", "R600a", -1, false],
+    ["R507A", "R717", -1, false],
+    ["R507A", "R718", -1, false],
+    ["R507A", "R744", -1, false],
+    ["R507A", "R1234yf", 1, false],
+    ["R507A", "R1234ze", 1, false],
+    ["R507A", "R1233zd", 1, false],
+    ["R507A", "R1270", 1, false],
+    ["R513A", "R12", 1, false],
+    ["R513A", "R22", 1, false],
+    ["R513A", "R32", 1, false],
+    ["R513A", "R134a", 1, false],
+    ["R513A", "R290", 1, false],
+    ["R513A", "R404A", 1, false],
+    ["R513A", "R407C", 1, false],
+    ["R513A", "R407F", 1, false],
+    ["R513A", "R410A", 1, false],
+    ["R513A", "R448A", 1, false],
+    ["R513A", "R449A", 1, false],
+    ["R513A", "R452A", 1, false],
+    ["R513A", "R507A", 1, false],
+    ["R513A", "R513A", 0, true],
+    ["R513A", "R600a", -1, false],
+    ["R513A", "R717", -1, false],
+    ["R513A", "R718", -1, false],
+    ["R513A", "R744", -1, false],
+    ["R513A", "R1234yf", 1, false],
+    ["R513A", "R1234ze", 1, false],
+    ["R513A", "R1233zd", 1, false],
+    ["R513A", "R1270", 1, false],
+    ["R600a", "R12", 1, false],
+    ["R600a", "R22", 1, false],
+    ["R600a", "R32", 1, false],
+    ["R600a", "R134a", 1, false],
+    ["R600a", "R290", 1, false],
+    ["R600a", "R404A", 1, false],
+    ["R600a", "R407C", 1, false],
+    ["R600a", "R407F", 1, false],
+    ["R600a", "R410A", 1, false],
+    ["R600a", "R448A", 1, false],
+    ["R600a", "R449A", 1, false],
+    ["R600a", "R452A", 1, false],
+    ["R600a", "R507A", 1, false],
+    ["R600a", "R513A", 1, false],
+    ["R600a", "R600a", 0, true],
+    ["R600a", "R717", -1, false],
+    ["R600a", "R718", -1, false],
+    ["R600a", "R744", -1, false],
+    ["R600a", "R1234yf", 1, false],
+    ["R600a", "R1234ze", 1, false],
+    ["R600a", "R1233zd", 1, false],
+    ["R600a", "R1270", 1, false],
+    ["R717", "R12", 1, false],
+    ["R717", "R22", 1, false],
+    ["R717", "R32", 1, false],
+    ["R717", "R134a", 1, false],
+    ["R717", "R290", 1, false],
+    ["R717", "R404A", 1, false],
+    ["R717", "R407C", 1, false],
+    ["R717", "R407F", 1, false],
+    ["R717", "R410A", 1, false],
+    ["R717", "R448A", 1, false],
+    ["R717", "R449A", 1, false],
+    ["R717", "R452A", 1, false],
+    ["R717", "R507A", 1, false],
+    ["R717", "R513A", 1, false],
+    ["R717", "R600a", 1, false],
+    ["R717", "R717", 0, true],
+    ["R717", "R718", -1, false],
+    ["R717", "R744", -1, false],
+    ["R717", "R1234yf", 1, false],
+    ["R717", "R1234ze", 1, false],
+    ["R717", "R1233zd", 1, false],
+    ["R717", "R1270", 1, false],
+    ["R718", "R12", 1, false],
+    ["R718", "R22", 1, false],
+    ["R718", "R32", 1, false],
+    ["R718", "R134a", 1, false],
+    ["R718", "R290", 1, false],
+    ["R718", "R404A", 1, false],
+    ["R718", "R407C", 1, false],
+    ["R718", "R407F", 1, false],
+    ["R718", "R410A", 1, false],
+    ["R718", "R448A", 1, false],
+    ["R718", "R449A", 1, false],
+    ["R718", "R452A", 1, false],
+    ["R718", "R507A", 1, false],
+    ["R718", "R513A", 1, false],
+    ["R718", "R600a", 1, false],
+    ["R718", "R717", 1, false],
+    ["R718", "R718", 0, true],
+    ["R718", "R744", -1, false],
+    ["R718", "R1234yf", 1, false],
+    ["R718", "R1234ze", 1, false],
+    ["R718", "R1233zd", 1, false],
+    ["R718", "R1270", 1, false],
+    ["R744", "R12", 1, false],
+    ["R744", "R22", 1, false],
+    ["R744", "R32", 1, false],
+    ["R744", "R134a", 1, false],
+    ["R744", "R290", 1, false],
+    ["R744", "R404A", 1, false],
+    ["R744", "R407C", 1, false],
+    ["R744", "R407F", 1, false],
+    ["R744", "R410A", 1, false],
+    ["R744", "R448A", 1, false],
+    ["R744", "R449A", 1, false],
+    ["R744", "R452A", 1, false],
+    ["R744", "R507A", 1, false],
+    ["R744", "R513A", 1, false],
+    ["R744", "R600a", 1, false],
+    ["R744", "R717", 1, false],
+    ["R744", "R718", 1, false],
+    ["R744", "R744", 0, true],
+    ["R744", "R1234yf", 1, false],
+    ["R744", "R1234ze", 1, false],
+    ["R744", "R1233zd", 1, false],
+    ["R744", "R1270", 1, false],
+    ["R1234yf", "R12", 1, false],
+    ["R1234yf", "R22", -1, false],
+    ["R1234yf", "R32", -1, false],
+    ["R1234yf", "R134a", -1, false],
+    ["R1234yf", "R290", -1, false],
+    ["R1234yf", "R404A", -1, false],
+    ["R1234yf", "R407C", -1, false],
+    ["R1234yf", "R407F", -1, false],
+    ["R1234yf", "R410A", -1, false],
+    ["R1234yf", "R448A", -1, false],
+    ["R1234yf", "R449A", -1, false],
+    ["R1234yf", "R452A", -1, false],
+    ["R1234yf", "R507A", -1, false],
+    ["R1234yf", "R513A", -1, false],
+    ["R1234yf", "R600a", -1, false],
+    ["R1234yf", "R717", -1, false],
+    ["R1234yf", "R718", -1, false],
+    ["R1234yf", "R744", -1, false],
+    ["R1234yf", "R1234yf", 0, true],
+    ["R1234yf", "R1234ze", -1, false],
+    ["R1234yf", "R1233zd", 1, false],
+    ["R1234yf", "R1270", -1, false],
+    ["R1234ze", "R12", 1, false],
+    ["R1234ze", "R22", -1, false],
+    ["R1234ze", "R32", -1, false],
+    ["R1234ze", "R134a", -1, false],
+    ["R1234ze", "R290", -1, false],
+    ["R1234ze", "R404A", -1, false],
+    ["R1234ze", "R407C", -1, false],
+    ["R1234ze", "R407F", -1, false],
+    ["R1234ze", "R410A", -1, false],
+    ["R1234ze", "R448A", -1, false],
+    ["R1234ze", "R449A", -1, false],
+    ["R1234ze", "R452A", -1, false],
+    ["R1234ze", "R507A", -1, false],
+    ["R1234ze", "R513A", -1, false],
+    ["R1234ze", "R600a", -1, false],
+    ["R1234ze", "R717", -1, false],
+    ["R1234ze", "R718", -1, false],
+    ["R1234ze", "R744", -1, false],
+    ["R1234ze", "R1234yf", 1, false],
+    ["R1234ze", "R1234ze", 0, true],
+    ["R1234ze", "R1233zd", 1, false],
+    ["R1234ze", "R1270", -1, false],
+    ["R1233zd", "R12", 1, false],
+    ["R1233zd", "R22", -1, false],
+    ["R1233zd", "R32", -1, false],
+    ["R1233zd", "R134a", -1, false],
+    ["R1233zd", "R290", -1, false],
+    ["R1233zd", "R404A", -1, false],
+    ["R1233zd", "R407C", -1, false],
+    ["R1233zd", "R407F", -1, false],
+    ["R1233zd", "R410A", -1, false],
+    ["R1233zd", "R448A", -1, false],
+    ["R1233zd", "R449A", -1, false],
+    ["R1233zd", "R452A", -1, false],
+    ["R1233zd", "R507A", -1, false],
+    ["R1233zd", "R513A", -1, false],
+    ["R1233zd", "R600a", -1, false],
+    ["R1233zd", "R717", -1, false],
+    ["R1233zd", "R718", -1, false],
+    ["R1233zd", "R744", -1, false],
+    ["R1233zd", "R1234yf", -1, false],
+    ["R1233zd", "R1234ze", -1, false],
+    ["R1233zd", "R1233zd", 0, true],
+    ["R1233zd", "R1270", -1, false],
+    ["R1270", "R12", 1, false],
+    ["R1270", "R22", -1, false],
+    ["R1270", "R32", -1, false],
+    ["R1270", "R134a", -1, false],
+    ["R1270", "R290", -1, false],
+    ["R1270", "R404A", -1, false],
+    ["R1270", "R407C", -1, false],
+    ["R1270", "R407F", -1, false],
+    ["R1270", "R410A", -1, false],
+    ["R1270", "R448A", -1, false],
+    ["R1270", "R449A", -1, false],
+    ["R1270", "R452A", -1, false],
+    ["R1270", "R507A", -1, false],
+    ["R1270", "R513A", -1, false],
+    ["R1270", "R600a", -1, false],
+    ["R1270", "R717", -1, false],
+    ["R1270", "R718", -1, false],
+    ["R1270", "R744", -1, false],
+    ["R1270", "R1234yf", 1, false],
+    ["R1270", "R1234ze", 1, false],
+    ["R1270", "R1233zd", 1, false],
+    ["R1270", "R1270", 0, true]
   ],
   "StorageMediaType": [
-    [
-      "Hdd",
-      "Hdd",
-      0,
-      true
-    ],
-    [
-      "Hdd",
-      "Sshd",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "Ssd",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "Nvme",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "EMmc",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "Ufs",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "Hdd",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Sshd",
-      "Sshd",
-      0,
-      true
-    ],
-    [
-      "Sshd",
-      "Ssd",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "Nvme",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "EMmc",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "Ufs",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "Sshd",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Ssd",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Ssd",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "Ssd",
-      "Ssd",
-      0,
-      true
-    ],
-    [
-      "Ssd",
-      "Nvme",
-      -1,
-      false
-    ],
-    [
-      "Ssd",
-      "EMmc",
-      -1,
-      false
-    ],
-    [
-      "Ssd",
-      "Ufs",
-      -1,
-      false
-    ],
-    [
-      "Ssd",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "Ssd",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Nvme",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Nvme",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "Nvme",
-      "Ssd",
-      1,
-      false
-    ],
-    [
-      "Nvme",
-      "Nvme",
-      0,
-      true
-    ],
-    [
-      "Nvme",
-      "EMmc",
-      -1,
-      false
-    ],
-    [
-      "Nvme",
-      "Ufs",
-      -1,
-      false
-    ],
-    [
-      "Nvme",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "Nvme",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "EMmc",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "EMmc",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "EMmc",
-      "Ssd",
-      1,
-      false
-    ],
-    [
-      "EMmc",
-      "Nvme",
-      1,
-      false
-    ],
-    [
-      "EMmc",
-      "EMmc",
-      0,
-      true
-    ],
-    [
-      "EMmc",
-      "Ufs",
-      -1,
-      false
-    ],
-    [
-      "EMmc",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "EMmc",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Ufs",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Ufs",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "Ufs",
-      "Ssd",
-      1,
-      false
-    ],
-    [
-      "Ufs",
-      "Nvme",
-      1,
-      false
-    ],
-    [
-      "Ufs",
-      "EMmc",
-      1,
-      false
-    ],
-    [
-      "Ufs",
-      "Ufs",
-      0,
-      true
-    ],
-    [
-      "Ufs",
-      "Flash",
-      -1,
-      false
-    ],
-    [
-      "Ufs",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Flash",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "Ssd",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "Nvme",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "EMmc",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "Ufs",
-      1,
-      false
-    ],
-    [
-      "Flash",
-      "Flash",
-      0,
-      true
-    ],
-    [
-      "Flash",
-      "Optane",
-      -1,
-      false
-    ],
-    [
-      "Optane",
-      "Hdd",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Sshd",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Ssd",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Nvme",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "EMmc",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Ufs",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Flash",
-      1,
-      false
-    ],
-    [
-      "Optane",
-      "Optane",
-      0,
-      true
-    ]
+    ["Hdd", "Hdd", 0, true],
+    ["Hdd", "Sshd", -1, false],
+    ["Hdd", "Ssd", -1, false],
+    ["Hdd", "Nvme", -1, false],
+    ["Hdd", "EMmc", -1, false],
+    ["Hdd", "Ufs", -1, false],
+    ["Hdd", "Flash", -1, false],
+    ["Hdd", "Optane", -1, false],
+    ["Sshd", "Hdd", 1, false],
+    ["Sshd", "Sshd", 0, true],
+    ["Sshd", "Ssd", -1, false],
+    ["Sshd", "Nvme", -1, false],
+    ["Sshd", "EMmc", -1, false],
+    ["Sshd", "Ufs", -1, false],
+    ["Sshd", "Flash", -1, false],
+    ["Sshd", "Optane", -1, false],
+    ["Ssd", "Hdd", 1, false],
+    ["Ssd", "Sshd", 1, false],
+    ["Ssd", "Ssd", 0, true],
+    ["Ssd", "Nvme", -1, false],
+    ["Ssd", "EMmc", -1, false],
+    ["Ssd", "Ufs", -1, false],
+    ["Ssd", "Flash", -1, false],
+    ["Ssd", "Optane", -1, false],
+    ["Nvme", "Hdd", 1, false],
+    ["Nvme", "Sshd", 1, false],
+    ["Nvme", "Ssd", 1, false],
+    ["Nvme", "Nvme", 0, true],
+    ["Nvme", "EMmc", -1, false],
+    ["Nvme", "Ufs", -1, false],
+    ["Nvme", "Flash", -1, false],
+    ["Nvme", "Optane", -1, false],
+    ["EMmc", "Hdd", 1, false],
+    ["EMmc", "Sshd", 1, false],
+    ["EMmc", "Ssd", 1, false],
+    ["EMmc", "Nvme", 1, false],
+    ["EMmc", "EMmc", 0, true],
+    ["EMmc", "Ufs", -1, false],
+    ["EMmc", "Flash", -1, false],
+    ["EMmc", "Optane", -1, false],
+    ["Ufs", "Hdd", 1, false],
+    ["Ufs", "Sshd", 1, false],
+    ["Ufs", "Ssd", 1, false],
+    ["Ufs", "Nvme", 1, false],
+    ["Ufs", "EMmc", 1, false],
+    ["Ufs", "Ufs", 0, true],
+    ["Ufs", "Flash", -1, false],
+    ["Ufs", "Optane", -1, false],
+    ["Flash", "Hdd", 1, false],
+    ["Flash", "Sshd", 1, false],
+    ["Flash", "Ssd", 1, false],
+    ["Flash", "Nvme", 1, false],
+    ["Flash", "EMmc", 1, false],
+    ["Flash", "Ufs", 1, false],
+    ["Flash", "Flash", 0, true],
+    ["Flash", "Optane", -1, false],
+    ["Optane", "Hdd", 1, false],
+    ["Optane", "Sshd", 1, false],
+    ["Optane", "Ssd", 1, false],
+    ["Optane", "Nvme", 1, false],
+    ["Optane", "EMmc", 1, false],
+    ["Optane", "Ufs", 1, false],
+    ["Optane", "Flash", 1, false],
+    ["Optane", "Optane", 0, true]
   ]
 }

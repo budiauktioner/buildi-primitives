@@ -167,6 +167,10 @@ export class OdometerReading {
     );
   }
 
+  negated(): OdometerReading {
+    return new OdometerReading(this.distance.negated());
+  }
+
   equals(other: OdometerReading | null | undefined): boolean {
     return other != null && this.distance.equals(other.distance);
   }

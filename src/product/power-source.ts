@@ -28,9 +28,7 @@ export class PowerSource {
     englishName: "Power Source",
     localizedName: "Strömkälla",
     emoji: "🔌",
-    sources: Object.freeze([
-      "https://schema.org/PowerSupplySpecification",
-    ]),
+    sources: Object.freeze(["https://schema.org/PowerSupplySpecification"]),
   });
 
   readonly value: string;
@@ -160,9 +158,7 @@ export class PowerSource {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -188,9 +184,8 @@ export class PowerSource {
     options?: PowerSourceFormatOptions,
   ): string | null {
     const r = PowerSource.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -212,9 +207,7 @@ export class PowerSource {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -273,11 +266,39 @@ function normalizeLookupKey(value: string): string {
 const ALIASES: readonly (readonly [PowerSource, readonly string[]])[] = [
   [
     PowerSource.Electric,
-    ["230v", "400v", "corded", "cordedelectric", "el", "eldriven", "electric", "electricity", "elektrisk", "mains", "mainselectric", "mainspowered", "nat", "natansluten", "natstrom", "plugin", "sladdansluten"],
+    [
+      "230v",
+      "400v",
+      "corded",
+      "cordedelectric",
+      "el",
+      "eldriven",
+      "electric",
+      "electricity",
+      "elektrisk",
+      "mains",
+      "mainselectric",
+      "mainspowered",
+      "nat",
+      "natansluten",
+      "natstrom",
+      "plugin",
+      "sladdansluten",
+    ],
   ],
   [
     PowerSource.Battery,
-    ["accu", "batteri", "batteridriven", "battery", "batterypowered", "cordless", "rechargeable", "sladdlos", "uppladdningsbartbatteri"],
+    [
+      "accu",
+      "batteri",
+      "batteridriven",
+      "battery",
+      "batterypowered",
+      "cordless",
+      "rechargeable",
+      "sladdlos",
+      "uppladdningsbartbatteri",
+    ],
   ],
   [
     PowerSource.Solar,
@@ -291,25 +312,41 @@ const ALIASES: readonly (readonly [PowerSource, readonly string[]])[] = [
     PowerSource.Petrol,
     ["bensin", "bensindriven", "bensinmotor", "gas", "gasoline", "petrol", "petrolengine"],
   ],
-  [
-    PowerSource.Diesel,
-    ["diesel", "dieseldriven", "dieselengine", "dieselmotor"],
-  ],
+  [PowerSource.Diesel, ["diesel", "dieseldriven", "dieselengine", "dieselmotor"]],
   [
     PowerSource.Hydrogen,
     ["branslecell", "fcev", "fuelcell", "h2", "hydrogen", "vatgas", "vatgasdriven"],
   ],
   [
     PowerSource.Pneumatic,
-    ["airpowered", "compressedair", "komprimeradluft", "pneumatic", "pneumaticair", "pneumatik", "pneumatisk", "tryckluft", "tryckluftsdriven"],
+    [
+      "airpowered",
+      "compressedair",
+      "komprimeradluft",
+      "pneumatic",
+      "pneumaticair",
+      "pneumatik",
+      "pneumatisk",
+      "tryckluft",
+      "tryckluftsdriven",
+    ],
   ],
-  [
-    PowerSource.Hydraulic,
-    ["hydrauldriven", "hydraulic", "hydraulik", "hydraulisk", "hydrauliskt"],
-  ],
+  [PowerSource.Hydraulic, ["hydrauldriven", "hydraulic", "hydraulik", "hydraulisk", "hydrauliskt"]],
   [
     PowerSource.Manual,
-    ["handdriven", "humanpowered", "manual", "manuell", "manuelldrift", "manuellt", "muskelkraft", "nopower", "pedal", "pedaldriven", "stromlos"],
+    [
+      "handdriven",
+      "humanpowered",
+      "manual",
+      "manuell",
+      "manuelldrift",
+      "manuellt",
+      "muskelkraft",
+      "nopower",
+      "pedal",
+      "pedaldriven",
+      "stromlos",
+    ],
   ],
 ];
 

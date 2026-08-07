@@ -57,6 +57,7 @@ export class RotationalSpeed extends Quantity<RotationalSpeedUnit> {
 
   /** Creates a rotational speed from a value and unit. */
   static create(value: number | Decimal, unit: RotationalSpeedUnit): RotationalSpeed {
+    RotationalSpeedUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : RotationalSpeed.decimalOf(value);
     return new RotationalSpeed(unit.toBase(amount), unit);
   }

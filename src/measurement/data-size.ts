@@ -86,6 +86,7 @@ export class DataSize extends Quantity<DataSizeUnit> {
 
   /** Creates a data size from a value and unit. */
   static create(value: number | Decimal, unit: DataSizeUnit): DataSize {
+    DataSizeUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : DataSize.decimalOf(value);
     return new DataSize(unit.toBase(amount), unit);
   }

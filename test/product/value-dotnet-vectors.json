@@ -6568,9 +6568,7 @@
       "englishName": "Clothing Size",
       "localizedName": "Klädstorlek",
       "emoji": "👕",
-      "sources": [
-        "https://en.wikipedia.org/wiki/EN_13402"
-      ]
+      "sources": ["https://en.wikipedia.org/wiki/EN_13402"]
     },
     "properties": [
       {
@@ -32424,9 +32422,7 @@
       "englishName": "Screen Resolution",
       "localizedName": "Skärmupplösning",
       "emoji": "📺",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Display_resolution"
-      ]
+      "sources": ["https://en.wikipedia.org/wiki/Display_resolution"]
     },
     "properties": [
       {
@@ -34155,9 +34151,7 @@
       "englishName": "Screen Size",
       "localizedName": "Skärmstorlek",
       "emoji": "🖥️",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Display_size"
-      ]
+      "sources": ["https://en.wikipedia.org/wiki/Display_size"]
     },
     "properties": [
       {
@@ -39468,9 +39462,7 @@
         "toStringSv": "zzz",
         "properties": {
           "Path": "zzz",
-          "Segments": [
-            "zzz"
-          ],
+          "Segments": ["zzz"],
           "Depth": 1,
           "RootCategory": "zzz",
           "LeafCategory": "zzz"
@@ -39490,9 +39482,7 @@
         "toStringSv": "not a value",
         "properties": {
           "Path": "not a value",
-          "Segments": [
-            "not a value"
-          ],
+          "Segments": ["not a value"],
           "Depth": 1,
           "RootCategory": "not a value",
           "LeafCategory": "not a value"
@@ -39512,9 +39502,7 @@
         "toStringSv": "0",
         "properties": {
           "Path": "0",
-          "Segments": [
-            "0"
-          ],
+          "Segments": ["0"],
           "Depth": 1,
           "RootCategory": "0",
           "LeafCategory": "0"
@@ -39534,9 +39522,7 @@
         "toStringSv": "-1",
         "properties": {
           "Path": "-1",
-          "Segments": [
-            "-1"
-          ],
+          "Segments": ["-1"],
           "Depth": 1,
           "RootCategory": "-1",
           "LeafCategory": "-1"
@@ -39556,9 +39542,7 @@
         "toStringSv": "Animals & Pet Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies",
-          "Segments": [
-            "Animals & Pet Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies"],
           "Depth": 1,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Animals & Pet Supplies"
@@ -39578,9 +39562,7 @@
         "toStringSv": "ANIMALS & PET SUPPLIES",
         "properties": {
           "Path": "ANIMALS & PET SUPPLIES",
-          "Segments": [
-            "ANIMALS & PET SUPPLIES"
-          ],
+          "Segments": ["ANIMALS & PET SUPPLIES"],
           "Depth": 1,
           "RootCategory": "ANIMALS & PET SUPPLIES",
           "LeafCategory": "ANIMALS & PET SUPPLIES"
@@ -39600,9 +39582,7 @@
         "toStringSv": "animals & pet supplies",
         "properties": {
           "Path": "animals & pet supplies",
-          "Segments": [
-            "animals & pet supplies"
-          ],
+          "Segments": ["animals & pet supplies"],
           "Depth": 1,
           "RootCategory": "animals & pet supplies",
           "LeafCategory": "animals & pet supplies"
@@ -39622,9 +39602,7 @@
         "toStringSv": "Animals & Pet Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies",
-          "Segments": [
-            "Animals & Pet Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies"],
           "Depth": 1,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Animals & Pet Supplies"
@@ -39644,9 +39622,7 @@
         "toStringSv": "Animals&PetSupplies",
         "properties": {
           "Path": "Animals&PetSupplies",
-          "Segments": [
-            "Animals&PetSupplies"
-          ],
+          "Segments": ["Animals&PetSupplies"],
           "Depth": 1,
           "RootCategory": "Animals&PetSupplies",
           "LeafCategory": "Animals&PetSupplies"
@@ -39666,10 +39642,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies"],
           "Depth": 2,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Pet Supplies"
@@ -39689,10 +39662,7 @@
         "toStringSv": "ANIMALS & PET SUPPLIES > PET SUPPLIES",
         "properties": {
           "Path": "ANIMALS & PET SUPPLIES > PET SUPPLIES",
-          "Segments": [
-            "ANIMALS & PET SUPPLIES",
-            "PET SUPPLIES"
-          ],
+          "Segments": ["ANIMALS & PET SUPPLIES", "PET SUPPLIES"],
           "Depth": 2,
           "RootCategory": "ANIMALS & PET SUPPLIES",
           "LeafCategory": "PET SUPPLIES"
@@ -39712,10 +39682,7 @@
         "toStringSv": "animals & pet supplies > pet supplies",
         "properties": {
           "Path": "animals & pet supplies > pet supplies",
-          "Segments": [
-            "animals & pet supplies",
-            "pet supplies"
-          ],
+          "Segments": ["animals & pet supplies", "pet supplies"],
           "Depth": 2,
           "RootCategory": "animals & pet supplies",
           "LeafCategory": "pet supplies"
@@ -39735,10 +39702,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies"],
           "Depth": 2,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Pet Supplies"
@@ -39758,10 +39722,7 @@
         "toStringSv": "Animals&PetSupplies > PetSupplies",
         "properties": {
           "Path": "Animals&PetSupplies > PetSupplies",
-          "Segments": [
-            "Animals&PetSupplies",
-            "PetSupplies"
-          ],
+          "Segments": ["Animals&PetSupplies", "PetSupplies"],
           "Depth": 2,
           "RootCategory": "Animals&PetSupplies",
           "LeafCategory": "PetSupplies"
@@ -39781,11 +39742,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies > Bird Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies",
-            "Bird Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies", "Bird Supplies"],
           "Depth": 3,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Bird Supplies"
@@ -39805,11 +39762,7 @@
         "toStringSv": "ANIMALS & PET SUPPLIES > PET SUPPLIES > BIRD SUPPLIES",
         "properties": {
           "Path": "ANIMALS & PET SUPPLIES > PET SUPPLIES > BIRD SUPPLIES",
-          "Segments": [
-            "ANIMALS & PET SUPPLIES",
-            "PET SUPPLIES",
-            "BIRD SUPPLIES"
-          ],
+          "Segments": ["ANIMALS & PET SUPPLIES", "PET SUPPLIES", "BIRD SUPPLIES"],
           "Depth": 3,
           "RootCategory": "ANIMALS & PET SUPPLIES",
           "LeafCategory": "BIRD SUPPLIES"
@@ -39829,11 +39782,7 @@
         "toStringSv": "animals & pet supplies > pet supplies > bird supplies",
         "properties": {
           "Path": "animals & pet supplies > pet supplies > bird supplies",
-          "Segments": [
-            "animals & pet supplies",
-            "pet supplies",
-            "bird supplies"
-          ],
+          "Segments": ["animals & pet supplies", "pet supplies", "bird supplies"],
           "Depth": 3,
           "RootCategory": "animals & pet supplies",
           "LeafCategory": "bird supplies"
@@ -39853,11 +39802,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies > Bird Supplies",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies",
-            "Bird Supplies"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies", "Bird Supplies"],
           "Depth": 3,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Bird Supplies"
@@ -39877,11 +39822,7 @@
         "toStringSv": "Animals&PetSupplies > PetSupplies > BirdSupplies",
         "properties": {
           "Path": "Animals&PetSupplies > PetSupplies > BirdSupplies",
-          "Segments": [
-            "Animals&PetSupplies",
-            "PetSupplies",
-            "BirdSupplies"
-          ],
+          "Segments": ["Animals&PetSupplies", "PetSupplies", "BirdSupplies"],
           "Depth": 3,
           "RootCategory": "Animals&PetSupplies",
           "LeafCategory": "BirdSupplies"
@@ -39901,11 +39842,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -39925,11 +39862,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS > LAPTOPS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS > LAPTOPS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS",
-            "LAPTOPS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS", "LAPTOPS"],
           "Depth": 3,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "LAPTOPS"
@@ -39949,11 +39882,7 @@
         "toStringSv": "electronics > computers > laptops",
         "properties": {
           "Path": "electronics > computers > laptops",
-          "Segments": [
-            "electronics",
-            "computers",
-            "laptops"
-          ],
+          "Segments": ["electronics", "computers", "laptops"],
           "Depth": 3,
           "RootCategory": "electronics",
           "LeafCategory": "laptops"
@@ -39973,11 +39902,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -39997,11 +39922,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -40021,11 +39942,7 @@
         "toStringSv": "Apparel & Accessories > Clothing > Shirts & Tops",
         "properties": {
           "Path": "Apparel & Accessories > Clothing > Shirts & Tops",
-          "Segments": [
-            "Apparel & Accessories",
-            "Clothing",
-            "Shirts & Tops"
-          ],
+          "Segments": ["Apparel & Accessories", "Clothing", "Shirts & Tops"],
           "Depth": 3,
           "RootCategory": "Apparel & Accessories",
           "LeafCategory": "Shirts & Tops"
@@ -40045,11 +39962,7 @@
         "toStringSv": "APPAREL & ACCESSORIES > CLOTHING > SHIRTS & TOPS",
         "properties": {
           "Path": "APPAREL & ACCESSORIES > CLOTHING > SHIRTS & TOPS",
-          "Segments": [
-            "APPAREL & ACCESSORIES",
-            "CLOTHING",
-            "SHIRTS & TOPS"
-          ],
+          "Segments": ["APPAREL & ACCESSORIES", "CLOTHING", "SHIRTS & TOPS"],
           "Depth": 3,
           "RootCategory": "APPAREL & ACCESSORIES",
           "LeafCategory": "SHIRTS & TOPS"
@@ -40069,11 +39982,7 @@
         "toStringSv": "apparel & accessories > clothing > shirts & tops",
         "properties": {
           "Path": "apparel & accessories > clothing > shirts & tops",
-          "Segments": [
-            "apparel & accessories",
-            "clothing",
-            "shirts & tops"
-          ],
+          "Segments": ["apparel & accessories", "clothing", "shirts & tops"],
           "Depth": 3,
           "RootCategory": "apparel & accessories",
           "LeafCategory": "shirts & tops"
@@ -40093,11 +40002,7 @@
         "toStringSv": "Apparel & Accessories > Clothing > Shirts & Tops",
         "properties": {
           "Path": "Apparel & Accessories > Clothing > Shirts & Tops",
-          "Segments": [
-            "Apparel & Accessories",
-            "Clothing",
-            "Shirts & Tops"
-          ],
+          "Segments": ["Apparel & Accessories", "Clothing", "Shirts & Tops"],
           "Depth": 3,
           "RootCategory": "Apparel & Accessories",
           "LeafCategory": "Shirts & Tops"
@@ -40117,11 +40022,7 @@
         "toStringSv": "Apparel&Accessories > Clothing > Shirts&Tops",
         "properties": {
           "Path": "Apparel&Accessories > Clothing > Shirts&Tops",
-          "Segments": [
-            "Apparel&Accessories",
-            "Clothing",
-            "Shirts&Tops"
-          ],
+          "Segments": ["Apparel&Accessories", "Clothing", "Shirts&Tops"],
           "Depth": 3,
           "RootCategory": "Apparel&Accessories",
           "LeafCategory": "Shirts&Tops"
@@ -40391,9 +40292,7 @@
         "toStringSv": "Electronics",
         "properties": {
           "Path": "Electronics",
-          "Segments": [
-            "Electronics"
-          ],
+          "Segments": ["Electronics"],
           "Depth": 1,
           "RootCategory": "Electronics",
           "LeafCategory": "Electronics"
@@ -40413,9 +40312,7 @@
         "toStringSv": "ELECTRONICS",
         "properties": {
           "Path": "ELECTRONICS",
-          "Segments": [
-            "ELECTRONICS"
-          ],
+          "Segments": ["ELECTRONICS"],
           "Depth": 1,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "ELECTRONICS"
@@ -40435,9 +40332,7 @@
         "toStringSv": "electronics",
         "properties": {
           "Path": "electronics",
-          "Segments": [
-            "electronics"
-          ],
+          "Segments": ["electronics"],
           "Depth": 1,
           "RootCategory": "electronics",
           "LeafCategory": "electronics"
@@ -40457,9 +40352,7 @@
         "toStringSv": "Electronics",
         "properties": {
           "Path": "Electronics",
-          "Segments": [
-            "Electronics"
-          ],
+          "Segments": ["Electronics"],
           "Depth": 1,
           "RootCategory": "Electronics",
           "LeafCategory": "Electronics"
@@ -40479,10 +40372,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -40502,10 +40392,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS"],
           "Depth": 2,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "COMPUTERS"
@@ -40525,10 +40412,7 @@
         "toStringSv": "electronics > computers",
         "properties": {
           "Path": "electronics > computers",
-          "Segments": [
-            "electronics",
-            "computers"
-          ],
+          "Segments": ["electronics", "computers"],
           "Depth": 2,
           "RootCategory": "electronics",
           "LeafCategory": "computers"
@@ -40548,10 +40432,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -40571,10 +40452,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -40594,9 +40472,7 @@
         "toStringSv": "Computers",
         "properties": {
           "Path": "Computers",
-          "Segments": [
-            "Computers"
-          ],
+          "Segments": ["Computers"],
           "Depth": 1,
           "RootCategory": "Computers",
           "LeafCategory": "Computers"
@@ -40616,9 +40492,7 @@
         "toStringSv": "COMPUTERS",
         "properties": {
           "Path": "COMPUTERS",
-          "Segments": [
-            "COMPUTERS"
-          ],
+          "Segments": ["COMPUTERS"],
           "Depth": 1,
           "RootCategory": "COMPUTERS",
           "LeafCategory": "COMPUTERS"
@@ -40638,9 +40512,7 @@
         "toStringSv": "computers",
         "properties": {
           "Path": "computers",
-          "Segments": [
-            "computers"
-          ],
+          "Segments": ["computers"],
           "Depth": 1,
           "RootCategory": "computers",
           "LeafCategory": "computers"
@@ -40660,9 +40532,7 @@
         "toStringSv": "Computers",
         "properties": {
           "Path": "Computers",
-          "Segments": [
-            "Computers"
-          ],
+          "Segments": ["Computers"],
           "Depth": 1,
           "RootCategory": "Computers",
           "LeafCategory": "Computers"
@@ -40682,9 +40552,7 @@
         "toStringSv": "Laptops",
         "properties": {
           "Path": "Laptops",
-          "Segments": [
-            "Laptops"
-          ],
+          "Segments": ["Laptops"],
           "Depth": 1,
           "RootCategory": "Laptops",
           "LeafCategory": "Laptops"
@@ -40704,9 +40572,7 @@
         "toStringSv": "LAPTOPS",
         "properties": {
           "Path": "LAPTOPS",
-          "Segments": [
-            "LAPTOPS"
-          ],
+          "Segments": ["LAPTOPS"],
           "Depth": 1,
           "RootCategory": "LAPTOPS",
           "LeafCategory": "LAPTOPS"
@@ -40726,9 +40592,7 @@
         "toStringSv": "laptops",
         "properties": {
           "Path": "laptops",
-          "Segments": [
-            "laptops"
-          ],
+          "Segments": ["laptops"],
           "Depth": 1,
           "RootCategory": "laptops",
           "LeafCategory": "laptops"
@@ -40748,9 +40612,7 @@
         "toStringSv": "Laptops",
         "properties": {
           "Path": "Laptops",
-          "Segments": [
-            "Laptops"
-          ],
+          "Segments": ["Laptops"],
           "Depth": 1,
           "RootCategory": "Laptops",
           "LeafCategory": "Laptops"
@@ -40770,12 +40632,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies",
-            "Bird Supplies",
-            "Bird Food"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies", "Bird Supplies", "Bird Food"],
           "Depth": 4,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Bird Food"
@@ -40795,12 +40652,7 @@
         "toStringSv": "ANIMALS & PET SUPPLIES > PET SUPPLIES > BIRD SUPPLIES > BIRD FOOD",
         "properties": {
           "Path": "ANIMALS & PET SUPPLIES > PET SUPPLIES > BIRD SUPPLIES > BIRD FOOD",
-          "Segments": [
-            "ANIMALS & PET SUPPLIES",
-            "PET SUPPLIES",
-            "BIRD SUPPLIES",
-            "BIRD FOOD"
-          ],
+          "Segments": ["ANIMALS & PET SUPPLIES", "PET SUPPLIES", "BIRD SUPPLIES", "BIRD FOOD"],
           "Depth": 4,
           "RootCategory": "ANIMALS & PET SUPPLIES",
           "LeafCategory": "BIRD FOOD"
@@ -40820,12 +40672,7 @@
         "toStringSv": "animals & pet supplies > pet supplies > bird supplies > bird food",
         "properties": {
           "Path": "animals & pet supplies > pet supplies > bird supplies > bird food",
-          "Segments": [
-            "animals & pet supplies",
-            "pet supplies",
-            "bird supplies",
-            "bird food"
-          ],
+          "Segments": ["animals & pet supplies", "pet supplies", "bird supplies", "bird food"],
           "Depth": 4,
           "RootCategory": "animals & pet supplies",
           "LeafCategory": "bird food"
@@ -40845,12 +40692,7 @@
         "toStringSv": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
         "properties": {
           "Path": "Animals & Pet Supplies > Pet Supplies > Bird Supplies > Bird Food",
-          "Segments": [
-            "Animals & Pet Supplies",
-            "Pet Supplies",
-            "Bird Supplies",
-            "Bird Food"
-          ],
+          "Segments": ["Animals & Pet Supplies", "Pet Supplies", "Bird Supplies", "Bird Food"],
           "Depth": 4,
           "RootCategory": "Animals & Pet Supplies",
           "LeafCategory": "Bird Food"
@@ -40870,12 +40712,7 @@
         "toStringSv": "Animals&PetSupplies > PetSupplies > BirdSupplies > BirdFood",
         "properties": {
           "Path": "Animals&PetSupplies > PetSupplies > BirdSupplies > BirdFood",
-          "Segments": [
-            "Animals&PetSupplies",
-            "PetSupplies",
-            "BirdSupplies",
-            "BirdFood"
-          ],
+          "Segments": ["Animals&PetSupplies", "PetSupplies", "BirdSupplies", "BirdFood"],
           "Depth": 4,
           "RootCategory": "Animals&PetSupplies",
           "LeafCategory": "BirdFood"
@@ -40895,9 +40732,7 @@
         "toStringSv": "Bird Food",
         "properties": {
           "Path": "Bird Food",
-          "Segments": [
-            "Bird Food"
-          ],
+          "Segments": ["Bird Food"],
           "Depth": 1,
           "RootCategory": "Bird Food",
           "LeafCategory": "Bird Food"
@@ -40917,9 +40752,7 @@
         "toStringSv": "BIRD FOOD",
         "properties": {
           "Path": "BIRD FOOD",
-          "Segments": [
-            "BIRD FOOD"
-          ],
+          "Segments": ["BIRD FOOD"],
           "Depth": 1,
           "RootCategory": "BIRD FOOD",
           "LeafCategory": "BIRD FOOD"
@@ -40939,9 +40772,7 @@
         "toStringSv": "bird food",
         "properties": {
           "Path": "bird food",
-          "Segments": [
-            "bird food"
-          ],
+          "Segments": ["bird food"],
           "Depth": 1,
           "RootCategory": "bird food",
           "LeafCategory": "bird food"
@@ -40961,9 +40792,7 @@
         "toStringSv": "Bird Food",
         "properties": {
           "Path": "Bird Food",
-          "Segments": [
-            "Bird Food"
-          ],
+          "Segments": ["Bird Food"],
           "Depth": 1,
           "RootCategory": "Bird Food",
           "LeafCategory": "Bird Food"
@@ -40983,9 +40812,7 @@
         "toStringSv": "BirdFood",
         "properties": {
           "Path": "BirdFood",
-          "Segments": [
-            "BirdFood"
-          ],
+          "Segments": ["BirdFood"],
           "Depth": 1,
           "RootCategory": "BirdFood",
           "LeafCategory": "BirdFood"
@@ -41005,11 +40832,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS > LAPTOPS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS > LAPTOPS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS",
-            "LAPTOPS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS", "LAPTOPS"],
           "Depth": 3,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "LAPTOPS"
@@ -41029,11 +40852,7 @@
         "toStringSv": "electronics > computers > laptops",
         "properties": {
           "Path": "electronics > computers > laptops",
-          "Segments": [
-            "electronics",
-            "computers",
-            "laptops"
-          ],
+          "Segments": ["electronics", "computers", "laptops"],
           "Depth": 3,
           "RootCategory": "electronics",
           "LeafCategory": "laptops"
@@ -41053,11 +40872,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -41077,11 +40892,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -41101,11 +40912,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS > LAPTOPS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS > LAPTOPS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS",
-            "LAPTOPS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS", "LAPTOPS"],
           "Depth": 3,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "LAPTOPS"
@@ -41125,11 +40932,7 @@
         "toStringSv": "electronics > computers > laptops",
         "properties": {
           "Path": "electronics > computers > laptops",
-          "Segments": [
-            "electronics",
-            "computers",
-            "laptops"
-          ],
+          "Segments": ["electronics", "computers", "laptops"],
           "Depth": 3,
           "RootCategory": "electronics",
           "LeafCategory": "laptops"
@@ -41149,11 +40952,7 @@
         "toStringSv": "Electronics > Computers > Laptops",
         "properties": {
           "Path": "Electronics > Computers > Laptops",
-          "Segments": [
-            "Electronics",
-            "Computers",
-            "Laptops"
-          ],
+          "Segments": ["Electronics", "Computers", "Laptops"],
           "Depth": 3,
           "RootCategory": "Electronics",
           "LeafCategory": "Laptops"
@@ -41173,10 +40972,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -41196,10 +40992,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS"],
           "Depth": 2,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "COMPUTERS"
@@ -41219,10 +41012,7 @@
         "toStringSv": "electronics > computers",
         "properties": {
           "Path": "electronics > computers",
-          "Segments": [
-            "electronics",
-            "computers"
-          ],
+          "Segments": ["electronics", "computers"],
           "Depth": 2,
           "RootCategory": "electronics",
           "LeafCategory": "computers"
@@ -41242,10 +41032,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -41265,10 +41052,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -41288,10 +41072,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS"],
           "Depth": 2,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "COMPUTERS"
@@ -41311,10 +41092,7 @@
         "toStringSv": "electronics > computers",
         "properties": {
           "Path": "electronics > computers",
-          "Segments": [
-            "electronics",
-            "computers"
-          ],
+          "Segments": ["electronics", "computers"],
           "Depth": 2,
           "RootCategory": "electronics",
           "LeafCategory": "computers"
@@ -41334,10 +41112,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -41357,9 +41132,7 @@
         "toStringSv": "Pet Supplies",
         "properties": {
           "Path": "Pet Supplies",
-          "Segments": [
-            "Pet Supplies"
-          ],
+          "Segments": ["Pet Supplies"],
           "Depth": 1,
           "RootCategory": "Pet Supplies",
           "LeafCategory": "Pet Supplies"
@@ -41379,9 +41152,7 @@
         "toStringSv": "PET SUPPLIES",
         "properties": {
           "Path": "PET SUPPLIES",
-          "Segments": [
-            "PET SUPPLIES"
-          ],
+          "Segments": ["PET SUPPLIES"],
           "Depth": 1,
           "RootCategory": "PET SUPPLIES",
           "LeafCategory": "PET SUPPLIES"
@@ -41401,9 +41172,7 @@
         "toStringSv": "pet supplies",
         "properties": {
           "Path": "pet supplies",
-          "Segments": [
-            "pet supplies"
-          ],
+          "Segments": ["pet supplies"],
           "Depth": 1,
           "RootCategory": "pet supplies",
           "LeafCategory": "pet supplies"
@@ -41423,9 +41192,7 @@
         "toStringSv": "Pet Supplies",
         "properties": {
           "Path": "Pet Supplies",
-          "Segments": [
-            "Pet Supplies"
-          ],
+          "Segments": ["Pet Supplies"],
           "Depth": 1,
           "RootCategory": "Pet Supplies",
           "LeafCategory": "Pet Supplies"
@@ -41445,9 +41212,7 @@
         "toStringSv": "PetSupplies",
         "properties": {
           "Path": "PetSupplies",
-          "Segments": [
-            "PetSupplies"
-          ],
+          "Segments": ["PetSupplies"],
           "Depth": 1,
           "RootCategory": "PetSupplies",
           "LeafCategory": "PetSupplies"
@@ -41467,9 +41232,7 @@
         "toStringSv": "Bird Supplies",
         "properties": {
           "Path": "Bird Supplies",
-          "Segments": [
-            "Bird Supplies"
-          ],
+          "Segments": ["Bird Supplies"],
           "Depth": 1,
           "RootCategory": "Bird Supplies",
           "LeafCategory": "Bird Supplies"
@@ -41489,9 +41252,7 @@
         "toStringSv": "BIRD SUPPLIES",
         "properties": {
           "Path": "BIRD SUPPLIES",
-          "Segments": [
-            "BIRD SUPPLIES"
-          ],
+          "Segments": ["BIRD SUPPLIES"],
           "Depth": 1,
           "RootCategory": "BIRD SUPPLIES",
           "LeafCategory": "BIRD SUPPLIES"
@@ -41511,9 +41272,7 @@
         "toStringSv": "bird supplies",
         "properties": {
           "Path": "bird supplies",
-          "Segments": [
-            "bird supplies"
-          ],
+          "Segments": ["bird supplies"],
           "Depth": 1,
           "RootCategory": "bird supplies",
           "LeafCategory": "bird supplies"
@@ -41533,9 +41292,7 @@
         "toStringSv": "Bird Supplies",
         "properties": {
           "Path": "Bird Supplies",
-          "Segments": [
-            "Bird Supplies"
-          ],
+          "Segments": ["Bird Supplies"],
           "Depth": 1,
           "RootCategory": "Bird Supplies",
           "LeafCategory": "Bird Supplies"
@@ -41555,9 +41312,7 @@
         "toStringSv": "BirdSupplies",
         "properties": {
           "Path": "BirdSupplies",
-          "Segments": [
-            "BirdSupplies"
-          ],
+          "Segments": ["BirdSupplies"],
           "Depth": 1,
           "RootCategory": "BirdSupplies",
           "LeafCategory": "BirdSupplies"
@@ -41577,10 +41332,7 @@
         "toStringSv": "ELECTRONICS > COMPUTERS",
         "properties": {
           "Path": "ELECTRONICS > COMPUTERS",
-          "Segments": [
-            "ELECTRONICS",
-            "COMPUTERS"
-          ],
+          "Segments": ["ELECTRONICS", "COMPUTERS"],
           "Depth": 2,
           "RootCategory": "ELECTRONICS",
           "LeafCategory": "COMPUTERS"
@@ -41600,10 +41352,7 @@
         "toStringSv": "electronics > computers",
         "properties": {
           "Path": "electronics > computers",
-          "Segments": [
-            "electronics",
-            "computers"
-          ],
+          "Segments": ["electronics", "computers"],
           "Depth": 2,
           "RootCategory": "electronics",
           "LeafCategory": "computers"
@@ -41623,10 +41372,7 @@
         "toStringSv": "Electronics > Computers",
         "properties": {
           "Path": "Electronics > Computers",
-          "Segments": [
-            "Electronics",
-            "Computers"
-          ],
+          "Segments": ["Electronics", "Computers"],
           "Depth": 2,
           "RootCategory": "Electronics",
           "LeafCategory": "Computers"
@@ -41822,9 +41568,7 @@
         "toStringSv": "Non-prescription Dog Food",
         "properties": {
           "Path": "Non-prescription Dog Food",
-          "Segments": [
-            "Non-prescription Dog Food"
-          ],
+          "Segments": ["Non-prescription Dog Food"],
           "Depth": 1,
           "RootCategory": "Non-prescription Dog Food",
           "LeafCategory": "Non-prescription Dog Food"
@@ -41844,9 +41588,7 @@
         "toStringSv": "NON-PRESCRIPTION DOG FOOD",
         "properties": {
           "Path": "NON-PRESCRIPTION DOG FOOD",
-          "Segments": [
-            "NON-PRESCRIPTION DOG FOOD"
-          ],
+          "Segments": ["NON-PRESCRIPTION DOG FOOD"],
           "Depth": 1,
           "RootCategory": "NON-PRESCRIPTION DOG FOOD",
           "LeafCategory": "NON-PRESCRIPTION DOG FOOD"
@@ -41866,9 +41608,7 @@
         "toStringSv": "non-prescription dog food",
         "properties": {
           "Path": "non-prescription dog food",
-          "Segments": [
-            "non-prescription dog food"
-          ],
+          "Segments": ["non-prescription dog food"],
           "Depth": 1,
           "RootCategory": "non-prescription dog food",
           "LeafCategory": "non-prescription dog food"
@@ -41888,9 +41628,7 @@
         "toStringSv": "Non-prescription Dog Food",
         "properties": {
           "Path": "Non-prescription Dog Food",
-          "Segments": [
-            "Non-prescription Dog Food"
-          ],
+          "Segments": ["Non-prescription Dog Food"],
           "Depth": 1,
           "RootCategory": "Non-prescription Dog Food",
           "LeafCategory": "Non-prescription Dog Food"
@@ -41910,9 +41648,7 @@
         "toStringSv": "Non-prescriptionDogFood",
         "properties": {
           "Path": "Non-prescriptionDogFood",
-          "Segments": [
-            "Non-prescriptionDogFood"
-          ],
+          "Segments": ["Non-prescriptionDogFood"],
           "Depth": 1,
           "RootCategory": "Non-prescriptionDogFood",
           "LeafCategory": "Non-prescriptionDogFood"
@@ -41932,9 +41668,7 @@
         "toStringSv": "Nonprescription Dog Food",
         "properties": {
           "Path": "Nonprescription Dog Food",
-          "Segments": [
-            "Nonprescription Dog Food"
-          ],
+          "Segments": ["Nonprescription Dog Food"],
           "Depth": 1,
           "RootCategory": "Nonprescription Dog Food",
           "LeafCategory": "Nonprescription Dog Food"

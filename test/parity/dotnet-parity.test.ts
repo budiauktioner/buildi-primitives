@@ -1,5 +1,74 @@
 import { describe, expect, it } from "vitest";
 import * as primitives from "../../src/index.js";
+import type {
+  AdultClothingSizeFormatOptions,
+  AdultShoeSizeFormatOptions,
+  AspectRatioFormatOptions,
+  BatteryCapacityFormatOptions,
+  BatteryChemistryFormatOptions,
+  CameraResolutionFormatOptions,
+  ChildClothingSizeFormatOptions,
+  ChildShoeSizeFormatOptions,
+  ClothingFitFormatOptions,
+  ClothingGenderFormatOptions,
+  ClothingSeasonFormatOptions,
+  ClothingSizeFormatOptions,
+  ColorFormatOptions,
+  DisplayPanelTypeFormatOptions,
+  ElectricalPhaseFormatOptions,
+  EuEnergyEfficiencyClassFormatOptions,
+  GoogleProductCategoryFormatOptions,
+  Gtin12FormatOptions,
+  Gtin13FormatOptions,
+  Gtin14FormatOptions,
+  Gtin8FormatOptions,
+  GtinFormatOptions,
+  HsCodeFormatOptions,
+  IpRatingFormatOptions,
+  OperatingSystemInfoFormatOptions,
+  OperatingSystemNameFormatOptions,
+  OperatingSystemVersionFormatOptions,
+  PowerSourceFormatOptions,
+  ProcessorSpeedFormatOptions,
+  RamCapacityFormatOptions,
+  RefrigerantFormatOptions,
+  ScreenResolutionFormatOptions,
+  ScreenSizeFormatOptions,
+  ShoeSizeFormatOptions,
+  StorageCapacityFormatOptions,
+  StorageMediaTypeFormatOptions,
+} from "../../src/product/index.js";
+import type {
+  BoatCeDesignCategoryFormatOptions,
+  BoatHullMaterialFormatOptions,
+  BodyTypeFormatOptions,
+  BoltPatternFormatOptions,
+  DrivetrainTypeFormatOptions,
+  EmissionRateFormatOptions,
+  EnergyConsumptionFormatOptions,
+  EngineDisplacementFormatOptions,
+  EnginePowerFormatOptions,
+  EuroEmissionClassFormatOptions,
+  EuTypeApprovalNumberFormatOptions,
+  EuVehicleCategoryFormatOptions,
+  FuelConsumptionFormatOptions,
+  FuelConsumptionNormFormatOptions,
+  FuelTypeFormatOptions,
+  OdometerReadingFormatOptions,
+  OperatingHoursFormatOptions,
+  SuspensionTypeFormatOptions,
+  SwedishDrivingLicenseCategoryFormatOptions,
+  SwedishEcoVehicleClassificationFormatOptions,
+  SwedishVehicleRegistrationNumberFormatOptions,
+  SwedishVehicleStatusFormatOptions,
+  SwedishVehicleTypeFormatOptions,
+  TireDimensionFormatOptions,
+  TireTypeFormatOptions,
+  TrackTypeFormatOptions,
+  TransmissionTypeFormatOptions,
+  VehicleIdentificationNumberFormatOptions,
+  WheelRimDimensionFormatOptions,
+} from "../../src/vehicle/index.js";
 
 /**
  * Guards the public surface against the .NET package `Buildi.Primitives`, which
@@ -15,6 +84,78 @@ import * as primitives from "../../src/index.js";
  */
 
 const exported = primitives as unknown as Record<string, unknown>;
+
+type ProductFormatOptions =
+  | AdultClothingSizeFormatOptions
+  | AdultShoeSizeFormatOptions
+  | AspectRatioFormatOptions
+  | BatteryCapacityFormatOptions
+  | BatteryChemistryFormatOptions
+  | CameraResolutionFormatOptions
+  | ChildClothingSizeFormatOptions
+  | ChildShoeSizeFormatOptions
+  | ClothingFitFormatOptions
+  | ClothingGenderFormatOptions
+  | ClothingSeasonFormatOptions
+  | ClothingSizeFormatOptions
+  | ColorFormatOptions
+  | DisplayPanelTypeFormatOptions
+  | ElectricalPhaseFormatOptions
+  | EuEnergyEfficiencyClassFormatOptions
+  | GoogleProductCategoryFormatOptions
+  | Gtin12FormatOptions
+  | Gtin13FormatOptions
+  | Gtin14FormatOptions
+  | Gtin8FormatOptions
+  | GtinFormatOptions
+  | HsCodeFormatOptions
+  | IpRatingFormatOptions
+  | OperatingSystemInfoFormatOptions
+  | OperatingSystemNameFormatOptions
+  | OperatingSystemVersionFormatOptions
+  | PowerSourceFormatOptions
+  | ProcessorSpeedFormatOptions
+  | RamCapacityFormatOptions
+  | RefrigerantFormatOptions
+  | ScreenResolutionFormatOptions
+  | ScreenSizeFormatOptions
+  | ShoeSizeFormatOptions
+  | StorageCapacityFormatOptions
+  | StorageMediaTypeFormatOptions;
+
+type VehicleFormatOptions =
+  | BoatCeDesignCategoryFormatOptions
+  | BoatHullMaterialFormatOptions
+  | BodyTypeFormatOptions
+  | BoltPatternFormatOptions
+  | DrivetrainTypeFormatOptions
+  | EmissionRateFormatOptions
+  | EnergyConsumptionFormatOptions
+  | EngineDisplacementFormatOptions
+  | EnginePowerFormatOptions
+  | EuroEmissionClassFormatOptions
+  | EuTypeApprovalNumberFormatOptions
+  | EuVehicleCategoryFormatOptions
+  | FuelConsumptionFormatOptions
+  | FuelConsumptionNormFormatOptions
+  | FuelTypeFormatOptions
+  | OdometerReadingFormatOptions
+  | OperatingHoursFormatOptions
+  | SuspensionTypeFormatOptions
+  | SwedishDrivingLicenseCategoryFormatOptions
+  | SwedishEcoVehicleClassificationFormatOptions
+  | SwedishVehicleRegistrationNumberFormatOptions
+  | SwedishVehicleStatusFormatOptions
+  | SwedishVehicleTypeFormatOptions
+  | TireDimensionFormatOptions
+  | TireTypeFormatOptions
+  | TrackTypeFormatOptions
+  | TransmissionTypeFormatOptions
+  | VehicleIdentificationNumberFormatOptions
+  | WheelRimDimensionFormatOptions;
+
+const productFormatOptions: ProductFormatOptions = {};
+const vehicleFormatOptions: VehicleFormatOptions = {};
 
 const COUNTRY_ADDRESS_PREFIXES = [
   "Austrian",
@@ -345,6 +486,11 @@ const EXPECTED_SCAN_RESULT_ACCESSORS = [
 ] as const;
 
 describe(".NET parity — ported namespaces", () => {
+  it("exports Product and Vehicle format-option types from namespace barrels", () => {
+    expect(productFormatOptions).toEqual({});
+    expect(vehicleFormatOptions).toEqual({});
+  });
+
   for (const [namespace, types] of Object.entries(EXPECTED_TYPES)) {
     it.each(types)(`${namespace} exports %s`, (typeName) => {
       expect(exported[typeName]).toBeDefined();

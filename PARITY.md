@@ -8,7 +8,7 @@ exactly how much of that surface is implemented here.
 |                   |                            |
 | ----------------- | -------------------------- |
 | .NET baseline     | `Buildi.Primitives` 0.21.0 |
-| This package      | `0.1.1`                    |
+| This package      | `0.2.0`                    |
 | Namespaces ported | 13 of 13                   |
 | Types ported      | 200 of 200                 |
 
@@ -24,21 +24,21 @@ commit that changes the .NET baseline.
 
 ## Namespace coverage
 
-| .NET namespace | Status         | Notes                                                       |
-| -------------- | -------------- | ----------------------------------------------------------- |
-| `Organization` | Complete       | 10 types                                                    |
-| `Banking`      | Complete       | 10 types                                                    |
-| `Person`       | Complete       | 6 types                                                     |
-| `Geography`    | Complete       | 7 types                                                     |
-| `Finance`      | Complete       | 3 types, plus `ExchangeRates`                               |
-| `Contact`      | Complete       | Including all 31 country address / zip-code pairs           |
-| `Web`          | Complete       | 2 types                                                     |
-| `Property`     | Complete       | 2 types                                                     |
-| `Validation`   | Complete       | Shared `ValidationResult` infrastructure                    |
-| `TextScanning` | Complete       | Scanner, candidates, overlap resolution, typed accessors    |
-| `Measurement`  | Full parity    | 19 dimensions, 136 units, 5 standalone types                |
-| `Vehicle`      | Full parity    | 29 types, plus the `SwedishDrivingLicenseVehicleGroup` enum |
-| `Product`      | Full parity    | 36 types, plus 6 nested enums                               |
+| .NET namespace | Status      | Notes                                                                 |
+| -------------- | ----------- | --------------------------------------------------------------------- |
+| `Organization` | Complete    | 10 types                                                              |
+| `Banking`      | Complete    | 10 types                                                              |
+| `Person`       | Complete    | 6 types                                                               |
+| `Geography`    | Complete    | 7 types                                                               |
+| `Finance`      | Complete    | 3 types, plus `ExchangeRates`                                         |
+| `Contact`      | Complete    | Including all 31 country address / zip-code pairs                     |
+| `Web`          | Complete    | 2 types                                                               |
+| `Property`     | Complete    | 2 types                                                               |
+| `Validation`   | Complete    | Shared `ValidationResult` infrastructure                              |
+| `TextScanning` | Complete    | Scanner, candidates, overlap resolution, typed accessors              |
+| `Measurement`  | Full parity | 19 dimensions, 133 units, 5 standalone types, plus `TemperatureDelta` |
+| `Vehicle`      | Full parity | 29 types, plus the `SwedishDrivingLicenseVehicleGroup` enum           |
+| `Product`      | Full parity | 36 types, plus 6 nested enums                                         |
 
 ## Cross-cutting features
 
@@ -83,13 +83,13 @@ so this is transparent to consumers; see
 
 ## Porting `Measurement`
 
-The namespace divides into 19 quantity types, each paired with a unit class, and
-six standalone types (`Count`, `Percentage`, `SoundLevel`, `TemperatureDelta`,
-`Year`, `YearMonth`). There are 133 units in total.
+The namespace divides into 19 quantity types, each paired with a unit class,
+five standalone types (`Count`, `Percentage`, `SoundLevel`, `Year`,
+`YearMonth`), and `TemperatureDelta`. There are 133 units in total.
 
-The namespace is fully ported: nineteen dimensions covering 136 units, plus the
-five standalone types `Count`, `Percentage`, `SoundLevel`, `Year` and
-`YearMonth`, which have no unit table and no conversion.
+The namespace is fully ported: 19 dimensions, 133 units, five standalone types,
+plus `TemperatureDelta`. The standalone types `Count`, `Percentage`,
+`SoundLevel`, `Year` and `YearMonth` have no unit table and no conversion.
 
 Four things do not follow the common pattern:
 
@@ -126,10 +126,9 @@ Two dimensions accept a bare number and assume a unit, as .NET does:
 `Speed`, `Torque` and `RotationalSpeed` have no curated display scale in .NET,
 so `naturalUnit` falls back to the base unit for them.
 
-The unit tables are static class fields, which bundlers keep whether or not the
-class is referenced, so the `measurement` subpath does not shrink to the single
-dimension a consumer imports. Splitting it into per-dimension subpaths would
-fix that if it becomes a problem.
+With the preserve-module output, bundlers can remove unreferenced Measurement
+dimensions. A retained quantity class still keeps its own static unit table, so
+importing `Length` includes the Length units but not unrelated dimension tables.
 
 Values are held internally as an exact base-10 decimal
 ([`internal/decimal.ts`](src/internal/decimal.ts)) rather than `number`.

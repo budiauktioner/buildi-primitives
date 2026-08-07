@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class PressureUnit extends MeasurementUnit {
+  declare private readonly __pressureUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Pressure Unit",
     localizedName: "Tryckenhet",
@@ -115,28 +117,29 @@ export class PressureUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<PressureUnit>(
-    [
+  static readonly index: MeasurementUnitIndex<PressureUnit> =
+    new MeasurementUnitIndex<PressureUnit>(
+      [
+        PressureUnit.Pascal,
+        PressureUnit.Hectopascal,
+        PressureUnit.Kilopascal,
+        PressureUnit.Megapascal,
+        PressureUnit.Gigapascal,
+        PressureUnit.Bar,
+        PressureUnit.Millibar,
+        PressureUnit.Psi,
+        PressureUnit.Atmosphere,
+        PressureUnit.MillimeterOfMercury,
+      ],
       PressureUnit.Pascal,
-      PressureUnit.Hectopascal,
-      PressureUnit.Kilopascal,
-      PressureUnit.Megapascal,
-      PressureUnit.Gigapascal,
-      PressureUnit.Bar,
-      PressureUnit.Millibar,
-      PressureUnit.Psi,
-      PressureUnit.Atmosphere,
-      PressureUnit.MillimeterOfMercury,
-    ],
-    PressureUnit.Pascal,
-    [
-      PressureUnit.Pascal,
-      PressureUnit.Hectopascal,
-      PressureUnit.Kilopascal,
-      PressureUnit.Bar,
-      PressureUnit.Megapascal,
-    ],
-  );
+      [
+        PressureUnit.Pascal,
+        PressureUnit.Hectopascal,
+        PressureUnit.Kilopascal,
+        PressureUnit.Bar,
+        PressureUnit.Megapascal,
+      ],
+    );
 
   static get all(): readonly PressureUnit[] {
     return PressureUnit.index.all;

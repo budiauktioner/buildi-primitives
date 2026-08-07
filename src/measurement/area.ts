@@ -74,6 +74,7 @@ export class Area extends Quantity<AreaUnit> {
 
   /** Creates a area from a value and unit. */
   static create(value: number | Decimal, unit: AreaUnit): Area {
+    AreaUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Area.decimalOf(value);
     return new Area(unit.toBase(amount), unit);
   }

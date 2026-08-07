@@ -91,11 +91,17 @@ export class RamCapacity {
   }
 
   /** Returns the display form, e.g. `16 GB`. Returns `null` when the input is invalid. */
-  static format(input: string | null | undefined, options?: RamCapacityFormatOptions): string | null {
+  static format(
+    input: string | null | undefined,
+    options?: RamCapacityFormatOptions,
+  ): string | null {
     const parsed = RamCapacity.tryParse(input);
     if (parsed !== null) {
       if (options?.unit !== undefined || options?.decimals !== undefined) {
-        return parsed.size.toStringInUnit(options.unit ?? parsed.size.originalUnit, options.decimals);
+        return parsed.size.toStringInUnit(
+          options.unit ?? parsed.size.originalUnit,
+          options.decimals,
+        );
       }
       return parsed.value;
     }

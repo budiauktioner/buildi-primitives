@@ -129,7 +129,10 @@ Types that can plausibly appear in prose expose `findCandidatesInText`, and
 `defaultTextScanner` runs all of them at once:
 
 ```ts
-import { defaultTextScanner } from "@budiauktioner/buildi-primitives/text-scanning";
+import {
+  TextCandidateCategory,
+  defaultTextScanner,
+} from "@budiauktioner/buildi-primitives/text-scanning";
 
 const text = "Hör av dig till info@example.com eller ring 070-174 06 33.";
 const result = defaultTextScanner.scan(text);
@@ -147,6 +150,21 @@ source text, its normalized, formatted and masked forms, and a
 `TextMatchConfidence`. Types with a checksum report `High`; bare digit
 sequences report `Low`. Narrow a scan with
 `scan(text, { minimumConfidence, includeCategories, excludeCategories })`.
+
+Version 0.2.0 expands `defaultTextScanner` with the Measurement, Vehicle, and
+Product scanners, so an unfiltered scan may now find or mask more values than
+0.1.x. To preserve the previous category scope during migration, exclude the
+new categories:
+
+```ts
+const result = defaultTextScanner.scan(text, {
+  excludeCategories: new Set([
+    TextCandidateCategory.Measurement,
+    TextCandidateCategory.Vehicle,
+    TextCandidateCategory.Product,
+  ]),
+});
+```
 
 Scanning is the one part of the package with import-time behaviour: importing
 `@budiauktioner/buildi-primitives/text-scanning` (or the root entry) registers
@@ -198,19 +216,34 @@ RFC 2606 domains for email and the standard international test IBANs.
 ## Subpath exports and bundle size
 
 The root entry re-exports everything for convenience. Import from a namespace
-subpath instead when bundle size matters:
+subpath instead when bundle size matters. These figures bundle and minify the
+complete consumers shown below with esbuild for an ES2022 browser target:
 
 ```ts
-// ~392 kB minified — the root entry registers every text scanner
+// 439,333 bytes minified
 import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives";
 
-// ~40 kB minified — the same type, nothing else
-import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives/organization";
+console.log(SwedishOrganizationNumber.parse("559246-0421").toNormalizedString());
 ```
 
-`measurement` is the one subpath that does not shrink to the type you ask for:
-its unit tables are static class fields, which bundlers keep whether or not you
-reference the class, so importing a single dimension still costs about 112 kB.
+```ts
+// 22,024 bytes minified
+import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives/organization";
+
+console.log(SwedishOrganizationNumber.parse("559246-0421").toNormalizedString());
+```
+
+```ts
+// 15,502 bytes minified
+import { Length } from "@budiauktioner/buildi-primitives/measurement";
+
+console.log(Length.fromMeters(1).toNormalizedString());
+```
+
+The root named import remains substantially larger because importing the root
+entry registers all built-in scanners as an import-time side effect. Namespace
+imports avoid that registration graph, and tree-shaking drops unrelated
+Measurement dimensions from the `Length` consumer.
 
 Available subpaths: `contact`, `person`, `organization`, `geography`, `web`,
 `finance`, `property`, `banking`, `measurement`, `vehicle`, `product`,

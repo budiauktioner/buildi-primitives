@@ -11,7 +11,7 @@ export interface EuTypeApprovalNumberFormatOptions {
 const MAX_COUNTRY_CODE = 58;
 
 const APPROVAL_PATTERN = /^[eE](\d{1,2})\*([0-9/]+)\*(\d+)\*(\d+)$/u;
-const SCAN_PATTERN = /\b[eE]\d{1,2}\*[0-9/]+\*\d+\*\d+\b/gu;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])[eE]\d{1,2}\*[0-9/]+\*\d+\*\d+(?![\p{L}\p{N}_])/gu;
 
 /** UNECE E-mark country codes. Gaps are codes that have never been assigned. */
 const E_MARK_COUNTRIES: Readonly<Record<number, string>> = Object.freeze({

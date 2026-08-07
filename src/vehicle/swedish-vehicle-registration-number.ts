@@ -19,7 +19,8 @@ const MAX_INPUT_LENGTH = 20;
 
 // I, Q, V, Å, Ä and Ö are never used; O is additionally barred from the last position.
 const PATTERN = /^[A-HJ-NOPR-UW-Z]{3}\d{2}[\dA-HJ-NPR-UW-Z]$/u;
-const SCAN_PATTERN = /\b[A-HJ-NOPR-UW-Z]{3}\s?\d{2}[\dA-HJ-NPR-UW-Z]\b/gu;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])[A-HJ-NOPR-UW-Z]{3}\s?\d{2}[\dA-HJ-NPR-UW-Z](?![\p{L}\p{N}_])/giu;
 
 /** Transportstyrelsen's mapping from the tax digit to the month tax falls due. */
 const TAX_MONTH_BY_DIGIT = [3, 4, 5, 6, 8, 10, 11, 12, 1, 2];
@@ -175,13 +176,11 @@ export class SwedishVehicleRegistrationNumber {
   ): readonly TextCandidate<SwedishVehicleRegistrationNumber>[] {
     if (!text) return [];
 
-    // .NET matches against the upper-cased copy but reports spans from the original.
-    const upper = text.toUpperCase();
     const out: TextCandidate<SwedishVehicleRegistrationNumber>[] = [];
     const pattern = new RegExp(SCAN_PATTERN.source, SCAN_PATTERN.flags);
     let match: RegExpExecArray | null;
 
-    while ((match = pattern.exec(upper)) !== null) {
+    while ((match = pattern.exec(text)) !== null) {
       const value = SwedishVehicleRegistrationNumber.tryParse(match[0]);
       if (value === null) continue;
       out.push(

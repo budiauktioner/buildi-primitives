@@ -30,9 +30,7 @@ export class ElectricalPhase {
     englishName: "Electrical Phase",
     localizedName: "Fas",
     emoji: "⚡",
-    sources: Object.freeze([
-      "https://www.elsakerhetsverket.se/",
-    ]),
+    sources: Object.freeze(["https://www.elsakerhetsverket.se/"]),
   });
 
   readonly value: string;
@@ -82,9 +80,7 @@ export class ElectricalPhase {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -110,9 +106,8 @@ export class ElectricalPhase {
     options?: ElectricalPhaseFormatOptions,
   ): string | null {
     const r = ElectricalPhase.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -161,9 +156,7 @@ export class ElectricalPhase {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -217,10 +210,7 @@ const ALIASES: readonly (readonly [ElectricalPhase, readonly string[]])[] = [
     ElectricalPhase.SinglePhase,
     ["1", "1f", "1fas", "1p", "1phase", "230v1fas", "enfas", "l1", "singlephase"],
   ],
-  [
-    ElectricalPhase.TwoPhase,
-    ["2", "2f", "2fas", "2p", "2phase", "tvafas", "twophase"],
-  ],
+  [ElectricalPhase.TwoPhase, ["2", "2f", "2fas", "2p", "2phase", "tvafas", "twophase"]],
   [
     ElectricalPhase.ThreePhase,
     ["3", "3f", "3fas", "3p", "3phase", "400v3fas", "l1l2l3", "threephase", "trefas"],
@@ -235,4 +225,5 @@ for (const [value, keys] of ALIASES) {
   }
 }
 
-const SCAN_PATTERN = /(?<![\p{L}\p{N}_])(?:[123]-?fas(?:ig)?|enfas(?:ig)?|trefas(?:ig)?|tvåfas(?:ig)?|single-?phase|three-?phase|two-?phase|[123]~)(?![\p{L}\p{N}_])/gui;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])(?:[123]-?fas(?:ig)?|enfas(?:ig)?|trefas(?:ig)?|tvåfas(?:ig)?|single-?phase|three-?phase|two-?phase|[123]~)(?![\p{L}\p{N}_])/giu;

@@ -13,7 +13,6 @@ interface SwedishVehicleStatusDef {
   readonly code: string;
   readonly englishName: string;
   readonly localizedName: string;
-  readonly rank: number;
 }
 
 /** Swedish vehicle registration status (`fordonsstatus`) from Transportstyrelsen. */
@@ -30,15 +29,11 @@ export class SwedishVehicleStatus {
   readonly englishName: string;
   readonly localizedName: string;
 
-  /** @internal Position in the canonical .NET ordering, used by {@link compareTo}. */
-  private readonly rank: number;
-
   private constructor(def: SwedishVehicleStatusDef) {
     this.value = def.value;
     this.code = def.code;
     this.englishName = def.englishName;
     this.localizedName = def.localizedName;
-    this.rank = def.rank;
   }
 
   static readonly InService = new SwedishVehicleStatus({
@@ -46,7 +41,6 @@ export class SwedishVehicleStatus {
     code: "ITRAFIK",
     englishName: "In service",
     localizedName: "I trafik",
-    rank: 0,
   });
 
   static readonly Deregistered = new SwedishVehicleStatus({
@@ -54,7 +48,6 @@ export class SwedishVehicleStatus {
     code: "AVST",
     englishName: "Deregistered",
     localizedName: "Avställd",
-    rank: 1,
   });
 
   static readonly Unregistered = new SwedishVehicleStatus({
@@ -62,7 +55,6 @@ export class SwedishVehicleStatus {
     code: "AVREG",
     englishName: "Unregistered",
     localizedName: "Avregistrerad",
-    rank: 2,
   });
 
   static readonly Stolen = new SwedishVehicleStatus({
@@ -70,7 +62,6 @@ export class SwedishVehicleStatus {
     code: "STULEN",
     englishName: "Stolen",
     localizedName: "Stulen",
-    rank: 3,
   });
 
   static readonly Exported = new SwedishVehicleStatus({
@@ -78,7 +69,6 @@ export class SwedishVehicleStatus {
     code: "EXPORT",
     englishName: "Exported",
     localizedName: "Exporterad",
-    rank: 4,
   });
 
   static readonly Scrapped = new SwedishVehicleStatus({
@@ -86,7 +76,6 @@ export class SwedishVehicleStatus {
     code: "SKROT",
     englishName: "Scrapped",
     localizedName: "Skrotad",
-    rank: 5,
   });
 
   static readonly ReportedStolen = new SwedishVehicleStatus({
@@ -94,7 +83,6 @@ export class SwedishVehicleStatus {
     code: "ANMSTULEN",
     englishName: "Reported stolen",
     localizedName: "Anmäld stulen",
-    rank: 6,
   });
 
   /** All 7 values, in canonical order. */

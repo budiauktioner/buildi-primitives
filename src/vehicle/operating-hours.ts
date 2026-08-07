@@ -14,7 +14,8 @@ export interface OperatingHoursFormatOptions {
 
 const HOUR_SUFFIXES = ["h", "tim", "timmar", "timme", "hours", "hour", "hrs", "hr"];
 
-const SCAN_PATTERN = /(?<!\w)(?:\d+[0-9 .,]*\d|\d)\s*(?:timmar|timme|tim|hours|hour|hrs|hr|h)\b/giu;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])(?:\d+[0-9 .,]*\d|\d)\s*(?:timmar|timme|tim|hours|hour|hrs|hr|h)(?![\p{L}\p{N}_])/giu;
 
 /**
  * Machine operating hours (`drifttimmar`), e.g. `1234 h`. A bare number is read as
@@ -167,6 +168,10 @@ export class OperatingHours {
     return new OperatingHours(
       this.exactHours.dividedBy(divisor instanceof Decimal ? divisor : decimalOf(divisor)),
     );
+  }
+
+  negated(): OperatingHours {
+    return new OperatingHours(this.exactHours.negated());
   }
 
   equals(other: OperatingHours | null | undefined): boolean {

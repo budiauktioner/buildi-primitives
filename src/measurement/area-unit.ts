@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class AreaUnit extends MeasurementUnit {
+  declare private readonly __areaUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Area Unit",
     localizedName: "Ytenhet",
@@ -111,7 +113,7 @@ export class AreaUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<AreaUnit>(
+  static readonly index: MeasurementUnitIndex<AreaUnit> = new MeasurementUnitIndex<AreaUnit>(
     [
       AreaUnit.SquareMillimeter,
       AreaUnit.SquareCentimeter,

@@ -35,8 +35,8 @@ export class Percentage {
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Percentage",
     localizedName: "Procent",
-    emoji: "％",
-    sources: Object.freeze([]),
+    emoji: "📊",
+    sources: Object.freeze(["https://www.bipm.org/en/publications/si-brochure"]),
   });
 
   private constructor(private readonly fraction: Decimal) {}

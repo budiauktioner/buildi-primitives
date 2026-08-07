@@ -28,9 +28,7 @@ export class BatteryChemistry {
     englishName: "Battery Chemistry",
     localizedName: "Batterikemi",
     emoji: "🔋",
-    sources: Object.freeze([
-      "https://www.iec.ch/",
-    ]),
+    sources: Object.freeze(["https://www.iec.ch/"]),
   });
 
   readonly value: string;
@@ -157,9 +155,7 @@ export class BatteryChemistry {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -185,9 +181,8 @@ export class BatteryChemistry {
     options?: BatteryChemistryFormatOptions,
   ): string | null {
     const r = BatteryChemistry.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -209,9 +204,7 @@ export class BatteryChemistry {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -269,50 +262,33 @@ function normalizeLookupKey(value: string): string {
 }
 
 const ALIASES: readonly (readonly [BatteryChemistry, readonly string[]])[] = [
-  [
-    BatteryChemistry.LithiumIon,
-    ["liion", "lithiumion", "litiumion", "litiumjon"],
-  ],
-  [
-    BatteryChemistry.LiFePO4,
-    ["lfp", "lifepo4", "lithiumironphosphate", "litiumjarnfosfat"],
-  ],
-  [
-    BatteryChemistry.LithiumPolymer,
-    ["lipo", "lipoly", "lithiumpolymer", "litiumpolymer"],
-  ],
-  [
-    BatteryChemistry.LithiumTitanate,
-    ["lithiumtitanate", "litiumtitanat", "lto"],
-  ],
-  [
-    BatteryChemistry.NickelMetalHydride,
-    ["nickelmetalhydride", "nickelmetallhydrid", "nimh"],
-  ],
-  [
-    BatteryChemistry.NickelCadmium,
-    ["nicd", "nickelcadmium", "nickelkadmium"],
-  ],
+  [BatteryChemistry.LithiumIon, ["liion", "lithiumion", "litiumion", "litiumjon"]],
+  [BatteryChemistry.LiFePO4, ["lfp", "lifepo4", "lithiumironphosphate", "litiumjarnfosfat"]],
+  [BatteryChemistry.LithiumPolymer, ["lipo", "lipoly", "lithiumpolymer", "litiumpolymer"]],
+  [BatteryChemistry.LithiumTitanate, ["lithiumtitanate", "litiumtitanat", "lto"]],
+  [BatteryChemistry.NickelMetalHydride, ["nickelmetalhydride", "nickelmetallhydrid", "nimh"]],
+  [BatteryChemistry.NickelCadmium, ["nicd", "nickelcadmium", "nickelkadmium"]],
   [
     BatteryChemistry.FloodedLeadAcid,
-    ["bly", "blybatteri", "blybatteri(flytandesyra)", "floodedleadacid", "leadacid", "pb", "pbacid", "vatcell", "wetcell"],
+    [
+      "bly",
+      "blybatteri",
+      "blybatteri(flytandesyra)",
+      "floodedleadacid",
+      "leadacid",
+      "pb",
+      "pbacid",
+      "vatcell",
+      "wetcell",
+    ],
   ],
   [
     BatteryChemistry.AbsorbedGlassMat,
     ["absorbedglassmat", "absorbentglassmat", "agm", "agmbatteri"],
   ],
-  [
-    BatteryChemistry.GelLeadAcid,
-    ["gel", "gelbatteri", "gelcell", "gelleadacid"],
-  ],
-  [
-    BatteryChemistry.Alkaline,
-    ["alkaline", "alkalisk", "alkaliskt"],
-  ],
-  [
-    BatteryChemistry.ZincCarbon,
-    ["zinccarbon", "zinkkol"],
-  ],
+  [BatteryChemistry.GelLeadAcid, ["gel", "gelbatteri", "gelcell", "gelleadacid"]],
+  [BatteryChemistry.Alkaline, ["alkaline", "alkalisk", "alkaliskt"]],
+  [BatteryChemistry.ZincCarbon, ["zinccarbon", "zinkkol"]],
 ];
 
 const LOOKUP = new Map<string, BatteryChemistry>();

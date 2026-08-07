@@ -25,9 +25,7 @@ export class ClothingFit {
     englishName: "Clothing Fit",
     localizedName: "Passform",
     emoji: "🧥",
-    sources: Object.freeze([
-      "https://en.wikipedia.org/wiki/Clothing_sizes",
-    ]),
+    sources: Object.freeze(["https://en.wikipedia.org/wiki/Clothing_sizes"]),
   });
 
   readonly value: string;
@@ -86,9 +84,7 @@ export class ClothingFit {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -114,9 +110,8 @@ export class ClothingFit {
     options?: ClothingFitFormatOptions,
   ): string | null {
     const r = ClothingFit.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -138,9 +133,7 @@ export class ClothingFit {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -198,19 +191,59 @@ const ALIASES: readonly (readonly [ClothingFit, readonly string[]])[] = [
   ],
   [
     ClothingFit.Regular,
-    ["klassiskpassform", "normal", "normalpassform", "rak", "rakpassform", "regular", "regularfit", "standard", "standardfit", "straight", "straightfit"],
+    [
+      "klassiskpassform",
+      "normal",
+      "normalpassform",
+      "rak",
+      "rakpassform",
+      "regular",
+      "regularfit",
+      "standard",
+      "standardfit",
+      "straight",
+      "straightfit",
+    ],
   ],
   [
     ClothingFit.Loose,
-    ["bekvampassform", "comfortfit", "loose", "loosefit", "los", "lospassform", "relaxed", "relaxedfit", "vid", "vidpassform"],
+    [
+      "bekvampassform",
+      "comfortfit",
+      "loose",
+      "loosefit",
+      "los",
+      "lospassform",
+      "relaxed",
+      "relaxedfit",
+      "vid",
+      "vidpassform",
+    ],
   ],
   [
     ClothingFit.Oversized,
-    ["boxy", "boxyfit", "extravid", "overdimensionerad", "oversize", "oversized", "oversizedfit", "oversizefit", "xxlfit"],
+    [
+      "boxy",
+      "boxyfit",
+      "extravid",
+      "overdimensionerad",
+      "oversize",
+      "oversized",
+      "oversizedfit",
+      "oversizefit",
+      "xxlfit",
+    ],
   ],
   [
     ClothingFit.Tailored,
-    ["anpassadpassform", "formellpassform", "skraddarsydd", "slimtailored", "tailored", "tailoredfit"],
+    [
+      "anpassadpassform",
+      "formellpassform",
+      "skraddarsydd",
+      "slimtailored",
+      "tailored",
+      "tailoredfit",
+    ],
   ],
 ];
 

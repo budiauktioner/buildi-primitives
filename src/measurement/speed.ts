@@ -62,6 +62,7 @@ export class Speed extends Quantity<SpeedUnit> {
 
   /** Creates a speed from a value and unit. */
   static create(value: number | Decimal, unit: SpeedUnit): Speed {
+    SpeedUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Speed.decimalOf(value);
     return new Speed(unit.toBase(amount), unit);
   }

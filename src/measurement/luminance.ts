@@ -58,6 +58,7 @@ export class Luminance extends Quantity<LuminanceUnit> {
 
   /** Creates a luminance from a value and unit. */
   static create(value: number | Decimal, unit: LuminanceUnit): Luminance {
+    LuminanceUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Luminance.decimalOf(value);
     return new Luminance(unit.toBase(amount), unit);
   }

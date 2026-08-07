@@ -70,6 +70,7 @@ export class Temperature {
 
   /** The exact value converted to `unit`. */
   inDecimal(unit: TemperatureUnit): Decimal {
+    TemperatureUnit.assertOwns(unit);
     if (unit === TemperatureUnit.Kelvin) return this.kelvinValue;
 
     const celsius = this.kelvinValue.minus(CELSIUS_OFFSET);
@@ -78,7 +79,8 @@ export class Temperature {
       return celsius.times(NINE).dividedBy(FIVE).plus(THIRTY_TWO);
     }
 
-    throw new Error("Unknown temperature unit.");
+    /* c8 ignore next */
+    throw new RangeError("Unit belongs to another dimension.");
   }
 
   /** The value converted to `unit`, as a `number` for ergonomic access. */
@@ -101,10 +103,12 @@ export class Temperature {
 
   /** Creates a temperature from a value on the given scale. */
   static create(value: number | Decimal, unit: TemperatureUnit): Temperature {
+    TemperatureUnit.assertOwns(unit);
     if (unit === TemperatureUnit.Celsius) return Temperature.fromCelsius(value);
     if (unit === TemperatureUnit.Fahrenheit) return Temperature.fromFahrenheit(value);
     if (unit === TemperatureUnit.Kelvin) return Temperature.fromKelvin(value);
-    throw new Error("Unknown temperature unit.");
+    /* c8 ignore next */
+    throw new RangeError("Unit belongs to another dimension.");
   }
 
   static tryParse(input: string | null | undefined): Temperature | null {

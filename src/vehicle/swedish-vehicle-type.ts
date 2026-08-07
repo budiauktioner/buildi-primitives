@@ -13,7 +13,6 @@ interface SwedishVehicleTypeDef {
   readonly code: string;
   readonly englishName: string;
   readonly localizedName: string;
-  readonly rank: number;
 }
 
 /** Swedish vehicle type classification (`fordonsslag`) as used by Transportstyrelsen. */
@@ -30,15 +29,11 @@ export class SwedishVehicleType {
   readonly englishName: string;
   readonly localizedName: string;
 
-  /** @internal Position in the canonical .NET ordering, used by {@link compareTo}. */
-  private readonly rank: number;
-
   private constructor(def: SwedishVehicleTypeDef) {
     this.value = def.value;
     this.code = def.code;
     this.englishName = def.englishName;
     this.localizedName = def.localizedName;
-    this.rank = def.rank;
   }
 
   static readonly PassengerCar = new SwedishVehicleType({
@@ -46,7 +41,6 @@ export class SwedishVehicleType {
     code: "PB",
     englishName: "Passenger car",
     localizedName: "Personbil",
-    rank: 0,
   });
 
   static readonly Truck = new SwedishVehicleType({
@@ -54,7 +48,6 @@ export class SwedishVehicleType {
     code: "LB",
     englishName: "Truck",
     localizedName: "Lastbil",
-    rank: 1,
   });
 
   static readonly Bus = new SwedishVehicleType({
@@ -62,7 +55,6 @@ export class SwedishVehicleType {
     code: "BU",
     englishName: "Bus",
     localizedName: "Buss",
-    rank: 2,
   });
 
   static readonly Motorcycle = new SwedishVehicleType({
@@ -70,7 +62,6 @@ export class SwedishVehicleType {
     code: "MC",
     englishName: "Motorcycle",
     localizedName: "Motorcykel",
-    rank: 3,
   });
 
   static readonly MopedClassI = new SwedishVehicleType({
@@ -78,7 +69,6 @@ export class SwedishVehicleType {
     code: "MR",
     englishName: "Moped class I",
     localizedName: "Moped klass I",
-    rank: 4,
   });
 
   static readonly MopedClassII = new SwedishVehicleType({
@@ -86,7 +76,6 @@ export class SwedishVehicleType {
     code: "EU-M",
     englishName: "Moped class II",
     localizedName: "EU-moped",
-    rank: 5,
   });
 
   static readonly Trailer = new SwedishVehicleType({
@@ -94,7 +83,6 @@ export class SwedishVehicleType {
     code: "SL",
     englishName: "Trailer",
     localizedName: "Släpvagn",
-    rank: 6,
   });
 
   static readonly SemiTrailer = new SwedishVehicleType({
@@ -102,7 +90,6 @@ export class SwedishVehicleType {
     code: "SA",
     englishName: "Semi-trailer",
     localizedName: "Påhängsvagn",
-    rank: 7,
   });
 
   static readonly Caravan = new SwedishVehicleType({
@@ -110,7 +97,6 @@ export class SwedishVehicleType {
     code: "HV",
     englishName: "Caravan",
     localizedName: "Husvagn",
-    rank: 8,
   });
 
   static readonly Motorhome = new SwedishVehicleType({
@@ -118,7 +104,6 @@ export class SwedishVehicleType {
     code: "HB",
     englishName: "Motorhome",
     localizedName: "Husbil",
-    rank: 9,
   });
 
   static readonly AllTerrainVehicle = new SwedishVehicleType({
@@ -126,7 +111,6 @@ export class SwedishVehicleType {
     code: "TK",
     englishName: "All-terrain vehicle",
     localizedName: "Terrängvagn",
-    rank: 10,
   });
 
   static readonly Snowmobile = new SwedishVehicleType({
@@ -134,7 +118,6 @@ export class SwedishVehicleType {
     code: "TM",
     englishName: "Snowmobile",
     localizedName: "Terrängskoter",
-    rank: 11,
   });
 
   static readonly Atv = new SwedishVehicleType({
@@ -142,7 +125,6 @@ export class SwedishVehicleType {
     code: "TH",
     englishName: "ATV",
     localizedName: "Terränghjuling",
-    rank: 12,
   });
 
   static readonly ATractor = new SwedishVehicleType({
@@ -150,7 +132,6 @@ export class SwedishVehicleType {
     code: "AT",
     englishName: "A-tractor",
     localizedName: "A-traktor",
-    rank: 13,
   });
 
   static readonly PowerVehicleI = new SwedishVehicleType({
@@ -158,7 +139,6 @@ export class SwedishVehicleType {
     code: "EP",
     englishName: "Power vehicle cl. I",
     localizedName: "Motorredskap klass I",
-    rank: 14,
   });
 
   static readonly PowerVehicleII = new SwedishVehicleType({
@@ -166,7 +146,6 @@ export class SwedishVehicleType {
     code: "MRK2",
     englishName: "Power vehicle cl. II",
     localizedName: "Motorredskap klass II",
-    rank: 15,
   });
 
   static readonly LightTruck = new SwedishVehicleType({
@@ -174,7 +153,6 @@ export class SwedishVehicleType {
     code: "LL",
     englishName: "Light truck",
     localizedName: "Lätt lastbil",
-    rank: 16,
   });
 
   /** All 17 values, in canonical order. */

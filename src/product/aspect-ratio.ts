@@ -111,7 +111,10 @@ export class AspectRatio {
   }
 
   /** Returns the canonical width:height form, e.g. `16:9`. */
-  static format(input: string | null | undefined, options?: AspectRatioFormatOptions): string | null {
+  static format(
+    input: string | null | undefined,
+    options?: AspectRatioFormatOptions,
+  ): string | null {
     const r = AspectRatio.tryParse(input);
     if (r !== null) return r.value;
     return fallback(input, options);
@@ -206,7 +209,11 @@ function matchByDecimal(ratio: Decimal): AspectRatio | null {
 
 const LOOKUP = new Map<string, AspectRatio>();
 for (const ratio of ALL) {
-  for (const key of [ratio.value, `${ratio.width}/${ratio.height}`, `${ratio.width}x${ratio.height}`]) {
+  for (const key of [
+    ratio.value,
+    `${ratio.width}/${ratio.height}`,
+    `${ratio.width}x${ratio.height}`,
+  ]) {
     const folded = normalizeLookupKey(key);
     if (folded.length > 0 && !LOOKUP.has(folded)) LOOKUP.set(folded, ratio);
   }

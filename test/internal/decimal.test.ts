@@ -100,6 +100,21 @@ describe("Decimal.parse", () => {
     },
   );
 
+  it("reduces multiple excess scale digits with one half-even rounding decision", () => {
+    const result = Decimal.parse("0.000000000000000000000000002451");
+    expect(result?.toString()).toBe("0.0000000000000000000000000025");
+  });
+
+  it("reduces excess scale while fitting the 96-bit magnitude", () => {
+    const result = Decimal.parse("7.92281625142643375935439503344");
+    expect(result?.toString()).toBe("7.9228162514264337593543950334");
+  });
+
+  it("drops another original digit when rounding would carry beyond the 96-bit maximum", () => {
+    const result = Decimal.parse("7.92281625142643375935439503355");
+    expect(result?.toString()).toBe("7.922816251426433759354395034");
+  });
+
   it("preserves trailing zeros as significant scale", () => {
     expect(Decimal.parse("12.750")!.toString()).toBe("12.750");
   });
@@ -164,6 +179,13 @@ describe("Decimal rendering", () => {
 });
 
 describe("Decimal errors", () => {
+  it.each([1.5, Number.NaN, Number.POSITIVE_INFINITY, 29])(
+    "rejects invalid decimal places %s",
+    (decimals) => {
+      expect(() => Decimal.parse("1.23")!.round(decimals)).toThrow(RangeError);
+    },
+  );
+
   it("throws on division by zero", () => {
     expect(() => Decimal.parse("1")!.dividedBy(Decimal.zero)).toThrow(DecimalDivisionByZeroError);
   });

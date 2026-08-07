@@ -65,6 +65,7 @@ export class Torque extends Quantity<TorqueUnit> {
 
   /** Creates a torque from a value and unit. */
   static create(value: number | Decimal, unit: TorqueUnit): Torque {
+    TorqueUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Torque.decimalOf(value);
     return new Torque(unit.toBase(amount), unit);
   }

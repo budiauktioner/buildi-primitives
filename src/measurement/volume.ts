@@ -80,6 +80,7 @@ export class Volume extends Quantity<VolumeUnit> {
 
   /** Creates a volume from a value and unit. */
   static create(value: number | Decimal, unit: VolumeUnit): Volume {
+    VolumeUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Volume.decimalOf(value);
     return new Volume(unit.toBase(amount), unit);
   }

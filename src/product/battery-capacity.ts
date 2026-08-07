@@ -128,7 +128,9 @@ export class BatteryCapacity {
   }
 
   toNormalizedString(): string {
-    return this.charge !== null ? this.charge.toNormalizedString() : this.energy!.toNormalizedString();
+    return this.charge !== null
+      ? this.charge.toNormalizedString()
+      : this.energy!.toNormalizedString();
   }
 
   toString(): string {

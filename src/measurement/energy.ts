@@ -86,6 +86,7 @@ export class Energy extends Quantity<EnergyUnit> {
 
   /** Creates a energy from a value and unit. */
   static create(value: number | Decimal, unit: EnergyUnit): Energy {
+    EnergyUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Energy.decimalOf(value);
     return new Energy(unit.toBase(amount), unit);
   }

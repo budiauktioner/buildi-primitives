@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class RotationalSpeedUnit extends MeasurementUnit {
+  declare private readonly __rotationalSpeedUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Rotational Speed Unit",
     localizedName: "Varvtalsenhet",
@@ -53,11 +55,12 @@ export class RotationalSpeedUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<RotationalSpeedUnit>(
-    [RotationalSpeedUnit.Rpm, RotationalSpeedUnit.Rps, RotationalSpeedUnit.RadiansPerSecond],
-    RotationalSpeedUnit.Rpm,
-    [],
-  );
+  static readonly index: MeasurementUnitIndex<RotationalSpeedUnit> =
+    new MeasurementUnitIndex<RotationalSpeedUnit>(
+      [RotationalSpeedUnit.Rpm, RotationalSpeedUnit.Rps, RotationalSpeedUnit.RadiansPerSecond],
+      RotationalSpeedUnit.Rpm,
+      [],
+    );
 
   static get all(): readonly RotationalSpeedUnit[] {
     return RotationalSpeedUnit.index.all;

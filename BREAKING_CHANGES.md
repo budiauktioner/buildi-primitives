@@ -14,7 +14,7 @@ not here.
   **Migration**, **Examples**, etc.
 - Order versions from newest to oldest.
 
-## Unreleased
+## Breaking changes 0.1.1 - 0.2.0
 
 ### `Country` membership flags renamed to match the .NET port
 
@@ -48,4 +48,34 @@ if (country.isEuropeanUnion && country.isNordic) { ... }
 
 // After
 if (country.isInEuropeanUnion && country.isInNordics) { ... }
+```
+
+### `ScreenResolution.totalPixels` now returns `bigint`
+
+**Area:** `@budiauktioner/buildi-primitives/product`
+
+**What changed**
+
+`ScreenResolution.totalPixels` changed from `number` to `bigint`.
+
+**Why**
+
+The exact width-by-height product can exceed JavaScript's safe integer range.
+Using `bigint` preserves the full .NET `Int64` value and keeps resolution
+comparisons exact.
+
+**Migration**
+
+Use bigint literals and bigint arithmetic when comparing or calculating with
+`totalPixels`. Convert explicitly only when a downstream API requires a
+`number` and precision loss is acceptable.
+
+```ts
+// Before
+const isLarge = resolution.totalPixels > 8_000_000;
+const doubled = resolution.totalPixels * 2;
+
+// After
+const isLarge = resolution.totalPixels > 8_000_000n;
+const doubled = resolution.totalPixels * 2n;
 ```

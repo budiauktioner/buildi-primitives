@@ -116,8 +116,14 @@ export class Decimal {
     let s = scale;
     while (s > MAX_SCALE || absBigInt(u) > MAX_UNSCALED) {
       if (s === 0) throw new DecimalOverflowError();
-      u = divideRounded(u, 10n, mode);
-      s -= 1;
+      let dropped = Math.max(1, s - MAX_SCALE);
+      let rounded = divideRounded(u, pow10(dropped), mode);
+      while (absBigInt(rounded) > MAX_UNSCALED && dropped < s) {
+        dropped += 1;
+        rounded = divideRounded(u, pow10(dropped), mode);
+      }
+      u = rounded;
+      s -= dropped;
     }
     return new Decimal(u, s);
   }
@@ -264,7 +270,9 @@ export class Decimal {
    * value carries leaves it untouched, matching .NET `Math.Round`.
    */
   round(decimals: number, mode: RoundingMode = "half-even"): Decimal {
-    if (decimals < 0) throw new RangeError("Negative decimals.");
+    if (!Number.isInteger(decimals) || decimals < 0 || decimals > MAX_SCALE) {
+      throw new RangeError(`Decimals must be an integer from 0 through ${MAX_SCALE}.`);
+    }
     if (decimals >= this.scale) return this;
     const dropped = this.scale - decimals;
     return new Decimal(divideRounded(this.units, pow10(dropped), mode), decimals);

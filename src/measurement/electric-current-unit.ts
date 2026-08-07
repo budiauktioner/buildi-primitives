@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class ElectricCurrentUnit extends MeasurementUnit {
+  declare private readonly __electricCurrentUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Electric Current Unit",
     localizedName: "Strömenhet",
@@ -61,16 +63,17 @@ export class ElectricCurrentUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<ElectricCurrentUnit>(
-    [
-      ElectricCurrentUnit.Microampere,
-      ElectricCurrentUnit.Milliampere,
+  static readonly index: MeasurementUnitIndex<ElectricCurrentUnit> =
+    new MeasurementUnitIndex<ElectricCurrentUnit>(
+      [
+        ElectricCurrentUnit.Microampere,
+        ElectricCurrentUnit.Milliampere,
+        ElectricCurrentUnit.Ampere,
+        ElectricCurrentUnit.Kiloampere,
+      ],
       ElectricCurrentUnit.Ampere,
-      ElectricCurrentUnit.Kiloampere,
-    ],
-    ElectricCurrentUnit.Ampere,
-    [ElectricCurrentUnit.Milliampere, ElectricCurrentUnit.Ampere, ElectricCurrentUnit.Kiloampere],
-  );
+      [ElectricCurrentUnit.Milliampere, ElectricCurrentUnit.Ampere, ElectricCurrentUnit.Kiloampere],
+    );
 
   static get all(): readonly ElectricCurrentUnit[] {
     return ElectricCurrentUnit.index.all;

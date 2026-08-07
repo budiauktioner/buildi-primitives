@@ -13,6 +13,7 @@ export interface ScreenResolutionFormatOptions {
 
 const WIDTH_BY_HEIGHT_PATTERN = /^\s*(\d+)\s*[xX]\s*(\d+)\s*$/u;
 const SCAN_PATTERN = /(?<!\d)\d{3,5}\s*[xX]\s*\d{3,5}(?!\d)/gu;
+const MAX_INT32 = 2_147_483_647;
 
 /** Marketing names accepted on input, including the ones that share pixel dimensions. */
 const PIXELS_BY_NAME: readonly (readonly [string, number, number])[] = [
@@ -87,14 +88,18 @@ export class ScreenResolution {
   }
 
   /** Total pixel count, width times height. */
-  get totalPixels(): number {
-    return this.width * this.height;
+  get totalPixels(): bigint {
+    return BigInt(this.width) * BigInt(this.height);
   }
 
   /** Builds a resolution from pixel dimensions, e.g. `create(1920, 1080)`. */
   static create(width: number, height: number): ScreenResolution {
-    if (!Number.isInteger(width) || width <= 0) throw new RangeError("Width must be positive.");
-    if (!Number.isInteger(height) || height <= 0) throw new RangeError("Height must be positive.");
+    if (!Number.isInteger(width) || width <= 0 || width > MAX_INT32) {
+      throw new RangeError("Width must be a positive Int32.");
+    }
+    if (!Number.isInteger(height) || height <= 0 || height > MAX_INT32) {
+      throw new RangeError("Height must be a positive Int32.");
+    }
     return new ScreenResolution(width, height);
   }
 
@@ -107,12 +112,16 @@ export class ScreenResolution {
     if (dimensions !== null) {
       const width = Number(dimensions[1]);
       const height = Number(dimensions[2]);
-      if (width <= 0 || height <= 0) return null;
-      return new ScreenResolution(width, height);
+      try {
+        return ScreenResolution.create(width, height);
+      } catch (error) {
+        if (error instanceof RangeError) return null;
+        throw error;
+      }
     }
 
     const named = PIXELS_BY_NAME_KEY.get(text.toUpperCase());
-    return named === undefined ? null : new ScreenResolution(named[0], named[1]);
+    return named === undefined ? null : ScreenResolution.create(named[0], named[1]);
   }
 
   static parse(input: string): ScreenResolution {

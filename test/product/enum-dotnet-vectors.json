@@ -13416,21 +13416,13 @@
         "ValueEn": "Spring",
         "EnglishNameEn": "Spring",
         "LocalizedNameEn": "Vår",
-        "MonthsCoveredEn": [
-          3,
-          4,
-          5
-        ],
+        "MonthsCoveredEn": [3, 4, 5],
         "IsAllSeasonEn": false,
         "DisplayNameEn": "Spring",
         "ValueSv": "Spring",
         "EnglishNameSv": "Spring",
         "LocalizedNameSv": "Vår",
-        "MonthsCoveredSv": [
-          3,
-          4,
-          5
-        ],
+        "MonthsCoveredSv": [3, 4, 5],
         "IsAllSeasonSv": false,
         "DisplayNameSv": "Vår"
       },
@@ -13441,21 +13433,13 @@
         "ValueEn": "Summer",
         "EnglishNameEn": "Summer",
         "LocalizedNameEn": "Sommar",
-        "MonthsCoveredEn": [
-          6,
-          7,
-          8
-        ],
+        "MonthsCoveredEn": [6, 7, 8],
         "IsAllSeasonEn": false,
         "DisplayNameEn": "Summer",
         "ValueSv": "Summer",
         "EnglishNameSv": "Summer",
         "LocalizedNameSv": "Sommar",
-        "MonthsCoveredSv": [
-          6,
-          7,
-          8
-        ],
+        "MonthsCoveredSv": [6, 7, 8],
         "IsAllSeasonSv": false,
         "DisplayNameSv": "Sommar"
       },
@@ -13466,21 +13450,13 @@
         "ValueEn": "Autumn",
         "EnglishNameEn": "Autumn",
         "LocalizedNameEn": "Höst",
-        "MonthsCoveredEn": [
-          9,
-          10,
-          11
-        ],
+        "MonthsCoveredEn": [9, 10, 11],
         "IsAllSeasonEn": false,
         "DisplayNameEn": "Autumn",
         "ValueSv": "Autumn",
         "EnglishNameSv": "Autumn",
         "LocalizedNameSv": "Höst",
-        "MonthsCoveredSv": [
-          9,
-          10,
-          11
-        ],
+        "MonthsCoveredSv": [9, 10, 11],
         "IsAllSeasonSv": false,
         "DisplayNameSv": "Höst"
       },
@@ -13491,21 +13467,13 @@
         "ValueEn": "Winter",
         "EnglishNameEn": "Winter",
         "LocalizedNameEn": "Vinter",
-        "MonthsCoveredEn": [
-          12,
-          1,
-          2
-        ],
+        "MonthsCoveredEn": [12, 1, 2],
         "IsAllSeasonEn": false,
         "DisplayNameEn": "Winter",
         "ValueSv": "Winter",
         "EnglishNameSv": "Winter",
         "LocalizedNameSv": "Vinter",
-        "MonthsCoveredSv": [
-          12,
-          1,
-          2
-        ],
+        "MonthsCoveredSv": [12, 1, 2],
         "IsAllSeasonSv": false,
         "DisplayNameSv": "Vinter"
       },
@@ -13516,39 +13484,13 @@
         "ValueEn": "All-Season",
         "EnglishNameEn": "All-Season",
         "LocalizedNameEn": "Året runt",
-        "MonthsCoveredEn": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12
-        ],
+        "MonthsCoveredEn": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "IsAllSeasonEn": true,
         "DisplayNameEn": "All-Season",
         "ValueSv": "All-Season",
         "EnglishNameSv": "All-Season",
         "LocalizedNameSv": "Året runt",
-        "MonthsCoveredSv": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12
-        ],
+        "MonthsCoveredSv": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "IsAllSeasonSv": true,
         "DisplayNameSv": "Året runt"
       }

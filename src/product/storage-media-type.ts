@@ -130,9 +130,7 @@ export class StorageMediaType {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -158,9 +156,8 @@ export class StorageMediaType {
     options?: StorageMediaTypeFormatOptions,
   ): string | null {
     const r = StorageMediaType.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -182,9 +179,7 @@ export class StorageMediaType {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -241,11 +236,33 @@ function normalizeLookupKey(value: string): string {
 const ALIASES: readonly (readonly [StorageMediaType, readonly string[]])[] = [
   [
     StorageMediaType.Hdd,
-    ["harddisk", "harddiskdrive", "harddiskhdd", "harddrive", "hdd", "magneticdisk", "magnetiskdisk", "mechanicaldrive", "mekaniskharddisk", "rotationaldrive", "spinningdisk", "spinningdrive"],
+    [
+      "harddisk",
+      "harddiskdrive",
+      "harddiskhdd",
+      "harddrive",
+      "hdd",
+      "magneticdisk",
+      "magnetiskdisk",
+      "mechanicaldrive",
+      "mekaniskharddisk",
+      "rotationaldrive",
+      "spinningdisk",
+      "spinningdrive",
+    ],
   ],
   [
     StorageMediaType.Sshd,
-    ["hybriddisk", "hybriddisksshd", "hybriddrive", "hybridharddrive", "solidstatehybriddrive", "ssdhddhybrid", "sshd", "sshddisk"],
+    [
+      "hybriddisk",
+      "hybriddisksshd",
+      "hybriddrive",
+      "hybridharddrive",
+      "solidstatehybriddrive",
+      "ssdhddhybrid",
+      "sshd",
+      "sshddisk",
+    ],
   ],
   [
     StorageMediaType.Ssd,
@@ -253,24 +270,34 @@ const ALIASES: readonly (readonly [StorageMediaType, readonly string[]])[] = [
   ],
   [
     StorageMediaType.Nvme,
-    ["gen3nvme", "gen4nvme", "gen5nvme", "m2nvme", "m2nvmessd", "nvme", "nvmessd", "nvmexpress", "pciessd", "pciexpressssd"],
+    [
+      "gen3nvme",
+      "gen4nvme",
+      "gen5nvme",
+      "m2nvme",
+      "m2nvmessd",
+      "nvme",
+      "nvmessd",
+      "nvmexpress",
+      "pciessd",
+      "pciexpressssd",
+    ],
   ],
-  [
-    StorageMediaType.EMmc,
-    ["embeddedmmc", "embeddedmultimediacard", "emmc"],
-  ],
-  [
-    StorageMediaType.Ufs,
-    ["ufs", "ufs21", "ufs30", "ufs31", "ufs40", "universalflashstorage"],
-  ],
+  [StorageMediaType.EMmc, ["embeddedmmc", "embeddedmultimediacard", "emmc"]],
+  [StorageMediaType.Ufs, ["ufs", "ufs21", "ufs30", "ufs31", "ufs40", "universalflashstorage"]],
   [
     StorageMediaType.Flash,
-    ["flash", "flashdrive", "flashlagring", "flashmemory", "flashminne", "flashstorage", "nandflash"],
+    [
+      "flash",
+      "flashdrive",
+      "flashlagring",
+      "flashmemory",
+      "flashminne",
+      "flashstorage",
+      "nandflash",
+    ],
   ],
-  [
-    StorageMediaType.Optane,
-    ["3dxpoint", "inteloptane", "optane", "optanememory", "xpoint"],
-  ],
+  [StorageMediaType.Optane, ["3dxpoint", "inteloptane", "optane", "optanememory", "xpoint"]],
 ];
 
 const LOOKUP = new Map<string, StorageMediaType>();

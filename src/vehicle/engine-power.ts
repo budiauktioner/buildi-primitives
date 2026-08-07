@@ -20,7 +20,7 @@ export interface EnginePowerFormatOptions {
 
 const HK_PATTERN = /^\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*hk\s*$/iu;
 const APPROXIMATE_PREFIX = /^(?:ca\.?\s+|circa\s+|~\s*|approx\.?\s+|ungefär\s+)/iu;
-const SCAN_PATTERN = /(?<!\w)\d+[0-9 .,]*\s*hk\b/giu;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])\d+[0-9 .,]*\s*hk(?![\p{L}\p{N}_])/giu;
 
 /**
  * Engine power output (`motoreffekt`), e.g. `150 hp`, `110 kW` or the Swedish

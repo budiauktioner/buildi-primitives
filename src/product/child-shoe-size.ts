@@ -200,7 +200,8 @@ function matchUk(text: string): SizeMatch | null {
   const youth = uk.toNumber() + UK_YOUTH_OFFSET;
 
   if (isValidEuSize(youth) && youth >= 33) return { euSize: youth, system: ShoeSizeSystem.UK };
-  if (isValidEuSize(toddler) && toddler <= 32) return { euSize: toddler, system: ShoeSizeSystem.UK };
+  if (isValidEuSize(toddler) && toddler <= 32)
+    return { euSize: toddler, system: ShoeSizeSystem.UK };
   return null;
 }
 

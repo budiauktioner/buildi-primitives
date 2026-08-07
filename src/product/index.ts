@@ -1,45 +1,60 @@
-export { AdultClothingSize } from "./adult-clothing-size.js";
-export { AdultShoeSize } from "./adult-shoe-size.js";
-export { AspectRatio } from "./aspect-ratio.js";
-export { BatteryCapacity } from "./battery-capacity.js";
-export { BatteryChemistry } from "./battery-chemistry.js";
-export { CameraResolution } from "./camera-resolution.js";
-export { ChildClothingSize } from "./child-clothing-size.js";
-export { ChildShoeSize } from "./child-shoe-size.js";
-export { ClothingFit } from "./clothing-fit.js";
-export { ClothingGender } from "./clothing-gender.js";
-export { ClothingSeason } from "./clothing-season.js";
-export { ClothingSize } from "./clothing-size.js";
+export { AdultClothingSize, type AdultClothingSizeFormatOptions } from "./adult-clothing-size.js";
+export { AdultShoeSize, type AdultShoeSizeFormatOptions } from "./adult-shoe-size.js";
+export { AspectRatio, type AspectRatioFormatOptions } from "./aspect-ratio.js";
+export { BatteryCapacity, type BatteryCapacityFormatOptions } from "./battery-capacity.js";
+export { BatteryChemistry, type BatteryChemistryFormatOptions } from "./battery-chemistry.js";
+export { CameraResolution, type CameraResolutionFormatOptions } from "./camera-resolution.js";
+export { ChildClothingSize, type ChildClothingSizeFormatOptions } from "./child-clothing-size.js";
+export { ChildShoeSize, type ChildShoeSizeFormatOptions } from "./child-shoe-size.js";
+export { ClothingFit, type ClothingFitFormatOptions } from "./clothing-fit.js";
+export { ClothingGender, type ClothingGenderFormatOptions } from "./clothing-gender.js";
+export { ClothingSeason, type ClothingSeasonFormatOptions } from "./clothing-season.js";
+export { ClothingSize, type ClothingSizeFormatOptions } from "./clothing-size.js";
 export { ClothingSizeSystem } from "./clothing-size-system.js";
-export { Color } from "./color.js";
-export { DisplayPanelType } from "./display-panel-type.js";
-export { ElectricalPhase } from "./electrical-phase.js";
+export { Color, type ColorFormatOptions } from "./color.js";
+export { DisplayPanelType, type DisplayPanelTypeFormatOptions } from "./display-panel-type.js";
+export { ElectricalPhase, type ElectricalPhaseFormatOptions } from "./electrical-phase.js";
 export { EnergyScale } from "./energy-scale.js";
-export { EuEnergyEfficiencyClass } from "./eu-energy-efficiency-class.js";
-export { GoogleProductCategory } from "./google-product-category.js";
-export { Gtin } from "./gtin.js";
-export { Gtin12 } from "./gtin12.js";
-export { Gtin13 } from "./gtin13.js";
-export { Gtin14 } from "./gtin14.js";
-export { Gtin8 } from "./gtin8.js";
-export { HsCode } from "./hs-code.js";
+export {
+  EuEnergyEfficiencyClass,
+  type EuEnergyEfficiencyClassFormatOptions,
+} from "./eu-energy-efficiency-class.js";
+export {
+  GoogleProductCategory,
+  type GoogleProductCategoryFormatOptions,
+} from "./google-product-category.js";
+export { Gtin, type GtinFormatOptions } from "./gtin.js";
+export { Gtin12, type Gtin12FormatOptions } from "./gtin12.js";
+export { Gtin13, type Gtin13FormatOptions } from "./gtin13.js";
+export { Gtin14, type Gtin14FormatOptions } from "./gtin14.js";
+export { Gtin8, type Gtin8FormatOptions } from "./gtin8.js";
+export { HsCode, type HsCodeFormatOptions } from "./hs-code.js";
 export { HsCodeLevel } from "./hs-code-level.js";
-export { IpRating } from "./ip-rating.js";
+export { IpRating, type IpRatingFormatOptions } from "./ip-rating.js";
 export { OperatingSystemFamily } from "./operating-system-family.js";
-export { OperatingSystemInfo } from "./operating-system-info.js";
-export { OperatingSystemName } from "./operating-system-name.js";
-export { OperatingSystemVersion } from "./operating-system-version.js";
-export { PowerSource } from "./power-source.js";
-export { ProcessorSpeed } from "./processor-speed.js";
-export { RamCapacity } from "./ram-capacity.js";
-export { Refrigerant } from "./refrigerant.js";
+export {
+  OperatingSystemInfo,
+  type OperatingSystemInfoFormatOptions,
+} from "./operating-system-info.js";
+export {
+  OperatingSystemName,
+  type OperatingSystemNameFormatOptions,
+} from "./operating-system-name.js";
+export {
+  OperatingSystemVersion,
+  type OperatingSystemVersionFormatOptions,
+} from "./operating-system-version.js";
+export { PowerSource, type PowerSourceFormatOptions } from "./power-source.js";
+export { ProcessorSpeed, type ProcessorSpeedFormatOptions } from "./processor-speed.js";
+export { RamCapacity, type RamCapacityFormatOptions } from "./ram-capacity.js";
+export { Refrigerant, type RefrigerantFormatOptions } from "./refrigerant.js";
 export { RefrigerantFamily } from "./refrigerant-family.js";
-export { ScreenResolution } from "./screen-resolution.js";
-export { ScreenSize } from "./screen-size.js";
-export { ShoeSize } from "./shoe-size.js";
+export { ScreenResolution, type ScreenResolutionFormatOptions } from "./screen-resolution.js";
+export { ScreenSize, type ScreenSizeFormatOptions } from "./screen-size.js";
+export { ShoeSize, type ShoeSizeFormatOptions } from "./shoe-size.js";
 export { ShoeSizeSystem } from "./shoe-size-system.js";
-export { StorageCapacity } from "./storage-capacity.js";
-export { StorageMediaType } from "./storage-media-type.js";
+export { StorageCapacity, type StorageCapacityFormatOptions } from "./storage-capacity.js";
+export { StorageMediaType, type StorageMediaTypeFormatOptions } from "./storage-media-type.js";
 
 export { toBarcodeLookupUrl } from "./product-extensions.js";
 

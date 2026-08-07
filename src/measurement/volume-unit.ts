@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class VolumeUnit extends MeasurementUnit {
+  declare private readonly __volumeUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Volume Unit",
     localizedName: "Volymenhet",
@@ -131,7 +133,7 @@ export class VolumeUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<VolumeUnit>(
+  static readonly index: MeasurementUnitIndex<VolumeUnit> = new MeasurementUnitIndex<VolumeUnit>(
     [
       VolumeUnit.Microliter,
       VolumeUnit.Milliliter,

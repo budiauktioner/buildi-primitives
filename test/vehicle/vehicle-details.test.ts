@@ -1,10 +1,18 @@
 import { afterEach, describe, expect, it } from "vitest";
+import { Count, Percentage } from "../../src/measurement/index.js";
 import { PrimitivesDefaults } from "../../src/primitives-defaults.js";
 import { defaultTextScanner } from "../../src/index.js";
 import { ValidationErrorReason } from "../../src/validation/validation-error-reason.js";
-import { EuVehicleCategory } from "../../src/vehicle/eu-vehicle-category.js";
-import { SwedishVehicleRegistrationNumber } from "../../src/vehicle/swedish-vehicle-registration-number.js";
-import { VehicleIdentificationNumber } from "../../src/vehicle/vehicle-identification-number.js";
+import {
+  EuVehicleCategory,
+  getBiluppgifterUrl,
+  getCarInfoUrl,
+  OdometerReading,
+  OperatingHours,
+  SwedishVehicleRegistrationNumber,
+  toBiluppgifterUrl,
+  VehicleIdentificationNumber,
+} from "../../src/vehicle/index.js";
 
 /**
  * The behaviour the .NET vectors cannot reach: structured validation, derived
@@ -64,6 +72,18 @@ describe("VehicleIdentificationNumber", () => {
 });
 
 describe("SwedishVehicleRegistrationNumber", () => {
+  it("builds the external lookup links exposed by .NET", () => {
+    const registration = SwedishVehicleRegistrationNumber.parse("ABC 123");
+
+    expect(toBiluppgifterUrl(registration)).toBe("https://biluppgifter.se/fordon/ABC123");
+    expect(getBiluppgifterUrl(registration)).toBeInstanceOf(URL);
+    expect(getBiluppgifterUrl(registration).href).toBe("https://biluppgifter.se/fordon/ABC123");
+    expect(getCarInfoUrl(registration)).toBeInstanceOf(URL);
+    expect(getCarInfoUrl(registration).href).toBe(
+      "https://www.car.info/sv-se/license-plate/S/ABC123",
+    );
+  });
+
   it("derives the tax payment month from the number", () => {
     const classic = SwedishVehicleRegistrationNumber.parse("ABC 123");
     expect(classic.isNewFormat).toBe(false);
@@ -87,6 +107,42 @@ describe("SwedishVehicleRegistrationNumber", () => {
 
     expect(result.isValid).toBe(false);
     expect(result.issues.map((i) => i.reason)).toEqual([reason]);
+  });
+});
+
+describe("Vehicle numeric parity", () => {
+  it("negates odometer readings", () => {
+    const negated = OdometerReading.fromKilometers(12).negated();
+
+    expect(negated.kilometers).toBe(-12);
+    expect(negated.toNormalizedString()).toBe("-12 km");
+  });
+
+  it("negates operating hours", () => {
+    const negated = OperatingHours.create(12).negated();
+
+    expect(negated.hours).toBe(-12);
+    expect(negated.value).toBe("-12 h");
+  });
+});
+
+describe("Measurement metadata parity", () => {
+  it("matches Count metadata from .NET", () => {
+    expect(Count.typeInfo).toEqual({
+      englishName: "Count",
+      localizedName: "Antal",
+      emoji: "🔢",
+      sources: ["https://www.tnc.se/"],
+    });
+  });
+
+  it("matches Percentage metadata from .NET", () => {
+    expect(Percentage.typeInfo).toEqual({
+      englishName: "Percentage",
+      localizedName: "Procent",
+      emoji: "📊",
+      sources: ["https://www.bipm.org/en/publications/si-brochure"],
+    });
   });
 });
 

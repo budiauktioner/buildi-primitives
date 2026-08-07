@@ -77,6 +77,7 @@ export class Pressure extends Quantity<PressureUnit> {
 
   /** Creates a pressure from a value and unit. */
   static create(value: number | Decimal, unit: PressureUnit): Pressure {
+    PressureUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Pressure.decimalOf(value);
     return new Pressure(unit.toBase(amount), unit);
   }

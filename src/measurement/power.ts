@@ -83,6 +83,7 @@ export class Power extends Quantity<PowerUnit> {
 
   /** Creates a power from a value and unit. */
   static create(value: number | Decimal, unit: PowerUnit): Power {
+    PowerUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Power.decimalOf(value);
     return new Power(unit.toBase(amount), unit);
   }

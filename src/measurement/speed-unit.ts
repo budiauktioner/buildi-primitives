@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class SpeedUnit extends MeasurementUnit {
+  declare private readonly __speedUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Speed Unit",
     localizedName: "Hastighetsenhet",
@@ -72,7 +74,7 @@ export class SpeedUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<SpeedUnit>(
+  static readonly index: MeasurementUnitIndex<SpeedUnit> = new MeasurementUnitIndex<SpeedUnit>(
     [
       SpeedUnit.MetersPerSecond,
       SpeedUnit.KilometersPerHour,

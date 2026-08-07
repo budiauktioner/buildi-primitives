@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class FlowRateUnit extends MeasurementUnit {
+  declare private readonly __flowRateUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Flow Rate Unit",
     localizedName: "Flödesenhet",
@@ -85,18 +87,19 @@ export class FlowRateUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<FlowRateUnit>(
-    [
-      FlowRateUnit.LitersPerSecond,
+  static readonly index: MeasurementUnitIndex<FlowRateUnit> =
+    new MeasurementUnitIndex<FlowRateUnit>(
+      [
+        FlowRateUnit.LitersPerSecond,
+        FlowRateUnit.LitersPerMinute,
+        FlowRateUnit.LitersPerHour,
+        FlowRateUnit.CubicMetersPerHour,
+        FlowRateUnit.CubicMetersPerMinute,
+        FlowRateUnit.GallonsPerMinute,
+      ],
       FlowRateUnit.LitersPerMinute,
-      FlowRateUnit.LitersPerHour,
-      FlowRateUnit.CubicMetersPerHour,
-      FlowRateUnit.CubicMetersPerMinute,
-      FlowRateUnit.GallonsPerMinute,
-    ],
-    FlowRateUnit.LitersPerMinute,
-    [FlowRateUnit.LitersPerHour, FlowRateUnit.LitersPerMinute, FlowRateUnit.CubicMetersPerHour],
-  );
+      [FlowRateUnit.LitersPerHour, FlowRateUnit.LitersPerMinute, FlowRateUnit.CubicMetersPerHour],
+    );
 
   static get all(): readonly FlowRateUnit[] {
     return FlowRateUnit.index.all;

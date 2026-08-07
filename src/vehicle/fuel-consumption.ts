@@ -22,7 +22,7 @@ const PATTERN =
   /^\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*(l\/100\s*km|liter\/100\s*km|km\/l|km\/liter|mpg(?:\s*\(imp\))?|miles\s*per\s*gallon|kWh\/100\s*km|kWh\/km|Wh\/km)\s*$/iu;
 
 const SCAN_PATTERN =
-  /(?<!\w)\d+[0-9 .,]*\s*(?:l\/100\s*km|liter\/100\s*km|km\/l|km\/liter|mpg|kWh\/100\s*km|kWh\/km|Wh\/km)\b/giu;
+  /(?<![\p{L}\p{N}_])\d+[0-9 .,]*\s*(?:l\/100\s*km|liter\/100\s*km|km\/l|km\/liter|mpg|kWh\/100\s*km|kWh\/km|Wh\/km)(?![\p{L}\p{N}_])/giu;
 
 /**
  * Vehicle fuel consumption (`bränsleförbrukning`), held as litres per 100 km. Both

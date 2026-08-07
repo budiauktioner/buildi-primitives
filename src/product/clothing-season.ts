@@ -103,9 +103,7 @@ export class ClothingSeason {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -131,9 +129,8 @@ export class ClothingSeason {
     options?: ClothingSeasonFormatOptions,
   ): string | null {
     const r = ClothingSeason.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -155,9 +152,7 @@ export class ClothingSeason {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -209,25 +204,27 @@ function normalizeLookupKey(value: string): string {
 }
 
 const ALIASES: readonly (readonly [ClothingSeason, readonly string[]])[] = [
-  [
-    ClothingSeason.Spring,
-    ["spring", "springsummer", "springtime", "ss", "var", "varsasong"],
-  ],
-  [
-    ClothingSeason.Summer,
-    ["sommar", "sommarsasong", "summer", "summertime"],
-  ],
+  [ClothingSeason.Spring, ["spring", "springsummer", "springtime", "ss", "var", "varsasong"]],
+  [ClothingSeason.Summer, ["sommar", "sommarsasong", "summer", "summertime"]],
   [
     ClothingSeason.Autumn,
     ["autumn", "autumnal", "autumnwinter", "aw", "fall", "fallwinter", "fw", "host", "hostsasong"],
   ],
-  [
-    ClothingSeason.Winter,
-    ["vinter", "vintersasong", "winter", "wintertime"],
-  ],
+  [ClothingSeason.Winter, ["vinter", "vintersasong", "winter", "wintertime"]],
   [
     ClothingSeason.AllSeason,
-    ["4season", "allroundsasong", "allseason", "allyear", "aretom", "aretrunt", "fourseason", "helar", "multiseason", "yearround"],
+    [
+      "4season",
+      "allroundsasong",
+      "allseason",
+      "allyear",
+      "aretom",
+      "aretrunt",
+      "fourseason",
+      "helar",
+      "multiseason",
+      "yearround",
+    ],
   ],
 ];
 

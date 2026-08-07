@@ -20,21 +20,13 @@ const MAX_MEGAPIXELS = Decimal.parse("100000")!;
 const PIXELS_PER_MEGAPIXEL = Decimal.parse("1000000")!;
 
 const RECOGNIZED_SUFFIXES: ReadonlySet<string> = new Set(
-  [
-    "MP",
-    "M",
-    "Mpx",
-    "Mpix",
-    "megapixel",
-    "megapixels",
-    "mpixel",
-    "mpixels",
-    "megapixlar",
-  ].map(foldOrdinalIgnoreCase),
+  ["MP", "M", "Mpx", "Mpix", "megapixel", "megapixels", "mpixel", "mpixels", "megapixlar"].map(
+    foldOrdinalIgnoreCase,
+  ),
 );
 
 const SCAN_PATTERN =
-  /(?<!\w)\d+[0-9 .,]*\s*(?:megapixels?|megapixlar|MPix|Mpix|MPx|Mpx|MP|Mp)\b/giu;
+  /(?<![\p{L}\p{N}_])\d+[0-9 .,]*\s*(?:megapixels?|megapixlar|MPix|Mpix|MPx|Mpx|MP|Mp)(?![\p{L}\p{N}_])/giu;
 
 /**
  * A camera image-sensor resolution in megapixels (`kamerapixlar`), e.g. `12 MP` or
@@ -65,10 +57,7 @@ export class CameraResolution {
 
   /** Total pixel count, e.g. `12200000` for 12.2 MP. */
   get totalPixels(): number {
-    return this.exactMegapixels
-      .times(PIXELS_PER_MEGAPIXEL)
-      .round(0, "away-from-zero")
-      .toNumber();
+    return this.exactMegapixels.times(PIXELS_PER_MEGAPIXEL).round(0, "away-from-zero").toNumber();
   }
 
   /** Builds a resolution from a megapixel value, e.g. `fromMegapixels(12.2)`. */
@@ -85,9 +74,10 @@ export class CameraResolution {
 
   /** Builds a resolution from a total pixel count, e.g. `fromTotalPixels(12200000)`. */
   static fromTotalPixels(totalPixels: number): CameraResolution {
-    if (totalPixels < 0) throw new RangeError("Total pixels must be non-negative.");
-    const amount = Decimal.fromNumber(totalPixels);
-    if (amount === null) throw new RangeError("Total pixels must be a finite number.");
+    if (!Number.isSafeInteger(totalPixels) || totalPixels < 0) {
+      throw new RangeError("Total pixels must be a non-negative safe integer.");
+    }
+    const amount = Decimal.fromNumber(totalPixels)!;
     return CameraResolution.fromMegapixels(amount.dividedBy(PIXELS_PER_MEGAPIXEL));
   }
 

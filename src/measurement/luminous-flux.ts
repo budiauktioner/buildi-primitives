@@ -50,6 +50,7 @@ export class LuminousFlux extends Quantity<LuminousFluxUnit> {
 
   /** Creates a luminous flux from a value and unit. */
   static create(value: number | Decimal, unit: LuminousFluxUnit): LuminousFlux {
+    LuminousFluxUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : LuminousFlux.decimalOf(value);
     return new LuminousFlux(unit.toBase(amount), unit);
   }

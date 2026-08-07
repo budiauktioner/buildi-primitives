@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class VoltageUnit extends MeasurementUnit {
+  declare private readonly __voltageUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Voltage Unit",
     localizedName: "Spänningsenhet",
@@ -69,7 +71,7 @@ export class VoltageUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<VoltageUnit>(
+  static readonly index: MeasurementUnitIndex<VoltageUnit> = new MeasurementUnitIndex<VoltageUnit>(
     [
       VoltageUnit.Microvolt,
       VoltageUnit.Millivolt,

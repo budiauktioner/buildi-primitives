@@ -62,6 +62,7 @@ export class Voltage extends Quantity<VoltageUnit> {
 
   /** Creates a voltage from a value and unit. */
   static create(value: number | Decimal, unit: VoltageUnit): Voltage {
+    VoltageUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Voltage.decimalOf(value);
     return new Voltage(unit.toBase(amount), unit);
   }

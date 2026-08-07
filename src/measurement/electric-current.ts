@@ -59,6 +59,7 @@ export class ElectricCurrent extends Quantity<ElectricCurrentUnit> {
 
   /** Creates a electric current from a value and unit. */
   static create(value: number | Decimal, unit: ElectricCurrentUnit): ElectricCurrent {
+    ElectricCurrentUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : ElectricCurrent.decimalOf(value);
     return new ElectricCurrent(unit.toBase(amount), unit);
   }

@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class ElectricChargeUnit extends MeasurementUnit {
+  declare private readonly __electricChargeUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Electric Charge Unit",
     localizedName: "Laddningsenhet",
@@ -62,11 +64,16 @@ export class ElectricChargeUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<ElectricChargeUnit>(
-    [ElectricChargeUnit.MilliampereHour, ElectricChargeUnit.AmpereHour, ElectricChargeUnit.Coulomb],
-    ElectricChargeUnit.AmpereHour,
-    [ElectricChargeUnit.MilliampereHour, ElectricChargeUnit.AmpereHour],
-  );
+  static readonly index: MeasurementUnitIndex<ElectricChargeUnit> =
+    new MeasurementUnitIndex<ElectricChargeUnit>(
+      [
+        ElectricChargeUnit.MilliampereHour,
+        ElectricChargeUnit.AmpereHour,
+        ElectricChargeUnit.Coulomb,
+      ],
+      ElectricChargeUnit.AmpereHour,
+      [ElectricChargeUnit.MilliampereHour, ElectricChargeUnit.AmpereHour],
+    );
 
   static get all(): readonly ElectricChargeUnit[] {
     return ElectricChargeUnit.index.all;

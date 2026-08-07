@@ -22,7 +22,8 @@ export interface ScreenSizeFormatOptions {
 
 const INCH_HYPHEN_PATTERN = /^\s*([+-])?\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*-\s*inch(?:es)?\s*$/iu;
 const INCH_SYMBOL_PATTERN = /^\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*(?:"|\u2033|'')\s*$/u;
-const SCAN_PATTERN = /(?<!\w)\d+[0-9.,]*\s*(?:"(?=[^a-zA-Z]|$)|\u2033|''|-\s*inch(?:es)?\b)/giu;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])\d+[0-9.,]*\s*(?:"|\u2033|''|-\s*inch(?:es)?)(?![\p{L}\p{N}_])/giu;
 
 /**
  * Display diagonal (`skärmstorlek`) held as a {@link Length}. A bare number is read as inches, so
@@ -103,7 +104,8 @@ export class ScreenSize {
     }
 
     const length = Length.tryParse(text);
-    if (length === null || length.inDecimal(LengthUnit.Inch).compareTo(Decimal.zero) <= 0) return null;
+    if (length === null || length.inDecimal(LengthUnit.Inch).compareTo(Decimal.zero) <= 0)
+      return null;
     return new ScreenSize(length);
   }
 
@@ -118,10 +120,14 @@ export class ScreenSize {
   }
 
   /** Returns the display form, e.g. `15 in`, or the diagonal converted to `options.unit`. */
-  static format(input: string | null | undefined, options?: ScreenSizeFormatOptions): string | null {
+  static format(
+    input: string | null | undefined,
+    options?: ScreenSizeFormatOptions,
+  ): string | null {
     const r = ScreenSize.tryParse(input);
     if (r !== null) {
-      if (options?.unit !== undefined) return r.diagonal.toStringInUnit(options.unit, options.decimals);
+      if (options?.unit !== undefined)
+        return r.diagonal.toStringInUnit(options.unit, options.decimals);
       if (options?.decimals !== undefined) {
         const inches = r.diagonal.inDecimal(LengthUnit.Inch);
         return `${formatQuantityDecimal(inches, options.decimals)} in`;

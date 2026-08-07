@@ -179,10 +179,11 @@ describe.each(ported)("%s against .NET vectors", (typeName) => {
         } else if (NESTED_ENUM_TYPES.has(prop.type)) {
           const members = exported[prop.type] as Record<string, number>;
           expect(actual).toBe(members[expected as string]);
+        } else if (typeof actual === "bigint") {
+          expect(actual.toString()).toBe(String(expected));
         } else if (NUMERIC_STRING_TYPES.has(prop.type)) {
           // .NET keeps the scale of a decimal, so 3.5 GHz reads back as 3500000000.0 hertz, and
-          // a long arrives as a string; the TypeScript getters expose plain numbers, so these
-          // compare by magnitude.
+          // numeric strings exposed as numbers compare by magnitude.
           expect(Number(actual)).toBeCloseTo(Number(expected), 9);
         } else {
           expect(actual ?? null).toBe(expected);

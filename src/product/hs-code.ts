@@ -133,10 +133,7 @@ function formatDigits(digits: string): string {
   }
 }
 
-function fallback(
-  input: string | null | undefined,
-  options?: HsCodeFormatOptions,
-): string | null {
+function fallback(input: string | null | undefined, options?: HsCodeFormatOptions): string | null {
   if (options?.fallbackToTrimmedInputWhenInvalid !== true || input == null) return null;
   const trimmed = input.trim();
   return trimmed.length > 0 ? trimmed : null;

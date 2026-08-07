@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class LuminanceUnit extends MeasurementUnit {
+  declare private readonly __luminanceUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Luminance Unit",
     localizedName: "Luminansenhet",
@@ -63,16 +65,17 @@ export class LuminanceUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<LuminanceUnit>(
-    [
+  static readonly index: MeasurementUnitIndex<LuminanceUnit> =
+    new MeasurementUnitIndex<LuminanceUnit>(
+      [
+        LuminanceUnit.CandelaPerSquareMetre,
+        LuminanceUnit.Nit,
+        LuminanceUnit.KilocandelaPerSquareMetre,
+        LuminanceUnit.Kilonit,
+      ],
       LuminanceUnit.CandelaPerSquareMetre,
-      LuminanceUnit.Nit,
-      LuminanceUnit.KilocandelaPerSquareMetre,
-      LuminanceUnit.Kilonit,
-    ],
-    LuminanceUnit.CandelaPerSquareMetre,
-    [LuminanceUnit.CandelaPerSquareMetre, LuminanceUnit.KilocandelaPerSquareMetre],
-  );
+      [LuminanceUnit.CandelaPerSquareMetre, LuminanceUnit.KilocandelaPerSquareMetre],
+    );
 
   static get all(): readonly LuminanceUnit[] {
     return LuminanceUnit.index.all;

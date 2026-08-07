@@ -56,6 +56,7 @@ export class ElectricCharge extends Quantity<ElectricChargeUnit> {
 
   /** Creates a electric charge from a value and unit. */
   static create(value: number | Decimal, unit: ElectricChargeUnit): ElectricCharge {
+    ElectricChargeUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : ElectricCharge.decimalOf(value);
     return new ElectricCharge(unit.toBase(amount), unit);
   }

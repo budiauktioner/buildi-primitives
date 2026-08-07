@@ -5,9 +5,7 @@
       "englishName": "Aspect Ratio",
       "localizedName": "Bildformat",
       "emoji": "🖥️",
-      "sources": [
-        "https://www.itu.int/rec/R-REC-BT.709"
-      ]
+      "sources": ["https://www.itu.int/rec/R-REC-BT.709"]
     },
     "properties": [
       {
@@ -135,138 +133,39 @@
       "NineEighteen"
     ],
     "lookup": [
-      [
-        "1:1",
-        "OneToOne"
-      ],
-      [
-        "1/1",
-        "OneToOne"
-      ],
-      [
-        "1x1",
-        "OneToOne"
-      ],
-      [
-        "4:3",
-        "FourThree"
-      ],
-      [
-        "4/3",
-        "FourThree"
-      ],
-      [
-        "4x3",
-        "FourThree"
-      ],
-      [
-        "5:4",
-        "FiveFour"
-      ],
-      [
-        "5/4",
-        "FiveFour"
-      ],
-      [
-        "5x4",
-        "FiveFour"
-      ],
-      [
-        "3:2",
-        "ThreeTwo"
-      ],
-      [
-        "3/2",
-        "ThreeTwo"
-      ],
-      [
-        "3x2",
-        "ThreeTwo"
-      ],
-      [
-        "16:10",
-        "SixteenTen"
-      ],
-      [
-        "16/10",
-        "SixteenTen"
-      ],
-      [
-        "16x10",
-        "SixteenTen"
-      ],
-      [
-        "16:9",
-        "SixteenNine"
-      ],
-      [
-        "16/9",
-        "SixteenNine"
-      ],
-      [
-        "16x9",
-        "SixteenNine"
-      ],
-      [
-        "18:9",
-        "EighteenNine"
-      ],
-      [
-        "18/9",
-        "EighteenNine"
-      ],
-      [
-        "18x9",
-        "EighteenNine"
-      ],
-      [
-        "21:9",
-        "TwentyOneNine"
-      ],
-      [
-        "21/9",
-        "TwentyOneNine"
-      ],
-      [
-        "21x9",
-        "TwentyOneNine"
-      ],
-      [
-        "32:9",
-        "ThirtyTwoNine"
-      ],
-      [
-        "32/9",
-        "ThirtyTwoNine"
-      ],
-      [
-        "32x9",
-        "ThirtyTwoNine"
-      ],
-      [
-        "9:16",
-        "NineSixteen"
-      ],
-      [
-        "9/16",
-        "NineSixteen"
-      ],
-      [
-        "9x16",
-        "NineSixteen"
-      ],
-      [
-        "9:18",
-        "NineEighteen"
-      ],
-      [
-        "9/18",
-        "NineEighteen"
-      ],
-      [
-        "9x18",
-        "NineEighteen"
-      ]
+      ["1:1", "OneToOne"],
+      ["1/1", "OneToOne"],
+      ["1x1", "OneToOne"],
+      ["4:3", "FourThree"],
+      ["4/3", "FourThree"],
+      ["4x3", "FourThree"],
+      ["5:4", "FiveFour"],
+      ["5/4", "FiveFour"],
+      ["5x4", "FiveFour"],
+      ["3:2", "ThreeTwo"],
+      ["3/2", "ThreeTwo"],
+      ["3x2", "ThreeTwo"],
+      ["16:10", "SixteenTen"],
+      ["16/10", "SixteenTen"],
+      ["16x10", "SixteenTen"],
+      ["16:9", "SixteenNine"],
+      ["16/9", "SixteenNine"],
+      ["16x9", "SixteenNine"],
+      ["18:9", "EighteenNine"],
+      ["18/9", "EighteenNine"],
+      ["18x9", "EighteenNine"],
+      ["21:9", "TwentyOneNine"],
+      ["21/9", "TwentyOneNine"],
+      ["21x9", "TwentyOneNine"],
+      ["32:9", "ThirtyTwoNine"],
+      ["32/9", "ThirtyTwoNine"],
+      ["32x9", "ThirtyTwoNine"],
+      ["9:16", "NineSixteen"],
+      ["9/16", "NineSixteen"],
+      ["9x16", "NineSixteen"],
+      ["9:18", "NineEighteen"],
+      ["9/18", "NineEighteen"],
+      ["9x18", "NineEighteen"]
     ]
   },
   {
@@ -275,9 +174,7 @@
       "englishName": "Battery Chemistry",
       "localizedName": "Batterikemi",
       "emoji": "🔋",
-      "sources": [
-        "https://www.iec.ch/"
-      ]
+      "sources": ["https://www.iec.ch/"]
     },
     "properties": [
       {
@@ -420,178 +317,49 @@
       "ZincCarbon"
     ],
     "lookup": [
-      [
-        "liion",
-        "LithiumIon"
-      ],
-      [
-        "lithiumion",
-        "LithiumIon"
-      ],
-      [
-        "litiumjon",
-        "LithiumIon"
-      ],
-      [
-        "lifepo4",
-        "LiFePO4"
-      ],
-      [
-        "lithiumironphosphate",
-        "LiFePO4"
-      ],
-      [
-        "litiumjarnfosfat",
-        "LiFePO4"
-      ],
-      [
-        "lipo",
-        "LithiumPolymer"
-      ],
-      [
-        "lithiumpolymer",
-        "LithiumPolymer"
-      ],
-      [
-        "litiumpolymer",
-        "LithiumPolymer"
-      ],
-      [
-        "lto",
-        "LithiumTitanate"
-      ],
-      [
-        "lithiumtitanate",
-        "LithiumTitanate"
-      ],
-      [
-        "litiumtitanat",
-        "LithiumTitanate"
-      ],
-      [
-        "nimh",
-        "NickelMetalHydride"
-      ],
-      [
-        "nickelmetalhydride",
-        "NickelMetalHydride"
-      ],
-      [
-        "nickelmetallhydrid",
-        "NickelMetalHydride"
-      ],
-      [
-        "nicd",
-        "NickelCadmium"
-      ],
-      [
-        "nickelcadmium",
-        "NickelCadmium"
-      ],
-      [
-        "nickelkadmium",
-        "NickelCadmium"
-      ],
-      [
-        "pbacid",
-        "FloodedLeadAcid"
-      ],
-      [
-        "floodedleadacid",
-        "FloodedLeadAcid"
-      ],
-      [
-        "blybatteri(flytandesyra)",
-        "FloodedLeadAcid"
-      ],
-      [
-        "agm",
-        "AbsorbedGlassMat"
-      ],
-      [
-        "absorbedglassmat",
-        "AbsorbedGlassMat"
-      ],
-      [
-        "agmbatteri",
-        "AbsorbedGlassMat"
-      ],
-      [
-        "gel",
-        "GelLeadAcid"
-      ],
-      [
-        "gelleadacid",
-        "GelLeadAcid"
-      ],
-      [
-        "gelbatteri",
-        "GelLeadAcid"
-      ],
-      [
-        "alkaline",
-        "Alkaline"
-      ],
-      [
-        "alkaliskt",
-        "Alkaline"
-      ],
-      [
-        "zinccarbon",
-        "ZincCarbon"
-      ],
-      [
-        "zinkkol",
-        "ZincCarbon"
-      ],
-      [
-        "litiumion",
-        "LithiumIon"
-      ],
-      [
-        "lfp",
-        "LiFePO4"
-      ],
-      [
-        "lipoly",
-        "LithiumPolymer"
-      ],
-      [
-        "leadacid",
-        "FloodedLeadAcid"
-      ],
-      [
-        "bly",
-        "FloodedLeadAcid"
-      ],
-      [
-        "blybatteri",
-        "FloodedLeadAcid"
-      ],
-      [
-        "pb",
-        "FloodedLeadAcid"
-      ],
-      [
-        "wetcell",
-        "FloodedLeadAcid"
-      ],
-      [
-        "vatcell",
-        "FloodedLeadAcid"
-      ],
-      [
-        "absorbentglassmat",
-        "AbsorbedGlassMat"
-      ],
-      [
-        "gelcell",
-        "GelLeadAcid"
-      ],
-      [
-        "alkalisk",
-        "Alkaline"
-      ]
+      ["liion", "LithiumIon"],
+      ["lithiumion", "LithiumIon"],
+      ["litiumjon", "LithiumIon"],
+      ["lifepo4", "LiFePO4"],
+      ["lithiumironphosphate", "LiFePO4"],
+      ["litiumjarnfosfat", "LiFePO4"],
+      ["lipo", "LithiumPolymer"],
+      ["lithiumpolymer", "LithiumPolymer"],
+      ["litiumpolymer", "LithiumPolymer"],
+      ["lto", "LithiumTitanate"],
+      ["lithiumtitanate", "LithiumTitanate"],
+      ["litiumtitanat", "LithiumTitanate"],
+      ["nimh", "NickelMetalHydride"],
+      ["nickelmetalhydride", "NickelMetalHydride"],
+      ["nickelmetallhydrid", "NickelMetalHydride"],
+      ["nicd", "NickelCadmium"],
+      ["nickelcadmium", "NickelCadmium"],
+      ["nickelkadmium", "NickelCadmium"],
+      ["pbacid", "FloodedLeadAcid"],
+      ["floodedleadacid", "FloodedLeadAcid"],
+      ["blybatteri(flytandesyra)", "FloodedLeadAcid"],
+      ["agm", "AbsorbedGlassMat"],
+      ["absorbedglassmat", "AbsorbedGlassMat"],
+      ["agmbatteri", "AbsorbedGlassMat"],
+      ["gel", "GelLeadAcid"],
+      ["gelleadacid", "GelLeadAcid"],
+      ["gelbatteri", "GelLeadAcid"],
+      ["alkaline", "Alkaline"],
+      ["alkaliskt", "Alkaline"],
+      ["zinccarbon", "ZincCarbon"],
+      ["zinkkol", "ZincCarbon"],
+      ["litiumion", "LithiumIon"],
+      ["lfp", "LiFePO4"],
+      ["lipoly", "LithiumPolymer"],
+      ["leadacid", "FloodedLeadAcid"],
+      ["bly", "FloodedLeadAcid"],
+      ["blybatteri", "FloodedLeadAcid"],
+      ["pb", "FloodedLeadAcid"],
+      ["wetcell", "FloodedLeadAcid"],
+      ["vatcell", "FloodedLeadAcid"],
+      ["absorbentglassmat", "AbsorbedGlassMat"],
+      ["gelcell", "GelLeadAcid"],
+      ["alkalisk", "Alkaline"]
     ]
   },
   {
@@ -600,9 +368,7 @@
       "englishName": "Clothing Fit",
       "localizedName": "Passform",
       "emoji": "🧥",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Clothing_sizes"
-      ]
+      "sources": ["https://en.wikipedia.org/wiki/Clothing_sizes"]
     },
     "properties": [
       {
@@ -659,190 +425,52 @@
         "DisplayName": "Tailored"
       }
     ],
-    "order": [
-      "Slim",
-      "Regular",
-      "Loose",
-      "Oversized",
-      "Tailored"
-    ],
+    "order": ["Slim", "Regular", "Loose", "Oversized", "Tailored"],
     "lookup": [
-      [
-        "slim",
-        "Slim"
-      ],
-      [
-        "smal",
-        "Slim"
-      ],
-      [
-        "regular",
-        "Regular"
-      ],
-      [
-        "normal",
-        "Regular"
-      ],
-      [
-        "loose",
-        "Loose"
-      ],
-      [
-        "los",
-        "Loose"
-      ],
-      [
-        "oversized",
-        "Oversized"
-      ],
-      [
-        "oversize",
-        "Oversized"
-      ],
-      [
-        "tailored",
-        "Tailored"
-      ],
-      [
-        "skraddarsydd",
-        "Tailored"
-      ],
-      [
-        "slimfit",
-        "Slim"
-      ],
-      [
-        "tight",
-        "Slim"
-      ],
-      [
-        "skinny",
-        "Slim"
-      ],
-      [
-        "skinnyfit",
-        "Slim"
-      ],
-      [
-        "figurnara",
-        "Slim"
-      ],
-      [
-        "atsittande",
-        "Slim"
-      ],
-      [
-        "standard",
-        "Regular"
-      ],
-      [
-        "regularfit",
-        "Regular"
-      ],
-      [
-        "standardfit",
-        "Regular"
-      ],
-      [
-        "straight",
-        "Regular"
-      ],
-      [
-        "straightfit",
-        "Regular"
-      ],
-      [
-        "klassiskpassform",
-        "Regular"
-      ],
-      [
-        "normalpassform",
-        "Regular"
-      ],
-      [
-        "rak",
-        "Regular"
-      ],
-      [
-        "rakpassform",
-        "Regular"
-      ],
-      [
-        "lospassform",
-        "Loose"
-      ],
-      [
-        "relaxed",
-        "Loose"
-      ],
-      [
-        "relaxedfit",
-        "Loose"
-      ],
-      [
-        "loosefit",
-        "Loose"
-      ],
-      [
-        "vid",
-        "Loose"
-      ],
-      [
-        "vidpassform",
-        "Loose"
-      ],
-      [
-        "comfortfit",
-        "Loose"
-      ],
-      [
-        "bekvampassform",
-        "Loose"
-      ],
-      [
-        "oversizefit",
-        "Oversized"
-      ],
-      [
-        "oversizedfit",
-        "Oversized"
-      ],
-      [
-        "boxy",
-        "Oversized"
-      ],
-      [
-        "boxyfit",
-        "Oversized"
-      ],
-      [
-        "overdimensionerad",
-        "Oversized"
-      ],
-      [
-        "extravid",
-        "Oversized"
-      ],
-      [
-        "xxlfit",
-        "Oversized"
-      ],
-      [
-        "tailoredfit",
-        "Tailored"
-      ],
-      [
-        "slimtailored",
-        "Tailored"
-      ],
-      [
-        "anpassadpassform",
-        "Tailored"
-      ],
-      [
-        "formellpassform",
-        "Tailored"
-      ]
+      ["slim", "Slim"],
+      ["smal", "Slim"],
+      ["regular", "Regular"],
+      ["normal", "Regular"],
+      ["loose", "Loose"],
+      ["los", "Loose"],
+      ["oversized", "Oversized"],
+      ["oversize", "Oversized"],
+      ["tailored", "Tailored"],
+      ["skraddarsydd", "Tailored"],
+      ["slimfit", "Slim"],
+      ["tight", "Slim"],
+      ["skinny", "Slim"],
+      ["skinnyfit", "Slim"],
+      ["figurnara", "Slim"],
+      ["atsittande", "Slim"],
+      ["standard", "Regular"],
+      ["regularfit", "Regular"],
+      ["standardfit", "Regular"],
+      ["straight", "Regular"],
+      ["straightfit", "Regular"],
+      ["klassiskpassform", "Regular"],
+      ["normalpassform", "Regular"],
+      ["rak", "Regular"],
+      ["rakpassform", "Regular"],
+      ["lospassform", "Loose"],
+      ["relaxed", "Loose"],
+      ["relaxedfit", "Loose"],
+      ["loosefit", "Loose"],
+      ["vid", "Loose"],
+      ["vidpassform", "Loose"],
+      ["comfortfit", "Loose"],
+      ["bekvampassform", "Loose"],
+      ["oversizefit", "Oversized"],
+      ["oversizedfit", "Oversized"],
+      ["boxy", "Oversized"],
+      ["boxyfit", "Oversized"],
+      ["overdimensionerad", "Oversized"],
+      ["extravid", "Oversized"],
+      ["xxlfit", "Oversized"],
+      ["tailoredfit", "Tailored"],
+      ["slimtailored", "Tailored"],
+      ["anpassadpassform", "Tailored"],
+      ["formellpassform", "Tailored"]
     ]
   },
   {
@@ -911,166 +539,46 @@
         "DisplayName": "Girls"
       }
     ],
-    "order": [
-      "Male",
-      "Female",
-      "Unisex",
-      "Boys",
-      "Girls"
-    ],
+    "order": ["Male", "Female", "Unisex", "Boys", "Girls"],
     "lookup": [
-      [
-        "male",
-        "Male"
-      ],
-      [
-        "herr",
-        "Male"
-      ],
-      [
-        "female",
-        "Female"
-      ],
-      [
-        "dam",
-        "Female"
-      ],
-      [
-        "unisex",
-        "Unisex"
-      ],
-      [
-        "boys",
-        "Boys"
-      ],
-      [
-        "pojke",
-        "Boys"
-      ],
-      [
-        "girls",
-        "Girls"
-      ],
-      [
-        "flicka",
-        "Girls"
-      ],
-      [
-        "man",
-        "Male"
-      ],
-      [
-        "men",
-        "Male"
-      ],
-      [
-        "men's",
-        "Male"
-      ],
-      [
-        "mens",
-        "Male"
-      ],
-      [
-        "herrar",
-        "Male"
-      ],
-      [
-        "herrkläder",
-        "Male"
-      ],
-      [
-        "gentleman",
-        "Male"
-      ],
-      [
-        "gentlemen",
-        "Male"
-      ],
-      [
-        "woman",
-        "Female"
-      ],
-      [
-        "women",
-        "Female"
-      ],
-      [
-        "women's",
-        "Female"
-      ],
-      [
-        "womens",
-        "Female"
-      ],
-      [
-        "damer",
-        "Female"
-      ],
-      [
-        "kvinna",
-        "Female"
-      ],
-      [
-        "kvinnor",
-        "Female"
-      ],
-      [
-        "damkläder",
-        "Female"
-      ],
-      [
-        "lady",
-        "Female"
-      ],
-      [
-        "ladies",
-        "Female"
-      ],
-      [
-        "uni",
-        "Unisex"
-      ],
-      [
-        "both",
-        "Unisex"
-      ],
-      [
-        "boy",
-        "Boys"
-      ],
-      [
-        "pojkar",
-        "Boys"
-      ],
-      [
-        "pojk",
-        "Boys"
-      ],
-      [
-        "kille",
-        "Boys"
-      ],
-      [
-        "killar",
-        "Boys"
-      ],
-      [
-        "girl",
-        "Girls"
-      ],
-      [
-        "flickor",
-        "Girls"
-      ],
-      [
-        "tjej",
-        "Girls"
-      ],
-      [
-        "tjejer",
-        "Girls"
-      ]
+      ["male", "Male"],
+      ["herr", "Male"],
+      ["female", "Female"],
+      ["dam", "Female"],
+      ["unisex", "Unisex"],
+      ["boys", "Boys"],
+      ["pojke", "Boys"],
+      ["girls", "Girls"],
+      ["flicka", "Girls"],
+      ["man", "Male"],
+      ["men", "Male"],
+      ["men's", "Male"],
+      ["mens", "Male"],
+      ["herrar", "Male"],
+      ["herrkläder", "Male"],
+      ["gentleman", "Male"],
+      ["gentlemen", "Male"],
+      ["woman", "Female"],
+      ["women", "Female"],
+      ["women's", "Female"],
+      ["womens", "Female"],
+      ["damer", "Female"],
+      ["kvinna", "Female"],
+      ["kvinnor", "Female"],
+      ["damkläder", "Female"],
+      ["lady", "Female"],
+      ["ladies", "Female"],
+      ["uni", "Unisex"],
+      ["both", "Unisex"],
+      ["boy", "Boys"],
+      ["pojkar", "Boys"],
+      ["pojk", "Boys"],
+      ["kille", "Boys"],
+      ["killar", "Boys"],
+      ["girl", "Girls"],
+      ["flickor", "Girls"],
+      ["tjej", "Girls"],
+      ["tjejer", "Girls"]
     ]
   },
   {
@@ -1116,11 +624,7 @@
         "Value": "Spring",
         "EnglishName": "Spring",
         "LocalizedName": "Vår",
-        "MonthsCovered": [
-          3,
-          4,
-          5
-        ],
+        "MonthsCovered": [3, 4, 5],
         "IsAllSeason": false,
         "DisplayName": "Spring"
       },
@@ -1129,11 +633,7 @@
         "Value": "Summer",
         "EnglishName": "Summer",
         "LocalizedName": "Sommar",
-        "MonthsCovered": [
-          6,
-          7,
-          8
-        ],
+        "MonthsCovered": [6, 7, 8],
         "IsAllSeason": false,
         "DisplayName": "Summer"
       },
@@ -1142,11 +642,7 @@
         "Value": "Autumn",
         "EnglishName": "Autumn",
         "LocalizedName": "Höst",
-        "MonthsCovered": [
-          9,
-          10,
-          11
-        ],
+        "MonthsCovered": [9, 10, 11],
         "IsAllSeason": false,
         "DisplayName": "Autumn"
       },
@@ -1155,11 +651,7 @@
         "Value": "Winter",
         "EnglishName": "Winter",
         "LocalizedName": "Vinter",
-        "MonthsCovered": [
-          12,
-          1,
-          2
-        ],
+        "MonthsCovered": [12, 1, 2],
         "IsAllSeason": false,
         "DisplayName": "Winter"
       },
@@ -1168,164 +660,46 @@
         "Value": "All-Season",
         "EnglishName": "All-Season",
         "LocalizedName": "Året runt",
-        "MonthsCovered": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6,
-          7,
-          8,
-          9,
-          10,
-          11,
-          12
-        ],
+        "MonthsCovered": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         "IsAllSeason": true,
         "DisplayName": "All-Season"
       }
     ],
-    "order": [
-      "Spring",
-      "Summer",
-      "Autumn",
-      "Winter",
-      "AllSeason"
-    ],
+    "order": ["Spring", "Summer", "Autumn", "Winter", "AllSeason"],
     "lookup": [
-      [
-        "spring",
-        "Spring"
-      ],
-      [
-        "var",
-        "Spring"
-      ],
-      [
-        "summer",
-        "Summer"
-      ],
-      [
-        "sommar",
-        "Summer"
-      ],
-      [
-        "autumn",
-        "Autumn"
-      ],
-      [
-        "host",
-        "Autumn"
-      ],
-      [
-        "winter",
-        "Winter"
-      ],
-      [
-        "vinter",
-        "Winter"
-      ],
-      [
-        "allseason",
-        "AllSeason"
-      ],
-      [
-        "aretrunt",
-        "AllSeason"
-      ],
-      [
-        "varsasong",
-        "Spring"
-      ],
-      [
-        "springtime",
-        "Spring"
-      ],
-      [
-        "ss",
-        "Spring"
-      ],
-      [
-        "springsummer",
-        "Spring"
-      ],
-      [
-        "sommarsasong",
-        "Summer"
-      ],
-      [
-        "summertime",
-        "Summer"
-      ],
-      [
-        "hostsasong",
-        "Autumn"
-      ],
-      [
-        "fall",
-        "Autumn"
-      ],
-      [
-        "autumnal",
-        "Autumn"
-      ],
-      [
-        "aw",
-        "Autumn"
-      ],
-      [
-        "fw",
-        "Autumn"
-      ],
-      [
-        "autumnwinter",
-        "Autumn"
-      ],
-      [
-        "fallwinter",
-        "Autumn"
-      ],
-      [
-        "vintersasong",
-        "Winter"
-      ],
-      [
-        "wintertime",
-        "Winter"
-      ],
-      [
-        "allyear",
-        "AllSeason"
-      ],
-      [
-        "yearround",
-        "AllSeason"
-      ],
-      [
-        "aretom",
-        "AllSeason"
-      ],
-      [
-        "helar",
-        "AllSeason"
-      ],
-      [
-        "allroundsasong",
-        "AllSeason"
-      ],
-      [
-        "4season",
-        "AllSeason"
-      ],
-      [
-        "fourseason",
-        "AllSeason"
-      ],
-      [
-        "multiseason",
-        "AllSeason"
-      ]
+      ["spring", "Spring"],
+      ["var", "Spring"],
+      ["summer", "Summer"],
+      ["sommar", "Summer"],
+      ["autumn", "Autumn"],
+      ["host", "Autumn"],
+      ["winter", "Winter"],
+      ["vinter", "Winter"],
+      ["allseason", "AllSeason"],
+      ["aretrunt", "AllSeason"],
+      ["varsasong", "Spring"],
+      ["springtime", "Spring"],
+      ["ss", "Spring"],
+      ["springsummer", "Spring"],
+      ["sommarsasong", "Summer"],
+      ["summertime", "Summer"],
+      ["hostsasong", "Autumn"],
+      ["fall", "Autumn"],
+      ["autumnal", "Autumn"],
+      ["aw", "Autumn"],
+      ["fw", "Autumn"],
+      ["autumnwinter", "Autumn"],
+      ["fallwinter", "Autumn"],
+      ["vintersasong", "Winter"],
+      ["wintertime", "Winter"],
+      ["allyear", "AllSeason"],
+      ["yearround", "AllSeason"],
+      ["aretom", "AllSeason"],
+      ["helar", "AllSeason"],
+      ["allroundsasong", "AllSeason"],
+      ["4season", "AllSeason"],
+      ["fourseason", "AllSeason"],
+      ["multiseason", "AllSeason"]
     ]
   },
   {
@@ -1334,9 +708,7 @@
       "englishName": "Display Panel Type",
       "localizedName": "Skärmpaneltyp",
       "emoji": "🖥️",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Comparison_of_display_technology"
-      ]
+      "sources": ["https://en.wikipedia.org/wiki/Comparison_of_display_technology"]
     },
     "properties": [
       {
@@ -1509,206 +881,56 @@
       "EInk"
     ],
     "lookup": [
-      [
-        "lcd",
-        "Lcd"
-      ],
-      [
-        "tn",
-        "Tn"
-      ],
-      [
-        "tntwistednematic",
-        "Tn"
-      ],
-      [
-        "ips",
-        "Ips"
-      ],
-      [
-        "ipsinplaneswitching",
-        "Ips"
-      ],
-      [
-        "va",
-        "Va"
-      ],
-      [
-        "vaverticalalignment",
-        "Va"
-      ],
-      [
-        "pls",
-        "Pls"
-      ],
-      [
-        "plsplanetolineswitching",
-        "Pls"
-      ],
-      [
-        "tft",
-        "Tft"
-      ],
-      [
-        "tftthinfilmtransistor",
-        "Tft"
-      ],
-      [
-        "oled",
-        "Oled"
-      ],
-      [
-        "amoled",
-        "Amoled"
-      ],
-      [
-        "pmoled",
-        "PmOled"
-      ],
-      [
-        "qled",
-        "Qled"
-      ],
-      [
-        "qdoled",
-        "QdOled"
-      ],
-      [
-        "miniled",
-        "MiniLed"
-      ],
-      [
-        "microled",
-        "MicroLed"
-      ],
-      [
-        "plasma",
-        "Plasma"
-      ],
-      [
-        "crt",
-        "Crt"
-      ],
-      [
-        "crtcathoderaytube",
-        "Crt"
-      ],
-      [
-        "crtkatodstraleror",
-        "Crt"
-      ],
-      [
-        "eink",
-        "EInk"
-      ],
-      [
-        "liquidcrystaldisplay",
-        "Lcd"
-      ],
-      [
-        "flytandekristall",
-        "Lcd"
-      ],
-      [
-        "twistednematic",
-        "Tn"
-      ],
-      [
-        "inplaneswitching",
-        "Ips"
-      ],
-      [
-        "verticalalignment",
-        "Va"
-      ],
-      [
-        "mva",
-        "Va"
-      ],
-      [
-        "pva",
-        "Va"
-      ],
-      [
-        "planetolineswitching",
-        "Pls"
-      ],
-      [
-        "organicled",
-        "Oled"
-      ],
-      [
-        "organiclightemittingdiode",
-        "Oled"
-      ],
-      [
-        "activematrixoled",
-        "Amoled"
-      ],
-      [
-        "superamoled",
-        "Amoled"
-      ],
-      [
-        "passivematrixoled",
-        "PmOled"
-      ],
-      [
-        "quantumdotled",
-        "Qled"
-      ],
-      [
-        "quantumdotoled",
-        "QdOled"
-      ],
-      [
-        "µled",
-        "MicroLed"
-      ],
-      [
-        "uled",
-        "MicroLed"
-      ],
-      [
-        "pdp",
-        "Plasma"
-      ],
-      [
-        "plasmaskarm",
-        "Plasma"
-      ],
-      [
-        "cathoderaytube",
-        "Crt"
-      ],
-      [
-        "katodstraleror",
-        "Crt"
-      ],
-      [
-        "bildror",
-        "Crt"
-      ],
-      [
-        "electronicink",
-        "EInk"
-      ],
-      [
-        "electronicpaper",
-        "EInk"
-      ],
-      [
-        "epaper",
-        "EInk"
-      ],
-      [
-        "elektronisktblack",
-        "EInk"
-      ],
-      [
-        "thinfilmtransistor",
-        "Tft"
-      ]
+      ["lcd", "Lcd"],
+      ["tn", "Tn"],
+      ["tntwistednematic", "Tn"],
+      ["ips", "Ips"],
+      ["ipsinplaneswitching", "Ips"],
+      ["va", "Va"],
+      ["vaverticalalignment", "Va"],
+      ["pls", "Pls"],
+      ["plsplanetolineswitching", "Pls"],
+      ["tft", "Tft"],
+      ["tftthinfilmtransistor", "Tft"],
+      ["oled", "Oled"],
+      ["amoled", "Amoled"],
+      ["pmoled", "PmOled"],
+      ["qled", "Qled"],
+      ["qdoled", "QdOled"],
+      ["miniled", "MiniLed"],
+      ["microled", "MicroLed"],
+      ["plasma", "Plasma"],
+      ["crt", "Crt"],
+      ["crtcathoderaytube", "Crt"],
+      ["crtkatodstraleror", "Crt"],
+      ["eink", "EInk"],
+      ["liquidcrystaldisplay", "Lcd"],
+      ["flytandekristall", "Lcd"],
+      ["twistednematic", "Tn"],
+      ["inplaneswitching", "Ips"],
+      ["verticalalignment", "Va"],
+      ["mva", "Va"],
+      ["pva", "Va"],
+      ["planetolineswitching", "Pls"],
+      ["organicled", "Oled"],
+      ["organiclightemittingdiode", "Oled"],
+      ["activematrixoled", "Amoled"],
+      ["superamoled", "Amoled"],
+      ["passivematrixoled", "PmOled"],
+      ["quantumdotled", "Qled"],
+      ["quantumdotoled", "QdOled"],
+      ["µled", "MicroLed"],
+      ["uled", "MicroLed"],
+      ["pdp", "Plasma"],
+      ["plasmaskarm", "Plasma"],
+      ["cathoderaytube", "Crt"],
+      ["katodstraleror", "Crt"],
+      ["bildror", "Crt"],
+      ["electronicink", "EInk"],
+      ["electronicpaper", "EInk"],
+      ["epaper", "EInk"],
+      ["elektronisktblack", "EInk"],
+      ["thinfilmtransistor", "Tft"]
     ]
   },
   {
@@ -1717,9 +939,7 @@
       "englishName": "Electrical Phase",
       "localizedName": "Fas",
       "emoji": "⚡",
-      "sources": [
-        "https://www.elsakerhetsverket.se/"
-      ]
+      "sources": ["https://www.elsakerhetsverket.se/"]
     },
     "properties": [
       {
@@ -1769,112 +989,33 @@
         "DisplayName": "Three-phase"
       }
     ],
-    "order": [
-      "SinglePhase",
-      "TwoPhase",
-      "ThreePhase"
-    ],
+    "order": ["SinglePhase", "TwoPhase", "ThreePhase"],
     "lookup": [
-      [
-        "1",
-        "SinglePhase"
-      ],
-      [
-        "2",
-        "TwoPhase"
-      ],
-      [
-        "3",
-        "ThreePhase"
-      ],
-      [
-        "1phase",
-        "SinglePhase"
-      ],
-      [
-        "singlephase",
-        "SinglePhase"
-      ],
-      [
-        "enfas",
-        "SinglePhase"
-      ],
-      [
-        "2phase",
-        "TwoPhase"
-      ],
-      [
-        "twophase",
-        "TwoPhase"
-      ],
-      [
-        "tvafas",
-        "TwoPhase"
-      ],
-      [
-        "3phase",
-        "ThreePhase"
-      ],
-      [
-        "threephase",
-        "ThreePhase"
-      ],
-      [
-        "trefas",
-        "ThreePhase"
-      ],
-      [
-        "1fas",
-        "SinglePhase"
-      ],
-      [
-        "1p",
-        "SinglePhase"
-      ],
-      [
-        "1f",
-        "SinglePhase"
-      ],
-      [
-        "230v1fas",
-        "SinglePhase"
-      ],
-      [
-        "l1",
-        "SinglePhase"
-      ],
-      [
-        "2fas",
-        "TwoPhase"
-      ],
-      [
-        "2p",
-        "TwoPhase"
-      ],
-      [
-        "2f",
-        "TwoPhase"
-      ],
-      [
-        "3fas",
-        "ThreePhase"
-      ],
-      [
-        "3p",
-        "ThreePhase"
-      ],
-      [
-        "3f",
-        "ThreePhase"
-      ],
-      [
-        "400v3fas",
-        "ThreePhase"
-      ],
-      [
-        "l1l2l3",
-        "ThreePhase"
-      ]
+      ["1", "SinglePhase"],
+      ["2", "TwoPhase"],
+      ["3", "ThreePhase"],
+      ["1phase", "SinglePhase"],
+      ["singlephase", "SinglePhase"],
+      ["enfas", "SinglePhase"],
+      ["2phase", "TwoPhase"],
+      ["twophase", "TwoPhase"],
+      ["tvafas", "TwoPhase"],
+      ["3phase", "ThreePhase"],
+      ["threephase", "ThreePhase"],
+      ["trefas", "ThreePhase"],
+      ["1fas", "SinglePhase"],
+      ["1p", "SinglePhase"],
+      ["1f", "SinglePhase"],
+      ["230v1fas", "SinglePhase"],
+      ["l1", "SinglePhase"],
+      ["2fas", "TwoPhase"],
+      ["2p", "TwoPhase"],
+      ["2f", "TwoPhase"],
+      ["3fas", "ThreePhase"],
+      ["3p", "ThreePhase"],
+      ["3f", "ThreePhase"],
+      ["400v3fas", "ThreePhase"],
+      ["l1l2l3", "ThreePhase"]
     ]
   },
   {
@@ -2026,18 +1167,7 @@
         "Value": "G"
       }
     ],
-    "order": [
-      "APlusPlusPlus",
-      "APlusPlus",
-      "APlus",
-      "A",
-      "B",
-      "C",
-      "D",
-      "E",
-      "F",
-      "G"
-    ],
+    "order": ["APlusPlusPlus", "APlusPlus", "APlus", "A", "B", "C", "D", "E", "F", "G"],
     "lookup": []
   },
   {
@@ -2046,9 +1176,7 @@
       "englishName": "Power Source",
       "localizedName": "Strömkälla",
       "emoji": "🔌",
-      "sources": [
-        "https://schema.org/PowerSupplySpecification"
-      ]
+      "sources": ["https://schema.org/PowerSupplySpecification"]
     },
     "properties": [
       {
@@ -2195,346 +1323,91 @@
       "Manual"
     ],
     "lookup": [
-      [
-        "electric",
-        "Electric"
-      ],
-      [
-        "mainselectric",
-        "Electric"
-      ],
-      [
-        "el",
-        "Electric"
-      ],
-      [
-        "battery",
-        "Battery"
-      ],
-      [
-        "batterypowered",
-        "Battery"
-      ],
-      [
-        "batteri",
-        "Battery"
-      ],
-      [
-        "solar",
-        "Solar"
-      ],
-      [
-        "solarpowered",
-        "Solar"
-      ],
-      [
-        "solenergi",
-        "Solar"
-      ],
-      [
-        "hybrid",
-        "Hybrid"
-      ],
-      [
-        "petrol",
-        "Petrol"
-      ],
-      [
-        "bensin",
-        "Petrol"
-      ],
-      [
-        "diesel",
-        "Diesel"
-      ],
-      [
-        "hydrogen",
-        "Hydrogen"
-      ],
-      [
-        "vatgas",
-        "Hydrogen"
-      ],
-      [
-        "pneumatic",
-        "Pneumatic"
-      ],
-      [
-        "pneumaticair",
-        "Pneumatic"
-      ],
-      [
-        "pneumatisk",
-        "Pneumatic"
-      ],
-      [
-        "hydraulic",
-        "Hydraulic"
-      ],
-      [
-        "hydraulisk",
-        "Hydraulic"
-      ],
-      [
-        "manual",
-        "Manual"
-      ],
-      [
-        "manuell",
-        "Manual"
-      ],
-      [
-        "electricity",
-        "Electric"
-      ],
-      [
-        "elektrisk",
-        "Electric"
-      ],
-      [
-        "eldriven",
-        "Electric"
-      ],
-      [
-        "mains",
-        "Electric"
-      ],
-      [
-        "mainspowered",
-        "Electric"
-      ],
-      [
-        "corded",
-        "Electric"
-      ],
-      [
-        "cordedelectric",
-        "Electric"
-      ],
-      [
-        "plugin",
-        "Electric"
-      ],
-      [
-        "nat",
-        "Electric"
-      ],
-      [
-        "natansluten",
-        "Electric"
-      ],
-      [
-        "natstrom",
-        "Electric"
-      ],
-      [
-        "sladdansluten",
-        "Electric"
-      ],
-      [
-        "230v",
-        "Electric"
-      ],
-      [
-        "400v",
-        "Electric"
-      ],
-      [
-        "batteridriven",
-        "Battery"
-      ],
-      [
-        "cordless",
-        "Battery"
-      ],
-      [
-        "sladdlos",
-        "Battery"
-      ],
-      [
-        "rechargeable",
-        "Battery"
-      ],
-      [
-        "uppladdningsbartbatteri",
-        "Battery"
-      ],
-      [
-        "accu",
-        "Battery"
-      ],
-      [
-        "solarpower",
-        "Solar"
-      ],
-      [
-        "solcell",
-        "Solar"
-      ],
-      [
-        "soldriven",
-        "Solar"
-      ],
-      [
-        "solpanel",
-        "Solar"
-      ],
-      [
-        "pv",
-        "Solar"
-      ],
-      [
-        "hybriddrift",
-        "Hybrid"
-      ],
-      [
-        "pluginhybrid",
-        "Hybrid"
-      ],
-      [
-        "phev",
-        "Hybrid"
-      ],
-      [
-        "hev",
-        "Hybrid"
-      ],
-      [
-        "mhev",
-        "Hybrid"
-      ],
-      [
-        "mildhybrid",
-        "Hybrid"
-      ],
-      [
-        "laddhybrid",
-        "Hybrid"
-      ],
-      [
-        "bensindriven",
-        "Petrol"
-      ],
-      [
-        "bensinmotor",
-        "Petrol"
-      ],
-      [
-        "gasoline",
-        "Petrol"
-      ],
-      [
-        "gas",
-        "Petrol"
-      ],
-      [
-        "petrolengine",
-        "Petrol"
-      ],
-      [
-        "dieseldriven",
-        "Diesel"
-      ],
-      [
-        "dieselmotor",
-        "Diesel"
-      ],
-      [
-        "dieselengine",
-        "Diesel"
-      ],
-      [
-        "vatgasdriven",
-        "Hydrogen"
-      ],
-      [
-        "h2",
-        "Hydrogen"
-      ],
-      [
-        "fuelcell",
-        "Hydrogen"
-      ],
-      [
-        "branslecell",
-        "Hydrogen"
-      ],
-      [
-        "fcev",
-        "Hydrogen"
-      ],
-      [
-        "pneumatik",
-        "Pneumatic"
-      ],
-      [
-        "airpowered",
-        "Pneumatic"
-      ],
-      [
-        "tryckluft",
-        "Pneumatic"
-      ],
-      [
-        "tryckluftsdriven",
-        "Pneumatic"
-      ],
-      [
-        "compressedair",
-        "Pneumatic"
-      ],
-      [
-        "komprimeradluft",
-        "Pneumatic"
-      ],
-      [
-        "hydraulik",
-        "Hydraulic"
-      ],
-      [
-        "hydrauliskt",
-        "Hydraulic"
-      ],
-      [
-        "hydrauldriven",
-        "Hydraulic"
-      ],
-      [
-        "manuellt",
-        "Manual"
-      ],
-      [
-        "manuelldrift",
-        "Manual"
-      ],
-      [
-        "handdriven",
-        "Manual"
-      ],
-      [
-        "muskelkraft",
-        "Manual"
-      ],
-      [
-        "humanpowered",
-        "Manual"
-      ],
-      [
-        "pedal",
-        "Manual"
-      ],
-      [
-        "pedaldriven",
-        "Manual"
-      ],
-      [
-        "nopower",
-        "Manual"
-      ],
-      [
-        "stromlos",
-        "Manual"
-      ]
+      ["electric", "Electric"],
+      ["mainselectric", "Electric"],
+      ["el", "Electric"],
+      ["battery", "Battery"],
+      ["batterypowered", "Battery"],
+      ["batteri", "Battery"],
+      ["solar", "Solar"],
+      ["solarpowered", "Solar"],
+      ["solenergi", "Solar"],
+      ["hybrid", "Hybrid"],
+      ["petrol", "Petrol"],
+      ["bensin", "Petrol"],
+      ["diesel", "Diesel"],
+      ["hydrogen", "Hydrogen"],
+      ["vatgas", "Hydrogen"],
+      ["pneumatic", "Pneumatic"],
+      ["pneumaticair", "Pneumatic"],
+      ["pneumatisk", "Pneumatic"],
+      ["hydraulic", "Hydraulic"],
+      ["hydraulisk", "Hydraulic"],
+      ["manual", "Manual"],
+      ["manuell", "Manual"],
+      ["electricity", "Electric"],
+      ["elektrisk", "Electric"],
+      ["eldriven", "Electric"],
+      ["mains", "Electric"],
+      ["mainspowered", "Electric"],
+      ["corded", "Electric"],
+      ["cordedelectric", "Electric"],
+      ["plugin", "Electric"],
+      ["nat", "Electric"],
+      ["natansluten", "Electric"],
+      ["natstrom", "Electric"],
+      ["sladdansluten", "Electric"],
+      ["230v", "Electric"],
+      ["400v", "Electric"],
+      ["batteridriven", "Battery"],
+      ["cordless", "Battery"],
+      ["sladdlos", "Battery"],
+      ["rechargeable", "Battery"],
+      ["uppladdningsbartbatteri", "Battery"],
+      ["accu", "Battery"],
+      ["solarpower", "Solar"],
+      ["solcell", "Solar"],
+      ["soldriven", "Solar"],
+      ["solpanel", "Solar"],
+      ["pv", "Solar"],
+      ["hybriddrift", "Hybrid"],
+      ["pluginhybrid", "Hybrid"],
+      ["phev", "Hybrid"],
+      ["hev", "Hybrid"],
+      ["mhev", "Hybrid"],
+      ["mildhybrid", "Hybrid"],
+      ["laddhybrid", "Hybrid"],
+      ["bensindriven", "Petrol"],
+      ["bensinmotor", "Petrol"],
+      ["gasoline", "Petrol"],
+      ["gas", "Petrol"],
+      ["petrolengine", "Petrol"],
+      ["dieseldriven", "Diesel"],
+      ["dieselmotor", "Diesel"],
+      ["dieselengine", "Diesel"],
+      ["vatgasdriven", "Hydrogen"],
+      ["h2", "Hydrogen"],
+      ["fuelcell", "Hydrogen"],
+      ["branslecell", "Hydrogen"],
+      ["fcev", "Hydrogen"],
+      ["pneumatik", "Pneumatic"],
+      ["airpowered", "Pneumatic"],
+      ["tryckluft", "Pneumatic"],
+      ["tryckluftsdriven", "Pneumatic"],
+      ["compressedair", "Pneumatic"],
+      ["komprimeradluft", "Pneumatic"],
+      ["hydraulik", "Hydraulic"],
+      ["hydrauliskt", "Hydraulic"],
+      ["hydrauldriven", "Hydraulic"],
+      ["manuellt", "Manual"],
+      ["manuelldrift", "Manual"],
+      ["handdriven", "Manual"],
+      ["muskelkraft", "Manual"],
+      ["humanpowered", "Manual"],
+      ["pedal", "Manual"],
+      ["pedaldriven", "Manual"],
+      ["nopower", "Manual"],
+      ["stromlos", "Manual"]
     ]
   },
   {
@@ -2825,158 +1698,44 @@
       "R1270"
     ],
     "lookup": [
-      [
-        "r12",
-        "R12"
-      ],
-      [
-        "r22",
-        "R22"
-      ],
-      [
-        "r32",
-        "R32"
-      ],
-      [
-        "r134a",
-        "R134a"
-      ],
-      [
-        "r290",
-        "R290"
-      ],
-      [
-        "r404a",
-        "R404A"
-      ],
-      [
-        "r407c",
-        "R407C"
-      ],
-      [
-        "r407f",
-        "R407F"
-      ],
-      [
-        "r410a",
-        "R410A"
-      ],
-      [
-        "r448a",
-        "R448A"
-      ],
-      [
-        "r449a",
-        "R449A"
-      ],
-      [
-        "r452a",
-        "R452A"
-      ],
-      [
-        "r507a",
-        "R507A"
-      ],
-      [
-        "r513a",
-        "R513A"
-      ],
-      [
-        "r600a",
-        "R600a"
-      ],
-      [
-        "r717",
-        "R717"
-      ],
-      [
-        "r718",
-        "R718"
-      ],
-      [
-        "r744",
-        "R744"
-      ],
-      [
-        "r1234yf",
-        "R1234yf"
-      ],
-      [
-        "r1234ze",
-        "R1234ze"
-      ],
-      [
-        "r1233zd",
-        "R1233zd"
-      ],
-      [
-        "r1270",
-        "R1270"
-      ],
-      [
-        "co2",
-        "R744"
-      ],
-      [
-        "co₂",
-        "R744"
-      ],
-      [
-        "carbondioxide",
-        "R744"
-      ],
-      [
-        "koldioxid",
-        "R744"
-      ],
-      [
-        "propane",
-        "R290"
-      ],
-      [
-        "propan",
-        "R290"
-      ],
-      [
-        "isobutane",
-        "R600a"
-      ],
-      [
-        "isobutan",
-        "R600a"
-      ],
-      [
-        "ammonia",
-        "R717"
-      ],
-      [
-        "ammoniak",
-        "R717"
-      ],
-      [
-        "nh3",
-        "R717"
-      ],
-      [
-        "water",
-        "R718"
-      ],
-      [
-        "vatten",
-        "R718"
-      ],
-      [
-        "h2o",
-        "R718"
-      ],
-      [
-        "propylene",
-        "R1270"
-      ],
-      [
-        "propen",
-        "R1270"
-      ]
+      ["r12", "R12"],
+      ["r22", "R22"],
+      ["r32", "R32"],
+      ["r134a", "R134a"],
+      ["r290", "R290"],
+      ["r404a", "R404A"],
+      ["r407c", "R407C"],
+      ["r407f", "R407F"],
+      ["r410a", "R410A"],
+      ["r448a", "R448A"],
+      ["r449a", "R449A"],
+      ["r452a", "R452A"],
+      ["r507a", "R507A"],
+      ["r513a", "R513A"],
+      ["r600a", "R600a"],
+      ["r717", "R717"],
+      ["r718", "R718"],
+      ["r744", "R744"],
+      ["r1234yf", "R1234yf"],
+      ["r1234ze", "R1234ze"],
+      ["r1233zd", "R1233zd"],
+      ["r1270", "R1270"],
+      ["co2", "R744"],
+      ["co₂", "R744"],
+      ["carbondioxide", "R744"],
+      ["koldioxid", "R744"],
+      ["propane", "R290"],
+      ["propan", "R290"],
+      ["isobutane", "R600a"],
+      ["isobutan", "R600a"],
+      ["ammonia", "R717"],
+      ["ammoniak", "R717"],
+      ["nh3", "R717"],
+      ["water", "R718"],
+      ["vatten", "R718"],
+      ["h2o", "R718"],
+      ["propylene", "R1270"],
+      ["propen", "R1270"]
     ]
   },
   {
@@ -3090,249 +1849,66 @@
         "DisplayName": "Intel Optane"
       }
     ],
-    "order": [
-      "Hdd",
-      "Sshd",
-      "Ssd",
-      "Nvme",
-      "EMmc",
-      "Ufs",
-      "Flash",
-      "Optane"
-    ],
+    "order": ["Hdd", "Sshd", "Ssd", "Nvme", "EMmc", "Ufs", "Flash", "Optane"],
     "lookup": [
-      [
-        "hdd",
-        "Hdd"
-      ],
-      [
-        "harddiskdrive",
-        "Hdd"
-      ],
-      [
-        "harddiskhdd",
-        "Hdd"
-      ],
-      [
-        "sshd",
-        "Sshd"
-      ],
-      [
-        "solidstatehybriddrive",
-        "Sshd"
-      ],
-      [
-        "hybriddisksshd",
-        "Sshd"
-      ],
-      [
-        "ssd",
-        "Ssd"
-      ],
-      [
-        "solidstatedrive",
-        "Ssd"
-      ],
-      [
-        "ssddisk",
-        "Ssd"
-      ],
-      [
-        "nvme",
-        "Nvme"
-      ],
-      [
-        "nvmessd",
-        "Nvme"
-      ],
-      [
-        "emmc",
-        "EMmc"
-      ],
-      [
-        "ufs",
-        "Ufs"
-      ],
-      [
-        "universalflashstorage",
-        "Ufs"
-      ],
-      [
-        "flash",
-        "Flash"
-      ],
-      [
-        "flashstorage",
-        "Flash"
-      ],
-      [
-        "flashminne",
-        "Flash"
-      ],
-      [
-        "optane",
-        "Optane"
-      ],
-      [
-        "inteloptane",
-        "Optane"
-      ],
-      [
-        "harddisk",
-        "Hdd"
-      ],
-      [
-        "harddrive",
-        "Hdd"
-      ],
-      [
-        "mekaniskharddisk",
-        "Hdd"
-      ],
-      [
-        "mechanicaldrive",
-        "Hdd"
-      ],
-      [
-        "spinningdisk",
-        "Hdd"
-      ],
-      [
-        "spinningdrive",
-        "Hdd"
-      ],
-      [
-        "magneticdisk",
-        "Hdd"
-      ],
-      [
-        "magnetiskdisk",
-        "Hdd"
-      ],
-      [
-        "rotationaldrive",
-        "Hdd"
-      ],
-      [
-        "sshddisk",
-        "Sshd"
-      ],
-      [
-        "hybriddisk",
-        "Sshd"
-      ],
-      [
-        "hybriddrive",
-        "Sshd"
-      ],
-      [
-        "hybridharddrive",
-        "Sshd"
-      ],
-      [
-        "ssdhddhybrid",
-        "Sshd"
-      ],
-      [
-        "solidstate",
-        "Ssd"
-      ],
-      [
-        "satassd",
-        "Ssd"
-      ],
-      [
-        "m2sata",
-        "Ssd"
-      ],
-      [
-        "m2satassd",
-        "Ssd"
-      ],
-      [
-        "nvmexpress",
-        "Nvme"
-      ],
-      [
-        "pciessd",
-        "Nvme"
-      ],
-      [
-        "pciexpressssd",
-        "Nvme"
-      ],
-      [
-        "m2nvme",
-        "Nvme"
-      ],
-      [
-        "m2nvmessd",
-        "Nvme"
-      ],
-      [
-        "gen3nvme",
-        "Nvme"
-      ],
-      [
-        "gen4nvme",
-        "Nvme"
-      ],
-      [
-        "gen5nvme",
-        "Nvme"
-      ],
-      [
-        "embeddedmmc",
-        "EMmc"
-      ],
-      [
-        "embeddedmultimediacard",
-        "EMmc"
-      ],
-      [
-        "ufs21",
-        "Ufs"
-      ],
-      [
-        "ufs30",
-        "Ufs"
-      ],
-      [
-        "ufs31",
-        "Ufs"
-      ],
-      [
-        "ufs40",
-        "Ufs"
-      ],
-      [
-        "flashmemory",
-        "Flash"
-      ],
-      [
-        "nandflash",
-        "Flash"
-      ],
-      [
-        "flashdrive",
-        "Flash"
-      ],
-      [
-        "flashlagring",
-        "Flash"
-      ],
-      [
-        "optanememory",
-        "Optane"
-      ],
-      [
-        "3dxpoint",
-        "Optane"
-      ],
-      [
-        "xpoint",
-        "Optane"
-      ]
+      ["hdd", "Hdd"],
+      ["harddiskdrive", "Hdd"],
+      ["harddiskhdd", "Hdd"],
+      ["sshd", "Sshd"],
+      ["solidstatehybriddrive", "Sshd"],
+      ["hybriddisksshd", "Sshd"],
+      ["ssd", "Ssd"],
+      ["solidstatedrive", "Ssd"],
+      ["ssddisk", "Ssd"],
+      ["nvme", "Nvme"],
+      ["nvmessd", "Nvme"],
+      ["emmc", "EMmc"],
+      ["ufs", "Ufs"],
+      ["universalflashstorage", "Ufs"],
+      ["flash", "Flash"],
+      ["flashstorage", "Flash"],
+      ["flashminne", "Flash"],
+      ["optane", "Optane"],
+      ["inteloptane", "Optane"],
+      ["harddisk", "Hdd"],
+      ["harddrive", "Hdd"],
+      ["mekaniskharddisk", "Hdd"],
+      ["mechanicaldrive", "Hdd"],
+      ["spinningdisk", "Hdd"],
+      ["spinningdrive", "Hdd"],
+      ["magneticdisk", "Hdd"],
+      ["magnetiskdisk", "Hdd"],
+      ["rotationaldrive", "Hdd"],
+      ["sshddisk", "Sshd"],
+      ["hybriddisk", "Sshd"],
+      ["hybriddrive", "Sshd"],
+      ["hybridharddrive", "Sshd"],
+      ["ssdhddhybrid", "Sshd"],
+      ["solidstate", "Ssd"],
+      ["satassd", "Ssd"],
+      ["m2sata", "Ssd"],
+      ["m2satassd", "Ssd"],
+      ["nvmexpress", "Nvme"],
+      ["pciessd", "Nvme"],
+      ["pciexpressssd", "Nvme"],
+      ["m2nvme", "Nvme"],
+      ["m2nvmessd", "Nvme"],
+      ["gen3nvme", "Nvme"],
+      ["gen4nvme", "Nvme"],
+      ["gen5nvme", "Nvme"],
+      ["embeddedmmc", "EMmc"],
+      ["embeddedmultimediacard", "EMmc"],
+      ["ufs21", "Ufs"],
+      ["ufs30", "Ufs"],
+      ["ufs31", "Ufs"],
+      ["ufs40", "Ufs"],
+      ["flashmemory", "Flash"],
+      ["nandflash", "Flash"],
+      ["flashdrive", "Flash"],
+      ["flashlagring", "Flash"],
+      ["optanememory", "Optane"],
+      ["3dxpoint", "Optane"],
+      ["xpoint", "Optane"]
     ]
   }
 ]

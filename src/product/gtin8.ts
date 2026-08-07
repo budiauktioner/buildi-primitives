@@ -128,10 +128,7 @@ export class Gtin8 {
   }
 }
 
-function fallback(
-  input: string | null | undefined,
-  options?: Gtin8FormatOptions,
-): string | null {
+function fallback(input: string | null | undefined, options?: Gtin8FormatOptions): string | null {
   if (options?.fallbackToTrimmedInputWhenInvalid !== true || input == null) return null;
   const trimmed = input.trim();
   return trimmed.length > 0 ? trimmed : null;

@@ -42,15 +42,24 @@ export class MeasurementUnit {
   readonly aliases: readonly string[];
   private readonly exactRatio: readonly [Decimal, Decimal] | null;
 
-  constructor(definition: MeasurementUnitDefinition) {
+  protected constructor(definition: MeasurementUnitDefinition) {
     this.symbol = definition.symbol;
     this.englishName = definition.englishName;
     this.localizedName = definition.localizedName;
     this.pluralEnglish = definition.pluralEnglish;
     this.pluralSwedish = definition.pluralSwedish;
     this.toBaseUnitFactor = definition.toBaseUnitFactor;
-    this.aliases = definition.aliases ?? [];
-    this.exactRatio = definition.exactRatio ?? null;
+    this.aliases = Object.freeze([...(definition.aliases ?? [])]);
+    this.exactRatio =
+      definition.exactRatio === undefined
+        ? null
+        : Object.freeze([definition.exactRatio[0], definition.exactRatio[1]]);
+
+    return new Proxy(this, {
+      set() {
+        throw new TypeError("Measurement units are immutable.");
+      },
+    });
   }
 
   /** Converts a value expressed in this unit into the dimension's base unit. */
@@ -75,20 +84,38 @@ export class MeasurementUnit {
  * used for display.
  */
 export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
-  private index: Map<string, TUnit> | null = null;
+  readonly all: readonly TUnit[];
+  readonly baseUnit: TUnit;
+  readonly naturalScale: readonly TUnit[];
+  private readonly symbolsExcludedFromIndex: readonly TUnit[];
+  private readonly index: ReadonlyMap<string, TUnit>;
+  private readonly ownedUnits: ReadonlySet<MeasurementUnit>;
 
   constructor(
-    readonly all: readonly TUnit[],
-    readonly baseUnit: TUnit,
+    all: readonly TUnit[],
+    baseUnit: TUnit,
     /** Metric units ordered small to large, used to auto-scale display. */
-    readonly naturalScale: readonly TUnit[],
+    naturalScale: readonly TUnit[],
     /**
      * Units whose symbol is deliberately left out of the index because it
      * collides case-insensitively with another unit's — `mW` against `MW`. The
      * owning class resolves those itself.
      */
-    private readonly symbolsExcludedFromIndex: readonly TUnit[] = [],
-  ) {}
+    symbolsExcludedFromIndex: readonly TUnit[] = [],
+  ) {
+    this.all = Object.freeze([...all]);
+    this.baseUnit = baseUnit;
+    this.naturalScale = Object.freeze([...naturalScale]);
+    this.symbolsExcludedFromIndex = Object.freeze([...symbolsExcludedFromIndex]);
+    this.ownedUnits = new Set(this.all);
+    this.index = this.buildSymbolIndex();
+
+    for (const unit of this.all) Object.freeze(unit);
+  }
+
+  assertOwns(unit: MeasurementUnit): asserts unit is TUnit {
+    if (!this.ownedUnits.has(unit)) throw new RangeError("Unit belongs to another dimension.");
+  }
 
   /**
    * Matches on symbol, English and Swedish names, plurals and aliases. Earlier
@@ -98,7 +125,7 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
     if (input == null) return null;
     const trimmed = input.trim();
     if (trimmed.length === 0) return null;
-    return this.symbolIndex().get(foldForUnitLookup(trimmed)) ?? null;
+    return this.index.get(foldForUnitLookup(trimmed)) ?? null;
   }
 
   /**
@@ -120,9 +147,7 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
     return result;
   }
 
-  private symbolIndex(): Map<string, TUnit> {
-    if (this.index !== null) return this.index;
-
+  private buildSymbolIndex(): ReadonlyMap<string, TUnit> {
     const index = new Map<string, TUnit>();
     const add = (key: string, unit: TUnit): void => {
       const normalized = foldForUnitLookup(key);
@@ -138,7 +163,6 @@ export class MeasurementUnitIndex<TUnit extends MeasurementUnit> {
       for (const alias of unit.aliases) add(alias, unit);
     }
 
-    this.index = index;
     return index;
   }
 }

@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class FrequencyUnit extends MeasurementUnit {
+  declare private readonly __frequencyUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Frequency Unit",
     localizedName: "Frekvensenhet",
@@ -79,24 +81,25 @@ export class FrequencyUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<FrequencyUnit>(
-    [
+  static readonly index: MeasurementUnitIndex<FrequencyUnit> =
+    new MeasurementUnitIndex<FrequencyUnit>(
+      [
+        FrequencyUnit.Hertz,
+        FrequencyUnit.Kilohertz,
+        FrequencyUnit.Megahertz,
+        FrequencyUnit.Gigahertz,
+        FrequencyUnit.Terahertz,
+        FrequencyUnit.RevolutionsPerMinute,
+      ],
       FrequencyUnit.Hertz,
-      FrequencyUnit.Kilohertz,
-      FrequencyUnit.Megahertz,
-      FrequencyUnit.Gigahertz,
-      FrequencyUnit.Terahertz,
-      FrequencyUnit.RevolutionsPerMinute,
-    ],
-    FrequencyUnit.Hertz,
-    [
-      FrequencyUnit.Hertz,
-      FrequencyUnit.Kilohertz,
-      FrequencyUnit.Megahertz,
-      FrequencyUnit.Gigahertz,
-      FrequencyUnit.Terahertz,
-    ],
-  );
+      [
+        FrequencyUnit.Hertz,
+        FrequencyUnit.Kilohertz,
+        FrequencyUnit.Megahertz,
+        FrequencyUnit.Gigahertz,
+        FrequencyUnit.Terahertz,
+      ],
+    );
 
   static get all(): readonly FrequencyUnit[] {
     return FrequencyUnit.index.all;

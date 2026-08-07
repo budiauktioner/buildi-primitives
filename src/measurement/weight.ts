@@ -74,6 +74,7 @@ export class Weight extends Quantity<WeightUnit> {
 
   /** Creates a weight from a value and unit. */
   static create(value: number | Decimal, unit: WeightUnit): Weight {
+    WeightUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Weight.decimalOf(value);
     return new Weight(unit.toBase(amount), unit);
   }

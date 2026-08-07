@@ -106,7 +106,7 @@ export class ChildClothingSize {
   }
 
   private static create(heightCm: number, system: ClothingSizeSystem): ChildClothingSize | null {
-      return LABELS.has(heightCm) ? new ChildClothingSize(heightCm, system) : null;
+    return LABELS.has(heightCm) ? new ChildClothingSize(heightCm, system) : null;
   }
 
   static tryParse(input: string | null | undefined): ChildClothingSize | null {
@@ -149,7 +149,10 @@ export class ChildClothingSize {
     if (years !== null) {
       const value = Number(years[1]!.replace(",", "."));
       if (Number.isFinite(value)) {
-        const size = ChildClothingSize.create(closestHeightForAge(value), ClothingSizeSystem.Unknown);
+        const size = ChildClothingSize.create(
+          closestHeightForAge(value),
+          ClothingSizeSystem.Unknown,
+        );
         if (size !== null) return size;
       }
     }
@@ -159,7 +162,10 @@ export class ChildClothingSize {
       const low = Number(range[1]);
       const high = Number(range[2]);
       if (low < high && low >= 50 && high <= 185) {
-        const size = ChildClothingSize.create(closestHeight((low + high) / 2), ClothingSizeSystem.EU);
+        const size = ChildClothingSize.create(
+          closestHeight((low + high) / 2),
+          ClothingSizeSystem.EU,
+        );
         if (size !== null) return size;
       }
     }
@@ -252,7 +258,10 @@ function closestHeightForAge(years: number): number {
   let bestDistance = Number.POSITIVE_INFINITY;
   for (const [index, height] of HEIGHTS.entries()) {
     const distance = Math.abs(REPRESENTATIVE_AGE_YEARS[index]! - years);
-    if (distance < bestDistance - 1e-9 || (Math.abs(distance - bestDistance) < 1e-9 && height > best)) {
+    if (
+      distance < bestDistance - 1e-9 ||
+      (Math.abs(distance - bestDistance) < 1e-9 && height > best)
+    ) {
       bestDistance = distance;
       best = height;
     }

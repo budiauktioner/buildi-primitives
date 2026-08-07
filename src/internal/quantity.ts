@@ -52,6 +52,8 @@ export abstract class Quantity<TUnit extends MeasurementUnit> {
 
   /** The exact value converted to `unit`. */
   inDecimal(unit: TUnit): Decimal {
+    const units: MeasurementUnitIndex<TUnit> = this.units;
+    units.assertOwns(unit);
     return unit.fromBase(this.baseValue);
   }
 
@@ -88,19 +90,21 @@ export abstract class Quantity<TUnit extends MeasurementUnit> {
   // TypeScript has no operator overloading, so the C# `+ - * /` become methods.
 
   plus(other: Quantity<TUnit>): this {
+    this.assertSameDimension(other);
     return this.withBaseValue(this.baseValue.plus(other.baseValue), this.originalUnit);
   }
 
   minus(other: Quantity<TUnit>): this {
+    this.assertSameDimension(other);
     return this.withBaseValue(this.baseValue.minus(other.baseValue), this.originalUnit);
   }
 
-  times(factor: Decimal): this {
-    return this.withBaseValue(this.baseValue.times(factor), this.originalUnit);
+  times(factor: number | Decimal): this {
+    return this.withBaseValue(this.baseValue.times(toDecimal(factor)), this.originalUnit);
   }
 
-  dividedBy(divisor: Decimal): this {
-    return this.withBaseValue(this.baseValue.dividedBy(divisor), this.originalUnit);
+  dividedBy(divisor: number | Decimal): this {
+    return this.withBaseValue(this.baseValue.dividedBy(toDecimal(divisor)), this.originalUnit);
   }
 
   negated(): this {
@@ -109,11 +113,12 @@ export abstract class Quantity<TUnit extends MeasurementUnit> {
 
   compareTo(other: Quantity<TUnit> | null | undefined): number {
     if (other == null) return 1;
+    this.assertSameDimension(other);
     return this.baseValue.compareTo(other.baseValue);
   }
 
   equals(other: Quantity<TUnit> | null | undefined): boolean {
-    return other != null && this.baseValue.equals(other.baseValue);
+    return other != null && this.units === other.units && this.baseValue.equals(other.baseValue);
   }
 
   isLessThan(other: Quantity<TUnit>): boolean {
@@ -123,6 +128,17 @@ export abstract class Quantity<TUnit extends MeasurementUnit> {
   isGreaterThan(other: Quantity<TUnit>): boolean {
     return this.compareTo(other) > 0;
   }
+
+  private assertSameDimension(other: Quantity<TUnit>): void {
+    if (this.units !== other.units) throw new RangeError("Quantity belongs to another dimension.");
+  }
+}
+
+function toDecimal(value: number | Decimal): Decimal {
+  if (value instanceof Decimal) return value;
+  const parsed = Decimal.fromNumber(value);
+  if (parsed === null) throw new RangeError(`Scalar cannot be represented as a decimal: ${value}`);
+  return parsed;
 }
 
 /**

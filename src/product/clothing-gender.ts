@@ -87,9 +87,7 @@ export class ClothingGender {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -115,9 +113,8 @@ export class ClothingGender {
     options?: ClothingGenderFormatOptions,
   ): string | null {
     const r = ClothingGender.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -139,9 +136,7 @@ export class ClothingGender {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -191,24 +186,39 @@ function normalizeLookupKey(value: string): string {
 const ALIASES: readonly (readonly [ClothingGender, readonly string[]])[] = [
   [
     ClothingGender.Male,
-    ["gentleman", "gentlemen", "herr", "herrar", "herrkläder", "male", "man", "men", "men's", "mens"],
+    [
+      "gentleman",
+      "gentlemen",
+      "herr",
+      "herrar",
+      "herrkläder",
+      "male",
+      "man",
+      "men",
+      "men's",
+      "mens",
+    ],
   ],
   [
     ClothingGender.Female,
-    ["dam", "damer", "damkläder", "female", "kvinna", "kvinnor", "ladies", "lady", "woman", "women", "women's", "womens"],
+    [
+      "dam",
+      "damer",
+      "damkläder",
+      "female",
+      "kvinna",
+      "kvinnor",
+      "ladies",
+      "lady",
+      "woman",
+      "women",
+      "women's",
+      "womens",
+    ],
   ],
-  [
-    ClothingGender.Unisex,
-    ["both", "uni", "unisex"],
-  ],
-  [
-    ClothingGender.Boys,
-    ["boy", "boys", "killar", "kille", "pojk", "pojkar", "pojke"],
-  ],
-  [
-    ClothingGender.Girls,
-    ["flicka", "flickor", "girl", "girls", "tjej", "tjejer"],
-  ],
+  [ClothingGender.Unisex, ["both", "uni", "unisex"]],
+  [ClothingGender.Boys, ["boy", "boys", "killar", "kille", "pojk", "pojkar", "pojke"]],
+  [ClothingGender.Girls, ["flicka", "flickor", "girl", "girls", "tjej", "tjejer"]],
 ];
 
 const LOOKUP = new Map<string, ClothingGender>();

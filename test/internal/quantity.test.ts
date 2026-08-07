@@ -1,7 +1,31 @@
 import { describe, expect, it } from "vitest";
-import { Decimal } from "../../src/internal/decimal.js";
+import { Decimal, DecimalDivisionByZeroError } from "../../src/internal/decimal.js";
 import { MeasurementUnit, MeasurementUnitIndex } from "../../src/internal/measurement-unit.js";
+import type { MeasurementUnitDefinition } from "../../src/internal/measurement-unit.js";
 import { Quantity, tryParseQuantity } from "../../src/internal/quantity.js";
+import {
+  Area,
+  DataSize,
+  ElectricCharge,
+  ElectricCurrent,
+  Energy,
+  FlowRate,
+  Frequency,
+  Length,
+  LengthUnit,
+  Luminance,
+  LuminousFlux,
+  Power,
+  Pressure,
+  RotationalSpeed,
+  Speed,
+  Temperature,
+  Torque,
+  Voltage,
+  Volume,
+  Weight,
+  WeightUnit,
+} from "../../src/measurement/index.js";
 import vectors from "./quantity-dotnet-vectors.json" with { type: "json" };
 
 /**
@@ -19,7 +43,13 @@ function factor(literal: string): Decimal {
   return parsed;
 }
 
-const nanometer = new MeasurementUnit({
+class TestMeasurementUnit extends MeasurementUnit {
+  constructor(definition: MeasurementUnitDefinition) {
+    super(definition);
+  }
+}
+
+const nanometer = new TestMeasurementUnit({
   symbol: "nm",
   englishName: "nanometer",
   localizedName: "nanometer",
@@ -28,7 +58,7 @@ const nanometer = new MeasurementUnit({
   toBaseUnitFactor: factor("0.000000001"),
   aliases: ["nanometre", "nanometres"],
 });
-const micrometer = new MeasurementUnit({
+const micrometer = new TestMeasurementUnit({
   symbol: "µm",
   englishName: "micrometer",
   localizedName: "mikrometer",
@@ -37,7 +67,7 @@ const micrometer = new MeasurementUnit({
   toBaseUnitFactor: factor("0.000001"),
   aliases: ["micrometre", "micrometres", "um"],
 });
-const millimeter = new MeasurementUnit({
+const millimeter = new TestMeasurementUnit({
   symbol: "mm",
   englishName: "millimeter",
   localizedName: "millimeter",
@@ -46,7 +76,7 @@ const millimeter = new MeasurementUnit({
   toBaseUnitFactor: factor("0.001"),
   aliases: ["millimetre", "millimetres"],
 });
-const centimeter = new MeasurementUnit({
+const centimeter = new TestMeasurementUnit({
   symbol: "cm",
   englishName: "centimeter",
   localizedName: "centimeter",
@@ -55,7 +85,7 @@ const centimeter = new MeasurementUnit({
   toBaseUnitFactor: factor("0.01"),
   aliases: ["centimetre", "centimetres"],
 });
-const decimeter = new MeasurementUnit({
+const decimeter = new TestMeasurementUnit({
   symbol: "dm",
   englishName: "decimeter",
   localizedName: "decimeter",
@@ -64,7 +94,7 @@ const decimeter = new MeasurementUnit({
   toBaseUnitFactor: factor("0.1"),
   aliases: ["decimetre", "decimetres"],
 });
-const meter = new MeasurementUnit({
+const meter = new TestMeasurementUnit({
   symbol: "m",
   englishName: "meter",
   localizedName: "meter",
@@ -73,7 +103,7 @@ const meter = new MeasurementUnit({
   toBaseUnitFactor: factor("1"),
   aliases: ["metre", "metres"],
 });
-const kilometer = new MeasurementUnit({
+const kilometer = new TestMeasurementUnit({
   symbol: "km",
   englishName: "kilometer",
   localizedName: "kilometer",
@@ -82,7 +112,7 @@ const kilometer = new MeasurementUnit({
   toBaseUnitFactor: factor("1000"),
   aliases: ["kilometre", "kilometres"],
 });
-const inch = new MeasurementUnit({
+const inch = new TestMeasurementUnit({
   symbol: "in",
   englishName: "inch",
   localizedName: "tum",
@@ -91,7 +121,7 @@ const inch = new MeasurementUnit({
   toBaseUnitFactor: factor("0.0254"),
   aliases: ["inch", "inches", '"', "tum"],
 });
-const foot = new MeasurementUnit({
+const foot = new TestMeasurementUnit({
   symbol: "ft",
   englishName: "foot",
   localizedName: "fot",
@@ -100,7 +130,7 @@ const foot = new MeasurementUnit({
   toBaseUnitFactor: factor("0.3048"),
   aliases: ["foot", "feet", "fot"],
 });
-const yard = new MeasurementUnit({
+const yard = new TestMeasurementUnit({
   symbol: "yd",
   englishName: "yard",
   localizedName: "yard",
@@ -109,7 +139,7 @@ const yard = new MeasurementUnit({
   toBaseUnitFactor: factor("0.9144"),
   aliases: ["yard", "yards"],
 });
-const mile = new MeasurementUnit({
+const mile = new TestMeasurementUnit({
   symbol: "mi",
   englishName: "mile",
   localizedName: "engelsk mil",
@@ -118,7 +148,7 @@ const mile = new MeasurementUnit({
   toBaseUnitFactor: factor("1609.344"),
   aliases: ["mile", "miles"],
 });
-const nauticalMile = new MeasurementUnit({
+const nauticalMile = new TestMeasurementUnit({
   symbol: "nmi",
   englishName: "nautical mile",
   localizedName: "nautisk mil",
@@ -127,7 +157,7 @@ const nauticalMile = new MeasurementUnit({
   toBaseUnitFactor: factor("1852"),
   aliases: ["nautical mile", "nautical miles", "sjömil", "NM"],
 });
-const swedishMile = new MeasurementUnit({
+const swedishMile = new TestMeasurementUnit({
   symbol: "mil",
   englishName: "Swedish mile",
   localizedName: "mil",
@@ -284,6 +314,70 @@ describe("quantity arithmetic and comparison", () => {
     expect(meters999.isLessThan(kilometer1)).toBe(true);
     expect(kilometer1.compareTo(null)).toBe(1);
     expect(kilometer1.equals(null)).toBe(false);
+  });
+});
+
+describe("public quantity invariants", () => {
+  it("accepts number scalars", () => {
+    expect(Length.fromFeet(3).times(2).toNormalizedString()).toBe("1.8288 m");
+    expect(Length.fromFeet(3).dividedBy(2).toNormalizedString()).toBe("0.4572 m");
+  });
+
+  it("rejects addition and subtraction across dimensions at runtime", () => {
+    expect(() => Length.fromMeters(1).plus(Weight.fromKilograms(2) as never)).toThrow(RangeError);
+    expect(() => Length.fromMeters(1).minus(Weight.fromKilograms(2) as never)).toThrow(RangeError);
+  });
+
+  it("rejects comparison across dimensions at runtime", () => {
+    expect(() => Length.fromMeters(1).compareTo(Weight.fromKilograms(1) as never)).toThrow(
+      RangeError,
+    );
+  });
+
+  it("does not consider equal base values from different dimensions equal", () => {
+    expect(Length.fromMeters(1).equals(Weight.fromKilograms(1) as never)).toBe(false);
+  });
+
+  it.each([Number.NaN, Number.POSITIVE_INFINITY, Number.NEGATIVE_INFINITY, Number.MAX_VALUE])(
+    "rejects unrepresentable scalar %s",
+    (scalar) => {
+      expect(() => Length.fromMeters(1).times(scalar)).toThrow(RangeError);
+      expect(() => Length.fromMeters(1).dividedBy(scalar)).toThrow(RangeError);
+    },
+  );
+
+  it("rejects division by a zero scalar", () => {
+    expect(() => Length.fromMeters(1).dividedBy(0)).toThrow(DecimalDivisionByZeroError);
+  });
+
+  it.each([
+    ["Area", () => Area.create(1, WeightUnit.Gram as never)],
+    ["DataSize", () => DataSize.create(1, WeightUnit.Gram as never)],
+    ["ElectricCharge", () => ElectricCharge.create(1, WeightUnit.Gram as never)],
+    ["ElectricCurrent", () => ElectricCurrent.create(1, WeightUnit.Gram as never)],
+    ["Energy", () => Energy.create(1, WeightUnit.Gram as never)],
+    ["FlowRate", () => FlowRate.create(1, WeightUnit.Gram as never)],
+    ["Frequency", () => Frequency.create(1, WeightUnit.Gram as never)],
+    ["Length", () => Length.create(1, WeightUnit.Gram as never)],
+    ["Luminance", () => Luminance.create(1, WeightUnit.Gram as never)],
+    ["LuminousFlux", () => LuminousFlux.create(1, WeightUnit.Gram as never)],
+    ["Power", () => Power.create(1, WeightUnit.Gram as never)],
+    ["Pressure", () => Pressure.create(1, WeightUnit.Gram as never)],
+    ["RotationalSpeed", () => RotationalSpeed.create(1, WeightUnit.Gram as never)],
+    ["Speed", () => Speed.create(1, WeightUnit.Gram as never)],
+    ["Temperature", () => Temperature.create(1, WeightUnit.Gram as never)],
+    ["Torque", () => Torque.create(1, WeightUnit.Gram as never)],
+    ["Voltage", () => Voltage.create(1, WeightUnit.Gram as never)],
+    ["Volume", () => Volume.create(1, WeightUnit.Gram as never)],
+    ["Weight", () => Weight.create(1, LengthUnit.Meter as never)],
+  ] as const)("rejects foreign units in %s.create", (_name, create) => {
+    expect(create).toThrow(RangeError);
+  });
+
+  it("freezes unit instances and indexes", () => {
+    expect(Object.isFrozen(LengthUnit.Meter)).toBe(true);
+    expect(Object.isFrozen(LengthUnit.all)).toBe(true);
+    expect(() => Reflect.set(LengthUnit.Meter, "symbol", "broken")).toThrow(TypeError);
   });
 });
 

@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class TorqueUnit extends MeasurementUnit {
+  declare private readonly __torqueUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Torque Unit",
     localizedName: "Vridmomentsenhet",
@@ -91,7 +93,7 @@ export class TorqueUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<TorqueUnit>(
+  static readonly index: MeasurementUnitIndex<TorqueUnit> = new MeasurementUnitIndex<TorqueUnit>(
     [
       TorqueUnit.NewtonMeter,
       TorqueUnit.MillinewtonMeter,

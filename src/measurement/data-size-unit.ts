@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class DataSizeUnit extends MeasurementUnit {
+  declare private readonly __dataSizeUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Data Size Unit",
     localizedName: "Datastorleksenhet",
@@ -153,33 +155,34 @@ export class DataSizeUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<DataSizeUnit>(
-    [
+  static readonly index: MeasurementUnitIndex<DataSizeUnit> =
+    new MeasurementUnitIndex<DataSizeUnit>(
+      [
+        DataSizeUnit.Byte,
+        DataSizeUnit.Kilobyte,
+        DataSizeUnit.Megabyte,
+        DataSizeUnit.Gigabyte,
+        DataSizeUnit.Terabyte,
+        DataSizeUnit.Petabyte,
+        DataSizeUnit.Exabyte,
+        DataSizeUnit.Kibibyte,
+        DataSizeUnit.Mebibyte,
+        DataSizeUnit.Gibibyte,
+        DataSizeUnit.Tebibyte,
+        DataSizeUnit.Pebibyte,
+        DataSizeUnit.Exbibyte,
+      ],
       DataSizeUnit.Byte,
-      DataSizeUnit.Kilobyte,
-      DataSizeUnit.Megabyte,
-      DataSizeUnit.Gigabyte,
-      DataSizeUnit.Terabyte,
-      DataSizeUnit.Petabyte,
-      DataSizeUnit.Exabyte,
-      DataSizeUnit.Kibibyte,
-      DataSizeUnit.Mebibyte,
-      DataSizeUnit.Gibibyte,
-      DataSizeUnit.Tebibyte,
-      DataSizeUnit.Pebibyte,
-      DataSizeUnit.Exbibyte,
-    ],
-    DataSizeUnit.Byte,
-    [
-      DataSizeUnit.Byte,
-      DataSizeUnit.Kilobyte,
-      DataSizeUnit.Megabyte,
-      DataSizeUnit.Gigabyte,
-      DataSizeUnit.Terabyte,
-      DataSizeUnit.Petabyte,
-      DataSizeUnit.Exabyte,
-    ],
-  );
+      [
+        DataSizeUnit.Byte,
+        DataSizeUnit.Kilobyte,
+        DataSizeUnit.Megabyte,
+        DataSizeUnit.Gigabyte,
+        DataSizeUnit.Terabyte,
+        DataSizeUnit.Petabyte,
+        DataSizeUnit.Exabyte,
+      ],
+    );
 
   static get all(): readonly DataSizeUnit[] {
     return DataSizeUnit.index.all;

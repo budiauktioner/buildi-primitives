@@ -26,7 +26,7 @@ export class Count {
     englishName: "Count",
     localizedName: "Antal",
     emoji: "🔢",
-    sources: Object.freeze([]),
+    sources: Object.freeze(["https://www.tnc.se/"]),
   });
 
   /** The smallest count that can be represented. */

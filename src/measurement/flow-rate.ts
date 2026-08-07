@@ -62,6 +62,7 @@ export class FlowRate extends Quantity<FlowRateUnit> {
 
   /** Creates a flow rate from a value and unit. */
   static create(value: number | Decimal, unit: FlowRateUnit): FlowRate {
+    FlowRateUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : FlowRate.decimalOf(value);
     return new FlowRate(unit.toBase(amount), unit);
   }

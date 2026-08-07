@@ -22,7 +22,7 @@ const REVERSED_PATTERN =
   /^\s*(\d{1,2}(?:[.,]\d{1,2})?)\s*(JJ|JK|J|B|K|P|D)?\s*[x×]\s*(\d{2}(?:[.,]\d{1,2})?)\s*$/iu;
 
 const SCAN_PATTERN =
-  /(?<!\w)\d{1,2}(?:[.,]\d{1,2})?\s*(?:JJ|JK|J|B|K|P|D)?\s*[x×]\s*\d{1,2}(?:[.,]\d{1,2})?\s*(?:JJ|JK|J|B|K|P|D)?(?!\w)/giu;
+  /(?<![\p{L}\p{N}_])\d{1,2}(?:[.,]\d{1,2})?\s*(?:JJ|JK|J|B|K|P|D)?\s*[x×]\s*\d{1,2}(?:[.,]\d{1,2})?\s*(?:JJ|JK|J|B|K|P|D)?(?![\p{L}\p{N}_])/giu;
 
 /**
  * Wheel rim size notation (`fälgdimension`) such as `18x7J`: rim diameter in inches,

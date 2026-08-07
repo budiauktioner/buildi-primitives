@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class EnergyUnit extends MeasurementUnit {
+  declare private readonly __energyUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Energy Unit",
     localizedName: "Energienhet",
@@ -148,7 +150,7 @@ export class EnergyUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<EnergyUnit>(
+  static readonly index: MeasurementUnitIndex<EnergyUnit> = new MeasurementUnitIndex<EnergyUnit>(
     [
       EnergyUnit.Joule,
       EnergyUnit.Kilojoule,

@@ -8,6 +8,7 @@ export interface OperatingSystemVersionFormatOptions {
 }
 
 const VERSION_PATTERN = /^\s*v?(\d+(?:\.\d+){0,3})\s*$/iu;
+const MAX_INT32 = 2_147_483_647;
 
 /**
  * An operating system version, e.g. `11`, `14.5`, `10.15.7` or `22.04`, with up to four numeric
@@ -51,10 +52,11 @@ export class OperatingSystemVersion {
     if (match === null) return null;
 
     const version = match[1]!;
-    return new OperatingSystemVersion(
-      version,
-      version.split(".").map((part) => Number(part)),
-    );
+    const parts = version.split(".").map((part) => Number(part));
+    if (!parts.every((part) => Number.isInteger(part) && part >= 0 && part <= MAX_INT32)) {
+      return null;
+    }
+    return new OperatingSystemVersion(version, parts);
   }
 
   static parse(input: string): OperatingSystemVersion {

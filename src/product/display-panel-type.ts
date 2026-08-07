@@ -26,9 +26,7 @@ export class DisplayPanelType {
     englishName: "Display Panel Type",
     localizedName: "Skärmpaneltyp",
     emoji: "🖥️",
-    sources: Object.freeze([
-      "https://en.wikipedia.org/wiki/Comparison_of_display_technology",
-    ]),
+    sources: Object.freeze(["https://en.wikipedia.org/wiki/Comparison_of_display_technology"]),
   });
 
   readonly value: string;
@@ -182,9 +180,7 @@ export class DisplayPanelType {
 
   /** Name in the language selected by {@link PrimitivesDefaults.uiCulture}. */
   get displayName(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   /** Resolves a value from its canonical name, localized name, code or any known alias. */
@@ -210,9 +206,8 @@ export class DisplayPanelType {
     options?: DisplayPanelTypeFormatOptions,
   ): string | null {
     const r = DisplayPanelType.tryParse(input);
-    if (r !== null) return PrimitivesDefaults.useLocalizedDisplayNames
-      ? r.localizedName
-      : r.englishName;
+    if (r !== null)
+      return PrimitivesDefaults.useLocalizedDisplayNames ? r.localizedName : r.englishName;
     return fallback(input, options);
   }
 
@@ -234,9 +229,7 @@ export class DisplayPanelType {
   }
 
   toString(): string {
-    return PrimitivesDefaults.useLocalizedDisplayNames
-      ? this.localizedName
-      : this.englishName;
+    return PrimitivesDefaults.useLocalizedDisplayNames ? this.localizedName : this.englishName;
   }
 
   toDisplayString(): string {
@@ -299,65 +292,30 @@ function normalizeLookupKey(value: string): string {
 }
 
 const ALIASES: readonly (readonly [DisplayPanelType, readonly string[]])[] = [
-  [
-    DisplayPanelType.Lcd,
-    ["flytandekristall", "lcd", "liquidcrystaldisplay"],
-  ],
-  [
-    DisplayPanelType.Tn,
-    ["tn", "tntwistednematic", "twistednematic"],
-  ],
-  [
-    DisplayPanelType.Ips,
-    ["inplaneswitching", "ips", "ipsinplaneswitching"],
-  ],
-  [
-    DisplayPanelType.Va,
-    ["mva", "pva", "va", "vaverticalalignment", "verticalalignment"],
-  ],
-  [
-    DisplayPanelType.Pls,
-    ["planetolineswitching", "pls", "plsplanetolineswitching"],
-  ],
-  [
-    DisplayPanelType.Tft,
-    ["tft", "tftthinfilmtransistor", "thinfilmtransistor"],
-  ],
-  [
-    DisplayPanelType.Oled,
-    ["oled", "organicled", "organiclightemittingdiode"],
-  ],
-  [
-    DisplayPanelType.Amoled,
-    ["activematrixoled", "amoled", "superamoled"],
-  ],
-  [
-    DisplayPanelType.PmOled,
-    ["passivematrixoled", "pmoled"],
-  ],
-  [
-    DisplayPanelType.Qled,
-    ["qled", "quantumdotled"],
-  ],
-  [
-    DisplayPanelType.QdOled,
-    ["qdoled", "quantumdotoled"],
-  ],
-  [
-    DisplayPanelType.MiniLed,
-    ["miniled"],
-  ],
-  [
-    DisplayPanelType.MicroLed,
-    ["microled", "uled", "µled"],
-  ],
-  [
-    DisplayPanelType.Plasma,
-    ["pdp", "plasma", "plasmaskarm"],
-  ],
+  [DisplayPanelType.Lcd, ["flytandekristall", "lcd", "liquidcrystaldisplay"]],
+  [DisplayPanelType.Tn, ["tn", "tntwistednematic", "twistednematic"]],
+  [DisplayPanelType.Ips, ["inplaneswitching", "ips", "ipsinplaneswitching"]],
+  [DisplayPanelType.Va, ["mva", "pva", "va", "vaverticalalignment", "verticalalignment"]],
+  [DisplayPanelType.Pls, ["planetolineswitching", "pls", "plsplanetolineswitching"]],
+  [DisplayPanelType.Tft, ["tft", "tftthinfilmtransistor", "thinfilmtransistor"]],
+  [DisplayPanelType.Oled, ["oled", "organicled", "organiclightemittingdiode"]],
+  [DisplayPanelType.Amoled, ["activematrixoled", "amoled", "superamoled"]],
+  [DisplayPanelType.PmOled, ["passivematrixoled", "pmoled"]],
+  [DisplayPanelType.Qled, ["qled", "quantumdotled"]],
+  [DisplayPanelType.QdOled, ["qdoled", "quantumdotoled"]],
+  [DisplayPanelType.MiniLed, ["miniled"]],
+  [DisplayPanelType.MicroLed, ["microled", "uled", "µled"]],
+  [DisplayPanelType.Plasma, ["pdp", "plasma", "plasmaskarm"]],
   [
     DisplayPanelType.Crt,
-    ["bildror", "cathoderaytube", "crt", "crtcathoderaytube", "crtkatodstraleror", "katodstraleror"],
+    [
+      "bildror",
+      "cathoderaytube",
+      "crt",
+      "crtcathoderaytube",
+      "crtkatodstraleror",
+      "katodstraleror",
+    ],
   ],
   [
     DisplayPanelType.EInk,

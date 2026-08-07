@@ -147,7 +147,9 @@ export class ProcessorSpeed {
   }
 
   times(factor: number | Decimal): ProcessorSpeed {
-    return new ProcessorSpeed(this.speed.times(factor instanceof Decimal ? factor : decimalOf(factor)));
+    return new ProcessorSpeed(
+      this.speed.times(factor instanceof Decimal ? factor : decimalOf(factor)),
+    );
   }
 
   dividedBy(divisor: number | Decimal): ProcessorSpeed {

@@ -18,7 +18,8 @@ const CONVERSION_PRECISION = 6;
 
 const PATTERN = /^\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*(g\/km|mg\/km|g\/mi|g\/mile|mg\/mi)\s*$/iu;
 
-const SCAN_PATTERN = /(?<!\w)\d+[0-9 .,]*\s*(?:g\/km|mg\/km|g\/mi(?:le)?|mg\/mi)\b/giu;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])\d+[0-9 .,]*\s*(?:g\/km|mg\/km|g\/mi(?:le)?|mg\/mi)(?![\p{L}\p{N}_])/giu;
 
 /**
  * A vehicle emission rate (`utsläpp`) such as CO₂ per distance, held as grams per

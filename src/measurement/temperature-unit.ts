@@ -10,6 +10,8 @@ import type { PrimitiveTypeInfo } from "../primitive-type-info.js";
  * also why this class does not share the common unit machinery.
  */
 export class TemperatureUnit {
+  declare private readonly __temperatureUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Temperature Unit",
     localizedName: "Temperaturenhet",
@@ -39,7 +41,13 @@ export class TemperatureUnit {
     this.localizedName = definition.localizedName;
     this.pluralEnglish = definition.pluralEnglish;
     this.pluralSwedish = definition.pluralSwedish;
-    this.aliases = definition.aliases;
+    this.aliases = Object.freeze([...definition.aliases]);
+
+    return new Proxy(this, {
+      set() {
+        throw new TypeError("Measurement units are immutable.");
+      },
+    });
   }
 
   static readonly Celsius = new TemperatureUnit({
@@ -69,8 +77,18 @@ export class TemperatureUnit {
     aliases: ["kelvin"],
   });
 
+  private static readonly units: readonly TemperatureUnit[] = Object.freeze([
+    TemperatureUnit.Celsius,
+    TemperatureUnit.Fahrenheit,
+    TemperatureUnit.Kelvin,
+  ]);
+
+  static {
+    for (const unit of TemperatureUnit.units) Object.freeze(unit);
+  }
+
   static get all(): readonly TemperatureUnit[] {
-    return [TemperatureUnit.Celsius, TemperatureUnit.Fahrenheit, TemperatureUnit.Kelvin];
+    return TemperatureUnit.units;
   }
 
   /** The SI base unit for thermodynamic temperature: kelvin. */
@@ -90,6 +108,12 @@ export class TemperatureUnit {
     const result = TemperatureUnit.tryParse(input);
     if (result === null) throw new Error("Unknown temperature unit.");
     return result;
+  }
+
+  static assertOwns(unit: unknown): asserts unit is TemperatureUnit {
+    if (!TemperatureUnit.units.includes(unit as TemperatureUnit)) {
+      throw new RangeError("Unit belongs to another dimension.");
+    }
   }
 
   toString(): string {

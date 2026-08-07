@@ -90,6 +90,7 @@ export class Length extends Quantity<LengthUnit> {
 
   /** Creates a length from a value and unit. */
   static create(value: number | Decimal, unit: LengthUnit): Length {
+    LengthUnit.index.assertOwns(unit);
     const amount = value instanceof Decimal ? value : Length.decimalOf(value);
     return new Length(unit.toBase(amount), unit);
   }

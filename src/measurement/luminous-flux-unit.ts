@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class LuminousFluxUnit extends MeasurementUnit {
+  declare private readonly __luminousFluxUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Luminous Flux Unit",
     localizedName: "Ljusflödesenhet",
@@ -42,11 +44,12 @@ export class LuminousFluxUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<LuminousFluxUnit>(
-    [LuminousFluxUnit.Lumen, LuminousFluxUnit.Kilolumen],
-    LuminousFluxUnit.Lumen,
-    [LuminousFluxUnit.Lumen, LuminousFluxUnit.Kilolumen],
-  );
+  static readonly index: MeasurementUnitIndex<LuminousFluxUnit> =
+    new MeasurementUnitIndex<LuminousFluxUnit>(
+      [LuminousFluxUnit.Lumen, LuminousFluxUnit.Kilolumen],
+      LuminousFluxUnit.Lumen,
+      [LuminousFluxUnit.Lumen, LuminousFluxUnit.Kilolumen],
+    );
 
   static get all(): readonly LuminousFluxUnit[] {
     return LuminousFluxUnit.index.all;

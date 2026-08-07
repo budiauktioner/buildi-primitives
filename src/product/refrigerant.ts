@@ -436,94 +436,28 @@ function normalizeLookupKey(value: string): string {
 }
 
 const ALIASES: readonly (readonly [Refrigerant, readonly string[]])[] = [
-  [
-    Refrigerant.R12,
-    ["r12"],
-  ],
-  [
-    Refrigerant.R22,
-    ["r22"],
-  ],
-  [
-    Refrigerant.R32,
-    ["r32"],
-  ],
-  [
-    Refrigerant.R134a,
-    ["r134a"],
-  ],
-  [
-    Refrigerant.R290,
-    ["propan", "propane", "r290"],
-  ],
-  [
-    Refrigerant.R404A,
-    ["r404a"],
-  ],
-  [
-    Refrigerant.R407C,
-    ["r407c"],
-  ],
-  [
-    Refrigerant.R407F,
-    ["r407f"],
-  ],
-  [
-    Refrigerant.R410A,
-    ["r410a"],
-  ],
-  [
-    Refrigerant.R448A,
-    ["r448a"],
-  ],
-  [
-    Refrigerant.R449A,
-    ["r449a"],
-  ],
-  [
-    Refrigerant.R452A,
-    ["r452a"],
-  ],
-  [
-    Refrigerant.R507A,
-    ["r507a"],
-  ],
-  [
-    Refrigerant.R513A,
-    ["r513a"],
-  ],
-  [
-    Refrigerant.R600a,
-    ["isobutan", "isobutane", "r600a"],
-  ],
-  [
-    Refrigerant.R717,
-    ["ammonia", "ammoniak", "nh3", "r717"],
-  ],
-  [
-    Refrigerant.R718,
-    ["h2o", "r718", "vatten", "water"],
-  ],
-  [
-    Refrigerant.R744,
-    ["carbondioxide", "co2", "co₂", "koldioxid", "r744"],
-  ],
-  [
-    Refrigerant.R1234yf,
-    ["r1234yf"],
-  ],
-  [
-    Refrigerant.R1234ze,
-    ["r1234ze"],
-  ],
-  [
-    Refrigerant.R1233zd,
-    ["r1233zd"],
-  ],
-  [
-    Refrigerant.R1270,
-    ["propen", "propylene", "r1270"],
-  ],
+  [Refrigerant.R12, ["r12"]],
+  [Refrigerant.R22, ["r22"]],
+  [Refrigerant.R32, ["r32"]],
+  [Refrigerant.R134a, ["r134a"]],
+  [Refrigerant.R290, ["propan", "propane", "r290"]],
+  [Refrigerant.R404A, ["r404a"]],
+  [Refrigerant.R407C, ["r407c"]],
+  [Refrigerant.R407F, ["r407f"]],
+  [Refrigerant.R410A, ["r410a"]],
+  [Refrigerant.R448A, ["r448a"]],
+  [Refrigerant.R449A, ["r449a"]],
+  [Refrigerant.R452A, ["r452a"]],
+  [Refrigerant.R507A, ["r507a"]],
+  [Refrigerant.R513A, ["r513a"]],
+  [Refrigerant.R600a, ["isobutan", "isobutane", "r600a"]],
+  [Refrigerant.R717, ["ammonia", "ammoniak", "nh3", "r717"]],
+  [Refrigerant.R718, ["h2o", "r718", "vatten", "water"]],
+  [Refrigerant.R744, ["carbondioxide", "co2", "co₂", "koldioxid", "r744"]],
+  [Refrigerant.R1234yf, ["r1234yf"]],
+  [Refrigerant.R1234ze, ["r1234ze"]],
+  [Refrigerant.R1233zd, ["r1233zd"]],
+  [Refrigerant.R1270, ["propen", "propylene", "r1270"]],
 ];
 
 const LOOKUP = new Map<string, Refrigerant>();
@@ -534,4 +468,4 @@ for (const [value, keys] of ALIASES) {
   }
 }
 
-const SCAN_PATTERN = /(?<![\p{L}\p{N}_])R-?\d{2,4}[A-Za-z]?(?![\p{L}\p{N}_])/gui;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])R-?\d{2,4}[A-Za-z]?(?![\p{L}\p{N}_])/giu;

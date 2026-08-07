@@ -12,7 +12,7 @@ export interface IpRatingFormatOptions {
 }
 
 const PARSE_PATTERN = /^\s*[Ii][Pp]\s*[-/]?\s*([0-6Xx])\s*([0-9Xx])\s*$/u;
-const SCAN_PATTERN = /\bIP\s*[-/]?\s*[0-6Xx][0-9Xx]\b/giu;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])IP\s*[-/]?\s*[0-6Xx][0-9Xx](?![\p{L}\p{N}_])/giu;
 
 const SOLIDS_DESCRIPTIONS: Readonly<Record<string, string>> = {
   X: "Not tested",

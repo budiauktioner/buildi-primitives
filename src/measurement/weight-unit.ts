@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * exact conversion factor to the base unit.
  */
 export class WeightUnit extends MeasurementUnit {
+  declare private readonly __weightUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Weight Unit",
     localizedName: "Viktenhet",
@@ -111,7 +113,7 @@ export class WeightUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<WeightUnit>(
+  static readonly index: MeasurementUnitIndex<WeightUnit> = new MeasurementUnitIndex<WeightUnit>(
     [
       WeightUnit.Microgram,
       WeightUnit.Milligram,

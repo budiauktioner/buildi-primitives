@@ -4,20 +4,20 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
-## [Unreleased]
+## [0.2.0] - 2026-08-07
 
 ### Added
 
 - The `Measurement` namespace, available from the new
-  `@budiauktioner/buildi-primitives/measurement` subpath. All 19 dimensions —
+  `@budiauktioner/buildi-primitives/measurement` subpath: 19 dimensions, 133
+  units, five standalone types, plus `TemperatureDelta`. The dimensions are
   `Area`, `DataSize`, `ElectricCharge`, `ElectricCurrent`, `Energy`,
   `FlowRate`, `Frequency`, `Length`, `Luminance`, `LuminousFlux`, `Power`,
   `Pressure`, `RotationalSpeed`, `Speed`, `Temperature`, `Torque`, `Voltage`,
-  `Volume` and `Weight` — covering 136 units, plus `TemperatureDelta`. Each
-  supports parsing from any of its units, exact conversion between them,
-  `toNaturalString()` auto-scaling, arithmetic, a `mask*` helper, and text
-  scanning through the matching `TextScanResult` accessor. The namespace also
-  brings the five types that have no unit table: `Count`, `Percentage`,
+  `Volume` and `Weight`. Each supports parsing from any of its units, exact
+  conversion between them, `toNaturalString()` auto-scaling, arithmetic, a
+  `mask*` helper, and text scanning through the matching `TextScanResult`
+  accessor. The five types with no unit table are `Count`, `Percentage`,
   `SoundLevel`, `Year` and `YearMonth`.
 - Internal foundation for the rest of the namespace: exact base-10 arithmetic
   matching .NET `System.Decimal`, the measurement string splitter, and the
@@ -54,6 +54,14 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
   `TextScanner` runs: `gtin8s`, `gtin12s`, `gtin13s`, `gtin14s`, `ipRatings`,
   `electricalPhases`, `refrigerants`, `colors`, `screenResolutions` and
   `screenSizes`.
+
+### Changed
+
+- Version 0.2.0 expands `defaultTextScanner` with the Measurement, Vehicle, and
+  Product scanners. Existing callers that need the 0.1.x scan scope can migrate
+  by passing `excludeCategories` for `TextCandidateCategory.Measurement`,
+  `.Vehicle`, and `.Product`; callers that want an explicit allowlist can use
+  `includeCategories` instead.
 
 ## [0.1.1] - 2026-08-07
 

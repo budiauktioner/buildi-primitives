@@ -21,7 +21,7 @@ const PATTERN =
   /^\s*([0-9][0-9 .,]*[0-9]|[0-9])\s*(kWh\/100\s*km|kWh\/km|Wh\/km|mi\/kWh|miles\/kWh|kWh\/mi|kWh\/mile)\s*$/iu;
 
 const SCAN_PATTERN =
-  /(?<!\w)\d+[0-9 .,]*\s*(?:kWh\/100\s*km|kWh\/km|Wh\/km|mi\/kWh|miles\/kWh|kWh\/mi|kWh\/mile)\b/giu;
+  /(?<![\p{L}\p{N}_])\d+[0-9 .,]*\s*(?:kWh\/100\s*km|kWh\/km|Wh\/km|mi\/kWh|miles\/kWh|kWh\/mi|kWh\/mile)(?![\p{L}\p{N}_])/giu;
 
 /**
  * Electric vehicle energy consumption (`elförbrukning`), held as kWh per 100 km.

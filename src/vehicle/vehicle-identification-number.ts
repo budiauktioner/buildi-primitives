@@ -19,7 +19,7 @@ const MAX_INPUT_LENGTH = 30;
 
 // I, O and Q are excluded so they cannot be confused with 1 and 0.
 const VIN_PATTERN = /^[A-HJ-NPR-Z0-9]{17}$/u;
-const SCAN_PATTERN = /\b[A-HJ-NPR-Z0-9]{17}\b/gu;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])[A-HJ-NPR-Z0-9]{17}(?![\p{L}\p{N}_])/giu;
 
 const WEIGHTS = [8, 7, 6, 5, 4, 3, 2, 10, 0, 9, 8, 7, 6, 5, 4, 3, 2];
 
@@ -236,13 +236,11 @@ export class VehicleIdentificationNumber {
   static findCandidatesInText(text: string): readonly TextCandidate<VehicleIdentificationNumber>[] {
     if (!text) return [];
 
-    // .NET matches against the upper-cased copy but reports spans from the original.
-    const upper = text.toUpperCase();
     const out: TextCandidate<VehicleIdentificationNumber>[] = [];
     const pattern = new RegExp(SCAN_PATTERN.source, SCAN_PATTERN.flags);
     let match: RegExpExecArray | null;
 
-    while ((match = pattern.exec(upper)) !== null) {
+    while ((match = pattern.exec(text)) !== null) {
       const value = VehicleIdentificationNumber.tryParse(match[0]);
       if (value === null) continue;
       out.push(

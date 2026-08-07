@@ -15,6 +15,8 @@ function factor(literal: string): Decimal {
  * the base SI unit (meter).
  */
 export class LengthUnit extends MeasurementUnit {
+  declare private readonly __lengthUnitBrand: void;
+
   static readonly typeInfo: PrimitiveTypeInfo = Object.freeze({
     englishName: "Length Unit",
     localizedName: "Längdenhet",
@@ -153,7 +155,7 @@ export class LengthUnit extends MeasurementUnit {
   });
 
   /** @internal Shared lookup and natural-scale walk. */
-  static readonly index = new MeasurementUnitIndex<LengthUnit>(
+  static readonly index: MeasurementUnitIndex<LengthUnit> = new MeasurementUnitIndex<LengthUnit>(
     [
       LengthUnit.Nanometer,
       LengthUnit.Micrometer,

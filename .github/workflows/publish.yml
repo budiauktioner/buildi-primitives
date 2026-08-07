@@ -37,8 +37,20 @@ jobs:
         with:
           node-version: "24"
 
+      - name: Validate release tag matches package version
+        run: |
+          tag_version="${GITHUB_REF_NAME#release-}"
+          package_version="$(node -p 'require("./package.json").version')"
+          test "${tag_version}" = "${package_version}"
+
       - name: Install
         run: pnpm install --frozen-lockfile
+
+      - name: Check formatting
+        run: pnpm format:check
+
+      - name: Lint
+        run: pnpm lint
 
       - name: Typecheck
         run: pnpm typecheck
@@ -49,11 +61,17 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Validate package identity and declarations
+        run: pnpm test:package
+
       - name: Validate package metadata
         run: pnpm publint
 
       - name: Validate type resolution
         run: pnpm attw
+
+      - name: Pack
+        run: pnpm pack --pack-destination ./artifacts
 
       # Fails loudly rather than letting the publish fall through to a confusing
       # ENEEDAUTH if a future runner image ships an npm without OIDC support.

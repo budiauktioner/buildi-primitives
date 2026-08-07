@@ -149,10 +149,7 @@ export class Gtin13 {
   }
 }
 
-function fallback(
-  input: string | null | undefined,
-  options?: Gtin13FormatOptions,
-): string | null {
+function fallback(input: string | null | undefined, options?: Gtin13FormatOptions): string | null {
   if (options?.fallbackToTrimmedInputWhenInvalid !== true || input == null) return null;
   const trimmed = input.trim();
   return trimmed.length > 0 ? trimmed : null;

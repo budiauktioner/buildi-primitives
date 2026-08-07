@@ -46,6 +46,9 @@ jobs:
       - name: Build
         run: pnpm build
 
+      - name: Validate package identity and declarations
+        run: pnpm test:package
+
       - name: Validate package metadata
         run: pnpm publint
 
