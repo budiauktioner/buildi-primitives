@@ -17,7 +17,7 @@ export interface TorqueFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:foot-pounds|foot-pound|inch-pounds|inch-pound|kilogramkraftmeter|kilonewton[\s-]?meters?|millinewton[\s-]?meters?|newtonmeter|fotpund|tumpund|kgf-m|kgf·m|kgfm|ft-lb|ft·lb|in-lb|in·lb|kN·m|kNm|mN·m|mNm|N·m|Nm)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:foot-pounds|foot-pound|inch-pounds|inch-pound|kilogramkraftmeter|kilonewton[\s-]?meters?|millinewton[\s-]?meters?|newtonmeter|fotpund|tumpund|kgf-m|kgf·m|kgfm|ft-lb|ft·lb|in-lb|in·lb|kN·m|kNm|mN·m|mNm|N·m|Nm)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

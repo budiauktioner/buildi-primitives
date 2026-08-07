@@ -17,7 +17,7 @@ export interface VolumeFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:kubikmeter|hektoliter|mikroliter|vätskeans|fluid\s+ounces?|fl\s*oz|gallons?|microliters?|milliliters?|centiliters?|deciliters?|hectoliters?|liters?|cubic\s+meters?|koppar|kopp|cups?|pints?|m³|m3|cbm|µL|µl|ul|ml|cl|dl|hL|hl|gal|pt|l)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:kubikmeter|hektoliter|mikroliter|vätskeans|fluid\s+ounces?|fl\s*oz|gallons?|microliters?|milliliters?|centiliters?|deciliters?|hectoliters?|liters?|cubic\s+meters?|koppar|kopp|cups?|pints?|m³|m3|cbm|µL|µl|ul|ml|cl|dl|hL|hl|gal|pt|l)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

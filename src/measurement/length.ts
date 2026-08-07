@@ -17,7 +17,7 @@ export interface LengthFormatOptions {
 }
 
 const SCAN_PATTERN =
-  /(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:µm|nm|mm|cm|dm|km|mi|ft|yd|nmi|mil|in|m)\b/giu;
+  /(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:µm|nm|mm|cm|dm|km|mi|ft|yd|nmi|mil|in|m)(?![\p{L}\p{N}_])/giu;
 
 /**
  * A length stored internally in meters, parsed from any supported unit format

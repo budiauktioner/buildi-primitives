@@ -17,7 +17,7 @@ export interface FrequencyFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:THz|GHz|MHz|kHz|Hz|rpm|rev/min|varv/min|r/min)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:THz|GHz|MHz|kHz|Hz|rpm|rev/min|varv/min|r/min)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

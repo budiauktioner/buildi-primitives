@@ -17,7 +17,7 @@ export interface PressureFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:GPa|MPa|kPa|hPa|mbar|mmHg|mm\s+Hg|lb/in²|atm|torr|bar|Pa|PSI)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:GPa|MPa|kPa|hPa|mbar|mmHg|mm\s+Hg|lb/in²|atm|torr|bar|Pa|PSI)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

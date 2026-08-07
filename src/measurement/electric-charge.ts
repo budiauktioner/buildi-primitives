@@ -17,7 +17,7 @@ export interface ElectricChargeFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:mAh|Ah|C)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:mAh|Ah|C)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

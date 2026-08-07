@@ -17,7 +17,7 @@ export interface DataSizeFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:exbibytes|exbibyte|exabytes|exabyte|pebibytes|pebibyte|petabytes|petabyte|tebibytes|tebibyte|terabytes|terabyte|gibibytes|gibibyte|gigabytes|gigabyte|mebibytes|mebibyte|megabytes|megabyte|kibibytes|kibibyte|kilobytes|kilobyte|EiB|PiB|TiB|GiB|MiB|KiB|EB|PB|TB|GB|MB|KB|bytes|byte|B)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:exbibytes|exbibyte|exabytes|exabyte|pebibytes|pebibyte|petabytes|petabyte|tebibytes|tebibyte|terabytes|terabyte|gibibytes|gibibyte|gigabytes|gigabyte|mebibytes|mebibyte|megabytes|megabyte|kibibytes|kibibyte|kilobytes|kilobyte|EiB|PiB|TiB|GiB|MiB|KiB|EB|PB|TB|GB|MB|KB|bytes|byte|B)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

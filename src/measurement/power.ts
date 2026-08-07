@@ -16,7 +16,8 @@ export interface PowerFormatOptions {
   decimals?: number;
 }
 
-const VALUE_PREFIX = String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*`;
+const VALUE_PREFIX = String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*`;
+const UNIT_SUFFIX = String.raw`(?![\p{L}\p{N}_])`;
 
 /**
  * Milliwatt and megawatt differ only by case, so their symbols must be matched
@@ -26,10 +27,13 @@ const VALUE_PREFIX = String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*`;
  * has no scoped flags, so the two halves are separate patterns and
  * {@link Power.findCandidatesInText} merges their results.
  */
-const CASE_SENSITIVE_PATTERN = new RegExp(String.raw`${VALUE_PREFIX}(?:µW|uW|mW|MW|TW)\b`, "gu");
+const CASE_SENSITIVE_PATTERN = new RegExp(
+  String.raw`${VALUE_PREFIX}(?:µW|uW|mW|MW|TW)${UNIT_SUFFIX}`,
+  "gu",
+);
 
 const CASE_INSENSITIVE_PATTERN = new RegExp(
-  String.raw`${VALUE_PREFIX}(?:kW|GW|W|hp|horsepower|hästkraft|hästkrafter|microwatt|mikrowatt|milliwatt|megawatt|gigawatt|terawatt|kilowatt|watt)\b`,
+  String.raw`${VALUE_PREFIX}(?:kW|GW|W|hp|horsepower|hästkraft|hästkrafter|microwatt|mikrowatt|milliwatt|megawatt|gigawatt|terawatt|kilowatt|watt)${UNIT_SUFFIX}`,
   "giu",
 );
 

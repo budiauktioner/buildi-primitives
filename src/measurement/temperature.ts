@@ -22,7 +22,8 @@ const NINE = Decimal.parse("9")!;
 const FIVE = Decimal.parse("5")!;
 const THIRTY_TWO = Decimal.parse("32")!;
 
-const SCAN_PATTERN = /(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:°[CF]|[CFK])\b/giu;
+const SCAN_PATTERN =
+  /(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:°[CF]|[CFK])(?![\p{L}\p{N}_])/giu;
 
 /**
  * An absolute temperature stored internally in kelvin, parsed from Celsius,

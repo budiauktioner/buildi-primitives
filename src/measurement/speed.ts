@@ -17,7 +17,7 @@ export interface SpeedFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:miles\s+per\s+hour|km/h|ft/s|m/s|kph|kmh|km/t|mph|knots?|knop|kt|kn)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:miles\s+per\s+hour|km/h|ft/s|m/s|kph|kmh|km/t|mph|knots?|knop|kt|kn)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

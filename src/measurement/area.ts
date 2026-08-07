@@ -16,8 +16,12 @@ export interface AreaFormatOptions {
   decimals?: number;
 }
 
+// Only the spelled-out units take a boundary; the `m²` and `m2` forms end in a
+// character that already terminates the match, as in .NET.
+const B = String.raw`(?![\p{L}\p{N}_])`;
+
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:(?:mm|cm|km|m)(?:²|2)|ha\b|hectare\b|hectares\b|hektar\b|acre\b|acres\b|sq\s*ft\b|sq\s*in\b|sq\s*yd\b|kvadrat(?:millimeter|centimeter|meter|kilometer|fot|tum|yard)\b)`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:(?:mm|cm|km|m)(?:²|2)|ha${B}|hectare${B}|hectares${B}|hektar${B}|acre${B}|acres${B}|sq\s*ft${B}|sq\s*in${B}|sq\s*yd${B}|kvadrat(?:millimeter|centimeter|meter|kilometer|fot|tum|yard)${B})`,
   "giu",
 );
 

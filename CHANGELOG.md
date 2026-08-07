@@ -4,6 +4,18 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.2.1] - 2026-08-07
+
+### Fixed
+
+- The 21 `Measurement` scanners matched on ASCII word boundaries, so a unit
+  abbreviation followed by a non-ASCII letter ended the match and produced a
+  false positive. In Swedish prose this was common enough to matter:
+  `24 månader` scanned as `24 m`, `3 tågresor` as `3 t`, and `123 väger` as
+  `123 V`. They now use Unicode-aware boundaries, matching .NET, where `\b`
+  is Unicode-aware already. `Vehicle` and `Product` scanners were already
+  correct; this closes the same gap in `Measurement`.
+
 ## [0.2.0] - 2026-08-07
 
 ### Added

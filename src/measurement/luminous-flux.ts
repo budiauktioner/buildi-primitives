@@ -16,7 +16,10 @@ export interface LuminousFluxFormatOptions {
   decimals?: number;
 }
 
-const SCAN_PATTERN = new RegExp(String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:klm|lm)\b`, "giu");
+const SCAN_PATTERN = new RegExp(
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:klm|lm)(?![\p{L}\p{N}_])`,
+  "giu",
+);
 
 /**
  * A luminous flux stored internally in lumens,

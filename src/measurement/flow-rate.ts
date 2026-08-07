@@ -17,7 +17,7 @@ export interface FlowRateFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:m[³3]/(?:h|min|tim)|l/(?:s|min|h|timme)|gal/min|gpm)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:m[³3]/(?:h|min|tim)|l/(?:s|min|h|timme)|gal/min|gpm)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

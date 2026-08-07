@@ -17,7 +17,7 @@ export interface VoltageFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:µV|uV|mV|kV|MV|V)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:µV|uV|mV|kV|MV|V)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

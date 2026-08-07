@@ -17,7 +17,7 @@ export interface WeightFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:metric\s+ton|microgram|milligram|hectogram|hektogram|kilogram|gram|tonne|ton|ounces|ounce|pounds|pound|stones|stone|hekto|lbs|lb|µg|ug|mg|hg|kg|g|oz|st|t|pund|uns)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:metric\s+ton|microgram|milligram|hectogram|hektogram|kilogram|gram|tonne|ton|ounces|ounce|pounds|pound|stones|stone|hekto|lbs|lb|µg|ug|mg|hg|kg|g|oz|st|t|pund|uns)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

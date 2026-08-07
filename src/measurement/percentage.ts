@@ -21,7 +21,7 @@ const MAX_INPUT_LENGTH = 100;
 const WORD_SUFFIX_PATTERN =
   /^(?<sign>[+-])?\s*(?<number>[0-9][0-9 .,]*[0-9]|[0-9])\s+(?:procent|percent)\s*$/iu;
 
-const SCAN_PATTERN = /(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*%/gu;
+const SCAN_PATTERN = /(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*%/gu;
 
 /**
  * A proportion from 0 to 100 percent, held internally as a fraction from 0 to

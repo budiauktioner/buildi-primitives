@@ -18,7 +18,7 @@ export interface RotationalSpeedFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:rpm|r/min|rev/min|varv/min|rps|r/s|rev/s|varv/s|rad/s(?:ec)?)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:rpm|r/min|rev/min|varv/min|rps|r/s|rev/s|varv/s|rad/s(?:ec)?)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

@@ -1,6 +1,7 @@
 import { Decimal } from "../internal/decimal.js";
 import { sanitizeInput } from "../internal/input-sanitization.js";
 import { tryParseNumberOnly } from "../internal/measurement-unit-parser.js";
+import { WORD_BOUNDARY } from "../internal/scan-boundaries.js";
 import type { PrimitiveTypeInfo } from "../primitive-type-info.js";
 import { TextCandidate } from "../text-scanning/text-candidate.js";
 import { TextCandidateCategory } from "../text-scanning/text-candidate-category.js";
@@ -32,8 +33,10 @@ export interface SoundLevelFormatOptions {
 const UNIT_PATTERN =
   /^\s*(?<sign>[+-])?\s*(?<num>[0-9][0-9 .,]*[0-9]|[0-9])\s*(?<unit>dB\s*(?:\(\s*(?<w1>[ABCZabcz])\s*\)|(?<w2>[ABCZabcz]))?)?\s*$/iu;
 
-const SCAN_PATTERN =
-  /(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*dB(?:\s*\(\s*[ABCZabcz]\s*\)|[ABCZabcz])?\b/giu;
+const SCAN_PATTERN = new RegExp(
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*dB(?:\s*\(\s*[ABCZabcz]\s*\)|[ABCZabcz])?${WORD_BOUNDARY}`,
+  "giu",
+);
 
 const SUFFIXES: Record<SoundWeighting, string> = {
   [SoundWeighting.Unweighted]: " dB",

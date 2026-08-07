@@ -18,7 +18,7 @@ export interface LuminanceFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:kcd/m²|kcd/m2|cd/m²|cd/m2|knits?|nits?)(?!\w)`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:kcd/m²|kcd/m2|cd/m²|cd/m2|knits?|nits?)(?![\p{L}\p{N}_])`,
   "giu",
 );
 

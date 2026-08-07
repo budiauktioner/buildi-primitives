@@ -17,7 +17,7 @@ export interface EnergyFormatOptions {
 }
 
 const SCAN_PATTERN = new RegExp(
-  String.raw`(?<!\w)(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:TWh|GWh|MWh|kWh|TJ|GJ|MJ|kJ|kcal|Wh|BTU|cal|J)\b`,
+  String.raw`(?<![\p{L}\p{N}_])(?:[+-]\s*)?\d+[0-9 .,]*\s*(?:TWh|GWh|MWh|kWh|TJ|GJ|MJ|kJ|kcal|Wh|BTU|cal|J)(?![\p{L}\p{N}_])`,
   "giu",
 );
 
