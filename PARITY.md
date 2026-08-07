@@ -9,8 +9,8 @@ exactly how much of that surface is implemented here.
 | ----------------- | -------------------------- |
 | .NET baseline     | `Buildi.Primitives` 0.21.0 |
 | This package      | `0.1.1`                    |
-| Namespaces ported | 11 of 13                   |
-| Types ported      | 140 of 200                 |
+| Namespaces ported | 13 of 13                   |
+| Types ported      | 200 of 200                 |
 
 Type counts follow the catalog in the .NET README — the value-object types a
 consumer works with directly, excluding extension-method containers and internal
@@ -38,19 +38,19 @@ commit that changes the .NET baseline.
 | `TextScanning` | Complete       | Scanner, candidates, overlap resolution, typed accessors    |
 | `Measurement`  | Full parity    | 19 dimensions, 136 units, 5 standalone types                |
 | `Vehicle`      | Full parity    | 29 types, plus the `SwedishDrivingLicenseVehicleGroup` enum |
-| **`Product`**  | **Not ported** | 36 types                                                    |
+| `Product`      | Full parity    | 36 types, plus 6 nested enums                               |
 
 ## Cross-cutting features
 
 | Feature                                                                    | Status                                              |
 | -------------------------------------------------------------------------- | --------------------------------------------------- |
-| `tryParse` / `parse` / `isValid` / `format` / `normalize` / `isNormalized` | Complete for every ported type                      |
+| `tryParse` / `parse` / `isValid` / `format` / `normalize` / `isNormalized` | Complete for every value-object type                |
 | `typeInfo` metadata (English + Swedish name, emoji, sources)               | Complete                                            |
-| `validate()` structured validation                                         | Complete — all 14 ported types that have it in .NET |
-| `findCandidatesInText()` text scanning                                     | Complete — all 59 ported types that have it in .NET |
-| `TextScanResult` typed accessors                                           | Complete — the same 58 accessors .NET exposes       |
-| Masking (`toMaskedString` → `mask*` functions)                             | Complete for ported namespaces                      |
-| Lookup and external-link helpers                                           | Complete for ported namespaces                      |
+| `validate()` structured validation                                         | Complete — all 14 types that have it in .NET        |
+| `findCandidatesInText()` text scanning                                     | Complete — all 70 types that have it in .NET        |
+| `TextScanResult` typed accessors                                           | Complete — all 67 .NET accessors, plus `luminances` |
+| Masking (`toMaskedString` → `mask*` functions)                             | Complete                                            |
+| Lookup and external-link helpers                                           | Complete                                            |
 | `PrimitivesDefaults` (culture, UI culture, country, calling code)          | Complete                                            |
 | Sample data                                                                | Partial — see below                                 |
 | `toNaturalString()` natural unit display                                   | Complete                                            |
@@ -170,20 +170,34 @@ Three details do not follow the .NET source line for line:
   neither do we. Applications that want it can register it on their own
   `TextScanner`.
 
-## Porting the remaining namespace
+## Porting `Product`
 
-`Product` builds on `Measurement`, which is in place: it wraps it for
-`StorageCapacity`, `RamCapacity`, `ProcessorSpeed` and `BatteryCapacity`.
+The namespace splits much like `Vehicle`. Eleven types are closed sets of named
+members (`BatteryChemistry`, `ClothingFit`, `Refrigerant` and so on), four wrap
+a `Measurement` quantity (`StorageCapacity` and `RamCapacity` over `DataSize`,
+`ProcessorSpeed` over `Frequency`, `BatteryCapacity` over either
+`ElectricCharge` or `Energy`), and the rest are structured — the GTIN family,
+the clothing and shoe size pairs, `Color`, the screen types, `IpRating`,
+`HsCode`, `GoogleProductCategory` and the `OperatingSystem*` trio.
 
-```
-Measurement (ported)
-  ├── Vehicle (ported)
-  └── Product (36 types)
-```
+As with `Vehicle`, the lookup types were generated from the .NET assembly rather
+than transcribed, and [`test/product`](test/product) runs against fixtures
+captured from .NET rather than expectations written here.
 
-`Product` additionally needs its `TextCandidateCategory` scanners registered in
-[`src/register-default-text-scanners.ts`](src/register-default-text-scanners.ts)
-and typed accessors added to
-[`src/text-scanning/text-scan-result.ts`](src/text-scanning/text-scan-result.ts).
-The .NET `TextScanResult` has 67 typed accessors in total; the 58 belonging to
-ported namespaces are implemented, and the remaining 9 arrive with `Product`.
+Four details are worth calling out:
+
+- **`BatteryCapacity` carries one of two dimensions.** A capacity in mAh is a
+  charge, one in Wh is an energy, and .NET refuses to add or compare across the
+  two. The port throws on the same combinations rather than silently
+  converting, which would need a cell voltage nobody supplied.
+- **Lookup keys fold by upper-casing.** `DisplayPanelType` accepts `µLED`,
+  where the micro sign and the Greek capital mu fold together going up but not
+  going down, so lookups go through
+  [`internal/case-folding.ts`](src/internal/case-folding.ts) — the same reason
+  `Measurement` unit lookup does.
+- **`Color` rounds half to even.** Its HSL round-trip lands on exact halves
+  often enough that the JavaScript default of rounding half away from zero
+  would drift from .NET by one channel step.
+- **`CameraResolution` is not registered on the default scanner.** It has a
+  `findCandidatesInText`, but the .NET `TextScanner` does not run it, the same
+  way `EnergyConsumption` is left out of the `Vehicle` set.

@@ -22,3 +22,4 @@ export * from "./property/index.js";
 export * from "./banking/index.js";
 export * from "./measurement/index.js";
 export * from "./vehicle/index.js";
+export * from "./product/index.js";

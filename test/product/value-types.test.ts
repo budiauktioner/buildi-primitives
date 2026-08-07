@@ -82,6 +82,9 @@ const NESTED_PROPERTY_TYPES = new Set([
   "OperatingSystemVersion",
 ]);
 
+/** Types the probe writes as strings but TypeScript exposes as plain numbers. */
+const NUMERIC_STRING_TYPES = new Set(["Byte", "Decimal", "Int64"]);
+
 /** Nested C# enums are const objects in TypeScript, so members compare by name. */
 const NESTED_ENUM_TYPES = new Set([
   "ClothingSizeSystem",
@@ -101,18 +104,7 @@ const inEnglish = <T>(run: () => T): T => {
 };
 
 /** Types still waiting for a port; the list shrinks to empty as the namespace is finished. */
-const NOT_YET_PORTED = [
-  "Color",
-  "CameraResolution",
-  "ScreenResolution",
-  "ScreenSize",
-  "IpRating",
-  "HsCode",
-  "GoogleProductCategory",
-  "OperatingSystemInfo",
-  "OperatingSystemName",
-  "OperatingSystemVersion",
-];
+const NOT_YET_PORTED: string[] = [];
 
 const ported = Object.keys(allVectors).filter((name) => exported[name] !== undefined);
 
@@ -187,9 +179,10 @@ describe.each(ported)("%s against .NET vectors", (typeName) => {
         } else if (NESTED_ENUM_TYPES.has(prop.type)) {
           const members = exported[prop.type] as Record<string, number>;
           expect(actual).toBe(members[expected as string]);
-        } else if (prop.type === "Decimal") {
-          // .NET keeps the scale of a decimal, so 3.5 GHz reads back as 3500000000.0 hertz;
-          // the TypeScript getters expose plain numbers and compare by magnitude.
+        } else if (NUMERIC_STRING_TYPES.has(prop.type)) {
+          // .NET keeps the scale of a decimal, so 3.5 GHz reads back as 3500000000.0 hertz, and
+          // a long arrives as a string; the TypeScript getters expose plain numbers, so these
+          // compare by magnitude.
           expect(Number(actual)).toBeCloseTo(Number(expected), 9);
         } else {
           expect(actual ?? null).toBe(expected);

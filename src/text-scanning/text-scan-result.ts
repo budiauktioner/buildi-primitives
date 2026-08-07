@@ -49,6 +49,16 @@ import type { SwedishPersonalIdentityNumber } from "../person/swedish-personal-i
 import type { SwedishPropertyDesignation } from "../property/swedish-property-designation.js";
 import type { EmailAddress } from "../web/email-address.js";
 import type { Url } from "../web/url.js";
+import type { Color } from "../product/color.js";
+import type { ElectricalPhase } from "../product/electrical-phase.js";
+import type { Gtin8 } from "../product/gtin8.js";
+import type { Gtin12 } from "../product/gtin12.js";
+import type { Gtin13 } from "../product/gtin13.js";
+import type { Gtin14 } from "../product/gtin14.js";
+import type { IpRating } from "../product/ip-rating.js";
+import type { Refrigerant } from "../product/refrigerant.js";
+import type { ScreenResolution } from "../product/screen-resolution.js";
+import type { ScreenSize } from "../product/screen-size.js";
 import type { BoltPattern } from "../vehicle/bolt-pattern.js";
 import type { EmissionRate } from "../vehicle/emission-rate.js";
 import type { EnginePower } from "../vehicle/engine-power.js";
@@ -290,6 +300,37 @@ export class TextScanResult {
   }
   get drivingLicenseCategories(): TextCandidate<SwedishDrivingLicenseCategory>[] {
     return this.byTypeName<SwedishDrivingLicenseCategory>("SwedishDrivingLicenseCategory");
+  }
+
+  get gtin8s(): TextCandidate<Gtin8>[] {
+    return this.byTypeName<Gtin8>("Gtin8");
+  }
+  get gtin12s(): TextCandidate<Gtin12>[] {
+    return this.byTypeName<Gtin12>("Gtin12");
+  }
+  get gtin13s(): TextCandidate<Gtin13>[] {
+    return this.byTypeName<Gtin13>("Gtin13");
+  }
+  get gtin14s(): TextCandidate<Gtin14>[] {
+    return this.byTypeName<Gtin14>("Gtin14");
+  }
+  get ipRatings(): TextCandidate<IpRating>[] {
+    return this.byTypeName<IpRating>("IpRating");
+  }
+  get electricalPhases(): TextCandidate<ElectricalPhase>[] {
+    return this.byTypeName<ElectricalPhase>("ElectricalPhase");
+  }
+  get refrigerants(): TextCandidate<Refrigerant>[] {
+    return this.byTypeName<Refrigerant>("Refrigerant");
+  }
+  get colors(): TextCandidate<Color>[] {
+    return this.byTypeName<Color>("Color");
+  }
+  get screenResolutions(): TextCandidate<ScreenResolution>[] {
+    return this.byTypeName<ScreenResolution>("ScreenResolution");
+  }
+  get screenSizes(): TextCandidate<ScreenSize>[] {
+    return this.byTypeName<ScreenSize>("ScreenSize");
   }
 
   /** Returns all candidates in the given category. */

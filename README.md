@@ -8,9 +8,9 @@ This is the TypeScript port of the .NET package
 [source](https://github.com/BudiAuktioner/Buildi.Primitives) remains the
 behavioural specification for both languages.
 
-> **Status**: early release, versioned from 0.1.0. Eleven of the thirteen .NET
-> namespaces are ported and track the .NET package closely; `Product` is not
-> ported yet. See [PARITY.md](PARITY.md) for the exact coverage and gaps.
+> **Status**: early release, versioned from 0.1.0. All thirteen .NET namespaces
+> are ported and track the .NET package closely. See [PARITY.md](PARITY.md) for
+> the exact coverage and the handful of intentional divergences.
 
 ## Install
 
@@ -213,8 +213,8 @@ its unit tables are static class fields, which bundlers keep whether or not you
 reference the class, so importing a single dimension still costs about 112 kB.
 
 Available subpaths: `contact`, `person`, `organization`, `geography`, `web`,
-`finance`, `property`, `banking`, `measurement`, `vehicle`, `validation`,
-`text-scanning`, and `sample-data`.
+`finance`, `property`, `banking`, `measurement`, `vehicle`, `product`,
+`validation`, `text-scanning`, and `sample-data`.
 
 ```ts
 import { SwedishPersonalIdentityNumber } from "@budiauktioner/buildi-primitives/person";
@@ -232,6 +232,7 @@ import {
   TireDimension,
   VehicleIdentificationNumber,
 } from "@budiauktioner/buildi-primitives/vehicle";
+import { Gtin13, ScreenSize, ClothingSize } from "@budiauktioner/buildi-primitives/product";
 import { ValidationErrorReason } from "@budiauktioner/buildi-primitives/validation";
 ```
 

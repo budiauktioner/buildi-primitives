@@ -37,6 +37,23 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
 - Thirteen new `TextScanResult` accessors for the vehicle types the .NET
   `TextScanner` runs, including `vehicleRegistrationNumbers`,
   `vehicleIdentificationNumbers`, `tireDimensions` and `enginePowers`.
+- The `Product` namespace, available from the new
+  `@budiauktioner/buildi-primitives/product` subpath, which completes the port
+  of all thirteen .NET namespaces. All 36 types: the lookup types
+  `AspectRatio`, `BatteryChemistry`, `ClothingFit`, `ClothingGender`,
+  `ClothingSeason`, `DisplayPanelType`, `ElectricalPhase`,
+  `EuEnergyEfficiencyClass`, `PowerSource`, `Refrigerant` and
+  `StorageMediaType`; the capacities `StorageCapacity`, `RamCapacity`,
+  `ProcessorSpeed` and `BatteryCapacity`; the GTIN family `Gtin`, `Gtin8`,
+  `Gtin12`, `Gtin13` and `Gtin14`; the sizes `ClothingSize`,
+  `AdultClothingSize`, `ChildClothingSize`, `ShoeSize`, `AdultShoeSize` and
+  `ChildShoeSize`; and `Color`, `CameraResolution`, `ScreenResolution`,
+  `ScreenSize`, `IpRating`, `HsCode`, `GoogleProductCategory`,
+  `OperatingSystemInfo`, `OperatingSystemName` and `OperatingSystemVersion`.
+- Ten new `TextScanResult` accessors for the product types the .NET
+  `TextScanner` runs: `gtin8s`, `gtin12s`, `gtin13s`, `gtin14s`, `ipRatings`,
+  `electricalPhases`, `refrigerants`, `colors`, `screenResolutions` and
+  `screenSizes`.
 
 ## [0.1.1] - 2026-08-07
 

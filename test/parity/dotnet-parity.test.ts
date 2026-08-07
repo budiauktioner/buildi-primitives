@@ -6,9 +6,9 @@ import * as primitives from "../../src/index.js";
  * is the behavioural specification for this port.
  *
  * The expectations below are transcribed from the public types of
- * https://github.com/BudiAuktioner/Buildi.Primitives at version 0.21.0, limited
- * to the namespaces this package has ported. Namespaces that are not ported yet
- * are listed in PARITY.md and deliberately excluded here.
+ * https://github.com/BudiAuktioner/Buildi.Primitives at version 0.21.0. The
+ * `Vehicle` and `Product` namespaces are covered by test/vehicle and
+ * test/product instead, which compare against fixtures captured from .NET.
  *
  * When bumping the .NET baseline, re-derive these lists from that source rather
  * than from this file.
@@ -450,13 +450,13 @@ describe(".NET parity — ported namespaces", () => {
   });
 });
 
-describe(".NET parity — namespaces not yet ported", () => {
-  // Sentinel types from each unported namespace. If one of these starts
-  // resolving, the namespace has landed and PARITY.md needs updating.
-  it.each([
-    ["Product", "Gtin13"],
-    ["Product", "StorageCapacity"],
-  ])("%s is documented as unported (%s absent)", (_namespace, typeName) => {
-    expect(exported[typeName]).toBeUndefined();
-  });
+describe(".NET parity — every namespace is ported", () => {
+  // Sentinels for the namespaces that landed last. Their per-namespace suites in
+  // test/vehicle and test/product run against fixtures captured from .NET.
+  it.each(["Gtin13", "StorageCapacity", "VehicleIdentificationNumber"])(
+    "%s resolves from the root entry",
+    (typeName) => {
+      expect(exported[typeName]).toBeDefined();
+    },
+  );
 });

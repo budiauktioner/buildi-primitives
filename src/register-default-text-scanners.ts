@@ -46,6 +46,16 @@ import { Torque } from "./measurement/torque.js";
 import { Voltage } from "./measurement/voltage.js";
 import { Volume } from "./measurement/volume.js";
 import { Weight } from "./measurement/weight.js";
+import { Color } from "./product/color.js";
+import { ElectricalPhase } from "./product/electrical-phase.js";
+import { Gtin8 } from "./product/gtin8.js";
+import { Gtin12 } from "./product/gtin12.js";
+import { Gtin13 } from "./product/gtin13.js";
+import { Gtin14 } from "./product/gtin14.js";
+import { IpRating } from "./product/ip-rating.js";
+import { Refrigerant } from "./product/refrigerant.js";
+import { ScreenResolution } from "./product/screen-resolution.js";
+import { ScreenSize } from "./product/screen-size.js";
 import { BoltPattern } from "./vehicle/bolt-pattern.js";
 import { EmissionRate } from "./vehicle/emission-rate.js";
 import { EnginePower } from "./vehicle/engine-power.js";
@@ -252,6 +262,29 @@ export function registerDefaultTextScanners(): void {
       typeName,
       category: TextCandidateCategory.Vehicle,
       scan: vehicle.findCandidatesInText,
+    });
+  }
+
+  // The same set the .NET `TextScanner` runs. `CameraResolution` can scan on its own but is
+  // deliberately left out here to match .NET.
+  const products: readonly (readonly [string, { findCandidatesInText: TextScanFunction }])[] = [
+    ["Gtin13", Gtin13],
+    ["Gtin8", Gtin8],
+    ["Gtin12", Gtin12],
+    ["Gtin14", Gtin14],
+    ["IpRating", IpRating],
+    ["ElectricalPhase", ElectricalPhase],
+    ["Refrigerant", Refrigerant],
+    ["Color", Color],
+    ["ScreenResolution", ScreenResolution],
+    ["ScreenSize", ScreenSize],
+  ];
+
+  for (const [typeName, product] of products) {
+    defaultTextScanner.register({
+      typeName,
+      category: TextCandidateCategory.Product,
+      scan: product.findCandidatesInText,
     });
   }
 }
