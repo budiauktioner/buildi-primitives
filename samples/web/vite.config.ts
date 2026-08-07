@@ -16,7 +16,10 @@ export default defineConfig({
   resolve: {
     alias: [
       // Subpath imports first (more specific) so they don't match the root.
-      { find: /^@buildi\/primitives\/(.*)$/, replacement: `${primitivesSrc}/$1/index.ts` },
+      {
+        find: /^@budiauktioner\/buildi-primitives\/(.*)$/,
+        replacement: `${primitivesSrc}/$1/index.ts`,
+      },
       { find: "@budiauktioner/buildi-primitives", replacement: `${primitivesSrc}/index.ts` },
     ],
   },
