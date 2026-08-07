@@ -34,11 +34,11 @@
   "packageManager": "pnpm@9.15.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BudiAuktioner/buildi-primitives.git"
+    "url": "git+https://github.com/budiauktioner/buildi-primitives.git"
   },
-  "homepage": "https://github.com/BudiAuktioner/buildi-primitives#readme",
+  "homepage": "https://github.com/budiauktioner/buildi-primitives#readme",
   "bugs": {
-    "url": "https://github.com/BudiAuktioner/buildi-primitives/issues"
+    "url": "https://github.com/budiauktioner/buildi-primitives/issues"
   },
   "keywords": [
     "swedish",

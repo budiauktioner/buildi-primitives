@@ -16,6 +16,9 @@ also the first version carrying a provenance attestation. No API changes.
 - `publishConfig` no longer forces `provenance`. It applies to every publish
   including local ones, where npm has no CI provider to attest against and
   fails outright. The release workflow requests provenance explicitly.
+- `repository.url`, `homepage` and `bugs.url` now spell the GitHub owner in
+  lowercase. npm compares `repository.url` against the provenance statement
+  case-sensitively and rejects the publish on a mismatch.
 
 ## [0.1.0] - 2026-08-07
 
