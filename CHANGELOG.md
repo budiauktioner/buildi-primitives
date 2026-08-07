@@ -8,11 +8,14 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-- Internal foundation for the `Measurement` namespace: exact base-10 arithmetic
+- `Length` and `LengthUnit`, the first types of the `Measurement` namespace,
+  available from the new `@budiauktioner/buildi-primitives/measurement` subpath.
+  `Length` supports parsing from any of its 13 units, exact conversion between
+  them, `toNaturalString()` auto-scaling, arithmetic, masking via `maskLength`,
+  and text scanning through `TextScanResult.lengths`.
+- Internal foundation for the rest of the namespace: exact base-10 arithmetic
   matching .NET `System.Decimal`, the measurement string splitter, and the
-  shared unit-index and quantity base classes. No public API yet — these are the
-  prerequisite for porting `Measurement`, and through it `Vehicle` and
-  `Product`.
+  shared unit-index and quantity base classes.
 
 ## [0.1.1] - 2026-08-07
 

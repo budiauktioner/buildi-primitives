@@ -16,6 +16,7 @@ describe("defaultTextScanner", () => {
       "Iban",
       "Isin",
       "LeiCode",
+      "Length",
       "PhoneNumber",
       "SwedishAddress",
       "SwedishBankAccount",
@@ -83,6 +84,7 @@ describe("defaultTextScanner", () => {
       [result.counties, "SwedishCounty"],
       [result.municipalities, "SwedishMunicipality"],
       [result.propertyDesignations, "SwedishPropertyDesignation"],
+      [result.lengths, "Length"],
     ];
 
     for (const [candidates, typeName] of pairs) {
@@ -123,6 +125,7 @@ describe("defaultTextScanner", () => {
       "SwedishCounty",
       "SwedishMunicipality",
       "SwedishPropertyDesignation",
+      "Length",
     ]);
 
     for (const registered of defaultTextScanner.registered) {

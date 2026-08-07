@@ -201,22 +201,23 @@ The root entry re-exports everything for convenience. Import from a namespace
 subpath instead when bundle size matters:
 
 ```ts
-// ~283 kB minified — the root entry registers every text scanner
+// ~292 kB minified — the root entry registers every text scanner
 import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives";
 
-// ~39 kB minified — the same type, nothing else
+// ~40 kB minified — the same type, nothing else
 import { SwedishOrganizationNumber } from "@budiauktioner/buildi-primitives/organization";
 ```
 
 Available subpaths: `contact`, `person`, `organization`, `geography`, `web`,
-`finance`, `property`, `banking`, `validation`, `text-scanning`, and
-`sample-data`.
+`finance`, `property`, `banking`, `measurement`, `validation`, `text-scanning`,
+and `sample-data`.
 
 ```ts
 import { SwedishPersonalIdentityNumber } from "@budiauktioner/buildi-primitives/person";
 import { Country, Continent, Language } from "@budiauktioner/buildi-primitives/geography";
 import { AddressCity, PhoneNumber, SwedishAddress } from "@budiauktioner/buildi-primitives/contact";
 import { Currency, MoneyAmount, ExchangeRates } from "@budiauktioner/buildi-primitives/finance";
+import { Length, LengthUnit } from "@budiauktioner/buildi-primitives/measurement";
 import { ValidationErrorReason } from "@budiauktioner/buildi-primitives/validation";
 ```
 

@@ -24,6 +24,7 @@ import { SwedishPostgiroNumber } from "./banking/swedish-postgiro-number.js";
 import { SwedishOcrReferenceNumber } from "./banking/swedish-ocr-reference-number.js";
 import { SwedishBankAccount } from "./banking/swedish-bank-account.js";
 import { SwedishSwishNumber } from "./banking/swedish-swish-number.js";
+import { Length } from "./measurement/length.js";
 
 let registered = false;
 
@@ -158,5 +159,11 @@ export function registerDefaultTextScanners(): void {
     typeName: "SwedishSwishNumber",
     category: TextCandidateCategory.Financial,
     scan: SwedishSwishNumber.findCandidatesInText,
+  });
+
+  defaultTextScanner.register({
+    typeName: "Length",
+    category: TextCandidateCategory.Measurement,
+    scan: Length.findCandidatesInText,
   });
 }

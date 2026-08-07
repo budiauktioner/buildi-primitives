@@ -79,6 +79,16 @@
         "default": "./dist/contact/index.cjs"
       }
     },
+    "./measurement": {
+      "import": {
+        "types": "./dist/measurement/index.d.ts",
+        "default": "./dist/measurement/index.js"
+      },
+      "require": {
+        "types": "./dist/measurement/index.d.cts",
+        "default": "./dist/measurement/index.cjs"
+      }
+    },
     "./person": {
       "import": {
         "types": "./dist/person/index.d.ts",

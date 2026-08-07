@@ -16,6 +16,7 @@ import type { AddressZipCode } from "../contact/address-zip-code.js";
 import type { PhoneNumber } from "../contact/phone-number.js";
 import type { SwedishAddress } from "../contact/swedish-address.js";
 import type { Isin } from "../finance/isin.js";
+import type { Length } from "../measurement/length.js";
 import type { Country } from "../geography/country.js";
 import type { SwedishCounty } from "../geography/swedish-county.js";
 import type { SwedishMunicipality } from "../geography/swedish-municipality.js";
@@ -152,6 +153,10 @@ export class TextScanResult {
 
   get propertyDesignations(): TextCandidate<SwedishPropertyDesignation>[] {
     return this.byTypeName<SwedishPropertyDesignation>("SwedishPropertyDesignation");
+  }
+
+  get lengths(): TextCandidate<Length>[] {
+    return this.byTypeName<Length>("Length");
   }
 
   /** Returns all candidates in the given category. */

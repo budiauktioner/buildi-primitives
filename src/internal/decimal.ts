@@ -153,6 +153,37 @@ export class Decimal {
     }
   }
 
+  /**
+   * Converts a `number`, expanding the exponent notation JavaScript uses for
+   * very large and very small magnitudes so that `1e-7` parses as
+   * `0.0000001`. Returns `null` for non-finite input or a magnitude outside the
+   * representable range.
+   */
+  static fromNumber(value: number): Decimal | null {
+    if (!Number.isFinite(value)) return null;
+
+    const rendered = String(value);
+    const exponentIndex = rendered.search(/[eE]/u);
+    if (exponentIndex < 0) return Decimal.parse(rendered);
+
+    const exponent = Number(rendered.slice(exponentIndex + 1));
+    const mantissa = rendered.slice(0, exponentIndex);
+    const negative = mantissa.startsWith("-");
+    const unsigned = negative ? mantissa.slice(1) : mantissa;
+
+    const pointIndex = unsigned.indexOf(".");
+    const digits = pointIndex < 0 ? unsigned : unsigned.replace(".", "");
+    const pointPosition = (pointIndex < 0 ? unsigned.length : pointIndex) + exponent;
+
+    let expanded: string;
+    if (pointPosition <= 0) expanded = `0.${"0".repeat(-pointPosition)}${digits}`;
+    else if (pointPosition >= digits.length)
+      expanded = digits + "0".repeat(pointPosition - digits.length);
+    else expanded = `${digits.slice(0, pointPosition)}.${digits.slice(pointPosition)}`;
+
+    return Decimal.parse(negative ? `-${expanded}` : expanded);
+  }
+
   get isZero(): boolean {
     return this.units === 0n;
   }

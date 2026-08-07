@@ -24,21 +24,21 @@ commit that changes the .NET baseline.
 
 ## Namespace coverage
 
-| .NET namespace    | Status         | Notes                                                    |
-| ----------------- | -------------- | -------------------------------------------------------- |
-| `Organization`    | Complete       | 10 types                                                 |
-| `Banking`         | Complete       | 10 types                                                 |
-| `Person`          | Complete       | 6 types                                                  |
-| `Geography`       | Complete       | 7 types                                                  |
-| `Finance`         | Complete       | 3 types, plus `ExchangeRates`                            |
-| `Contact`         | Complete       | Including all 31 country address / zip-code pairs        |
-| `Web`             | Complete       | 2 types                                                  |
-| `Property`        | Complete       | 2 types                                                  |
-| `Validation`      | Complete       | Shared `ValidationResult` infrastructure                 |
-| `TextScanning`    | Complete       | Scanner, candidates, overlap resolution, typed accessors |
-| **`Measurement`** | **Not ported** | 24 types                                                 |
-| **`Vehicle`**     | **Not ported** | 29 types                                                 |
-| **`Product`**     | **Not ported** | 36 types                                                 |
+| .NET namespace    | Status          | Notes                                                    |
+| ----------------- | --------------- | -------------------------------------------------------- |
+| `Organization`    | Complete        | 10 types                                                 |
+| `Banking`         | Complete        | 10 types                                                 |
+| `Person`          | Complete        | 6 types                                                  |
+| `Geography`       | Complete        | 7 types                                                  |
+| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                            |
+| `Contact`         | Complete        | Including all 31 country address / zip-code pairs        |
+| `Web`             | Complete        | 2 types                                                  |
+| `Property`        | Complete        | 2 types                                                  |
+| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                 |
+| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors |
+| **`Measurement`** | **In progress** | `Length` and `LengthUnit`; 23 quantity types to go       |
+| **`Vehicle`**     | **Not ported**  | 29 types                                                 |
+| **`Product`**     | **Not ported**  | 36 types                                                 |
 
 ## Cross-cutting features
 
@@ -80,6 +80,32 @@ These differ from .NET on purpose and are not tracked as gaps.
 address modules having been loaded. Every package entry point re-exports them,
 so this is transparent to consumers; see
 [`src/contact/country-address-registry.ts`](src/contact/country-address-registry.ts).
+
+## Porting `Measurement`
+
+The namespace divides into 19 quantity types, each paired with a unit class, and
+six standalone types (`Count`, `Percentage`, `SoundLevel`, `TemperatureDelta`,
+`Year`, `YearMonth`). There are 133 units in total.
+
+`Length` is ported as the reference implementation. The remaining 18 quantities
+share its shape, so the work is mostly supplying unit tables and the named
+accessors that make each dimension readable.
+
+Two things do not follow the pattern:
+
+- **`Temperature` is affine.** `TemperatureUnit` has no `ToBaseUnitFactor`
+  because Celsius, Fahrenheit and kelvin differ by offset as well as scale, so
+  it cannot use the shared multiplicative conversion.
+- **Arithmetic has no operators.** C# overloads `+ - * /` and the comparison
+  operators on every quantity; those become `plus`, `minus`, `times`,
+  `dividedBy`, `negated`, `isLessThan` and `isGreaterThan`.
+
+Values are held internally as an exact base-10 decimal
+([`internal/decimal.ts`](src/internal/decimal.ts)) rather than `number`.
+Binary floating point turns `3 ft` into `0.9144000000000001 m` on the
+`normalize()` path, which would break the `isNormalized` contract and diverge
+from .NET. Consumer-facing accessors such as `length.meters` still return
+`number`; the conversion happens only at the boundary.
 
 ## Porting the remaining namespaces
 

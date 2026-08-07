@@ -110,6 +110,8 @@ const EXPECTED_TYPES: Readonly<Record<string, readonly string[]>> = {
     "SwedishPropertyTaxationCategory",
     "SwedishPropertyTaxationCode",
   ],
+  // Partially ported — see PARITY.md. Extend as each dimension lands.
+  Measurement: ["Length", "LengthUnit"],
   Validation: ["ValidationErrorReason", "ValidationIssue", "ValidationResult"],
   TextScanning: [
     "TextCandidate",
@@ -156,6 +158,7 @@ const EXPECTED_MASKING_FUNCTIONS = [
   "maskIban",
   "maskIsin",
   "maskLanguage",
+  "maskLength",
   "maskLeiCode",
   "maskMoneyAmount",
   "maskPersonAge",
@@ -205,6 +208,7 @@ const EXPECTED_SCANNABLE_TYPES = [
   "EuVatNumber",
   "Iban",
   "Isin",
+  "Length",
   "LeiCode",
   "PhoneNumber",
   "SwedishAddress",
@@ -302,6 +306,9 @@ describe(".NET parity — ported namespaces", () => {
       "ValidationResult",
       // Plain data record in .NET too; only reachable via `Country.capital`.
       "CountryCapital",
+      // Measurement unit lookups. These expose tryParse/parse only in .NET —
+      // there is nothing to format or normalize about a unit itself.
+      "LengthUnit",
       // Enums / const objects.
       "BankAccountHolderType",
       "OcrReferenceControlType",
@@ -337,7 +344,6 @@ describe(".NET parity — namespaces not yet ported", () => {
   // Sentinel types from each unported namespace. If one of these starts
   // resolving, the namespace has landed and PARITY.md needs updating.
   it.each([
-    ["Measurement", "Length"],
     ["Measurement", "Weight"],
     ["Vehicle", "VehicleIdentificationNumber"],
     ["Vehicle", "SwedishVehicleRegistrationNumber"],
