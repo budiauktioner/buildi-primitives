@@ -7,12 +7,19 @@ on:
 
 permissions:
   contents: read
-  id-token: write
 
 jobs:
   publish:
     name: Publish to npm
     runs-on: ubuntu-latest
+
+    # Trusted publishing mints a short-lived credential per run, so there is no
+    # NPM_TOKEN anywhere in this repository. `id-token: write` is what lets
+    # GitHub issue the OIDC token that npm exchanges for publish rights.
+    # Note that npm only supports this on GitHub-hosted runners.
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
       - uses: actions/checkout@v4
@@ -20,12 +27,17 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
 
+      # Deliberately not .nvmrc. That file pins the minimum runtime we support
+      # for consumers; trusted publishing needs npm 11.5.1 or newer, which is
+      # what Node 24 ships. `registry-url` is also omitted on purpose: it makes
+      # setup-node write `_authToken=${NODE_AUTH_TOKEN}` into the runner .npmrc,
+      # and with no token that expands to an empty string which npm reads as
+      # "already authenticated", skipping the OIDC exchange and failing with
+      # ENEEDAUTH. The default registry is registry.npmjs.org either way.
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version-file: .nvmrc
-          registry-url: https://registry.npmjs.org
-          cache: pnpm
+          node-version: "24"
 
       - name: Install
         run: pnpm install --frozen-lockfile
@@ -45,7 +57,20 @@ jobs:
       - name: Validate type resolution
         run: pnpm attw
 
+      # Fails loudly rather than letting the publish fall through to a confusing
+      # ENEEDAUTH if a future runner image ships an npm without OIDC support.
+      - name: Verify npm supports trusted publishing
+        run: |
+          npm_version="$(npm --version)"
+          echo "node $(node --version) / npm ${npm_version}"
+          if [ "$(printf '%s\n11.5.1\n' "${npm_version}" | sort -V | head -n1)" != "11.5.1" ]; then
+            echo "npm ${npm_version} is too old for OIDC trusted publishing; need >= 11.5.1" >&2
+            exit 1
+          fi
+
+      # Published with npm rather than pnpm: pnpm only recently let an OIDC
+      # credential take precedence over a configured token, and this repo pins
+      # an older pnpm. Nothing is lost here — the package has no runtime or
+      # workspace dependencies for pnpm to rewrite.
       - name: Publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm publish --access public --provenance --no-git-checks
+        run: npm publish --access public --provenance

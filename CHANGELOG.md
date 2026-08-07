@@ -6,6 +6,10 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-08-07
+
+First public release.
+
 ### Added
 
 - Initial TypeScript port scaffolding.
@@ -35,6 +39,9 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
   barrel, removing an import cycle between the two.
 - `registerDefaultTextScanners` is now exported from the `text-scanning`
   namespace.
+- `sideEffects` lists the four entries that register defaults at import time
+  instead of claiming `false` for the whole package. Every other entry stays
+  tree-shakeable, so subpath imports are unaffected.
 
 ### Fixed
 

@@ -8,9 +8,9 @@ This is the TypeScript port of the .NET package
 [source](https://github.com/BudiAuktioner/Buildi.Primitives) remains the
 behavioural specification for both languages.
 
-> **Status**: in development, not yet published to npm. The ported namespaces
-> track the .NET package closely; three namespaces are not ported yet. See
-> [PARITY.md](PARITY.md) for the exact coverage and gaps.
+> **Status**: early release, versioned from 0.1.0. Ten of the thirteen .NET
+> namespaces are ported and track the .NET package closely; three are not
+> ported yet. See [PARITY.md](PARITY.md) for the exact coverage and gaps.
 
 ## Install
 
