@@ -46,6 +46,19 @@ import { Torque } from "./measurement/torque.js";
 import { Voltage } from "./measurement/voltage.js";
 import { Volume } from "./measurement/volume.js";
 import { Weight } from "./measurement/weight.js";
+import { BoltPattern } from "./vehicle/bolt-pattern.js";
+import { EmissionRate } from "./vehicle/emission-rate.js";
+import { EnginePower } from "./vehicle/engine-power.js";
+import { EuTypeApprovalNumber } from "./vehicle/eu-type-approval-number.js";
+import { EuroEmissionClass } from "./vehicle/euro-emission-class.js";
+import { FuelConsumption } from "./vehicle/fuel-consumption.js";
+import { OperatingHours } from "./vehicle/operating-hours.js";
+import { SwedishDrivingLicenseCategory } from "./vehicle/swedish-driving-license-category.js";
+import { SwedishEcoVehicleClassification } from "./vehicle/swedish-eco-vehicle-classification.js";
+import { SwedishVehicleRegistrationNumber } from "./vehicle/swedish-vehicle-registration-number.js";
+import { TireDimension } from "./vehicle/tire-dimension.js";
+import { VehicleIdentificationNumber } from "./vehicle/vehicle-identification-number.js";
+import { WheelRimDimension } from "./vehicle/wheel-rim-dimension.js";
 
 let registered = false;
 
@@ -213,6 +226,32 @@ export function registerDefaultTextScanners(): void {
       typeName,
       category: TextCandidateCategory.Measurement,
       scan: quantity.findCandidatesInText,
+    });
+  }
+
+  // The same set the .NET `TextScanner` runs. `EnergyConsumption` can scan on its
+  // own but is deliberately left out here to match .NET.
+  const vehicles: readonly (readonly [string, { findCandidatesInText: TextScanFunction }])[] = [
+    ["BoltPattern", BoltPattern],
+    ["EmissionRate", EmissionRate],
+    ["EnginePower", EnginePower],
+    ["EuTypeApprovalNumber", EuTypeApprovalNumber],
+    ["EuroEmissionClass", EuroEmissionClass],
+    ["FuelConsumption", FuelConsumption],
+    ["OperatingHours", OperatingHours],
+    ["SwedishDrivingLicenseCategory", SwedishDrivingLicenseCategory],
+    ["SwedishEcoVehicleClassification", SwedishEcoVehicleClassification],
+    ["SwedishVehicleRegistrationNumber", SwedishVehicleRegistrationNumber],
+    ["TireDimension", TireDimension],
+    ["VehicleIdentificationNumber", VehicleIdentificationNumber],
+    ["WheelRimDimension", WheelRimDimension],
+  ];
+
+  for (const [typeName, vehicle] of vehicles) {
+    defaultTextScanner.register({
+      typeName,
+      category: TextCandidateCategory.Vehicle,
+      scan: vehicle.findCandidatesInText,
     });
   }
 }

@@ -15,6 +15,7 @@ export default defineConfig({
     "property/index": "src/property/index.ts",
     "banking/index": "src/banking/index.ts",
     "measurement/index": "src/measurement/index.ts",
+    "vehicle/index": "src/vehicle/index.ts",
   },
   format: ["esm", "cjs"],
   dts: true,

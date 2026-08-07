@@ -454,8 +454,6 @@ describe(".NET parity — namespaces not yet ported", () => {
   // Sentinel types from each unported namespace. If one of these starts
   // resolving, the namespace has landed and PARITY.md needs updating.
   it.each([
-    ["Vehicle", "VehicleIdentificationNumber"],
-    ["Vehicle", "SwedishVehicleRegistrationNumber"],
     ["Product", "Gtin13"],
     ["Product", "StorageCapacity"],
   ])("%s is documented as unported (%s absent)", (_namespace, typeName) => {

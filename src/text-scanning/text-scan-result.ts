@@ -49,6 +49,19 @@ import type { SwedishPersonalIdentityNumber } from "../person/swedish-personal-i
 import type { SwedishPropertyDesignation } from "../property/swedish-property-designation.js";
 import type { EmailAddress } from "../web/email-address.js";
 import type { Url } from "../web/url.js";
+import type { BoltPattern } from "../vehicle/bolt-pattern.js";
+import type { EmissionRate } from "../vehicle/emission-rate.js";
+import type { EnginePower } from "../vehicle/engine-power.js";
+import type { EuTypeApprovalNumber } from "../vehicle/eu-type-approval-number.js";
+import type { EuroEmissionClass } from "../vehicle/euro-emission-class.js";
+import type { FuelConsumption } from "../vehicle/fuel-consumption.js";
+import type { OperatingHours } from "../vehicle/operating-hours.js";
+import type { SwedishDrivingLicenseCategory } from "../vehicle/swedish-driving-license-category.js";
+import type { SwedishEcoVehicleClassification } from "../vehicle/swedish-eco-vehicle-classification.js";
+import type { SwedishVehicleRegistrationNumber } from "../vehicle/swedish-vehicle-registration-number.js";
+import type { TireDimension } from "../vehicle/tire-dimension.js";
+import type { VehicleIdentificationNumber } from "../vehicle/vehicle-identification-number.js";
+import type { WheelRimDimension } from "../vehicle/wheel-rim-dimension.js";
 
 /**
  * The result of scanning unstructured text for structured value types.
@@ -237,6 +250,46 @@ export class TextScanResult {
   }
   get weights(): TextCandidate<Weight>[] {
     return this.byTypeName<Weight>("Weight");
+  }
+
+  get vehicleRegistrationNumbers(): TextCandidate<SwedishVehicleRegistrationNumber>[] {
+    return this.byTypeName<SwedishVehicleRegistrationNumber>("SwedishVehicleRegistrationNumber");
+  }
+  get vehicleIdentificationNumbers(): TextCandidate<VehicleIdentificationNumber>[] {
+    return this.byTypeName<VehicleIdentificationNumber>("VehicleIdentificationNumber");
+  }
+  get operatingHourValues(): TextCandidate<OperatingHours>[] {
+    return this.byTypeName<OperatingHours>("OperatingHours");
+  }
+  get boltPatterns(): TextCandidate<BoltPattern>[] {
+    return this.byTypeName<BoltPattern>("BoltPattern");
+  }
+  get wheelRimDimensions(): TextCandidate<WheelRimDimension>[] {
+    return this.byTypeName<WheelRimDimension>("WheelRimDimension");
+  }
+  get tireDimensions(): TextCandidate<TireDimension>[] {
+    return this.byTypeName<TireDimension>("TireDimension");
+  }
+  get euTypeApprovalNumbers(): TextCandidate<EuTypeApprovalNumber>[] {
+    return this.byTypeName<EuTypeApprovalNumber>("EuTypeApprovalNumber");
+  }
+  get enginePowers(): TextCandidate<EnginePower>[] {
+    return this.byTypeName<EnginePower>("EnginePower");
+  }
+  get fuelConsumptions(): TextCandidate<FuelConsumption>[] {
+    return this.byTypeName<FuelConsumption>("FuelConsumption");
+  }
+  get emissionRates(): TextCandidate<EmissionRate>[] {
+    return this.byTypeName<EmissionRate>("EmissionRate");
+  }
+  get euroEmissionClasses(): TextCandidate<EuroEmissionClass>[] {
+    return this.byTypeName<EuroEmissionClass>("EuroEmissionClass");
+  }
+  get swedishEcoVehicleClassifications(): TextCandidate<SwedishEcoVehicleClassification>[] {
+    return this.byTypeName<SwedishEcoVehicleClassification>("SwedishEcoVehicleClassification");
+  }
+  get drivingLicenseCategories(): TextCandidate<SwedishDrivingLicenseCategory>[] {
+    return this.byTypeName<SwedishDrivingLicenseCategory>("SwedishDrivingLicenseCategory");
   }
 
   /** Returns all candidates in the given category. */

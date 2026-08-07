@@ -189,6 +189,16 @@
         "default": "./dist/banking/index.cjs"
       }
     },
+    "./vehicle": {
+      "import": {
+        "types": "./dist/vehicle/index.d.ts",
+        "default": "./dist/vehicle/index.js"
+      },
+      "require": {
+        "types": "./dist/vehicle/index.d.cts",
+        "default": "./dist/vehicle/index.cjs"
+      }
+    },
     "./package.json": "./package.json"
   },
   "scripts": {

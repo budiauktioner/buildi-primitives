@@ -22,6 +22,21 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
 - Internal foundation for the rest of the namespace: exact base-10 arithmetic
   matching .NET `System.Decimal`, the measurement string splitter, and the
   shared unit-index and quantity base classes.
+- The `Vehicle` namespace, available from the new
+  `@budiauktioner/buildi-primitives/vehicle` subpath. All 29 types: the lookup
+  types `FuelType`, `BodyType`, `TransmissionType`, `DrivetrainType`,
+  `SuspensionType`, `TireType`, `TrackType`, `EuroEmissionClass`,
+  `FuelConsumptionNorm`, `BoatHullMaterial`, `BoatCeDesignCategory`,
+  `SwedishVehicleType`, `SwedishVehicleStatus`, `SwedishEcoVehicleClassification`
+  and `SwedishDrivingLicenseCategory`; the measurements `EngineDisplacement`,
+  `EnginePower`, `OdometerReading`, `OperatingHours`, `FuelConsumption`,
+  `EnergyConsumption` and `EmissionRate`; and the identifiers and dimensions
+  `VehicleIdentificationNumber`, `SwedishVehicleRegistrationNumber`,
+  `TireDimension`, `WheelRimDimension`, `BoltPattern`, `EuTypeApprovalNumber`
+  and `EuVehicleCategory`.
+- Thirteen new `TextScanResult` accessors for the vehicle types the .NET
+  `TextScanner` runs, including `vehicleRegistrationNumbers`,
+  `vehicleIdentificationNumbers`, `tireDimensions` and `enginePowers`.
 
 ## [0.1.1] - 2026-08-07
 
