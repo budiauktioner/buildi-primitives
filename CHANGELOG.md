@@ -16,8 +16,9 @@ and this package adheres to [Semantic Versioning](https://semver.org/).
   `Volume` and `Weight` — covering 136 units, plus `TemperatureDelta`. Each
   supports parsing from any of its units, exact conversion between them,
   `toNaturalString()` auto-scaling, arithmetic, a `mask*` helper, and text
-  scanning through the matching `TextScanResult` accessor. The standalone types
-  (`Count`, `Percentage`, `SoundLevel`, `Year`, `YearMonth`) are not ported yet.
+  scanning through the matching `TextScanResult` accessor. The namespace also
+  brings the five types that have no unit table: `Count`, `Percentage`,
+  `SoundLevel`, `Year` and `YearMonth`.
 - Internal foundation for the rest of the namespace: exact base-10 arithmetic
   matching .NET `System.Decimal`, the measurement string splitter, and the
   shared unit-index and quantity base classes.

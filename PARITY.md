@@ -24,21 +24,21 @@ commit that changes the .NET baseline.
 
 ## Namespace coverage
 
-| .NET namespace    | Status          | Notes                                                    |
-| ----------------- | --------------- | -------------------------------------------------------- |
-| `Organization`    | Complete        | 10 types                                                 |
-| `Banking`         | Complete        | 10 types                                                 |
-| `Person`          | Complete        | 6 types                                                  |
-| `Geography`       | Complete        | 7 types                                                  |
-| `Finance`         | Complete        | 3 types, plus `ExchangeRates`                            |
-| `Contact`         | Complete        | Including all 31 country address / zip-code pairs        |
-| `Web`             | Complete        | 2 types                                                  |
-| `Property`        | Complete        | 2 types                                                  |
-| `Validation`      | Complete        | Shared `ValidationResult` infrastructure                 |
-| `TextScanning`    | Complete        | Scanner, candidates, overlap resolution, typed accessors |
-| **`Measurement`** | **In progress** | All 19 dimensions; 5 standalone types to go              |
-| **`Vehicle`**     | **Not ported**  | 29 types                                                 |
-| **`Product`**     | **Not ported**  | 36 types                                                 |
+| .NET namespace | Status         | Notes                                                    |
+| -------------- | -------------- | -------------------------------------------------------- |
+| `Organization` | Complete       | 10 types                                                 |
+| `Banking`      | Complete       | 10 types                                                 |
+| `Person`       | Complete       | 6 types                                                  |
+| `Geography`    | Complete       | 7 types                                                  |
+| `Finance`      | Complete       | 3 types, plus `ExchangeRates`                            |
+| `Contact`      | Complete       | Including all 31 country address / zip-code pairs        |
+| `Web`          | Complete       | 2 types                                                  |
+| `Property`     | Complete       | 2 types                                                  |
+| `Validation`   | Complete       | Shared `ValidationResult` infrastructure                 |
+| `TextScanning` | Complete       | Scanner, candidates, overlap resolution, typed accessors |
+| `Measurement`  | Full parity    | 19 dimensions, 136 units, 5 standalone types             |
+| **`Vehicle`**  | **Not ported** | 29 types                                                 |
+| **`Product`**  | **Not ported** | 36 types                                                 |
 
 ## Cross-cutting features
 
@@ -47,13 +47,13 @@ commit that changes the .NET baseline.
 | `tryParse` / `parse` / `isValid` / `format` / `normalize` / `isNormalized` | Complete for every ported type                      |
 | `typeInfo` metadata (English + Swedish name, emoji, sources)               | Complete                                            |
 | `validate()` structured validation                                         | Complete — all 12 ported types that have it in .NET |
-| `findCandidatesInText()` text scanning                                     | Complete — all 24 ported types that have it in .NET |
-| `TextScanResult` typed accessors                                           | Complete for the 24 ported scannable types          |
+| `findCandidatesInText()` text scanning                                     | Complete — all 45 ported types that have it in .NET |
+| `TextScanResult` typed accessors                                           | Complete for the 45 ported scannable types          |
 | Masking (`toMaskedString` → `mask*` functions)                             | Complete for ported namespaces                      |
 | Lookup and external-link helpers                                           | Complete for ported namespaces                      |
 | `PrimitivesDefaults` (culture, UI culture, country, calling code)          | Complete                                            |
 | Sample data                                                                | Partial — see below                                 |
-| **`toNaturalString()` natural unit display**                               | **Not ported** — belongs to `Measurement`           |
+| `toNaturalString()` natural unit display                                   | Complete                                            |
 
 ## Known gaps within ported namespaces
 
@@ -87,8 +87,9 @@ The namespace divides into 19 quantity types, each paired with a unit class, and
 six standalone types (`Count`, `Percentage`, `SoundLevel`, `TemperatureDelta`,
 `Year`, `YearMonth`). There are 133 units in total.
 
-All nineteen dimensions are ported, covering 136 units. Still to come: the
-standalone types `Count`, `Percentage`, `SoundLevel`, `Year` and `YearMonth`.
+The namespace is fully ported: nineteen dimensions covering 136 units, plus the
+five standalone types `Count`, `Percentage`, `SoundLevel`, `Year` and
+`YearMonth`, which have no unit table and no conversion.
 
 Four things do not follow the common pattern:
 
@@ -139,13 +140,14 @@ from .NET. Consumer-facing accessors such as `length.meters` still return
 
 ## Porting the remaining namespaces
 
-`Measurement` is the prerequisite for the other two: `Vehicle` wraps it for
-`EngineDisplacement`, `EnginePower`, and `OdometerReading`, and `Product` wraps
-it for `StorageCapacity`, `RamCapacity`, `ProcessorSpeed`, and
-`BatteryCapacity`. `Product` and `Vehicle` are independent of each other.
+`Vehicle` and `Product` both build on `Measurement`, which is now in place:
+`Vehicle` wraps it for `EngineDisplacement`, `EnginePower` and
+`OdometerReading`, and `Product` wraps it for `StorageCapacity`,
+`RamCapacity`, `ProcessorSpeed` and `BatteryCapacity`. The two are independent
+of each other, so they can be ported in either order.
 
 ```
-Measurement (24 types)
+Measurement (ported)
   ├── Vehicle (29 types)
   └── Product (36 types)
 ```
@@ -154,6 +156,6 @@ Each namespace additionally needs its `TextCandidateCategory` scanners
 registered in [`src/register-default-text-scanners.ts`](src/register-default-text-scanners.ts)
 and typed accessors added to
 [`src/text-scanning/text-scan-result.ts`](src/text-scanning/text-scan-result.ts).
-The .NET `TextScanResult` has 67 typed accessors in total; the 24 belonging to
-ported namespaces are implemented, and the remaining 43 arrive with their
+The .NET `TextScanResult` has 67 typed accessors in total; the 45 belonging to
+ported namespaces are implemented, and the remaining 22 arrive with their
 namespaces.

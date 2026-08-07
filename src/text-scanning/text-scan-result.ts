@@ -26,7 +26,9 @@ import type { Frequency } from "../measurement/frequency.js";
 import type { Length } from "../measurement/length.js";
 import type { Luminance } from "../measurement/luminance.js";
 import type { LuminousFlux } from "../measurement/luminous-flux.js";
+import type { Percentage } from "../measurement/percentage.js";
 import type { Power } from "../measurement/power.js";
+import type { SoundLevel } from "../measurement/sound-level.js";
 import type { Pressure } from "../measurement/pressure.js";
 import type { RotationalSpeed } from "../measurement/rotational-speed.js";
 import type { Speed } from "../measurement/speed.js";
@@ -203,8 +205,14 @@ export class TextScanResult {
   get luminousFluxes(): TextCandidate<LuminousFlux>[] {
     return this.byTypeName<LuminousFlux>("LuminousFlux");
   }
+  get percentages(): TextCandidate<Percentage>[] {
+    return this.byTypeName<Percentage>("Percentage");
+  }
   get powers(): TextCandidate<Power>[] {
     return this.byTypeName<Power>("Power");
+  }
+  get soundLevels(): TextCandidate<SoundLevel>[] {
+    return this.byTypeName<SoundLevel>("SoundLevel");
   }
   get pressures(): TextCandidate<Pressure>[] {
     return this.byTypeName<Pressure>("Pressure");

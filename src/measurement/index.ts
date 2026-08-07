@@ -1,5 +1,6 @@
 export { Area, maskArea, type AreaFormatOptions } from "./area.js";
 export { AreaUnit } from "./area-unit.js";
+export { Count, maskCount, type CountFormatOptions } from "./count.js";
 export { DataSize, maskDataSize, type DataSizeFormatOptions } from "./data-size.js";
 export { DataSizeUnit } from "./data-size-unit.js";
 export {
@@ -26,6 +27,7 @@ export { Luminance, maskLuminance, type LuminanceFormatOptions } from "./luminan
 export { LuminanceUnit } from "./luminance-unit.js";
 export { LuminousFlux, maskLuminousFlux, type LuminousFluxFormatOptions } from "./luminous-flux.js";
 export { LuminousFluxUnit } from "./luminous-flux-unit.js";
+export { Percentage, maskPercentage, type PercentageFormatOptions } from "./percentage.js";
 export { Power, maskPower, type PowerFormatOptions } from "./power.js";
 export { PowerUnit } from "./power-unit.js";
 export { Pressure, maskPressure, type PressureFormatOptions } from "./pressure.js";
@@ -36,6 +38,12 @@ export {
   type RotationalSpeedFormatOptions,
 } from "./rotational-speed.js";
 export { RotationalSpeedUnit } from "./rotational-speed-unit.js";
+export {
+  SoundLevel,
+  SoundWeighting,
+  maskSoundLevel,
+  type SoundLevelFormatOptions,
+} from "./sound-level.js";
 export { Speed, maskSpeed, type SpeedFormatOptions } from "./speed.js";
 export { SpeedUnit } from "./speed-unit.js";
 export { Temperature, maskTemperature, type TemperatureFormatOptions } from "./temperature.js";
@@ -49,3 +57,5 @@ export { Volume, maskVolume, type VolumeFormatOptions } from "./volume.js";
 export { VolumeUnit } from "./volume-unit.js";
 export { Weight, maskWeight, type WeightFormatOptions } from "./weight.js";
 export { WeightUnit } from "./weight-unit.js";
+export { Year, maskYear, type YearFormatOptions } from "./year.js";
+export { YearMonth, maskYearMonth, type YearMonthFormatOptions } from "./year-month.js";

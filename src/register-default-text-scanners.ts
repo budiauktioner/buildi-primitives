@@ -35,9 +35,11 @@ import { Frequency } from "./measurement/frequency.js";
 import { Length } from "./measurement/length.js";
 import { Luminance } from "./measurement/luminance.js";
 import { LuminousFlux } from "./measurement/luminous-flux.js";
+import { Percentage } from "./measurement/percentage.js";
 import { Power } from "./measurement/power.js";
 import { Pressure } from "./measurement/pressure.js";
 import { RotationalSpeed } from "./measurement/rotational-speed.js";
+import { SoundLevel } from "./measurement/sound-level.js";
 import { Speed } from "./measurement/speed.js";
 import { Temperature } from "./measurement/temperature.js";
 import { Torque } from "./measurement/torque.js";
@@ -193,9 +195,11 @@ export function registerDefaultTextScanners(): void {
     ["Length", Length],
     ["Luminance", Luminance],
     ["LuminousFlux", LuminousFlux],
+    ["Percentage", Percentage],
     ["Power", Power],
     ["Pressure", Pressure],
     ["RotationalSpeed", RotationalSpeed],
+    ["SoundLevel", SoundLevel],
     ["Speed", Speed],
     ["Temperature", Temperature],
     ["Torque", Torque],
