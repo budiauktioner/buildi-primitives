@@ -1,0 +1,8 @@
+node_modules/
+dist/
+coverage/
+.vitest-cache/
+*.tgz
+tmp-pack/
+*.tsbuildinfo
+.DS_Store

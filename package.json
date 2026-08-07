@@ -1,0 +1,199 @@
+{
+  "name": "@budiauktioner/buildi-primitives",
+  "version": "0.1.0",
+  "description": "Swedish, EU and international value-object primitives — validation, normalization, masking, and text scanning. TypeScript port of Buildi.Primitives (.NET).",
+  "license": "MIT",
+  "author": "Budi Auktioner",
+  "type": "module",
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20.10"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BudiAuktioner/buildi-primitives.git"
+  },
+  "homepage": "https://github.com/BudiAuktioner/buildi-primitives#readme",
+  "bugs": {
+    "url": "https://github.com/BudiAuktioner/buildi-primitives/issues"
+  },
+  "keywords": [
+    "swedish",
+    "sweden",
+    "eu",
+    "iso",
+    "validation",
+    "normalization",
+    "primitives",
+    "value-object",
+    "personnummer",
+    "organisationsnummer",
+    "iban",
+    "vat",
+    "address",
+    "phone",
+    "country",
+    "language"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./contact": {
+      "import": {
+        "types": "./dist/contact/index.d.ts",
+        "default": "./dist/contact/index.js"
+      },
+      "require": {
+        "types": "./dist/contact/index.d.cts",
+        "default": "./dist/contact/index.cjs"
+      }
+    },
+    "./person": {
+      "import": {
+        "types": "./dist/person/index.d.ts",
+        "default": "./dist/person/index.js"
+      },
+      "require": {
+        "types": "./dist/person/index.d.cts",
+        "default": "./dist/person/index.cjs"
+      }
+    },
+    "./organization": {
+      "import": {
+        "types": "./dist/organization/index.d.ts",
+        "default": "./dist/organization/index.js"
+      },
+      "require": {
+        "types": "./dist/organization/index.d.cts",
+        "default": "./dist/organization/index.cjs"
+      }
+    },
+    "./geography": {
+      "import": {
+        "types": "./dist/geography/index.d.ts",
+        "default": "./dist/geography/index.js"
+      },
+      "require": {
+        "types": "./dist/geography/index.d.cts",
+        "default": "./dist/geography/index.cjs"
+      }
+    },
+    "./validation": {
+      "import": {
+        "types": "./dist/validation/index.d.ts",
+        "default": "./dist/validation/index.js"
+      },
+      "require": {
+        "types": "./dist/validation/index.d.cts",
+        "default": "./dist/validation/index.cjs"
+      }
+    },
+    "./text-scanning": {
+      "import": {
+        "types": "./dist/text-scanning/index.d.ts",
+        "default": "./dist/text-scanning/index.js"
+      },
+      "require": {
+        "types": "./dist/text-scanning/index.d.cts",
+        "default": "./dist/text-scanning/index.cjs"
+      }
+    },
+    "./sample-data": {
+      "import": {
+        "types": "./dist/sample-data/index.d.ts",
+        "default": "./dist/sample-data/index.js"
+      },
+      "require": {
+        "types": "./dist/sample-data/index.d.cts",
+        "default": "./dist/sample-data/index.cjs"
+      }
+    },
+    "./web": {
+      "import": {
+        "types": "./dist/web/index.d.ts",
+        "default": "./dist/web/index.js"
+      },
+      "require": {
+        "types": "./dist/web/index.d.cts",
+        "default": "./dist/web/index.cjs"
+      }
+    },
+    "./finance": {
+      "import": {
+        "types": "./dist/finance/index.d.ts",
+        "default": "./dist/finance/index.js"
+      },
+      "require": {
+        "types": "./dist/finance/index.d.cts",
+        "default": "./dist/finance/index.cjs"
+      }
+    },
+    "./property": {
+      "import": {
+        "types": "./dist/property/index.d.ts",
+        "default": "./dist/property/index.js"
+      },
+      "require": {
+        "types": "./dist/property/index.d.cts",
+        "default": "./dist/property/index.cjs"
+      }
+    },
+    "./banking": {
+      "import": {
+        "types": "./dist/banking/index.d.ts",
+        "default": "./dist/banking/index.js"
+      },
+      "require": {
+        "types": "./dist/banking/index.d.cts",
+        "default": "./dist/banking/index.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "release": "pnpm build && pnpm publish --access public",
+    "publint": "publint",
+    "attw": "attw --pack . --profile node16"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@eslint/js": "^9.18.0",
+    "@types/node": "^22.10.7",
+    "@vitest/coverage-v8": "^2.1.8",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "publint": "^0.3.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0",
+    "vitest": "^2.1.8"
+  }
+}

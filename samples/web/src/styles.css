@@ -1,0 +1,55 @@
+/* Mirrors the highlight palette from samples/Buildi.Primitives.Demo Home.razor */
+
+mark.scan-match {
+  padding: 2px 4px;
+  border-radius: 3px;
+  cursor: help;
+}
+
+.cat-personalidentifier {
+  background-color: #f8d7da;
+  border-bottom: 2px solid #dc3545;
+}
+.cat-organizationidentifier {
+  background-color: #cfe2ff;
+  border-bottom: 2px solid #0d6efd;
+}
+.cat-financial {
+  background-color: #d1e7dd;
+  border-bottom: 2px solid #198754;
+}
+.cat-contact {
+  background-color: #cff4fc;
+  border-bottom: 2px solid #0dcaf0;
+}
+.cat-vehicle {
+  background-color: #fff3cd;
+  border-bottom: 2px solid #ffc107;
+}
+.cat-property {
+  background-color: #e2e3e5;
+  border-bottom: 2px solid #6c757d;
+}
+.cat-product {
+  background-color: #f5e6ff;
+  border-bottom: 2px solid #6f42c1;
+}
+.cat-geography {
+  background-color: #d1f2eb;
+  border-bottom: 2px solid #20c997;
+}
+.cat-measurement {
+  background-color: #fff0e6;
+  border-bottom: 2px solid #fd7e14;
+}
+
+.scan-output {
+  white-space: pre-wrap;
+  font-family: var(--bs-font-monospace);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.type-table code {
+  word-break: break-all;
+}

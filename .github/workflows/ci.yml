@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Lint, test, build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.10"
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Check formatting
+        run: pnpm format:check
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build
+
+      - name: Validate package metadata
+        run: pnpm publint
+
+      - name: Validate type resolution
+        run: pnpm attw
+
+      - name: Pack
+        run: pnpm pack --pack-destination ./artifacts
+
+      - name: Upload npm package
+        uses: actions/upload-artifact@v4
+        with:
+          name: buildi-primitives-npm
+          path: artifacts/*.tgz
+          if-no-files-found: error
+          retention-days: 14
