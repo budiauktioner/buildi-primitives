@@ -1,6 +1,6 @@
 {
   "name": "@budiauktioner/buildi-primitives",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Swedish, EU and international value-object primitives — validation, normalization, masking, and text scanning. TypeScript port of Buildi.Primitives (.NET).",
   "license": "MIT",
   "author": "Budi Auktioner",
