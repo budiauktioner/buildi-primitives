@@ -16,7 +16,7 @@ pnpm build
 
 The repository requires:
 
-- Node.js 20.10 or newer (see [`.nvmrc`](.nvmrc))
+- Node.js 24 (see [`.nvmrc`](.nvmrc)); the dev tooling needs at least 20.19 or 22.13
 - pnpm 9 (declared via [`packageManager`](./package.json))
 
 ## Ways to contribute

@@ -291,7 +291,7 @@ particular a `defaultTextScanner` that already knows every scannable type.
 
 ## Runtime targets
 
-- Node.js 20.10 or newer (see [`.nvmrc`](.nvmrc)).
+- Node.js 20.10 or newer.
 - Bun 1.1 or newer.
 - Modern browsers (current Chromium, Firefox, Safari).
 - No Node-only runtime APIs and no runtime dependencies; ES2022 plus standard
