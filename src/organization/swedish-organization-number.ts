@@ -247,9 +247,10 @@ export class SwedishOrganizationNumber {
         "Värdet innehåller inga siffror.",
       );
     }
-    if (
-      !(digits.length === 10 || (digits.length === 12 && digits.startsWith(LEGAL_ENTITY_PREFIX)))
-    ) {
+    if (!(
+      digits.length === 10 ||
+      (digits.length === 12 && digits.startsWith(LEGAL_ENTITY_PREFIX))
+    )) {
       return invalidResult(
         input,
         ValidationErrorReason.InvalidLength,

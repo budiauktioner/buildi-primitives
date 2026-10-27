@@ -89,14 +89,7 @@ import {
 } from "@budiauktioner/buildi-primitives/banking";
 
 export type Category =
-  | "Contact"
-  | "Person"
-  | "Organization"
-  | "Geography"
-  | "Web"
-  | "Finance"
-  | "Property"
-  | "Banking";
+  "Contact" | "Person" | "Organization" | "Geography" | "Web" | "Finance" | "Property" | "Banking";
 
 export interface TypeEntry {
   readonly name: string;
