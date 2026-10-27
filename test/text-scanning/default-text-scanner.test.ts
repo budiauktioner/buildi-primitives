@@ -72,6 +72,7 @@ describe("defaultTextScanner", () => {
       "VehicleIdentificationNumber",
       "Voltage",
       "Volume",
+      "WatercraftIdentificationNumber",
       "Weight",
       "WheelRimDimension",
     ]);
@@ -150,6 +151,7 @@ describe("defaultTextScanner", () => {
       [result.weights, "Weight"],
       [result.vehicleRegistrationNumbers, "SwedishVehicleRegistrationNumber"],
       [result.vehicleIdentificationNumbers, "VehicleIdentificationNumber"],
+      [result.watercraftIdentificationNumbers, "WatercraftIdentificationNumber"],
       [result.operatingHourValues, "OperatingHours"],
       [result.boltPatterns, "BoltPattern"],
       [result.wheelRimDimensions, "WheelRimDimension"],
@@ -234,6 +236,7 @@ describe("defaultTextScanner", () => {
       "Weight",
       "SwedishVehicleRegistrationNumber",
       "VehicleIdentificationNumber",
+      "WatercraftIdentificationNumber",
       "OperatingHours",
       "BoltPattern",
       "WheelRimDimension",

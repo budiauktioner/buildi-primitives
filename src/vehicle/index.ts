@@ -76,6 +76,12 @@ export {
   type VehicleIdentificationNumberFormatOptions,
 } from "./vehicle-identification-number.js";
 export {
+  WatercraftIdentificationNumber,
+  WatercraftIdentificationNumberScheme,
+  maskWatercraftIdentificationNumber,
+  type WatercraftIdentificationNumberFormatOptions,
+} from "./watercraft-identification-number.js";
+export {
   WheelRimDimension,
   maskWheelRimDimension,
   type WheelRimDimensionFormatOptions,

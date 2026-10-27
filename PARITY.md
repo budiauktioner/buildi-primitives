@@ -7,10 +7,10 @@ exactly how much of that surface is implemented here.
 
 |                   |                            |
 | ----------------- | -------------------------- |
-| .NET baseline     | `Buildi.Primitives` 0.21.0 |
-| This package      | `0.2.1`                    |
+| .NET baseline     | `Buildi.Primitives` 0.22.0 |
+| This package      | `0.3.0`                    |
 | Namespaces ported | 13 of 13                   |
-| Types ported      | 200 of 200                 |
+| Types ported      | 201 of 201                 |
 
 Type counts follow the catalog in the .NET README — the value-object types a
 consumer works with directly, excluding extension-method containers and internal
@@ -37,7 +37,7 @@ commit that changes the .NET baseline.
 | `Validation`   | Complete    | Shared `ValidationResult` infrastructure                              |
 | `TextScanning` | Complete    | Scanner, candidates, overlap resolution, typed accessors              |
 | `Measurement`  | Full parity | 19 dimensions, 133 units, 5 standalone types, plus `TemperatureDelta` |
-| `Vehicle`      | Full parity | 29 types, plus the `SwedishDrivingLicenseVehicleGroup` enum           |
+| `Vehicle`      | Full parity | 30 types, plus the `SwedishDrivingLicenseVehicleGroup` enum           |
 | `Product`      | Full parity | 36 types, plus 6 nested enums                                         |
 
 ## Cross-cutting features
@@ -46,9 +46,9 @@ commit that changes the .NET baseline.
 | -------------------------------------------------------------------------- | --------------------------------------------------- |
 | `tryParse` / `parse` / `isValid` / `format` / `normalize` / `isNormalized` | Complete for every value-object type                |
 | `typeInfo` metadata (English + Swedish name, emoji, sources)               | Complete                                            |
-| `validate()` structured validation                                         | Complete — all 14 types that have it in .NET        |
-| `findCandidatesInText()` text scanning                                     | Complete — all 70 types that have it in .NET        |
-| `TextScanResult` typed accessors                                           | Complete — all 67 .NET accessors, plus `luminances` |
+| `validate()` structured validation                                         | Complete — all 15 types that have it in .NET        |
+| `findCandidatesInText()` text scanning                                     | Complete — all 71 types that have it in .NET        |
+| `TextScanResult` typed accessors                                           | Complete — all 68 .NET accessors, plus `luminances` |
 | Masking (`toMaskedString` → `mask*` functions)                             | Complete                                            |
 | Lookup and external-link helpers                                           | Complete                                            |
 | `PrimitivesDefaults` (culture, UI culture, country, calling code)          | Complete                                            |

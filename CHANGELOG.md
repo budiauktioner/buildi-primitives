@@ -4,6 +4,36 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.3.0] - Unreleased
+
+Tracks `Buildi.Primitives` 0.22.0.
+
+### Added
+
+- `WatercraftIdentificationNumber` in the `Vehicle` namespace: the hull
+  marking of a small craft (`skrovnummer`), in either the ISO 10087 format
+  (CIN/WIN, e.g. `NL-HXAB7A33G506`) or the twelve-character US hull
+  identification number (HIN, e.g. `ZZZ00001A020`). Input may be lower case,
+  contain whitespace, and omit the hyphen after the ISO country code; any other
+  hyphen or punctuation is rejected. `normalize()` returns the number without
+  separators, `format()` returns it as marked on the hull. The parsed value
+  exposes `scheme`, `countryCode`, `country`, `manufacturerCode`,
+  `serialNumber`, `productionMonthCode`, `productionMonth`,
+  `productionYearDigit` and `modelYearDigits`. Years stay as the encoded digits
+  because the number does not carry the century.
+- `WatercraftIdentificationNumber.validate()` reports one issue per invalid
+  segment, using four new `ValidationErrorReason` values:
+  `InvalidManufacturerCode`, `InvalidSerialNumber`, `InvalidMonthCode` and
+  `InvalidYearDigits`.
+- `maskWatercraftIdentificationNumber`, which keeps the country and
+  manufacturer codes visible, e.g. `NL-HXA*********`.
+- `defaultTextScanner` finds watercraft identification numbers, exposed as
+  `TextScanResult.watercraftIdentificationNumbers`. A hyphenated ISO number is
+  reported with `Medium` confidence; an unseparated one and a US HIN with
+  `Low`.
+- `VehicleSampleData.WatercraftIdentificationNumber` in `sample-data`, holding
+  the ISO 10087 worked example and a US HIN constructed for this library.
+
 ## [0.2.1] - 2026-08-07
 
 ### Fixed

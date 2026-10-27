@@ -77,6 +77,7 @@ const NESTED_PROPERTY_TYPES = new Set([
   "Count",
   "FuelConsumptionNorm",
   "EuVehicleCategory",
+  "Country",
 ]);
 
 /** The .NET run that produced these vectors used the invariant English culture. */
@@ -154,7 +155,9 @@ describe.each(ported)("%s against .NET vectors", (typeName) => {
         const actual = parsed[camel(prop.name)];
         if (expected === undefined) continue;
 
-        if (typeof expected === "string" && DOTNET_TYPE_NAME.test(expected)) {
+        if (expected === null) {
+          expect(actual ?? null).toBeNull();
+        } else if (typeof expected === "string" && DOTNET_TYPE_NAME.test(expected)) {
           // The probe rendered collection properties through ToString, which yields a
           // .NET type name instead of the elements; only the shape survives.
           expect(Array.isArray(actual)).toBe(true);
