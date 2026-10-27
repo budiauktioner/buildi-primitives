@@ -101,6 +101,22 @@ result.issues.map((i) => i.reason); // ["InvalidCheckDigit"]
 result.issues[0].description; // "Ogiltiga IBAN-kontrollsiffror."
 ```
 
+Where a value is made of independent segments, every failing segment gets its
+own issue:
+
+```ts
+import { WatercraftIdentificationNumber } from "@budiauktioner/buildi-primitives/vehicle";
+
+WatercraftIdentificationNumber.validate("NL-H0AB7A33M506").issues.map((i) => i.reason);
+// ["InvalidManufacturerCode", "InvalidMonthCode"]
+
+const win = WatercraftIdentificationNumber.parse("nlhxab7a33g506");
+win.toString(); // "NL-HXAB7A33G506" — as marked on the hull
+win.toNormalizedString(); // "NLHXAB7A33G506"
+win.productionMonth; // 7
+win.modelYearDigits; // "06" — the century is not encoded
+```
+
 `reason` is a stable `ValidationErrorReason` enum value safe to branch on.
 `description` is human-readable and follows the display language described
 under [Defaults and display language](#defaults-and-display-language); each
@@ -264,6 +280,7 @@ import {
   FuelType,
   TireDimension,
   VehicleIdentificationNumber,
+  WatercraftIdentificationNumber,
 } from "@budiauktioner/buildi-primitives/vehicle";
 import { Gtin13, ScreenSize, ClothingSize } from "@budiauktioner/buildi-primitives/product";
 import { ValidationErrorReason } from "@budiauktioner/buildi-primitives/validation";

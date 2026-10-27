@@ -11,6 +11,7 @@ import {
 import { EmailAddress, Url } from "../web/index.js";
 import { Currency, Isin, MoneyAmount } from "../finance/index.js";
 import { SwedishPropertyDesignation, SwedishPropertyTaxationCode } from "../property/index.js";
+import { WatercraftIdentificationNumber } from "../vehicle/index.js";
 import {
   Bic,
   Iban,
@@ -247,6 +248,16 @@ const SwedishPropertyTaxationCodeSamples = Object.freeze({
   industriBebyggd: SwedishPropertyTaxationCode.parse("420"),
 });
 
+const WatercraftIdentificationNumberSamples = Object.freeze({
+  /** The worked example in ISO 10087:2022 §4.6. */
+  iso10087Example: WatercraftIdentificationNumber.parse("NL-HXAB7A33G506"),
+  /**
+   * A US HIN constructed for this library: an all-Z manufacturer code and serial number `00001`.
+   * It has not been checked against the Coast Guard's register of manufacturer codes.
+   */
+  unitedStatesExample: WatercraftIdentificationNumber.parse("ZZZ00001A020"),
+});
+
 export const PropertySampleData = Object.freeze({
   SwedishPropertyDesignation: Object.freeze({
     ...SwedishPropertyDesignationSamples,
@@ -255,6 +266,13 @@ export const PropertySampleData = Object.freeze({
   SwedishPropertyTaxationCode: Object.freeze({
     ...SwedishPropertyTaxationCodeSamples,
     all: Object.freeze(Object.values(SwedishPropertyTaxationCodeSamples)),
+  }),
+});
+
+export const VehicleSampleData = Object.freeze({
+  WatercraftIdentificationNumber: Object.freeze({
+    ...WatercraftIdentificationNumberSamples,
+    all: Object.freeze(Object.values(WatercraftIdentificationNumberSamples)),
   }),
 });
 

@@ -6,6 +6,7 @@ import {
   GeographySampleData,
   OrganizationSampleData,
   PropertySampleData,
+  VehicleSampleData,
   WebSampleData,
 } from "../../src/sample-data/index.js";
 
@@ -45,6 +46,16 @@ describe("sample data", () => {
     expect(PropertySampleData.SwedishPropertyDesignation.all.length).toBeGreaterThanOrEqual(1);
     expect(PropertySampleData.SwedishPropertyTaxationCode.smahusBebyggd.code).toBe("220");
     expect(PropertySampleData.SwedishPropertyTaxationCode.all.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("exposes vehicle samples", () => {
+    expect(VehicleSampleData.WatercraftIdentificationNumber.iso10087Example.formatted).toBe(
+      "NL-HXAB7A33G506",
+    );
+    expect(VehicleSampleData.WatercraftIdentificationNumber.unitedStatesExample.value).toBe(
+      "ZZZ00001A020",
+    );
+    expect(VehicleSampleData.WatercraftIdentificationNumber.all.length).toBeGreaterThanOrEqual(2);
   });
 
   it("exposes banking samples", () => {

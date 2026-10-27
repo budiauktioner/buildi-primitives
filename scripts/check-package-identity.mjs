@@ -78,6 +78,7 @@ const expectedRegisteredTypeNames = [
   "VehicleIdentificationNumber",
   "Voltage",
   "Volume",
+  "WatercraftIdentificationNumber",
   "Weight",
   "WheelRimDimension",
 ].sort();

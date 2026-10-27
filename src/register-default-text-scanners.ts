@@ -68,6 +68,7 @@ import { SwedishEcoVehicleClassification } from "./vehicle/swedish-eco-vehicle-c
 import { SwedishVehicleRegistrationNumber } from "./vehicle/swedish-vehicle-registration-number.js";
 import { TireDimension } from "./vehicle/tire-dimension.js";
 import { VehicleIdentificationNumber } from "./vehicle/vehicle-identification-number.js";
+import { WatercraftIdentificationNumber } from "./vehicle/watercraft-identification-number.js";
 import { WheelRimDimension } from "./vehicle/wheel-rim-dimension.js";
 
 let registered = false;
@@ -254,6 +255,7 @@ export function registerDefaultTextScanners(): void {
     ["SwedishVehicleRegistrationNumber", SwedishVehicleRegistrationNumber],
     ["TireDimension", TireDimension],
     ["VehicleIdentificationNumber", VehicleIdentificationNumber],
+    ["WatercraftIdentificationNumber", WatercraftIdentificationNumber],
     ["WheelRimDimension", WheelRimDimension],
   ];
 

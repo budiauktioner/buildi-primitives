@@ -37,6 +37,12 @@ export const ValidationErrorReason = {
   MissingAtSign: "MissingAtSign",
   InvalidLocalPart: "InvalidLocalPart",
   InvalidDomain: "InvalidDomain",
+
+  // --- Watercraft identification ---
+  InvalidManufacturerCode: "InvalidManufacturerCode",
+  InvalidSerialNumber: "InvalidSerialNumber",
+  InvalidMonthCode: "InvalidMonthCode",
+  InvalidYearDigits: "InvalidYearDigits",
 } as const;
 
 export type ValidationErrorReason =
