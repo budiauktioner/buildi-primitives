@@ -4,7 +4,7 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 2026-10-28
 
 Tracks `Buildi.Primitives` 0.22.0.
 

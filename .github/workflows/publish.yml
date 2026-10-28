@@ -27,9 +27,9 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
 
-      # Deliberately not .nvmrc. That file pins the minimum runtime we support
-      # for consumers; trusted publishing needs npm 11.5.1 or newer, which is
-      # what Node 24 ships. `registry-url` is omitted because the default is
+      # Pinned here rather than read from .nvmrc: trusted publishing needs
+      # npm 11.5.1 or newer, which is what Node 24 ships, and that must not
+      # change if .nvmrc does. `registry-url` is omitted because the default is
       # already registry.npmjs.org and setting it only adds an `_authToken`
       # line to the runner .npmrc, which is exactly what OIDC exists to avoid.
       - name: Setup Node
