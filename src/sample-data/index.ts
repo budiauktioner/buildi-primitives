@@ -34,7 +34,7 @@ const PhoneNumberSamples = Object.freeze({
   folksam: PhoneNumber.parse("+46771950950"),
   kooperativaForbundet: PhoneNumber.parse("+46107400000"),
   swedishMobileTest: PhoneNumber.parse("+46701740605"),
-  swedishFixedTest: PhoneNumber.parse("+4681234567"),
+  swedishFixedTest: PhoneNumber.parse("+46846500400"),
 });
 
 const SwedishCountySamples = Object.freeze({

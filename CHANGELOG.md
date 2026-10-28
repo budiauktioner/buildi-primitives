@@ -34,6 +34,20 @@ Tracks `Buildi.Primitives` 0.22.0.
 - `VehicleSampleData.WatercraftIdentificationNumber` in `sample-data`, holding
   the ISO 10087 worked example and a US HIN constructed for this library.
 
+### Fixed
+
+- `PhoneNumber.formatted`, `toLocalString()` and `format()` put the hyphen
+  after the area code based on the number's length instead of the numbering
+  plan, so every mobile number and most landlines were split in the wrong
+  place (`0701-74 06 35` instead of `070-174 06 35`, `0846-50 04 56` instead
+  of `08-465 004 56`). The area code is now looked up in PTS's numbering plan
+  and the subscriber number is grouped by its own length, as Svenska
+  skrivregler recommends. Swedish numbers formatted internationally get the
+  same split, e.g. `+46 8 465 004 56`. `maskPhoneNumberDetailed` follows the
+  new area code, e.g. `070-*** ** 33`. The normalized form is unchanged.
+- `ContactSampleData.PhoneNumber.swedishFixedTest` is now `+46846500400`, from the
+  PTS-reserved Stockholm range, instead of a number outside it.
+
 ## [0.2.1] - 2026-08-07
 
 ### Fixed

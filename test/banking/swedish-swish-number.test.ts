@@ -38,6 +38,10 @@ describe("SwedishSwishNumber.tryParse", () => {
     expect(r.isSwish123).toBe(false);
     expect(r.phoneNumber).not.toBeNull();
   });
+
+  it("formats Swedish mobile number with a three-digit area code", () => {
+    expect(SwedishSwishNumber.format("0701740635")).toBe("070-174 06 35");
+  });
 });
 
 describe("maskSwedishSwishNumber", () => {

@@ -263,7 +263,7 @@ export class PhoneNumber {
         : this.toDisplayInternationalString();
     }
     const subscriber = this.digits.slice(2 + this.countryCallingCode.value.length);
-    if (this.isSwedish) return formatSwedishLocal("0" + subscriber);
+    if (this.isSwedish) return formatSwedishLocal(subscriber);
     return "0" + subscriber;
   }
 
@@ -276,6 +276,7 @@ export class PhoneNumber {
 
   toDisplayInternationalString(): string {
     const subscriber = this.digits.slice(2 + this.countryCallingCode.value.length);
+    if (this.isSwedish) return formatSwedishInternational(subscriber);
     return (
       "+" +
       this.countryCallingCode.value +
@@ -368,20 +369,56 @@ function formatInternationalSubscriberDigits(callingCode: string, digits: string
   }
 }
 
-function formatSwedishLocal(number: string): string {
-  const digits = number.replace(/^0+/, "");
-  if (digits.length === 9) {
-    return `0${digits.slice(0, 3)}-${digits.slice(3, 5)} ${digits.slice(5, 7)} ${digits.slice(7, 9)}`;
+// Two-digit national destination codes (NDCs) from PTS's numbering plan. 8 (Stockholm) is the
+// only one-digit NDC; every NDC not listed here is three digits.
+const SWEDISH_TWO_DIGIT_DESTINATION_CODES = new Set([
+  ..."11 13 16 18 19 21 23 26 31 33 35 36 40 42 44 46 54 60 63 90".split(" "),
+  ..."10 20 70 71 72 73 74 75 76 77 79 99".split(" "),
+]);
+
+// 900 (premium rate) is the only three-digit NDC that starts with a two-digit NDC (90, Umeå).
+const SWEDISH_THREE_DIGIT_DESTINATION_CODES_OVERRIDING_TWO_DIGIT = new Set(["900"]);
+
+function swedishDestinationCodeLength(nationalSignificantNumber: string): number {
+  if (nationalSignificantNumber.startsWith("8")) return 1;
+  if (
+    SWEDISH_THREE_DIGIT_DESTINATION_CODES_OVERRIDING_TWO_DIGIT.has(
+      nationalSignificantNumber.slice(0, 3),
+    )
+  ) {
+    return 3;
   }
-  if (digits.length === 7) {
-    const area = digits.slice(0, 1);
-    const rest = digits.slice(1);
-    return `0${area}-${rest.slice(0, 2)} ${rest.slice(2, 4)} ${rest.slice(4, 6)}`;
+  if (SWEDISH_TWO_DIGIT_DESTINATION_CODES.has(nationalSignificantNumber.slice(0, 2))) return 2;
+  return 3;
+}
+
+/**
+ * Groups a Swedish subscriber number as recommended by Svenska skrivregler:
+ * `NN NN`, `NNN NN`, `NN NN NN`, `NNN NN NN` and `NNN NNN NN`.
+ */
+function groupSwedishSubscriberNumber(subscriber: string): string {
+  if (subscriber.length === 8) {
+    return `${subscriber.slice(0, 3)} ${subscriber.slice(3, 6)} ${subscriber.slice(6)}`;
   }
-  if (digits.length === 8) {
-    const area = digits.slice(0, 1);
-    const rest = digits.slice(1);
-    return `0${area}-${rest.slice(0, 2)} ${rest.slice(2, 4)} ${rest.slice(4, 7)}`;
+  const firstGroupLength = subscriber.length % 2 === 1 ? 3 : 2;
+  const groups = [subscriber.slice(0, firstGroupLength)];
+  for (let i = firstGroupLength; i < subscriber.length; i += 2) {
+    groups.push(subscriber.slice(i, i + 2));
   }
-  return number;
+  return groups.join(" ");
+}
+
+function splitSwedishNationalNumber(nationalSignificantNumber: string): [string, string] {
+  const length = swedishDestinationCodeLength(nationalSignificantNumber);
+  return [nationalSignificantNumber.slice(0, length), nationalSignificantNumber.slice(length)];
+}
+
+function formatSwedishLocal(nationalSignificantNumber: string): string {
+  const [destinationCode, subscriber] = splitSwedishNationalNumber(nationalSignificantNumber);
+  return `0${destinationCode}-${groupSwedishSubscriberNumber(subscriber)}`;
+}
+
+function formatSwedishInternational(nationalSignificantNumber: string): string {
+  const [destinationCode, subscriber] = splitSwedishNationalNumber(nationalSignificantNumber);
+  return `+46 ${destinationCode} ${groupSwedishSubscriberNumber(subscriber)}`;
 }

@@ -32,7 +32,7 @@ export const PhoneNumberTestData = {
     return generateRange("04062804", 0, 99);
   },
 
-  /** Landline Stockholm: 08-4650 04 00 through 08-4650 04 99 (100 numbers). */
+  /** Landline Stockholm: 08-465 004 00 through 08-465 004 99 (100 numbers). */
   get landlineStockholm(): readonly string[] {
     return generateRange("08465004", 0, 99);
   },

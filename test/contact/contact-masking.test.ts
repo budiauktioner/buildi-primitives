@@ -50,6 +50,19 @@ describe("contact masking", () => {
     expect(masked).toContain("*");
   });
 
+  it.each([
+    ["0701740633", 2, "070-*** ** 33"],
+    ["0701740633", 0, "070-*** ** **"],
+    ["0701740633", 4, "070-*** 06 33"],
+    ["0846500456", 2, "08-*** *** 56"],
+    ["0980319247", 2, "0980-** ** 47"],
+  ] as const)(
+    "masks Swedish phone %s after the area code",
+    (input, visibleDigitsAtEnd, expected) => {
+      expect(maskPhoneNumberDetailed(PhoneNumber.parse(input), visibleDigitsAtEnd)).toBe(expected);
+    },
+  );
+
   it("masks international phone keeping last 2 digits", () => {
     const p = PhoneNumber.parse("+44 20 7946 0958");
     const masked = maskPhoneNumberDetailed(p);
