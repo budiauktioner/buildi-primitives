@@ -4,6 +4,22 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.4.0] - 2026-11-09
+
+Tracks `Buildi.Primitives` 0.23.0.
+
+### Changed
+
+- `Color` resolves `nameEnglish` / `nameSwedish` for every shade the parser
+  produces from a name, so a stored hex formats back to the same name:
+  `Color.parse("#4D4D4D").nameSwedish` is `mörkgrå` and `Color.format("#4D4D4D")`
+  is `dark grey`. Matching is exact RGB; when a shade equals a base color the
+  base name wins (`#FFFFFF` is `vit`, not `ljusvit`). See
+  [issue #8](https://github.com/budiauktioner/buildi-primitives/issues/8).
+- `#808080` now resolves to the English name `grey` (was `gray`), matching what
+  `grå` already produced. Input `gray` still gives `gray`. See
+  [BREAKING_CHANGES.md](BREAKING_CHANGES.md).
+
 ## [0.3.0] - 2026-10-28
 
 Tracks `Buildi.Primitives` 0.22.0.

@@ -76,7 +76,7 @@ import type {
  * is the behavioural specification for this port.
  *
  * The expectations below are transcribed from the public types of
- * https://github.com/BudiAuktioner/Buildi.Primitives at version 0.22.0. The
+ * https://github.com/BudiAuktioner/Buildi.Primitives at version 0.23.0. The
  * `Vehicle` and `Product` namespaces are covered by test/vehicle and
  * test/product instead, which compare against fixtures captured from .NET.
  *

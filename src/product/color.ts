@@ -31,6 +31,7 @@ const NAMED_COLORS: readonly NamedColor[] = [
   { r: 0xff, g: 0xc0, b: 0xcb, english: "pink", swedish: "rosa" },
   { r: 0x00, g: 0x00, b: 0x00, english: "black", swedish: "svart" },
   { r: 0xff, g: 0xff, b: 0xff, english: "white", swedish: "vit" },
+  { r: 0x80, g: 0x80, b: 0x80, english: "grey", swedish: "grå" },
   { r: 0x80, g: 0x80, b: 0x80, english: "gray", swedish: "grå" },
   { r: 0xa5, g: 0x2a, b: 0x2a, english: "brown", swedish: "brun" },
   { r: 0xff, g: 0xd7, b: 0x00, english: "gold", swedish: "guld" },
@@ -52,7 +53,6 @@ const NAMED_COLORS: readonly NamedColor[] = [
   { r: 0xf0, g: 0xe6, b: 0x8c, english: "khaki", swedish: "kaki" },
   { r: 0xe6, g: 0xe6, b: 0xfa, english: "lavender", swedish: "lavendel" },
   { r: 0xdc, g: 0x14, b: 0x3c, english: "crimson", swedish: "karmosinröd" },
-  { r: 0x80, g: 0x80, b: 0x80, english: "grey", swedish: "grå" },
   { r: 0xff, g: 0x63, b: 0x47, english: "tomato", swedish: "tomat" },
   { r: 0xdd, g: 0xa0, b: 0xdd, english: "plum", swedish: "plommon" },
   { r: 0x80, g: 0x00, b: 0x20, english: "burgundy", swedish: "vinröd" },
@@ -80,8 +80,22 @@ const BY_RGB = new Map<string, NamedColor>();
 for (const entry of NAMED_COLORS) {
   BY_NAME.set(foldOrdinalIgnoreCase(entry.english), entry);
   const swedishKey = foldOrdinalIgnoreCase(entry.swedish);
-  if (swedishKey !== foldOrdinalIgnoreCase(entry.english)) BY_NAME.set(swedishKey, entry);
+  if (!BY_NAME.has(swedishKey)) BY_NAME.set(swedishKey, entry);
+  addByRgb(entry);
+}
 
+const CANONICAL_MODIFIERS = COLOR_MODIFIERS.filter(
+  (modifier, index) => COLOR_MODIFIERS.findIndex((other) => other[1] === modifier[1]) === index,
+);
+
+for (const entry of NAMED_COLORS) {
+  const base = BY_NAME.get(foldOrdinalIgnoreCase(entry.swedish))!;
+  for (const [, swedishDisplay, englishDisplay, factor] of CANONICAL_MODIFIERS) {
+    addByRgb(createShade(base, swedishDisplay, englishDisplay, factor));
+  }
+}
+
+function addByRgb(entry: NamedColor): void {
   const rgbKey = `${entry.r},${entry.g},${entry.b}`;
   if (!BY_RGB.has(rgbKey)) BY_RGB.set(rgbKey, entry);
 }
@@ -115,10 +129,16 @@ export class Color {
   /** Blue channel, 0–255. */
   readonly b: number;
 
-  /** English CSS-style name when the color matches a known one, otherwise `null`. */
+  /**
+   * English CSS-style name when the channels exactly match a named color or one of its shades,
+   * e.g. `grey` or `dark grey` for `#4D4D4D`; otherwise `null`.
+   */
   readonly nameEnglish: string | null;
 
-  /** Swedish name when the color matches a known one, otherwise `null`. */
+  /**
+   * Swedish name when the channels exactly match a named color or one of its shades,
+   * e.g. `grå` or `mörkgrå` for `#4D4D4D`; otherwise `null`.
+   */
   readonly nameSwedish: string | null;
 
   private constructor(
@@ -296,19 +316,26 @@ function expandNibble(character: string): number {
 function tryShadeNamedColor(input: string): NamedColor | null {
   for (const [prefix, swedishDisplay, englishDisplay, factor] of COLOR_MODIFIERS) {
     const base = tryExtractBaseColor(input, prefix);
-    if (base === null) continue;
-
-    const [r, g, b] = blendBrightness(base.r, base.g, base.b, factor);
-    return {
-      r,
-      g,
-      b,
-      english: `${englishDisplay} ${base.english}`,
-      swedish: `${swedishDisplay}${base.swedish}`,
-    };
+    if (base !== null) return createShade(base, swedishDisplay, englishDisplay, factor);
   }
 
   return null;
+}
+
+function createShade(
+  base: NamedColor,
+  swedishDisplay: string,
+  englishDisplay: string,
+  factor: number,
+): NamedColor {
+  const [r, g, b] = blendBrightness(base.r, base.g, base.b, factor);
+  return {
+    r,
+    g,
+    b,
+    english: `${englishDisplay} ${base.english}`,
+    swedish: `${swedishDisplay}${base.swedish}`,
+  };
 }
 
 function tryExtractBaseColor(input: string, prefix: string): NamedColor | null {
