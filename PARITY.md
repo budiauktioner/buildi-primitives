@@ -7,8 +7,8 @@ exactly how much of that surface is implemented here.
 
 |                   |                            |
 | ----------------- | -------------------------- |
-| .NET baseline     | `Buildi.Primitives` 0.23.0 |
-| This package      | `0.4.0`                    |
+| .NET baseline     | `Buildi.Primitives` 0.24.0 |
+| This package      | `0.5.0`                    |
 | Namespaces ported | 13 of 13                   |
 | Types ported      | 201 of 201                 |
 
@@ -21,6 +21,12 @@ which asserts that every .NET public type, masking function, `validate()`
 implementation, `findCandidatesInText()` implementation, and `TextScanResult`
 accessor in the ported namespaces exists here. Update that test in the same
 commit that changes the .NET baseline.
+
+Which inputs the personnummer, samordningsnummer and person-based
+organisationsnummer accept is enforced by
+[`test/person/personal-number-parity-cases.json`](test/person/personal-number-parity-cases.json),
+a verbatim copy of the case file the .NET test project runs. Change both copies
+together.
 
 ## Namespace coverage
 

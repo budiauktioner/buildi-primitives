@@ -14,6 +14,32 @@ not here.
   **Migration**, **Examples**, etc.
 - Order versions from newest to oldest.
 
+## Breaking changes 0.4.0 - 0.5.0
+
+### `WatercraftIdentificationNumber` rejects the user-assigned country code `XK`
+
+**Area:** `@budiauktioner/buildi-primitives/vehicle`
+
+**What changed**
+
+The country code of an ISO 10087 number is checked against the 249 officially
+assigned ISO 3166-1 alpha-2 codes rather than the `Country` catalog.
+
+- `XK-HXAB7A33G506` is now invalid (`UnknownCountryCode`). `XK` is user-assigned,
+  not an ISO code, even though the `Country` catalog lists it for Kosovo.
+- Assigned codes missing from the catalog, such as `KY-HXAB7A33G506`, are now
+  valid. For these, `country` is `null` even though `countryCode` is set.
+
+**Why**
+
+ISO 10087 requires an ISO 3166-1 alpha-2 code, and the `Country` catalog is
+neither complete nor limited to assigned codes. Mirrors `Buildi.Primitives` 0.24.0.
+
+**Migration**
+
+Code that reads `win.country` for an ISO number should handle `null` and fall
+back to `win.countryCode`. Stored `XK` numbers no longer parse.
+
 ## Breaking changes 0.3.0 - 0.4.0
 
 ### `Color` resolves shade names from RGB and spells grey as `grey`

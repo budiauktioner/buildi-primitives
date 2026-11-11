@@ -53,7 +53,7 @@ describe("collapseWhitespace", () => {
 
 describe("keepDigits", () => {
   it("keeps only ASCII digits", () => {
-    expect(keepDigits("19880829-1234")).toBe("198808291234");
+    expect(keepDigits("19880101-2389")).toBe("198801012389");
     expect(keepDigits("abc 1.2.3 def")).toBe("123");
   });
 

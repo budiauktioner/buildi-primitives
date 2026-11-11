@@ -47,11 +47,11 @@ describe("organization conversion helpers", () => {
   });
 
   it("converts coordination-number based organization numbers", () => {
-    const org = SwedishOrganizationNumber.parse("199908672398");
+    const org = SwedishOrganizationNumber.parse("199903672385");
     const coordinationNumber = toCoordinationNumber(org);
 
     expect(coordinationNumber).toBeInstanceOf(SwedishCoordinationNumber);
-    expect(coordinationNumber!.to12DigitString()).toBe("199908672398");
+    expect(coordinationNumber!.to12DigitString()).toBe("199903672385");
   });
 
   it("builds lookup URLs", () => {
@@ -121,10 +121,10 @@ describe("SwedishOrganizationIdentifierParser", () => {
   });
 
   it("classifies coordination numbers", () => {
-    const parsed = SwedishOrganizationIdentifierParser.tryParse("199908672398");
+    const parsed = SwedishOrganizationIdentifierParser.tryParse("199903672385");
 
     expect(parsed!.type).toBe(SwedishOrganizationIdentifierType.SwedishCoordinationNumber);
-    expect(parsed!.normalizedValue).toBe("199908672398");
+    expect(parsed!.normalizedValue).toBe("199903672385");
     expect(parsed!.swedishOrganizationNumber!.isPerson).toBe(true);
   });
 

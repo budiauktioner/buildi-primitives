@@ -1,5 +1,6 @@
 import { Country } from "../geography/country.js";
 import { sanitizeInput } from "../internal/input-sanitization.js";
+import { isAssignedIso3166Alpha2 } from "../internal/iso-3166-alpha2.js";
 import type { PrimitiveTypeInfo } from "../primitive-type-info.js";
 import { TextCandidate } from "../text-scanning/text-candidate.js";
 import { TextCandidateCategory } from "../text-scanning/text-candidate-category.js";
@@ -45,8 +46,7 @@ const ALLOWED_CHARACTERS_PATTERN = /^[A-Z0-9-]+$/u;
 // .NET port, where it also matches U+0085 but not U+FEFF.
 const WHITESPACE_PATTERN = / +/g;
 const LOWERCASE_ASCII_PATTERN = /[a-z]/g;
-const DOTNET_WHITESPACE_ONLY_PATTERN = /^[\p{Z}\t\n\v\f\r\u0085]*$/u;
-const DOTNET_TRIM_PATTERN = /^[\p{Z}\t\n\v\f\r\u0085]+|[\p{Z}\t\n\v\f\r\u0085]+$/gu;
+const DOTNET_WHITESPACE_CHARACTER_PATTERN = /^[\p{Z}\t\n\v\f\r\u0085]$/u;
 const COUNTRY_CODE_PATTERN = /^[A-Z]{2}$/u;
 
 // ISO 10087 §4.3: letters and numerals, except the numerals 0 and 1.
@@ -114,7 +114,10 @@ export class WatercraftIdentificationNumber {
    */
   readonly countryCode: string | null;
 
-  /** The country of {@link countryCode}, or `null` for a US HIN. */
+  /**
+   * The country of {@link countryCode}, or `null` for a US HIN and for an assigned code
+   * the `Country` catalog does not cover, e.g. `KY`.
+   */
   readonly country: Country | null;
 
   /** The three-character manufacturer identification code (MIC), e.g. `HXA`. */
@@ -343,8 +346,10 @@ export class WatercraftIdentificationNumber {
     let country: Country | null = null;
 
     if (isIso) {
-      country = resolveCountry(compact.slice(0, 2));
-      if (country === null) {
+      const code = compact.slice(0, 2);
+      if (COUNTRY_CODE_PATTERN.test(code) && isAssignedIso3166Alpha2(code)) {
+        country = catalogCountry(code);
+      } else {
         isValid = fail(
           ValidationErrorReason.UnknownCountryCode,
           "The first two characters must be an ISO 3166-1 alpha-2 country code.",
@@ -411,8 +416,7 @@ export function maskWatercraftIdentificationNumber(win: WatercraftIdentification
   return prefix + "*".repeat(win.formatted.length - prefix.length);
 }
 
-function resolveCountry(code: string): Country | null {
-  if (!COUNTRY_CODE_PATTERN.test(code)) return null;
+function catalogCountry(code: string): Country | null {
   const parsed = Country.tryParse(code);
   return parsed !== null && parsed.alpha2Code === code ? parsed : null;
 }
@@ -441,9 +445,19 @@ function fallback(
  * the empty check and the fallback text agree for every input.
  */
 function isNullOrWhiteSpace(input: string | null | undefined): input is null | undefined {
-  return input == null || DOTNET_WHITESPACE_ONLY_PATTERN.test(input);
+  return input == null || trimLikeDotnet(input).length === 0;
 }
 
+// Scans in from both ends rather than using a trailing-whitespace regex, which backtracks
+// from every inner whitespace run and takes quadratic time on long runs.
 function trimLikeDotnet(input: string): string {
-  return input.replace(DOTNET_TRIM_PATTERN, "");
+  let start = 0;
+  let end = input.length;
+  while (start < end && isDotnetWhiteSpace(input[start]!)) start++;
+  while (end > start && isDotnetWhiteSpace(input[end - 1]!)) end--;
+  return input.slice(start, end);
+}
+
+function isDotnetWhiteSpace(codeUnit: string): boolean {
+  return DOTNET_WHITESPACE_CHARACTER_PATTERN.test(codeUnit);
 }
