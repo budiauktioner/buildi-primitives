@@ -23,7 +23,7 @@ describe("SwedishPersonalIdentityNumber", () => {
   });
 
   it("rejects coordination numbers", () => {
-    expect(SwedishPersonalIdentityNumber.tryParse("19990867-2391")).toBeNull();
+    expect(SwedishPersonalIdentityNumber.tryParse("19990367-2385")).toBeNull();
   });
 
   it("rejects invalid checksum", () => {

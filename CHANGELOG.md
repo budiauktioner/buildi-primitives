@@ -4,6 +4,30 @@ All notable changes to the TypeScript port of `Buildi.Primitives` will be
 documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this package adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.5.0] - Unreleased
+
+Tracks `Buildi.Primitives` 0.24.0.
+
+### Changed
+
+- `WatercraftIdentificationNumber` validates the ISO 10087 country code against
+  the 249 officially assigned ISO 3166-1 alpha-2 codes instead of the `Country`
+  catalog. Assigned codes the catalog lacks, such as `KY` and `VG`, are now
+  accepted, with `country` set to `null`. The user-assigned `XK` is now rejected
+  with `UnknownCountryCode`. See [BREAKING_CHANGES.md](BREAKING_CHANGES.md).
+
+### Fixed
+
+- `WatercraftIdentificationNumber.format` and `normalize` with
+  `fallbackToTrimmedInputWhenInvalid` took quadratic time on long inner
+  whitespace runs; trimming is now linear.
+
+### Tests
+
+- `test/person/personal-number-parity-cases.json` is shared with the .NET test
+  project, so both ports accept the same personnummer, samordningsnummer and
+  person-based organisationsnummer inputs, including `YYYYMMDD-NNNC`.
+
 ## [0.4.0] - 2026-11-09
 
 Tracks `Buildi.Primitives` 0.23.0.

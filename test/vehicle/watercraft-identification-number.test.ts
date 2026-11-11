@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
+import { Country } from "../../src/geography/index.js";
 import { defaultTextScanner } from "../../src/index.js";
+import { ASSIGNED_ISO_3166_ALPHA2_COUNT } from "../../src/internal/iso-3166-alpha2.js";
 import { TextMatchConfidence } from "../../src/text-scanning/text-match-confidence.js";
 import { ValidationErrorReason } from "../../src/validation/validation-error-reason.js";
 import {
@@ -155,6 +157,39 @@ describe("WatercraftIdentificationNumber", () => {
     expect(win!.modelYearDigits).toBe("20");
   });
 
+  it.each(["KY", "VG", "RE", "AQ", "SX"])(
+    "accepts %s, an assigned code missing from the Country catalog",
+    (code) => {
+      const win = WatercraftIdentificationNumber.tryParse(`${code}-HXAB7A33G506`);
+
+      expect(win!.countryCode).toBe(code);
+      expect(win!.country).toBeNull();
+    },
+  );
+
+  it.each(["XK", "AA", "QM", "XA", "ZZ", "UK", "EU"])(
+    "rejects %s, which is not an officially assigned code",
+    (code) => {
+      const result = WatercraftIdentificationNumber.validate(`${code}-HXAB7A33G506`);
+
+      expect(result.isValid).toBe(false);
+      expect(result.issues.map((i) => i.reason)).toEqual([
+        ValidationErrorReason.UnknownCountryCode,
+      ]);
+    },
+  );
+
+  it("accepts every assigned code in the Country catalog", () => {
+    for (const country of Country.all.filter((c) => c.alpha2Code !== "XK")) {
+      const win = WatercraftIdentificationNumber.tryParse(`${country.alpha2Code}-HXAB7A33G506`);
+      expect(win?.country?.alpha2Code, country.alpha2Code).toBe(country.alpha2Code);
+    }
+  });
+
+  it("lists all 249 assigned ISO 3166-1 alpha-2 codes", () => {
+    expect(ASSIGNED_ISO_3166_ALPHA2_COUNT).toBe(249);
+  });
+
   it("accepts the letter I in the manufacturer code and as September", () => {
     const win = WatercraftIdentificationNumber.tryParse("SE-KIX4567AI925");
 
@@ -197,6 +232,21 @@ describe("WatercraftIdentificationNumber", () => {
         fallbackToTrimmedInputWhenInvalid: true,
       }),
     ).toBe("SE 1234");
+  });
+
+  // Vitest's timeout cannot interrupt synchronous work, so the budget is checked here. Quadratic
+  // trimming takes seconds on this input; linear trimming takes a few milliseconds.
+  it("trims a fallback with a long inner whitespace run in linear time", () => {
+    const options = { fallbackToTrimmedInputWhenInvalid: true };
+    const run = " ".repeat(100_000);
+    const input = " X" + run + "X\u0085";
+    const expected = "X" + run + "X";
+
+    const start = performance.now();
+    expect(WatercraftIdentificationNumber.format(input, options)).toBe(expected);
+    expect(WatercraftIdentificationNumber.normalize(input, options)).toBe(expected);
+    expect(WatercraftIdentificationNumber.format(run, options)).toBeNull();
+    expect(performance.now() - start).toBeLessThan(1_000);
   });
 
   it.each([

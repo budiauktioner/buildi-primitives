@@ -26,10 +26,10 @@ describe("person masking", () => {
   });
 
   it.each([
-    ["199908672398", false, "990867-****"],
-    ["990867-2398", false, "990867-****"],
-    ["199908672398", true, "******-****"],
-    ["990867-2398", true, "******-****"],
+    ["199903672385", false, "990367-****"],
+    ["990367-2385", false, "990367-****"],
+    ["199903672385", true, "******-****"],
+    ["990367-2385", true, "******-****"],
   ])("masks coordination number %s", (input, maskBirthDate, expected) => {
     const cn = SwedishCoordinationNumber.parse(input);
     expect(maskCoordinationNumber(cn, { maskBirthDate })).toBe(expected);

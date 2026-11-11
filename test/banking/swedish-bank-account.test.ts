@@ -97,8 +97,8 @@ describe("SwedishBankAccount.tryParse", () => {
     ["  7000 1234567  ", "7000", "1234567"],
     ["81234-123456", "81234", "123456"],
     ["8105-9694719622-3", "81059", "6947196223"],
-    ["33007109230511", "3300", "7109230511"],
-    ["3300 590413-0035", "3300", "5904130035"],
+    ["33007101019045", "3300", "7101019045"],
+    ["3300 590201-0353", "3300", "5902010353"],
   ])("returns clearing and account for %s", (input, clearing, account) => {
     const r = SwedishBankAccount.tryParse(input)!;
     expect(r.clearingNumber).toBe(clearing);
